@@ -1,103 +1,134 @@
-import Image from "next/image";
+"use client";
+import Featured from "@/components/Featured/Featured";
+import Logos from "@/components/Logo/Logos";
+import Navbar from "@/components/Navbar/Navbar"
+import { MdArrowOutward } from "react-icons/md";
+import Tech from "@/components/Tech/Tech";
+import Technologies from "@/components/Technologies/Technologies";
+import Cta from "@/components/Cta/Cta";
+import OurClients from "@/components/OurClients/OurClients";
+import Industries from "@/components/Industries/Industries";
+import { Award } from "lucide-react";
+import Awards from "@/components/Awards/Awards";
+import Trigger from "@/components/Trigger/Trigger";
+import Footer from "@/components/Footer/Footer";
+import Sidepopup from "@/components/Sidepopup/Sidepopup";
+import Product from "@/components/Product/Product";
+import Highlights from "@/components/Highlights/Highlights";
+import { useRef, useEffect } from "react";  // 👈 ye add karo
+import { gsap } from "gsap"; // 👈 ye add karo
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+   const btnRef = useRef(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+  useEffect(() => {
+    const btn = btnRef.current;
+    const rect = btn.getBoundingClientRect(); // button ki position
+
+    const maxMove = 200; // 👈 max move area (200-400px ke liye adjust karo)
+
+    function handleMouseMove(e) {
+      const x = e.clientX - (rect.left + rect.width / 2);
+      const y = e.clientY - (rect.top + rect.height / 2);
+
+      // mouse ki distance limit
+      const limitedX = Math.max(Math.min(x, maxMove), -maxMove);
+      const limitedY = Math.max(Math.min(y, maxMove), -maxMove);
+
+      // GSAP se smooth follow
+      gsap.to(btn, {
+        x: limitedX * 1.4,
+        y: limitedY * 1.4,
+        scale: 0.9, // 👈 hover me chhota ho jaye
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    }
+
+    function handleMouseLeave() {
+      // wapas apni jagah pe
+      gsap.to(btn, {
+        x: 0,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        ease: "elastic.out(1, 0.4)", // 👈 smooth elastic effect
+      });
+    }
+
+    btn.addEventListener("mousemove", handleMouseMove);
+    btn.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      btn.removeEventListener("mousemove", handleMouseMove);
+      btn.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <main className="h-[90vh] bg-gradient-to-b from-gray-900 to-gray-600 text-white">
+        <section className="pt-[10%]">
+          <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex-col justify-between items-center">
+            {/* Left Side Content */}
+            <h1 className=" font-extrabold text-white md:text-6xl leading-none text-[43px] lg:text-6xl xl:text-7xl 2xl:text-8xl lg:tracking-[-4px] tracking-[-2px]">
+              We are a <span className="text-[#3BB9E1] ">Software</span> <span className="text-[#3BB9E1] block"> Development</span> Company
+            </h1>
+            <p className=" text-neutral-200 mt-5 lg:max-w-xl 2xl:max-w-3xl text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+              We are your trusted development partner with just one goal in focus to build products that generate a lasting, profitable impact.
+            </p>
+
+            {/* Right Side Circle */}
+            {/* <div className="bg-[#3BB9E1] rounded-full h-[150px] w-[150px] flex flex-col items-center justify-center text-white mt-8 cursor-pointer hover:shadow-lg hover:scale-105 transition-transform duration-300">
+              <MdArrowOutward className="text-black text-5xl mb-2" />
+              <b className="mb-0 font-bold mt-2 xl:leading-5 leading-4 text-center" >Let’s Discuss <br/> Your Idea</b>
+            </div> */}
+
+            <div className="ball text-right flex justify-end">
+              <div ref={btnRef} className="bg-[#3BB9E1] duration-100 hover:bg-[#fff] rounded-full h-[150px] w-[150px] flex flex-col items-center justify-center hover:text-black text-white mt-8 cursor-pointer shadow-md"
+            >
+              <MdArrowOutward className="text-black text-5xl mb-2" />
+              <b className="mb-0 font-bold mt-2 xl:leading-5 leading-4 text-center">
+                Let’s Discuss <br /> Your Idea
+              </b>
+            </div>
+            </div>
+
+            
+          </div>
+        </section>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+      <Logos />
+
+      <Featured />
+
+      <Tech />
+
+      <Product />
+
+      <Technologies />
+
+      <Cta />
+
+      <OurClients />
+
+      <Industries />
+
+      <Awards />
+
+      <Highlights />
+
+      <Trigger />
+
+      {/* <Test/> */}
+
+      <Footer />
+
+      <Sidepopup />
+
+    </>
+  )
 }

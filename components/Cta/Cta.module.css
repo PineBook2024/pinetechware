@@ -1,0 +1,26 @@
+.buttonChange {
+  --height: 2rem;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  line-height: calc(var(--height) - 2px) !important;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #fff;
+}
+
+.buttonChangeBlack {
+  background-color: #000 !important;
+}
+
+.buttonChange span {
+  display: block;
+  position: relative;
+  transform: translate3d(0, -10%, 0);
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease;
+}
+
+.buttonChange:hover span {
+  transform: translate3d(0, 90%, 0);
+}

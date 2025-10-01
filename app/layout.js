@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LenisProvider from "./utils/LenisProvider";
+import { PopupProvider } from "@/Context/PopupContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +21,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* 👇 Dono providers wrap kar diye */}
+        <LenisProvider>
+          <PopupProvider>
+            {children}
+          </PopupProvider>
+        </LenisProvider>
       </body>
     </html>
   );

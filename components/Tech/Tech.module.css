@@ -1,0 +1,8 @@
+span.dod {
+    height: 15px;
+    width: 15px;
+    display: inline-table;
+    background: #000;
+    border-radius: 50px;
+    margin-right: 10px;
+}

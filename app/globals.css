@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,9 +9,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Poppins', sans-serif;
   --font-mono: var(--font-geist-mono);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,8 +21,104 @@
   }
 }
 
+
+
 body {
+  font-family: 'Manrope', system-ui, Helvetica, Arial, sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+html, body {
+  height: 100%;
+}
+
+
+.arrow-circle {
+    display: block;
+}
+
+
+
+.logo-slider .slider {
+  height: 97px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+.logo-slider .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3120px;
+}
+
+.logo-slider .slider .slide {
+  height: 100px;
+  margin-right: 52px;
+  width: 250px;
+}
+
+.transition {
+  transition-duration: .15s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+.duration-\[500ms\] {
+  transition-duration: .5s;
+}
+
+.duration-300 {
+  transition-duration: .3s;
+}
+
+
+
+.buttonChange {
+  --height: 2rem;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  line-height: calc(var(--height) - 2px) !important;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #fff;
+}
+
+.buttonChangeBlack {
+  background-color: #000 !important;
+}
+
+.buttonChange span {
+  display: block;
+  position: relative;
+  transform: translate3d(0, -10%, 0);
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease;
+}
+
+.buttonChange:hover span {
+  transform: translate3d(0, 90%, 0);
+}
+
+
+
+
