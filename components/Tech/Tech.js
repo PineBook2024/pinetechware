@@ -7,7 +7,7 @@ import styles from "./Tech.module.css";
 export default function InfiniteSlider() {
   return (
     <div
-      className={`${styles.container} overflow-hidden w-full py-12 mb-12`}
+      className={`${styles.container} overflow-hidden w-full py-12 bg-[#fff]`}
     >
       <Splide
         options={{
@@ -37,37 +37,37 @@ export default function InfiniteSlider() {
         extensions={{ AutoScroll }}
       >
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             Blockchain
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             iOS
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             UX Design
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             Android
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             Web Design
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div className="slide text-black text-6xl font-medium">
+          <div className="slide text-6xl font-medium  text-black">
             SAAS
           </div>
         </SplideSlide>

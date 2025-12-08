@@ -56,25 +56,48 @@ const Product = () => {
     });
   }, []);
 
+  const steps = [
+  {
+    title: "Ideate",
+    description: "Share your vision, market, users & goals with us so we can create a perfect roadmap for your brand's success."
+  },
+  {
+    title: "Design",
+    description: "We craft products that showcase design with all the features to optimize the interface for user satisfaction."
+  },
+  {
+    title: "Develop",
+    description: "Ensuring top-quality development with agile sprints, best practices, and scalable architecture that focus on feasible accessibility."
+  },
+  {
+    title: "Test",
+    description: "We cover every corner of QA, usability, performance, and website security. Your project is in safe hands."
+  },
+  {
+    title: "Launch",
+    description: "Promising a smooth deployment & rollout across all platforms with top-notch development and design services."
+  },
+];
+
   return (
-    <section className="pt-16 md:pt-24 lg:pt-[10.5rem] bg-black">
+
+    
+    <section className="pt-16 md:pt-24 lg:pt-[10.5rem] bg-[#3BB9E1]">
       <div className="px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-20 flex justify-between xs:items-end xs:flex-row flex-col xs:gap-0 gap-6">
           <div className="lg:overflow-hidden">
-            <h2 className="text-white font-extrabold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[55px] 2xl:!leading-[65px]">
-              <span>Our product </span>
+            <h2 className="text-white font-extrabold text-4xl xl:text-5xl 2xl:text-6xl  xl:!leading-[55px] 2xl:!leading-[65px]">
+              <span>How We Work  </span>
               <br />
-              <span className="text-theme">development process</span>
+              <span className="text-theme">Product Development Process</span>
             </h2>
           </div>
 
           <div>
             <a
               className="mt-6 text-white text-md lg:text-xl inline-flex items-center gap-4 group transition-all duration-300 ease-in-out hover:font-semibold"
-              href="//"
-            >
-              View More
+              href="/">View More
               <div className="transform group-hover:translate-x-2 transition-all duration-300 ease-in-out">
                 <IoIosArrowRoundForward className="text-white text-5xl" />
               </div>
@@ -87,7 +110,7 @@ const Product = () => {
           {/* Left Column (text) */}
           <div className="left-col w-2/4">
             <div className="detailsWrapper pl-12">
-              {[1, 2, 3, 4, 5].map((_, idx) => (
+              {steps.map((step, idx) => (
                 <div
                   key={idx}
                   ref={(el) => (detailsRef.current[idx] = el)}
@@ -99,14 +122,12 @@ const Product = () => {
                         0{idx + 1}/05
                       </p>
                       <div className="overflow-hidden">
-                        <b className="font-bold text-[#3bb9e1] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[60px] 2xl:!leading-[75px]">
-                          Ideate {idx + 1}
+                        <b className="font-bold text-[#fff] text-4xl xl:text-5xl 2xl:text-6xl  xl:!leading-[60px] 2xl:!leading-[75px]">
+                          {step.title}
                         </b>
                       </div>
                       <p className="mt-7 mb-10 leading-9 text-white font-normal text-sm lg:text-md xl:text-lg 2xl:text-xl">
-                        We analyze your vision thoroughly to ensure the roadmap
-                        is perfectly aligned with your end goals, setting the
-                        stage for product success.
+                        {step.description}
                       </p>
                     </div>
                   </div>
@@ -114,6 +135,7 @@ const Product = () => {
               ))}
             </div>
           </div>
+
 
           {/* Right Column (images) */}
           <div className="right h-[34rem] w-96 ml-20 rounded-full overflow-hidden md:sticky top-[10%]">

@@ -7,7 +7,7 @@ const Highlights = () => {
   const tabsData = [
     {
       id: 1,
-      title: "Recommendations",
+      title: "Stories That Inspire",
       leftVideo: {
         id: 1,
         video: vid,
@@ -71,7 +71,7 @@ const Highlights = () => {
     },
     {
       id: 3,
-      title: "Life at Cubix",
+      title: "Culture & Beyond",
       leftVideo: {
         id: 1,
         video: vid,
@@ -111,10 +111,10 @@ const Highlights = () => {
     <section className="bg-black pb-14 md:pb-24">
       <div className="insightsHome px-6 lg:px-8 max-w-7xl mx-auto mb-1 lg:mb-12">
         <div className="lg:overflow-hidden">
-          <h2 className="font-bold text-white sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
-            <span>our</span>
+          <h2 className="font-bold text-white sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
+            <span>In the </span>
             <span className="text-theme">
-              <span> highlights</span>
+              <span> Spotlight</span>
             </span>
           </h2>
         </div>

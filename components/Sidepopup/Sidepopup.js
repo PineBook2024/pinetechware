@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
-import { usePopup } from "@/Context/PopupContext"; 
+import { usePopup } from "@/context/PopupContext"; 
 
 export default function Sidepopup() {
   const { isOpen, closePopup } = usePopup(); 
@@ -61,7 +61,7 @@ export default function Sidepopup() {
                       <ImCross />
                     </button>
                   </div>
-                  <h2 className="font-bold 2xl:mt-4 xl:mt-8 mb-5 text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] text-white">
+                  <h2 className="font-bold 2xl:mt-4 xl:mt-8 mb-5 text-4xl xl:text-5xl 2xl:text-6xl  text-white">
                     Got a <span className="text-theme">project?</span>
                   </h2>
                   <p className="text-[#7D8387] font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">
@@ -71,7 +71,7 @@ export default function Sidepopup() {
                     Our team will thoroughly review the materials and respond to you promptly.
                   </p>
                   <div className="my-8">
-                    <p className="text-[#7D8387] font-medium text-xs xl:text-sm 2xl:text-base">I'm interested in</p>
+                    <p className="text-[#7D8387] font-medium text-xs xl:text-sm 2xl:text-base">I&apos;m interested in</p>
                     <div className="mt-2">
                       <button type="button" className="bg-transparent text-white py-2 px-3.5 my-2 mr-2 text-sm rounded-full border border-white font-semibold">Custom Software</button>
                       <button type="button" className="bg-transparent text-white py-2 px-3.5 my-2 mr-2 text-sm rounded-full border border-white font-semibold">Mobile App</button>
@@ -86,7 +86,7 @@ export default function Sidepopup() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Name"
-                      className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2"
+                      className="block w-full rounded-[23px] bg-[#1f2020] text-white px-5 py-2"
                     />
                     <input
                       type="email"
@@ -111,7 +111,7 @@ export default function Sidepopup() {
                     )}
                     <div className="inline-flex items-start mb-5">
                       <p className="text-[#7D8387] select-none text-sm tracking-wider cursor-text">
-                        We'll keep your information in our CRM to respond to your request. For more details, consult our <a className="inline-flex text-white hover:text-[#3bb9e1] cursor-pointer ps-1.5" href="/privacy-policy/">privacy policy.</a>
+                        We&apos;ll keep your information in our CRM to respond to your request. For more details, consult our <a className="inline-flex text-white hover:text-[#3bb9e1] cursor-pointer ps-1.5" href="/privacy-policy/">privacy policy.</a>
                       </p>
                     </div>
                   </div>
