@@ -102,7 +102,8 @@ export default function about() {
             </p>
           </div>
 
-          {/* <Image src={abtBanner} alt="About Us Image" width={1200} height={600} className="mt-8 lg:mt-24 image lg:rounded-[30px] rounded-2xl w-full" /> */}
+         
+         {/* <Image src={abtBanner} alt="About Us Image" width={1200} height={600} className="mt-8 lg:mt-24 image lg:rounded-[30px] rounded-2xl w-full" /> */}
         </div>
       </section>
 
