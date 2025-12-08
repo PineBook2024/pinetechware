@@ -120,7 +120,7 @@ export default function services() {
                 <div className="px-6 lg:px-8 pt-14 md:pt-24 lg:py-[10.5rem] max-w-7xl mx-auto">
                     <div className="max-w-3xl xl:max-w-4xl">
                         <div className="lg:overflow-hidden">
-                            <h2 className="font-bold pb-8 md:pb-12 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Services We Offer</span></h2></div>
+                            <h2 className="font-bold pb-8 md:pb-12 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-white"><span>Services We Offer</span></h2></div>
                     </div>
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8 pt-10">
                         <div className="lg:col-span-5">
@@ -178,15 +178,15 @@ export default function services() {
                                             onClick={() => toggleAccordion(index)}
                                         >
                                             <h3
-                                                className={`font-bold text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] ${openIndex === index ? "text-theme" : ""
+                                                className={`font-bold text-2xl text-white xl:text-3xl 2xl:text-4xl tracking-[0px] ${openIndex === index ? "text-theme" : ""
                                                     }`}
                                             >
                                                 {item.title}
                                             </h3>
-                                            <span className="ml-6 flex h-7 items-center">
+                                            <span className="ml-6 flex h-7 items-center text-white">
                                                 <span
-                                                    className={`transform transition-transform duration-[200ms] ease-in-out text-5xl font-normal mt-[8px] ${openIndex === index
-                                                        ? "rotate-180 text-theme mt-[5px]"
+                                                    className={` transform transition-transform duration-[200ms] ease-in-out text-5xl font-normal mt-[8px] ${openIndex === index
+                                                        ? "rotate-180 text-white mt-[5px]"
                                                         : ""
                                                         }`}
                                                 >
@@ -201,7 +201,7 @@ export default function services() {
                                                 }`}
                                         >
                                             <dd className="mt-6 pr-12">
-                                                <p className="dark:text-white mt-3 mb-7 text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                                <p className="text-white mt-3 mb-7 text-sm lg:text-md xl:text-lg 2xl:text-xl">
                                                     {item.content}
                                                 </p>
                                                 <p className="dark:invert font-bold pb-2 text-xs xl:text-sm 2xl:text-base"></p>

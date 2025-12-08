@@ -222,7 +222,7 @@ const Footer = () => {
 
 
 
-              <footer className="text-white body-font brand-footer">
+              <footer className="text-white body-font brand-footer bg-black">
                 <div className="container px-5 pt-10 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
                     <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-10 md:text-left text-center justify-evenly py-10">
                         <div className="lg:w-1/3 md:w-1/4 w-full px-4 widget-2 relative">

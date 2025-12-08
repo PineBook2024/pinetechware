@@ -17,37 +17,37 @@ export default function Logos() {
                     <div className="slider">
                         <div className="slide-track">
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo2} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo1} width="120" height={120} alt="logo-5" />
                             </div>
                             <div className="slide">
-                                <Image className="dark:invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
+                                <Image className="invert h-[91px] mr-[52px]" loading="lazy" src={Logo3} width="120" height={120} alt="logo-5" />
                             </div>
                         </div>
                     </div>

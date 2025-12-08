@@ -177,11 +177,11 @@ export default function Featured() {
         <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
           <div className="max-w-3xl xl:max-w-4xl">
             <div className="lg:overflow-hidden">
-              <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
+              <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl text-white lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
                 <span>Pine Techware’s 5+ Years Of Successful Journey</span>
               </h2>
             </div>
-            <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+            <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-white  2xl:text-2xl">
               We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
             </p>
           </div>
@@ -194,7 +194,7 @@ export default function Featured() {
             <div className="flex flex-col gap-y-2 w-max">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="font-bold text-white text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -206,7 +206,7 @@ export default function Featured() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="group-hover:underline text-white underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Completed Projects
                 </p>
               </span>
@@ -216,7 +216,7 @@ export default function Featured() {
             <div className="flex flex-col gap-y-2 w-max">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="font-bold text-white text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -228,7 +228,7 @@ export default function Featured() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="group-hover:underline text-white underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Satisfied Clients
                 </p>
               </span>
@@ -238,7 +238,7 @@ export default function Featured() {
             <div className="flex flex-col gap-y-2 w-max md:pb-20">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="font-bold text-white text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -250,7 +250,7 @@ export default function Featured() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="group-hover:underline underline-offset-[9px] text-white decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Tech Experts
                 </p>
               </span>

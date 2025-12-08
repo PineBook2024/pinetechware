@@ -110,11 +110,11 @@ export default function about() {
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-14 md:pt-24 lg:pt-[10.5rem] lg:pb-24 lg:px-8">
           <div className="max-w-3xl xl:max-w-4xl">
             <div className="lg:overflow-hidden">
-              <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl  xl:!leading-[55px] 2xl:!leading-[65px]">
+              <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl text-white xl:!leading-[55px] 2xl:!leading-[65px]">
                 <span>Building Tomorrow’s Digital Experiences</span>
               </h2>
             </div>
-            <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+            <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-white">
               Since 2020, Pine Techware has been setting the bar high in innovation, engineering excellence, and design quality. We deliver solutions that not only look good but perform powerfully, delight users, and drive real business growth.
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function about() {
             <div className="flex flex-col gap-y-2 w-max">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="text-white font-bold text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -139,7 +139,7 @@ export default function about() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="text-white group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Completed Projects
                 </p>
               </span>
@@ -149,7 +149,7 @@ export default function about() {
             <div className="flex flex-col gap-y-2 w-max">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="text-white font-bold text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -161,7 +161,7 @@ export default function about() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="text-white group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Talented Cubixians
                 </p>
               </span>
@@ -171,7 +171,7 @@ export default function about() {
             <div className="flex flex-col gap-y-2 w-max md:pb-20">
               <span className="cursor-pointer group inline-flex flex-col gap-y-2">
                 <div className="inline-flex">
-                  <span className="group-hover:text-[#3BB9E1] font-bold text-4xl xl:text-5xl 2xl:text-6xl">
+                  <span className="text-white font-bold text-4xl xl:text-5xl 2xl:text-6xl">
                     {startCounter && (
                       <CountUp
                         start={0}
@@ -183,7 +183,7 @@ export default function about() {
                     +
                   </span>
                 </div>
-                <p className="group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <p className="text-white group-hover:underline underline-offset-[9px] decoration-1 inline text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                   Satisfied Clients
                 </p>
               </span>
