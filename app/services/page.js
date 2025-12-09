@@ -11,7 +11,7 @@ import Image from 'next/image'
 import serviceBoll from "@/public/images/serviceBoll.webp"
 import serviceHand from "@/public/images/serviceHand.webp"
 import Navbar from '@/components/Navbar/Navbar'
-import serMob from "@/public/images/serMob.jpg"
+import serMob from "@/public/images/serMob.png"
 import OurClients from "@/components/OurClients/OurClients";
 import Trigger from "@/components/Trigger/Trigger";
 import Footer from "@/components/Footer/Footer";

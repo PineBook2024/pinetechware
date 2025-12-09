@@ -2,11 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
-import Img1 from "@/public/images/Ideate.webp";
-import Img2 from "@/public/images/Ideate1.webp";
-import Img3 from "@/public/images/Ideate2.webp";
-import Img4 from "@/public/images/Ideate3.webp";
-import Img5 from "@/public/images/Ideate4.webp";
+import Img1 from "@/public/images/Ideate.png";
+import Img2 from "@/public/images/Ideate1.png";
+import Img3 from "@/public/images/Ideate2.png";
+import Img4 from "@/public/images/Ideate3.png";
+import Img5 from "@/public/images/Ideate4.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
