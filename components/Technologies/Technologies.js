@@ -25,18 +25,6 @@ const Technologies = () => {
           image: "/images/icon4.svg",
         },
       ],
-
-      // right: [
-
-      //   {
-      //     title: "Professional Branding",
-      //     image: "/images/icon6.svg",
-      //   },
-      //   {
-      //     title: "Stationary Design",
-      //     image: "/images/icon7.svg",
-      //   },
-      // ],
     },
 
     "Web Design and Development": {
@@ -59,17 +47,6 @@ const Technologies = () => {
         },
       ],
 
-      // right: [
-
-      //   {
-      //     title: "Custom Applications",
-      //     image: "/images/icon1.svg",
-      //   },
-      //   {
-      //     title: "Ecommerce Website",
-      //     image: "/images/icon1.svg",
-      //   },
-      // ],
     },
 
     "Digital Marketing": {
@@ -136,51 +113,6 @@ const Technologies = () => {
   const tabKeys = Object.keys(tabData);
   const [activeTab, setActiveTab] = useState(tabKeys[0]);
 
-  // const [activeTab, setActiveTab] = useState("Branding");
-
-  // object structure
-  // const techData = {
-  //   "Branding": {
-  //     sections: [
-  //       {
-  //         title: "React",
-  //         icon: [<FaReact />, <FaReact />, <FaReact />, <FaReact />, <FaReact />],
-  //         items: ["React.js", "Angular", "Vue.js", "Node.js", "Django"],
-  //       },
-  //     ],
-  //   },
-  //   "Web Design and Development": {
-  //     sections: [
-  //       {
-  //         title: "Flutter",
-  //         items: [
-  //           "Spring Boot",
-  //           "Laravel",
-  //           "ASP.NET",
-  //           "Ruby on Rails",
-  //           "Flutter",
-  //           "React Native",
-  //         ],
-  //       },
-  //     ],
-  //   },
-  //   "Digital Marketing": {
-  //     sections: [
-  //       {
-  //         title: "Frameworks",
-  //         items: ["Django", "Flask", "FastAPI"],
-  //       },
-  //     ],
-  //   },
-  //   "Mobile Application Development": {
-  //     sections: [
-  //       {
-  //         title: "Frameworks",
-  //         items: ["Spring Boot", "Hibernate", "Struts"],
-  //       },
-  //     ],
-  //   }
-  // };
 
   return (
     <div>
@@ -195,57 +127,11 @@ const Technologies = () => {
             <p className="lg:py-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
               We’re fluent in:
             </p>
-
-
-
             <div className="flex flex-wrap flex-col md:flex-row md:border-t border-gray-300">
-              {/* Left Tabs */}
-              {/* <div className="w-full md:w-[30%] lg:w-[21.5%] 2xl:w-[24%] overflow-auto md:overflow-hidden md:border-r border-gray-300 md:pt-12 md:border-b-0 border-b">
-                <ul className="text-lg lg:text-xl 2xl:text-2xl font-medium space-y-4 md:space-y-6 xl:space-y-10 2xl:space-y-8 pr-4 md:pr-0">
-                  {Object.keys(techData).map((tab) => (
-                    <li
-                      key={tab}
-                      onClick={() => setActiveTab(tab)}
-                      className={`cursor-pointer z-10 whitespace-nowrap md:whitespace-normal outline-none md:w-full md:rounded-full md:px-3 font-medium text-left ${activeTab === tab
-                        ? "text-black font-bold"
-                        : "text-gray-500 hover:text-black"
-                        }`}
-                    >
-                      {tab}
-                    </li>
-                  ))}
-                </ul>
-                <FaReact />
-
-              </div> */}
-
-              {/* Right Content */}
-              {/* <div className="w-full md:w-[70%] lg:w-[78.5%] 2xl:w-[76%] pt-6 md:pt-0">
-                {techData[activeTab].sections.map((section, idx) => (
-                  <div key={idx}>
-                    <h2 className="my-8 font-bold text-xl xl:text-2xl 2xl:text-3xl tracking-[0px] pl-4 md:pl-12 lg:pl-16 text-black">
-                      {section.title}
-                    </h2>
-                    <ul className="flex flex-wrap text-lg lg:text-xl gap-4 2xl:text-2xl font-medium pl-4 md:pl-12 lg:pl-16">
-                      {section.items.map((item, i) => (
-                        <li
-                          key={i}
-                          className="buttonChange buttonChangeBlack bg-black text-white 2xl:w-[180px] items-center px-6 md:px-11 h-[40px] md:h-12 border-transparent rounded-full font-extrabold text-sm"
-                        >
-                          <span className="pb-[3px] md:pb-1.5">{item}</span>
-                          <span className="pb-[3px] md:pb-1.5">{item}</span>
-                          <icon>{section.icon}</icon>
-
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div> */}
             </div>
 
 
-            <div className="w-full max-w-4xl mx-auto mt-10">
+            <div className="w-full mx-auto mt-10">
 
               {/* Tabs */}
               <div className="flex gap-4 border-b pb-2">
@@ -279,30 +165,11 @@ const Technologies = () => {
                     </div>
                   ))}
                 </div>
-
-                {/* Right List */}
-                {/* <div>
-                  {tabData[activeTab].right.map((item, index) => (
-                    <div key={index} className="flex items-center gap-4 mb-5">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        className="w-10 h-10 object-contain"
-                        width={50}
-                        height={50}
-
-                      />
-                      <p className="text-lg font-semibold">{item.title}</p>
-                    </div>
-                  ))}
-                </div> */}
-
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </div>
 
   )

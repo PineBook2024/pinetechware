@@ -127,7 +127,6 @@ export default function services() {
                             <Image className="w-full fade-in lg:sticky lg:top-20" src={serMob} alt="" />
                         </div>
 
-
                         {/* <div className="lg:col-span-7 lg:pt-0 pt-10">
                             <div className="space-y-6 lg:space-y-10">
 

@@ -21,7 +21,7 @@ const Footer = () => {
                                 <Image src={logo} width={150} height={200}></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7 px-4">
-                                Pine Book Publishing is a team of passionate book publishers that believe in the power of storytelling and the importance of writers' ability to tell their tales. Our streamlined process and dedicated support make book publishing service a realistic and rewarding goal for any author.
+                                Pine Techware is among the Leading Software Development Agencies in USA & UK. We are Committed to Provide Innovative Tech Products and Solutions with Affordability
                             </p>
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
