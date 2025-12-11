@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-10 md:text-left text-center justify-evenly py-10">
                         <div className="lg:w-1/3 md:w-1/4 w-full px-4 widget-2 relative">
                             <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                                <Image src={logo} width={150} height={200}></Image>
+                                <Image src={logo} width={150} height={200} alt='logo'></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7 px-4">
                                 Pine Techware is among the Leading Software Development Agencies in USA & UK. We are Committed to Provide Innovative Tech Products and Solutions with Affordability

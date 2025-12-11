@@ -98,7 +98,7 @@ export default function services() {
 
                             className="font-extrabold text-black leading-none text-[43px] lg:text-6xl xl:text-7xl 2xl:text-8xl"
                         >
-                            <span className="text-theme">Fueling Growth Through</span> Advanced Digital Services
+                            <span className="text-theme text-[#3BB9E1]">Fueling Growth Through</span> Advanced Digital Services
                         </h1>
                         <p className=" text-black mt-5 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We build intelligent, scalable digital products that help businesses grow, innovate, and lead. From strategy through design, development, launch, and maintenance, PineTechware is your full-cycle partner in creating real value.</p>
 
@@ -109,18 +109,18 @@ export default function services() {
                     <Image src={serviceBoll} className="w-24 md:w-28 2xl:w-36" alt="teach Asset" />
                 </div>
 
-                <div className="absolute bottom-20 2xl:-right-28 -right-12 hidden lg:block">
+                {/* <div className="absolute bottom-20 2xl:-right-28 -right-12 hidden lg:block">
                     <Image src={serviceHand} className="w-[28rem] 2xl:w-[42rem]" alt="teach Asset" />
-                </div>
+                </div> */}
             </section>
 
 
 
-            <section className="reveal-text service-provided bg-[#3BB9E1] " id="mobile-services">
+            <section className="reveal-text service-provided bg-white " id="mobile-services">
                 <div className="px-6 lg:px-8 pt-14 md:pt-24 lg:py-[10.5rem] max-w-7xl mx-auto">
                     <div className="max-w-3xl xl:max-w-4xl">
                         <div className="lg:overflow-hidden">
-                            <h2 className="font-bold pb-8 md:pb-12 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-white"><span>Services We Offer</span></h2></div>
+                            <h2 className="font-bold pb-8 md:pb-12 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-black"><span>Services We Offer</span></h2></div>
                     </div>
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8 pt-10">
                         <div className="lg:col-span-5">
@@ -177,15 +177,15 @@ export default function services() {
                                             onClick={() => toggleAccordion(index)}
                                         >
                                             <h3
-                                                className={`font-bold text-2xl text-white xl:text-3xl 2xl:text-4xl tracking-[0px] ${openIndex === index ? "text-theme" : ""
+                                                className={`font-bold text-2xl text-black xl:text-3xl 2xl:text-4xl tracking-[0px] ${openIndex === index ? "text-theme" : ""
                                                     }`}
                                             >
                                                 {item.title}
                                             </h3>
-                                            <span className="ml-6 flex h-7 items-center text-white">
+                                            <span className="ml-6 flex h-7 items-center text-black">
                                                 <span
                                                     className={` transform transition-transform duration-[200ms] ease-in-out text-5xl font-normal mt-[8px] ${openIndex === index
-                                                        ? "rotate-180 text-white mt-[5px]"
+                                                        ? "rotate-180 text-black mt-[5px]"
                                                         : ""
                                                         }`}
                                                 >
@@ -200,7 +200,7 @@ export default function services() {
                                                 }`}
                                         >
                                             <dd className="mt-6 pr-12">
-                                                <p className="text-white mt-3 mb-7 text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                                <p className="text-black mt-3 mb-7 text-sm lg:text-md xl:text-lg 2xl:text-xl">
                                                     {item.content}
                                                 </p>
                                                 <p className="dark:invert font-bold pb-2 text-xs xl:text-sm 2xl:text-base"></p>
@@ -216,7 +216,7 @@ export default function services() {
             </section>
 
 
-            <section className="reveal-text teach-guarantees bg-[#3BB9E1] ">
+            <section className="reveal-text teach-guarantees bg-[#3BB9E1] pt-20">
                 <div className="px-6 lg:px-8 pb-14 md:pb-24 lg:pb-[10.5rem] max-w-7xl mx-auto">
                     <div className="2xl:max-w-4xl lg:max-w-3xl pb-12 lg:pb-20">
                         <div className="lg:overflow-hidden">

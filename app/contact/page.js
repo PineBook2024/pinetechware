@@ -79,24 +79,26 @@ export default function contact() {
                 {/* <title>Home - My Software Company</title>
         <meta name="description" content="We build software solutions..." /> */}
             </Head>
-            <Navbar />
+           <div data-theme="light">
+                <Navbar />
+            </div>
 
-            <section className="px-6 lg:px-8 pt-24 md:pt-[10.5rem] bg-[#3BB9E1] ">
+            <section className="px-6 lg:px-8 pt-24 md:py-[10.5rem] bg-white ">
                 <div className='md:flex max-w-7xl mx-auto '>
                     <div className='w-full md:w-[40%] md:pr-20'>
                         <div className='overflow-hidden'>
-                            <h1 className=" font-bold pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">Got an idea for your project?</h1>
+                            <h1 className=" font-bold pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-black">Got an idea for your project?</h1>
                         </div>
-                        <p className=" text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We’d love to learn more about you and what we can design and build together.</p>
+                        <p className=" text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-black">We'd love to learn more about you and what we can design and build together.</p>
                         <div className='mt-8 md:mt-[220px] 2xl:mt-[175px] flex flex-col wrap md:gap-x-0 gap-2 gap-x-4'>
                             <div className='flex items-center'>
-                                <IoIosMail className='h-5 w-5 md:h-6 md:w-6 mr-4' />
-                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+                                <IoIosMail className='h-5 w-5 md:h-6 md:w-6 mr-4 text-black' />
+                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
                                     <Link href="mailto: info@pinetechware.com">info@pinetechware.com</Link></p>
                             </div>
                             <div className='flex items-center md:mt-4'>
-                                <MdOutlineLocalPhone className='h-5 w-5 md:h-6 md:w-6 mr-4' />
-                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+                                <MdOutlineLocalPhone className='h-5 w-5 md:h-6 md:w-6 mr-4 text-black' />
+                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
                                     <Link href="phone: 866-841-7463">866-841-7463</Link></p>
                             </div>
                         </div>
@@ -211,6 +213,7 @@ export default function contact() {
             </section>
 
 
+           
             <div className="px-6 lg:px-8 py-12 md:py-20 bg-[#3BB9E1] ">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-x-10 sm:gap-y-10 max-w-7xl mx-auto ">
                     <div>
