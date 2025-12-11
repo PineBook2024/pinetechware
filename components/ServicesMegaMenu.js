@@ -1,27 +1,37 @@
 "use client"
+import { useState } from "react"
 import Link from "next/link"
-
+import { IoMdArrowDropdown } from "react-icons/io"
 
 export default function ServicesMegaMenu({ isLight }) {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const toggleMenu = (e) => {
+    e.preventDefault() // prevent page reload
+    setMenuOpen(!menuOpen)
+  }
+
     return (
         <div className="group static">
             {/* Services Link */}
             <Link
-                href="/services"
-                className={`relative inline-block font-medium cursor-pointer
-    before:absolute before:-bottom-1 before:left-0 before:h-[2px]
-    before:w-0 before:bg-blue-500 before:transition-all before:duration-300
-    hover:before:w-full
-    text-base transition-colors duration-200 ${isLight ? "text-black" : "text-white"}
-  `}
+                href="#"
+                onClick={toggleMenu}
+                className={`
+          relative flex items-center gap-1 font-medium cursor-pointer
+          before:absolute before:-bottom-1 before:left-0 before:h-[2px]
+          before:w-0 before:bg-blue-500 before:transition-all before:duration-300
+          hover:before:w-full
+          text-base transition-colors duration-200 ${isLight ? "text-black" : "text-white"}
+        `}
             >
-                Services
+                Services <IoMdArrowDropdown className={`transition-transform duration-300 ${menuOpen ? "rotate-180" : ""}`} />
             </Link>
 
 
 
             {/* Mega Menu */}
-            <div className="fixed left-0 right-0 top-[64px] w-screen hidden group-hover:block bg-white z-[9999]">
+            <div className="fixed left-0 right-0 top-[64px]  w-screen hidden group-hover:block bg-white z-[9999]">
                 <div className="w-full shadow-xl ring-1 ">
 
                     <div className="mx-auto max-w-7xl px-8 py-14">
@@ -29,18 +39,18 @@ export default function ServicesMegaMenu({ isLight }) {
 
                             {/* Column 1 - Services */}
                             {/* <div className="flex flex-col gap-6 border-r border-gray-200 pr-10">
-                <div className="flex items-center justify-between">
-                  <p className="text-[26px] font-bold text-black tracking-tight">
-                    Services
-                  </p>
-                  <Link
-                    href="/services"
-                    className="text-lg font-semibold text-[#3BB9E1] hover:underline"
-                  >
-                    →
-                  </Link>
-                </div>
-              </div> */}
+                                <div className="flex items-center justify-between">
+                                <p className="text-[26px] font-bold text-black tracking-tight">
+                                    Services
+                                </p>
+                                <Link
+                                    href="/services"
+                                    className="text-lg font-semibold text-[#3BB9E1] hover:underline"
+                                >
+                                    →
+                                </Link>
+                                </div>
+                            </div> */}
 
                             {/* Column 2 - App Development */}
                             <div className="flex flex-col gap-4">
