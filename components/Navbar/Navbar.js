@@ -6,6 +6,8 @@ import logoDark from "@/public/images/logo-dark.png"
 import logoWhite from "@/public/images/logo.png"
 import { usePopup } from "@/context/PopupContext"
 import Link from "next/link"
+import ServicesMegaMenu from "@/components/ServicesMegaMenu"
+
 
 export default function Navbar() {
   const { openPopup } = usePopup()
@@ -54,7 +56,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all z-30 duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +76,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 mx-auto">
-            {navLinks.map((link) => (
+            {/* {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
@@ -85,7 +87,26 @@ export default function Navbar() {
               >
                 {link.name}
               </a>
-            ))}
+            ))} */}
+
+            {navLinks.map((link) => {
+              if (link.name === "Services") {
+                return <ServicesMegaMenu isLight={isLight} key={link.name}/>
+              }
+
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`${styles.navLink} text-base font-medium transition-colors duration-200 ${isLight
+                    ? "text-black hover:[text-#3BB9E1]"
+                    : "text-white hover:#3BB9E1]"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              )
+            })}
           </div>
 
           {/* Right Button (Desktop) */}
