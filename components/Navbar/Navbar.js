@@ -47,7 +47,7 @@ export default function Navbar() {
   const isLight = activeTheme === "light" || isScrolled
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
+    <nav className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
@@ -156,7 +156,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden bg-white dark:bg-gray-900 transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
+      <div className={`bg-white dark:bg-gray-900 transition-all duration-300 ${menuOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"}`}>
         <div className="flex flex-col items-center space-y-4 py-6">
           {/* {navLinks.map(link => (
             <a
