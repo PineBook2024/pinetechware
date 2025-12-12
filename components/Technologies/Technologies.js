@@ -134,7 +134,7 @@ const Technologies = () => {
             <div className="w-full mx-auto mt-10">
 
               {/* Tabs */}
-              <div className="flex gap-4 border-b pb-2">
+              <div className="flex flex-col md:flex-row md:space-y-0 gap-4 border-b pb-2">
                 {tabKeys.map((tab) => (
                   <button
                     key={tab}
