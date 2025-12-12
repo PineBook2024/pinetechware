@@ -54,15 +54,15 @@ export default function page() {
 
 
             <section className="HalfTextContent-sec bg-white">
-                <div className="px-6 lg:px-8 py-40 lg:py-[10.5rem] max-w-7xl mx-auto">
+                <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">iPhone App Development Services</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We build custom iPhone app solutions that boost engagement, brand value, and revenue while delivering experiences that ensure users keep coming back.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Transforming</span> Ideas Into Visual Experiences</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We create visuals that define your brand, tell your story, and make your audience care. From branding to marketing assets, our designs blend creativity with strategy so your business stands out everywhere it appears.</p>
                         </div>
-                        <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-end items-end">
-                            <Image className="w-[170px] " src="https://cdn.cubix.co/73z7hm_Ua_Dfqfuj_Oys_Vp5yf_6ddd983374.svg" alt="Top Mobile App Developers" width="170" height="100" />
+                        <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
+                            <Image className="w-full" src="/images/custom-graphic-design.png" alt="Top Mobile App Developers" width="500" height="500" />
                         </div>
                     </div>
                 </div>
@@ -158,35 +158,35 @@ export default function page() {
                 </div>
             </section>
 
-            <section className='bg-white'>
+            <section className='bg-gray-50'>
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem] ">
                     <div className="lg:overflow-hidden">
-                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>our full-cycle <span className="!normal-case">iPhone</span> app development services</span></h2></div>
+                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle <span className="!normal-case">Custom</span> Graphic Design Services</span></h2></div>
                     <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black"></p>
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 lg:gap-14 gap-6 md:gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Mobile Strategy &amp; Consulting</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Our experts consult you on all aspects of app development, from staying current with market trends to defining your target audience to creating a roadmap for success.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Brand Identity Design</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Logos, color palettes, typography, and assets crafted to express your brand’s personality and set the foundation for all visual communication.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">UI/UX Design for iPhone</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Following Apple’s Human Interface Guidelines is our core priority. This enables us to deliver beautiful, functional designs that are compliant with iPhone’s usability standards.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Marketing & Promotional Design</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Flyers, brochures, banners, posters, pitch decks, presentations, social media visuals, and everything you need to promote your business.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Custom iPhone Development</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">With a strong focus on the latest technologies. Cubix offers customized iPhone app solutions that enhance your brand values and perfectly align with your business needs.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">UI/UX Graphics & Digital Assets</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Custom icons, illustrations, interface elements, and digital graphics that enhance your website, platform, or mobile app experience.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Platform Migration</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">We transition your app from other platforms to iPhone and ensure it retains its core functionalities while taking advantage of iPhone-specific features.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Product Packaging Design</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Unique, shelf-worthy packaging that increases product appeal and communicates your values instantly.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">iPhone Software Testing</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Our team of QA engineers and testers helps you release bug-free apps with exceptional functionality, usability, and performance testing for a flawless user experience across devices.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Print Design</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Business cards, booklets, company profiles, menus, invitations, and professional print-ready artworks for any requirement.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Cross-Platform Development</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">We use frameworks like Flutter and React Native to develop quality iPhone apps that provide exceptional UX across different devices, which can reduce development time and costs.</p>
+                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Custom Illustrations</h3>
+                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Detailed hand-drawn or digital illustrations for books, branding, storytelling, or product lines.</p>
                         </div>
                     </div>
                 </div>
@@ -204,32 +204,32 @@ export default function page() {
                         <div className="lg:col-span-6">
                             <div className="flex flex-col gap-y-5">
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">01</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Planning &amp; Research</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We gather requirements, define goals, and conduct market analysis to ensure the app meets user needs and attunes to your business objectives.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Discovery & Research</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We begin by understanding your brand, audience, and design goals. This helps us create visuals that align with your message and marketing direction.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">02</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">UI/UX Design</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Our proficient UI/UX developers prepare interfaces and user experiences that are easy to navigate and optimized for iPhone devices.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Concept Development</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Our designers craft initial directions, mood boards, and creative concepts so you can visualize the tone and direction early on.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">03</span>
-                                    <h3 className=" font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">App Development</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We then initiate our development process, creating and testing builds simultaneously to ensure exceptional performance, security, and scalability.</p>
+                                    <h3 className=" font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Design Execution</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Once the concept is approved, we refine it into polished graphic designs across the required formats and platforms.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">04</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">QA &amp; Testing</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Our team thoroughly tests the final build for functionality, usability, performance, and compatibility across iPhone devices to identify and resolve any issues.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Revisions & Refinement</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We provide structured revisions to perfect the artwork and ensure everything aligns with your expectations.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">05</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">App Refinement</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We refine the final build based on feedback from testing, fixing features, UI elements, and the overall user experience to enhance app usability and quality.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Final Delivery</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">You receive clean, high-resolution, print-ready and web-ready files in all required formats.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">06</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Final Deployment</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Next, our focus is to ensure a secure launch of your iPhone app, adhering to Apple’s strict guidelines and ensuring all necessary documentation and assets are in place.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Asset Packaging</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We organize your full set of branding and graphic assets for long-term, consistent use across your business.</p>
                                 </div>
                                 <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">07</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Post-launch Support</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">After the final deployment, we provide ongoing support, monitor app performance, collect user feedback, and release updates if required.</p>
+                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Ongoing Support</h3>
+                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Need updates or new variations later? Our team is here to support your brand’s continued growth and design needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -252,92 +252,74 @@ export default function page() {
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Mobile App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Logo Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Android App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Branding Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
                                 <li>
-                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">eCommerce App</a></li>
+                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Social Media Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">visionOS App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">UI/UX Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Enterprise App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Web Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Cross Platform App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Packaging Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Flutter App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Illustration</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Hybrid App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Print Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Ionic App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Motion Graphics</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Sencha App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Marketing Material Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">NativeScript App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Presentation Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">AR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">VR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Metaverse App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">IoT App</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Book Cover Design</a></li>
                             </ul>
                         </div>
                     </div>
@@ -353,10 +335,6 @@ export default function page() {
             <Footer />
 
             <Sidepopup />
-
-
-
-
         </div>
     )
 }
