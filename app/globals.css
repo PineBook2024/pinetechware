@@ -129,3 +129,26 @@ html, body {
     background: #fff;
     background: radial-gradient(circle, #fff 0, #f0f0f0 100%);
 }
+
+
+.vertical {
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -ms-transform-origin: right top 0;
+  -moz-transform-origin: right top 0;
+  -webkit-transform-origin: right top 0;
+  transform-origin: right top 0;
+  right: 50%;
+  padding-top: 0vw;
+  padding-right: 0vw;
+  font-size: 5vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: vertical-text;
+  position: absolute;
+  display: block;
+  direction: rtl;
+  user-select: none;
+}

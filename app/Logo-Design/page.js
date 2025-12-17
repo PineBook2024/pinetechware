@@ -8,7 +8,7 @@ import SeoHead from '@/components/SeoHead'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
-import Img1 from "@/public/images/iphone-app-development-banner.webp";
+import Img1 from "@/public/images/banner-inner/logo-design-banner.webp";
 import Img2 from "@/public/images/check.svg";
 
 import { useEffect, useRef, useState } from 'react';
@@ -68,7 +68,7 @@ export default function page() {
             </section>
 
 
-            <Image src={Img1} sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="mt-8 lg:mt-24 w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+            <Image src={Img1} sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
