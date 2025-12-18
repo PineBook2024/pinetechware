@@ -108,7 +108,7 @@ export default function contact() {
                         <form id="contact-form" onSubmit={handleSubmit}>
                             <div className="grid grid-col-12 gap-x-2 md:gap-x-10 md:gap-y-10 gap-y-6">
                                 <div className="col-span-12 mt-14 md:mt-0">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
                                         Name*
                                     </p>
                                     <div className="mt-2">
@@ -119,13 +119,13 @@ export default function contact() {
                                             id="name"
                                             value={formData.name}
                                             autoComplete="given-name"
-                                            className="bg-[#F1F1F1] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
+                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
                                         />
                                     </div>
                                 </div>
 
                                 <div className="col-span-12 sm:col-span-6">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
                                         Email*
                                     </p>
                                     <div className="mt-2">
@@ -136,13 +136,13 @@ export default function contact() {
                                             id="email"
                                             value={formData.email}
                                             autoComplete="email"
-                                            className="bg-[#F1F1F1] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
+                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
                                         />
                                     </div>
                                 </div>
 
                                 <div className="col-span-12 sm:col-span-6">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
                                         Phone*
                                     </p>
                                     <div className="mt-2">
@@ -153,13 +153,13 @@ export default function contact() {
                                             autoComplete="tel"
                                             onChange={handleChange}
                                             value={formData.phone}
-                                            className="bg-[#F1F1F1] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
+                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
                                         />
                                     </div>
                                 </div>
 
                                 <div className="col-span-12">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">
+                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
                                         Message*
                                     </p>
                                     <div className="mt-2">
@@ -169,7 +169,7 @@ export default function contact() {
                                             name="message"        // IMPORTANT: API ke saath match
                                             rows="3"
                                             value={formData.message}
-                                            className="bg-[#F1F1F1] px-5 pt-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl h-[122]"
+                                            className="bg-[#dddd] px-5 pt-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl h-[122]"
                                         />
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@ export default function contact() {
                                         id="button_686890"
                                         type="submit"
                                         disabled={loading}
-                                        className="px-6 md:px-11 w-full h-[40px] md:h-[68px] rounded-full bg-black text-white dark:bg-white dark:text-black font-bold text-xs xl:text-sm 2xl:text-base disabled:opacity-60"
+                                        className="px-6 md:px-11 w-full bg-black cursor-pointer h-[40px] md:h-[68px] rounded-full font-bold text-xs xl:text-sm 2xl:text-base disabled:opacity-60"
                                     >
                                         {loading ? "Sending..." : "Send Message"}
                                     </button>

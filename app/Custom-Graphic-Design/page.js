@@ -198,7 +198,7 @@ export default function page() {
                         <div className="lg:col-span-6 lg:pb-0 pb-12 lg:pr-14 2xl:pr-20">
                             <div className="lg:sticky top-20">
                                 <div className="lg:overflow-hidden">
-                                    <h2 className="text-black font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase vertical"><span>our approach</span></h2></div>
+                                    <h2 className="text-black font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase "><span>our approach</span></h2></div>
                             </div>
                         </div>
                         <div className="lg:col-span-6">

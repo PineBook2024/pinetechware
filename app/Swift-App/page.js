@@ -45,70 +45,78 @@ export default function page() {
     }, []);
 
 const webServices = [
-    {
-        heading: "Custom iOS App Development",
-        description: "Tailor-made iOS applications built to match your business goals and user requirements.",
-    },
-    {
-        heading: "UI/UX Design for iOS",
-        description: "Apple-standard interfaces with smooth navigation and intuitive user experiences.",
-    },
-    {
-        heading: "iPhone & iPad App Development",
-        description: "Optimized apps designed for both iPhone and iPad with consistent performance.",
-    },
-    {
-        heading: "API & Backend Integration",
-        description: "Secure integrations with third-party services, databases, and cloud platforms.",
-    },
-    {
-        heading: "App Store Deployment",
-        description: "Complete App Store submission, compliance, and launch support.",
-    },
-    {
-        heading: "App Testing & Quality Assurance",
-        description: "Comprehensive testing to ensure performance, security, and device compatibility.",
-    },
+  {
+    heading: "Custom Swift App Development",
+    description:
+      "Tailor-made iOS applications built in Swift to align with your business goals and user requirements.",
+  },
+  {
+    heading: "Native iOS App Development",
+    description:
+      "High-performance native applications designed specifically for iPhone, iPad, and the Apple ecosystem.",
+  },
+  {
+    heading: "UI/UX Design for Swift Apps",
+    description:
+      "Clean, intuitive user interfaces built in accordance with Apple Human Interface Guidelines.",
+  },
+  {
+    heading: "API & Backend Integration",
+    description:
+      "Secure and scalable integration with cloud services, databases, and third-party APIs.",
+  },
+  {
+    heading: "App Store Deployment",
+    description:
+      "End-to-end App Store submission, compliance management, and launch support.",
+  },
+  {
+    heading: "App Testing & Quality Assurance",
+    description:
+      "Comprehensive testing to ensure optimal performance, security, and multi-device compatibility.",
+  },
 ];
+
 
 
 const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Analysis",
-        desc: "We define app objectives, features, and technical requirements.",
-    },
-    {
-        number: "02",
-        title: "UI/UX & Prototyping",
-        desc: "Wireframes and prototypes designed for Apple’s design guidelines.",
-    },
-    {
-        number: "03",
-        title: "iOS App Development",
-        desc: "Clean, efficient development using Swift and modern frameworks.",
-    },
-    {
-        number: "04",
-        title: "API & Feature Integration",
-        desc: "Secure backend connections and advanced feature implementation.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Thorough testing across devices and iOS versions.",
-    },
-    {
-        number: "06",
-        title: "App Store Launch",
-        desc: "Submission, review handling, and final deployment.",
-    },
-    {
-        number: "07",
-        title: "Post-Launch Support & Scaling",
-        desc: "Continuous support, updates, and scalability planning.",
-    },
+  {
+    number: "01",
+    title: "Requirement Analysis",
+    desc: "We define app objectives, features, and technical requirements clearly.",
+  },
+  {
+    number: "02",
+    title: "UI/UX & Prototyping",
+    desc: "Wireframes and prototypes designed for smooth Apple user experiences.",
+  },
+  {
+    number: "03",
+    title: "Swift App Development",
+    desc: "Clean, efficient development using Swift and modern iOS frameworks.",
+  },
+  {
+    number: "04",
+    title: "Feature & API Integration",
+    desc: "Secure backend connections and advanced feature implementation.",
+  },
+  {
+    number: "05",
+    title: "Testing & Quality Assurance",
+    desc: "Rigorous testing across iOS versions and Apple devices.",
+  },
+  {
+    number: "06",
+    title: "App Store Launch",
+    desc: "Submission, review handling, and final deployment.",
+  },
+  {
+    number: "07",
+    title: "Post-Launch Support & Scaling",
+    desc: "Ongoing updates, enhancements, and scalability planning.",
+  },
 ];
+
 
 
 
@@ -131,11 +139,11 @@ const processSteps = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>High-Performance</span>  iOS Apps Built for Growth</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We design and develop secure, scalable, and intuitive iOS applications that deliver seamless user experiences and drive real business value across Apple devices.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Powerful, Secure </span>  iOS Apps Built With Swift</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Swift is Apple’s preferred language for building fast, secure, and future-ready iOS applications. We develop high-performance Swift apps that deliver smooth user experiences, strong security, and long-term scalability across Apple devices.</p>
                         </div>
                         <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/IOS-App.webp" alt="IOS-App" width="500" height="500" />
+                            <Image className="w-full" src="/images/Swift-App.webp" alt="Swift-App" width="500" height="500" />
                         </div>
                     </div>
                 </div>
@@ -235,7 +243,7 @@ const processSteps = [
             <section className='bg-white'>
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem] ">
                     <div className="lg:overflow-hidden">
-                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle iOS App Development Services</span></h2></div>
+                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle Swift App Development Services</span></h2></div>
                     <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black"></p>
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 lg:gap-14 gap-6 md:gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 

@@ -43,94 +43,86 @@ export default function page() {
 
 const webServices = [
   {
-    heading: "Social Media Strategy & Planning",
+    heading: "Custom Mobile Game Development",
     description:
-      "Platform-specific strategies aligned with your business goals and target audience.",
+      "End-to-end game development tailored to your concept, genre, and target audience.",
   },
   {
-    heading: "Content Creation & Design",
+    heading: "2D & 3D Game Development",
     description:
-      "Scroll-stopping posts, reels, stories, and creatives tailored to each platform.",
+      "Visually stunning 2D games and immersive 3D experiences built with modern engines and tools.",
   },
   {
-    heading: "Account Management",
+    heading: "iOS & Android Game Development",
     description:
-      "Daily posting, community engagement, inbox management, and consistent brand voice.",
+      "Optimized mobile games designed to run smoothly across both iOS and Android platforms.",
   },
   {
-    heading: "Paid Social Advertising",
+    heading: "Unity Game Development",
     description:
-      "High-performing ad campaigns designed to increase reach, leads, and sales.",
+      "High-performance games developed using Unity for scalability, flexibility, and cross-platform support.",
   },
   {
-    heading: "Audience Growth & Engagement",
+    heading: "Game UI/UX Design",
     description:
-      "Organic growth tactics focused on real followers, interactions, and brand loyalty.",
+      "Intuitive menus, controls, and interfaces crafted to enhance overall player experience.",
   },
   {
-    heading: "Influencer & Collaboration Campaigns",
+    heading: "Multiplayer & Online Games",
     description:
-      "Strategic influencer partnerships to expand reach and build brand credibility.",
-  },
-  {
-    heading: "Analytics & Performance Tracking",
-    description:
-      "Data-driven insights and reporting on reach, engagement, conversions, and ROI.",
+      "Real-time multiplayer gameplay with leaderboards, matchmaking, and secure server-side integration.",
   },
 ];
-
-
-
 
 const processSteps = [
   {
     number: "01",
-    title: "Audience & Platform Research",
-    desc: "We identify your ideal audience and the platforms where they are most active.",
+    title: "Game Concept & Planning",
+    desc: "We understand your game idea, genre, audience, and monetization goals.",
   },
   {
     number: "02",
-    title: "Strategy Development",
-    desc: "We define content pillars, posting schedules, and growth objectives.",
+    title: "Storyboarding & Game Design",
+    desc: "Game mechanics, levels, characters, and progression systems are planned.",
   },
   {
     number: "03",
-    title: "Creative Production",
-    desc: "High-quality visuals, captions, hashtags, and short-form videos are created.",
+    title: "Art & Asset Creation",
+    desc: "Custom characters, environments, animations, and visual effects are designed.",
   },
   {
     number: "04",
-    title: "Publishing & Engagement",
-    desc: "Consistent posting, active engagement, and community interaction.",
+    title: "Game Development",
+    desc: "Core gameplay mechanics and features are developed using industry-standard engines.",
   },
   {
     number: "05",
-    title: "Paid Campaign Execution",
-    desc: "Data-driven ad campaigns to amplify reach and accelerate growth.",
+    title: "Testing & Quality Assurance",
+    desc: "Rigorous testing ensures performance, stability, and device compatibility.",
   },
   {
     number: "06",
-    title: "Monitoring & Optimization",
-    desc: "Continuous analysis and refinement to improve performance.",
+    title: "Store Deployment",
+    desc: "Complete publishing support for the App Store and Google Play.",
   },
   {
     number: "07",
-    title: "Reporting & Scaling",
-    desc: "Transparent reports with insights and recommendations for long-term growth.",
+    title: "Post-Launch Support & Updates",
+    desc: "Ongoing updates, new features, and continuous performance improvements.",
   },
 ];
 
 
+
 const relatedServices = [
-  { name: "Digital Marketing" },
-  { name: "Search Engine Optimization (SEO)" },
-  { name: "Social Media Marketing" },
-  { name: "Conversion Rate Optimization" },
-  { name: "Landing Page Design" },
-  { name: "Analytics & Reporting" },
-  { name: "Email Marketing" },
-  { name: "Content Marketing" },
-  { name: "Marketing Automation" },
+  { name: "Unity Game Development" },
+  { name: "Mobile Game Development" },
+  { name: "2D & 3D Game Development" },
+  { name: "AR & VR Development" },
+  { name: "UI/UX Design" },
+  { name: "Backend Development" },
+  { name: "Cloud Solutions" },
+  { name: "Multiplayer Game Development" },
 ];
 
 
@@ -152,11 +144,11 @@ const relatedServices = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Turn Social Media</span>  Into a Growth Engine</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Social media is where your audience spends their time. We help brands build visibility, engagement, and trust across platforms—turning followers into loyal customers and conversations into conversions.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Engaging Mobile Games </span>  Built to Entertain and Retain</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Mobile games need more than graphics. They need smooth performance, addictive gameplay, and scalable architecture. We develop high-quality mobile games that keep users engaged, monetize effectively, and perform flawlessly across devices.</p>
                         </div>
                         <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/PPC-Management.webp" alt="PPC-Management" width="500" height="500" />
+                            <Image className="w-full" src="/images/Game-development.webp" alt="Game-development" width="500" height="500" />
                         </div>
                     </div>
                 </div>
@@ -256,7 +248,7 @@ const relatedServices = [
             <section className='bg-white'>
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem] ">
                     <div className="lg:overflow-hidden">
-                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle Social Media Services</span></h2></div>
+                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle Mobile Game Development Services</span></h2></div>
                     <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black"></p>
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 lg:gap-14 gap-6 md:gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 

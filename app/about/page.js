@@ -380,15 +380,15 @@ export default function about() {
 
 
       <section className="bg-[#3BB9E1] px-6 lg:px-8 py-14 md:py-24">
-        <figure className="bg-gradient-to-r max-w-7xl from-[#050505] mx-auto to-[#201F21] text-white lg:rounded-[30px] rounded-2xl lg:p-[4.5rem] p-8">
-          <h3 className=" font-bold lg:max-w-4xl text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">“Success isn’t just about building great products; it’s about creating meaningful impact. At Pine Techware, our goal is to turn vision into value and challenges into opportunities.”</h3>
-          <figcaption className="lg:mt-12 mt-6 flex items-center gap-x-4">
+        <figure className="bg-gradient-to-r max-w-7xl from-[#050505] text-center mx-auto to-[#201F21] text-white lg:rounded-[30px] rounded-2xl lg:p-[4.5rem] p-8">
+          <h3 className=" font-bold text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-center">“Success isn’t just about building great products; it’s about creating meaningful impact. At Pine Techware, our goal is to turn vision into value and challenges into opportunities.”</h3>
+          {/* <figcaption className="lg:mt-12 mt-6 flex items-center gap-x-4">
             <Image alt="" src={CEO} width="64" height="64" className="h-16 w-16 rounded-full" />
             <div className="flex flex-col">
               <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">Salman Lakhani</p>
               <p className=" text-[#6F6F6F] text-sm lg:text-md xl:text-lg 2xl:text-xl">CEO, Pine Techware Inc.</p>
             </div>
-          </figcaption>
+          </figcaption> */}
         </figure>
       </section>
 
@@ -449,9 +449,9 @@ export default function about() {
         </div>
       </div> */}
 
-      <div className='pt-10 md:pt-12 lg:pt-[7.5rem] bg-[#3BB9E1]'>
+      {/* <div className='bg-[#3BB9E1]'>
         <Tech />
-      </div>
+      </div> */}
 
 
       {/* <section className="HalfTextContent-sec bg-[#3BB9E1]">

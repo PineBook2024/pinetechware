@@ -45,31 +45,38 @@ export default function page() {
     }, []);
 
 const webServices = [
-    {
-        heading: "Custom iOS App Development",
-        description: "Tailor-made iOS applications built to match your business goals and user requirements.",
-    },
-    {
-        heading: "UI/UX Design for iOS",
-        description: "Apple-standard interfaces with smooth navigation and intuitive user experiences.",
-    },
-    {
-        heading: "iPhone & iPad App Development",
-        description: "Optimized apps designed for both iPhone and iPad with consistent performance.",
-    },
-    {
-        heading: "API & Backend Integration",
-        description: "Secure integrations with third-party services, databases, and cloud platforms.",
-    },
-    {
-        heading: "App Store Deployment",
-        description: "Complete App Store submission, compliance, and launch support.",
-    },
-    {
-        heading: "App Testing & Quality Assurance",
-        description: "Comprehensive testing to ensure performance, security, and device compatibility.",
-    },
+  {
+    heading: "Custom Flutter App Development",
+    description:
+      "End-to-end Flutter application development tailored to your business objectives, target audience, and functional requirements.",
+  },
+  {
+    heading: "UI/UX Design with Flutter",
+    description:
+      "Pixel-perfect, intuitive interfaces crafted using Flutter’s expressive UI capabilities to deliver engaging and user-centric experiences.",
+  },
+  {
+    heading: "Cross-Platform App Development",
+    description:
+      "High-performance applications built on a single codebase, ensuring seamless functionality across both iOS and Android platforms.",
+  },
+  {
+    heading: "API & Backend Integration",
+    description:
+      "Secure and scalable integration with REST APIs, cloud services, and third-party systems to support robust app functionality.",
+  },
+  {
+    heading: "MVP Development",
+    description:
+      "Rapid development of Minimum Viable Products to validate concepts, reduce risk, and accelerate time-to-market.",
+  },
+  {
+    heading: "App Testing & Quality Assurance",
+    description:
+      "Comprehensive testing processes covering performance, security, usability, and multi-device compatibility to ensure a reliable release.",
+  },
 ];
+
 
 
 const processSteps = [
@@ -131,11 +138,11 @@ const processSteps = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>High-Performance</span>  iOS Apps Built for Growth</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We design and develop secure, scalable, and intuitive iOS applications that deliver seamless user experiences and drive real business value across Apple devices.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Beautiful, Fast Apps </span>  From a Single Codebase</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Flutter allows you to build visually stunning, high-performance apps for iOS and Android using one codebase. We develop scalable Flutter applications that deliver smooth performance, rapid deployment, and consistent UI across platforms.</p>
                         </div>
                         <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/IOS-App.webp" alt="IOS-App" width="500" height="500" />
+                            <Image className="w-full" src="/images/Flutter-App.webp" alt="Flutter-App" width="500" height="500" />
                         </div>
                     </div>
                 </div>
@@ -235,7 +242,7 @@ const processSteps = [
             <section className='bg-white'>
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem] ">
                     <div className="lg:overflow-hidden">
-                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle iOS App Development Services</span></h2></div>
+                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle Flutter App Development Services</span></h2></div>
                     <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black"></p>
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 lg:gap-14 gap-6 md:gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
