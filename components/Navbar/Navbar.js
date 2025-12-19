@@ -202,9 +202,8 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -229,6 +228,8 @@ export default function Navbar() {
                   <div key={link.name} className="relative flex items-center gap-1">
                     <Link
                       href={link.href}
+                      onMouseEnter={() => setServicesOpenDesktop(true)}
+                      onMouseLeave={() => setServicesOpenDesktop(false)}
                       onClick={() => setServicesOpenDesktop(false)}
                       className={`text-base font-medium transition-colors duration-200 ${linkColor} ${linkHover}`}
                     >
@@ -243,12 +244,12 @@ export default function Navbar() {
                       className={`flex items-center ${linkColor} ${linkHover} transition-colors duration-200`}
                     >
                       <IoMdArrowDropdown
-                        className={`transition-transform duration-300 ${
-                          servicesOpenDesktop ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform duration-300 ${servicesOpenDesktop ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
                   </div>
+
                 )
               }
 
@@ -283,9 +284,8 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               aria-label="Toggle menu"
-              className={`focus:outline-none transition-colors duration-300 ${
-                isLight ? "text-gray-800" : "text-white"
-              }`}
+              className={`focus:outline-none transition-colors duration-300 ${isLight ? "text-gray-800" : "text-white"
+                }`}
               onClick={() => {
                 setMenuOpen((v) => !v)
                 setServicesOpenMobile(false)
@@ -293,19 +293,16 @@ export default function Navbar() {
             >
               <div className="space-y-1">
                 <span
-                  className={`block w-6 h-[2px] bg-current transition-transform duration-300 ${
-                    menuOpen ? "rotate-45 translate-y-[6px]" : ""
-                  }`}
+                  className={`block w-6 h-[2px] bg-current transition-transform duration-300 ${menuOpen ? "rotate-45 translate-y-[6px]" : ""
+                    }`}
                 />
                 <span
-                  className={`block w-6 h-[2px] bg-current transition-opacity duration-300 ${
-                    menuOpen ? "opacity-0" : ""
-                  }`}
+                  className={`block w-6 h-[2px] bg-current transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""
+                    }`}
                 />
                 <span
-                  className={`block w-6 h-[2px] bg-current transition-transform duration-300 ${
-                    menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
-                  }`}
+                  className={`block w-6 h-[2px] bg-current transition-transform duration-300 ${menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
+                    }`}
                 />
               </div>
             </button>
@@ -316,9 +313,8 @@ export default function Navbar() {
       {/* ===== Desktop Mega Dropdown ===== */}
       <div
         ref={megaRef}
-        className={`hidden md:block fixed left-0 right-0 top-16 bg-white shadow-xl z-40 transition-all duration-200 origin-top ${
-          servicesOpenDesktop ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
-        }`}
+        className={`hidden md:block fixed left-0 right-0 top-16 bg-white shadow-xl z-40 transition-all duration-200 origin-top ${servicesOpenDesktop ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+          }`}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -362,9 +358,8 @@ export default function Navbar() {
 
       {/* ===== Mobile Menu (Responsive) ===== */}
       <div
-        className={`md:hidden fixed left-0 right-0 top-16 bottom-0 bg-white z-40 transition-all duration-200 ${
-          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
+        className={`md:hidden fixed left-0 right-0 top-16 bottom-0 bg-white z-40 transition-all duration-200 ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
       >
         <div className="h-full overflow-y-auto px-6 py-6">
           <div className="flex flex-col gap-4">
@@ -380,16 +375,14 @@ export default function Navbar() {
                     >
                       <span>Services</span>
                       <IoMdArrowDropdown
-                        className={`transition-transform duration-300 ${
-                          servicesOpenMobile ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform duration-300 ${servicesOpenMobile ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-all duration-300 ${
-                        servicesOpenMobile ? "max-h-[1200px] mt-4" : "max-h-0"
-                      }`}
+                      className={`overflow-hidden transition-all duration-300 ${servicesOpenMobile ? "max-h-[1200px] mt-4" : "max-h-0"
+                        }`}
                     >
                       <div className="rounded-xl border border-gray-200 p-4">
                         <div className="flex flex-col gap-6">
