@@ -79,7 +79,7 @@ export default function contact() {
                 {/* <title>Home - My Software Company</title>
         <meta name="description" content="We build software solutions..." /> */}
             </Head>
-           <div data-theme="light">
+            <div data-theme="light">
                 <Navbar />
             </div>
 
@@ -148,7 +148,7 @@ export default function contact() {
                                     <div className="mt-2">
                                         <input
                                             type="text"
-                                            name="phone"           
+                                            name="phone"
                                             id="phone"
                                             autoComplete="tel"
                                             onChange={handleChange}
@@ -213,7 +213,7 @@ export default function contact() {
             </section>
 
 
-           
+
             <div className="px-6 lg:px-8 py-12 md:py-20 bg-[#3BB9E1] ">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-x-10 sm:gap-y-10 max-w-7xl mx-auto ">
                     <div>
@@ -225,7 +225,7 @@ export default function contact() {
                         </div>
                     </div>
                     <div>
-                        <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl" src={usa} alt="Location" />
+                        <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl w-full h-100" src={usa} alt="Location" />
                         <div>
                             <p className="  mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">USA Address</p>
                             <p className=" text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
