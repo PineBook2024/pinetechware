@@ -6,7 +6,7 @@ import Image from 'next/image'
 import abtBanner from "@/public/images/abt-banner.webp"
 import { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
-import CEO from "@/public/images/CEO.webp"
+// import CEO from "@/public/images/CEO.webp"
 import bage2 from "@/public/images/bage2.png"
 import bage3 from "@/public/images/bage3.png"
 import bage4 from "@/public/images/bage4.png"
@@ -31,7 +31,6 @@ import t4 from "@/public/images/t4.svg"
 import y1 from "@/public/images/y1.svg"
 import y2 from "@/public/images/y2.svg"
 import y3 from "@/public/images/y3.svg"
-import Elvina from "@/public/images/elvina.webp"
 import SeoHead from "@/components/SeoHead";
 
 
@@ -100,7 +99,7 @@ export default function about() {
                             This Privacy Policy explains how Pine Techware Design Services (“we,” “us,” or “our”) collects, uses, and protects your personal information when you visit our website or use our design and development services. It also describes your rights and choices regarding your data, and how you can contact us with questions or concerns.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             1. Information We Collect and How We Use It
                         </h2>
 
@@ -133,7 +132,7 @@ export default function about() {
                             </li>
                         </ul>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             2. Your Rights and Control Over Your Information
                         </h2>
 
@@ -153,7 +152,7 @@ export default function about() {
                             To exercise these rights, please contact us using the email address or phone number provided on our website.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             3. Security
                         </h2>
 
@@ -173,7 +172,7 @@ export default function about() {
                             3.4 While we take reasonable steps to safeguard your personal data, no method of transmission over the internet or electronic storage is completely secure. We cannot guarantee absolute security, but we work continuously to minimize risks.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             4. Payments
                         </h2>
 
@@ -185,7 +184,7 @@ export default function about() {
                             4.2 Credit card and online payment information is processed securely by trusted third-party payment processors. We do not store your full credit card details on our servers. Our payment partners use their own secure systems in line with industry standards.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             5. IP Address, Cookies, and Analytics
                         </h2>
 
@@ -210,7 +209,7 @@ export default function about() {
                             5.4 We may use third-party tools (such as analytics or advertising partners) that collect anonymized or aggregated information about website usage. These third parties do not receive your personal information from us unless required to provide their services and subject to appropriate safeguards.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             6. Information About Our Services
                         </h2>
 
@@ -218,7 +217,7 @@ export default function about() {
                             6.1 We strive to ensure that all descriptions of our design, development, branding, and related services on our website are clear and accurate. If you believe that the services you received differ from what was described, please contact us so we can review and address your concern promptly.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             7. Ownership and Confidentiality
                         </h2>
 
@@ -234,7 +233,7 @@ export default function about() {
                             7.3 Once all project fees have been paid in full, and unless stated otherwise in our agreement, the final deliverables we create for you (such as approved designs, source files, or website builds) are considered your property, subject to any third-party licenses or stock assets used in the project.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             8. Originality and Use of Third-Party Content
                         </h2>
 
@@ -246,7 +245,7 @@ export default function about() {
                             8.2 When we use third-party resources (such as stock photos, fonts, icons, or plugins), they are incorporated under appropriate licenses. Where relevant, we will inform you of any ongoing license obligations or renewal requirements.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             9. Sharing Your Information with Third Parties
                         </h2>
 
@@ -266,7 +265,7 @@ export default function about() {
                             9.4 Information collected through SMS opt-in (if applicable) will not be sold, rented, or shared with third parties for their own marketing purposes.
                         </p>
 
-                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             10. Contact Us
                         </h2>
 
