@@ -122,6 +122,7 @@ const Technologies = () => {
             <div className="lg:overflow-hidden">
               <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-black">
                 <span>Technologies & Tools We Use That Create An Impact</span>
+                
               </h2>
             </div>
             <p className="lg:py-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
