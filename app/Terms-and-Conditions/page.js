@@ -6,7 +6,6 @@ import Image from 'next/image'
 import abtBanner from "@/public/images/abt-banner.webp"
 import { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
-// import CEO from "@/public/images/CEO.webp"
 import bage2 from "@/public/images/bage2.png"
 import bage3 from "@/public/images/bage3.png"
 import bage4 from "@/public/images/bage4.png"
@@ -31,7 +30,6 @@ import t4 from "@/public/images/t4.svg"
 import y1 from "@/public/images/y1.svg"
 import y2 from "@/public/images/y2.svg"
 import y3 from "@/public/images/y3.svg"
-// import Elvina from "@/public/images/elvina.webp"
 import SeoHead from "@/components/SeoHead";
 
 

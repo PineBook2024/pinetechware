@@ -3,50 +3,12 @@ import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import Image from 'next/image'
-import abtBanner from "@/public/images/abt-banner.webp"
 import { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
-import CEO from "@/public/images/CEO.webp"
-import bage2 from "@/public/images/bage2.png"
-import bage3 from "@/public/images/bage3.png"
-import bage4 from "@/public/images/bage4.png"
-import bage12 from "@/public/images/bage12.png"
-import bage13 from "@/public/images/bage13.png"
-import bage14 from "@/public/images/bage14.png"
-import c2 from "@/public/images/c2.webp"
-import c3 from "@/public/images/c3.webp"
-import c4 from "@/public/images/c4.webp"
-import c5 from "@/public/images/c5.webp"
-import c6 from "@/public/images/c6.webp"
-import c7 from "@/public/images/c7.webp"
-import c8 from "@/public/images/c8.webp"
-import c9 from "@/public/images/c9.webp"
-import c10 from "@/public/images/c10.webp"
-import clutch from "@/public/images/clutch.webp"
-import aboutBanner from "@/public/images/aboutteambanner.webp"
-import t1 from "@/public/images/t1.svg"
-import t2 from "@/public/images/t2.svg"
-import t3 from "@/public/images/t3.svg"
-import t4 from "@/public/images/t4.svg"
-import y1 from "@/public/images/y1.svg"
-import y2 from "@/public/images/y2.svg"
-import y3 from "@/public/images/y3.svg"
-import Elvina from "@/public/images/elvina.webp"
 import SeoHead from "@/components/SeoHead";
-
-
-
-
 import React from 'react'
-import Tech from '@/components/Tech/Tech'
-import { Link } from 'lucide-react'
 import Trigger from '@/components/Trigger/Trigger'
-import Head from 'next/head'
 
-// export const metadata = {
-//   title: "About Us",
-//   description: "Learn more about our team and company mission.",
-// };
 
 export default function about() {
   const [activeTab, setActiveTab] = useState("tab1"); // 👈 by default Tab1 active
@@ -490,33 +452,33 @@ export default function about() {
           <div className="grid grid-cols-2 gap-6 lg:gap-10 lg:grid-cols-3 sm:grid-cols-3 ">
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage2} alt="Good Firms" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage2.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage3} alt="Good Firms" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage3.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage4} alt="Clutch" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage4.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage12} alt="Good Firms" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage12.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
             </span>
 
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage13} alt="Clutch" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage13.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src={bage14} alt="Good Firms" />
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage14.png" alt="Good Firms"  width={120} height={100}/>
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
             </span>
 
