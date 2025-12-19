@@ -215,9 +215,19 @@ export default function contact() {
 
 
             <div className="px-6 lg:px-8 py-12 md:py-20 bg-[#3BB9E1] ">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-x-10 sm:gap-y-10 max-w-7xl mx-auto ">
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-5 sm:gap-x-10 sm:gap-y-10 max-w-7xl mx-auto ">
                     <div>
-                        <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl" src={florida} alt="Location" />
+                        {/* <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl" src={florida} alt="Location" /> */}
+                        <div className="w-full h-[400px] mb-6 rounded overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps?q=10225+Yonge+St,+Richmond+Hill,+ON+L4C+3B2&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                />
+                            </div>
                         <div>
                             <p className="   mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">Canada Address</p>
                             <p className="text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
@@ -225,7 +235,17 @@ export default function contact() {
                         </div>
                     </div>
                     <div>
-                        <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl w-full h-100" src={usa} alt="Location" />
+                        {/* <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl w-full h-100" src={usa} alt="Location" /> */}
+                        <div className="w-full h-[400px] mb-6 rounded overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps?q=211+E+43rd+St,+New+York,+NY+10017&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                />
+                            </div>
                         <div>
                             <p className="  mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">USA Address</p>
                             <p className=" text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>

@@ -134,12 +134,12 @@ const Technologies = () => {
             <div className="w-full mx-auto mt-10">
 
               {/* Tabs */}
-              <div className="flex flex-col md:flex-row md:space-y-0 gap-4 border-b pb-2">
+              <div className="flex flex-col md:flex-row md:space-y-0 gap-4 border-b pb-10">
                 {tabKeys.map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-4 py-2 font-semibold rounded-md 
+                    className={`px-4 py-2 font-semibold rounded-full 
               ${activeTab === tab ? "bg-black text-white" : "bg-gray-200 text-black"}`}
                   >
                     {tab}

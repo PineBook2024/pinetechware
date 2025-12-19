@@ -62,38 +62,38 @@ const Footer = () => {
                             </h2>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
-                                    <Link href="/book-publishing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-publishing"; }}>
-                                        Custom Graphic Design
+                                    <Link href="/Professional-Branding" onClick={(e) => { e.preventDefault(); window.location.href = "/Professional-Branding"; }}>
+                                        Branding
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/book-editing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-editing"; }}>
-                                        Logo Design
+                                    <Link href="/Website-Development" onClick={(e) => { e.preventDefault(); window.location.href = "/Website-Development"; }}>
+                                        Web Design & Development
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/proofreading" onClick={(e) => { e.preventDefault(); window.location.href = "/proofreading"; }}>
-                                        Professional Branding
+                                    <Link href="/Social-Media-Marketing" onClick={(e) => { e.preventDefault(); window.location.href = "/Social-Media-Marketing"; }}>
+                                        Digital Marketing
                                     </Link>
                                 </li>
                                 {/* <li className="mt-3">
                                     Services
                                 </li> */}
                                 <li className="mt-3">
-                                    <Link href="/book-formatting" onClick={(e) => { e.preventDefault(); window.location.href = "/book-formatting"; }}>
-                                        Video Animation
+                                    <Link href="/IOS-App" onClick={(e) => { e.preventDefault(); window.location.href = "/IOS-App"; }}>
+                                        Mob App Development
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/typesetting-layout-adjustment" onClick={(e) => { e.preventDefault(); window.location.href = "/typesetting-layout-adjustment"; }}>
-                                        Website Designing
+                                    <Link href="/Mobile-Game-Development" onClick={(e) => { e.preventDefault(); window.location.href = "/Mobile-Game-Development"; }}>
+                                        Game Development
                                     </Link>
                                 </li>
 
                                 {/* <li className="mt-3">
                                     Testimonials
                                 </li> */}
-                                <li className="mt-3">
+                                {/* <li className="mt-3">
                                     <Link href="/print-on-demand" onClick={(e) => { e.preventDefault(); window.location.href = "/print-on-demand"; }}>
                                         Website Development
                                     </Link>
@@ -172,7 +172,7 @@ const Footer = () => {
                                     <Link href="/book-translation" onClick={(e) => { e.preventDefault(); window.location.href = "/book-translation"; }}>
                                         Mobile Game Development
                                     </Link>
-                                </li>
+                                </li> */}
                                 {/* <li className="mt-3">
                                     <Link href="/book-translation" onClick={(e) => { e.preventDefault(); window.location.href = "/book-translation"; }}>
                                         Unity Game Development
@@ -232,7 +232,7 @@ const Footer = () => {
                                 R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2
                             </p>
 
-                            <div className="w-full h-[200px] mb-6 rounded overflow-hidden">
+                            {/* <div className="w-full h-[200px] mb-6 rounded overflow-hidden">
                                 <iframe
                                     src="https://www.google.com/maps?q=10225+Yonge+St,+Richmond+Hill,+ON+L4C+3B2&output=embed"
                                     width="100%"
@@ -241,7 +241,7 @@ const Footer = () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 />
-                            </div>
+                            </div> */}
 
                             {/* USA Address */}
                             <h4 className="text-white font-bold text-xl font-poppins text-center lg:text-start uppercase">
@@ -252,7 +252,7 @@ const Footer = () => {
                                 211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017
                             </p>
 
-                            <div className="w-full h-[200px] rounded overflow-hidden">
+                            {/* <div className="w-full h-[200px] rounded overflow-hidden">
                                 <iframe
                                     src="https://www.google.com/maps?q=211+E+43rd+St,+New+York,+NY+10017&output=embed"
                                     width="100%"
@@ -261,7 +261,7 @@ const Footer = () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 />
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
