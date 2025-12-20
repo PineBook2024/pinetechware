@@ -206,7 +206,7 @@ export default function contact() {
                         <div className="lg:col-span-7 xl:pr-4">
                             <div className="lg:overflow-hidden">
                                 <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our global office locations</span></h2></div>
-                            <p className=" lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-white">Find your team among 350 specialists in 4 offices from 3 countries.</p>
+                            {/* <p className=" lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-white">Find your team among 350 specialists in 4 offices from 3 countries.</p> */}
                         </div>
                     </div>
                 </div>
