@@ -179,7 +179,7 @@ export default function contact() {
                                         id="button_686890"
                                         type="submit"
                                         disabled={loading}
-                                        className="px-6 md:px-11 w-full bg-black cursor-pointer h-[40px] md:h-[68px] rounded-full font-bold text-xs xl:text-sm 2xl:text-base disabled:opacity-60"
+                                        className="text-white px-6 md:px-11 w-full bg-black cursor-pointer h-[40px] md:h-[68px] rounded-full font-bold text-xs xl:text-sm 2xl:text-base disabled:opacity-60"
                                     >
                                         {loading ? "Sending..." : "Send Message"}
                                     </button>
@@ -214,7 +214,7 @@ export default function contact() {
 
 
 
-            <div className="px-6 lg:px-8 py-12 md:py-20 bg-[#3BB9E1] ">
+            <div className="px-6 lg:px-8 py-12 md:py-20 bg-[#3BB9E1]">
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-5 sm:gap-x-10 sm:gap-y-10 max-w-7xl mx-auto ">
                     <div>
                         {/* <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl" src={florida} alt="Location" /> */}
