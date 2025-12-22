@@ -40,17 +40,17 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/testimonials"; }}>
+                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/services"; }}>
                                         Services
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "/portfolio"; }}>
+                                    <Link href="/work" onClick={(e) => { e.preventDefault(); window.location.href = "/work"; }}>
                                         Portfolio
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "/contact-us"; }}>
+                                    <Link href="/contact" onClick={(e) => { e.preventDefault(); window.location.href = "/contact"; }}>
                                         Contact Us
                                     </Link>
                                 </li>

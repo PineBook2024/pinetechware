@@ -94,7 +94,7 @@ const Product = () => {
             </h2>
           </div>
 
-          <div>
+          {/* <div>
             <a
               className="mt-6 text-white text-md lg:text-xl inline-flex items-center gap-4 group transition-all duration-300 ease-in-out hover:font-semibold"
               href="/">View More
@@ -102,7 +102,7 @@ const Product = () => {
                 <IoIosArrowRoundForward className="text-white text-5xl" />
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Gallery Section */}
