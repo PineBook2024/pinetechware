@@ -123,6 +123,21 @@ export default function Navbar() {
     setServicesOpenMobile(false)
   }
 
+  const hoverCloseTimeout = useRef(null)
+
+  const openMega = () => {
+    if (hoverCloseTimeout.current) clearTimeout(hoverCloseTimeout.current)
+    setServicesOpenDesktop(true)
+  }
+
+  const scheduleCloseMega = () => {
+    if (hoverCloseTimeout.current) clearTimeout(hoverCloseTimeout.current)
+    hoverCloseTimeout.current = setTimeout(() => {
+      setServicesOpenDesktop(false)
+    }, 120) // 120ms smooth gap
+  }
+
+
   const navLinks = useMemo(
     () => [
       { name: "Home", href: "/" },
@@ -225,11 +240,10 @@ export default function Navbar() {
             {navLinks.map((link) => {
               if (link.name === "Services") {
                 return (
-                  <div key={link.name} className="relative flex items-center gap-1">
+                  <div key={link.name} className="relative flex items-center gap-1" onMouseEnter={openMega}
+                    onMouseLeave={scheduleCloseMega}>
                     <Link
                       href={link.href}
-                      onMouseEnter={() => setServicesOpenDesktop(true)}
-                      onMouseLeave={() => setServicesOpenDesktop(false)}
                       onClick={() => setServicesOpenDesktop(false)}
                       className={`text-base font-medium transition-colors duration-200 ${linkColor} ${linkHover}`}
                     >
@@ -240,7 +254,11 @@ export default function Navbar() {
                       type="button"
                       aria-haspopup="true"
                       aria-expanded={servicesOpenDesktop}
-                      onClick={() => setServicesOpenDesktop((v) => !v)}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        setServicesOpenDesktop((v) => !v)
+                      }}
                       className={`flex items-center ${linkColor} ${linkHover} transition-colors duration-200`}
                     >
                       <IoMdArrowDropdown
@@ -249,6 +267,7 @@ export default function Navbar() {
                       />
                     </button>
                   </div>
+
 
                 )
               }
@@ -310,10 +329,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ===== Desktop Mega Dropdown ===== */}
+      {/* ===== Desktop Mega Dropdown (inside wrapper) ===== */}
       <div
         ref={megaRef}
-        className={`hidden md:block fixed left-0 right-0 top-16 bg-white shadow-xl z-40 transition-all duration-200 origin-top ${servicesOpenDesktop ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+        onMouseEnter={openMega}
+        onMouseLeave={scheduleCloseMega}
+        className={`hidden md:block absolute left-1/2 -translate-x-1/2 top-[52px] w-screen bg-white shadow-xl z-40 transition-all duration-200 origin-top ${servicesOpenDesktop ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
           }`}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
@@ -355,6 +376,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
 
       {/* ===== Mobile Menu (Responsive) ===== */}
       <div
