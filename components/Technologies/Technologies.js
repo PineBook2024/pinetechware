@@ -107,6 +107,22 @@ const Technologies = () => {
         },
       ],
     },
+    "Game Development": {
+      left: [
+        {
+          title: "Mobile Game Development",
+          image: "/images/game-development.png",
+        },
+        {
+          title: "Unity Game Development",
+          image: "/images/unity.svg",
+        },
+        {
+          title: "Unreal Game Developmemt",
+          image: "/images/unreal.svg",
+        },
+      ],
+    },
   };
 
 
@@ -135,7 +151,7 @@ const Technologies = () => {
             <div className="w-full mx-auto mt-10">
 
               {/* Tabs */}
-              <div className="flex flex-col md:flex-row md:space-y-0 gap-4 border-b pb-10">
+              <div className="flex flex-col md:flex-row md:space-y-0 gap-4 border-b pb-10 justify-center">
                 {tabKeys.map((tab) => (
                   <button
                     key={tab}
@@ -152,7 +168,7 @@ const Technologies = () => {
               <div className="mt-6">
 
                 {/* Left List */}
-                <div className='flex flex-wrap gap-5'>
+                <div className='flex flex-wrap gap-5 justify-center'>
                   {tabData[activeTab].left.map((item, index) => (
                     <div key={index} className="flex flex-wrap items-center gap-4 mb-5">
                       <Image
