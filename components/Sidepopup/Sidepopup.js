@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ImCross } from "react-icons/im";
 import { usePopup } from "@/context/PopupContext";
 import { useRouter } from "next/navigation";
@@ -15,15 +15,33 @@ export default function Sidepopup() {
   const [message, setMessage] = useState("");
 
   const [showSuccess, setShowSuccess] = useState(false);
-  const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  });
+
+  // Get user location info
   const [userInfo, setUserInfo] = useState({
     ip: "",
     city: "",
     region: "",
     country: "",
   });
+
+  const safeJson = async (res) => {
+    const text = await res.text();
+    if (!text) return { success: false, message: "Empty response from API" };
+
+    try {
+      return JSON.parse(text);
+    } catch {
+      return { success: false, message: "API returned non-JSON response", raw: text };
+    }
+  };
 
   useEffect(() => {
     fetchUserRegion();
@@ -45,59 +63,141 @@ export default function Sidepopup() {
     }
   };
 
-  const sendEmailNotification = async () => {
-    const response = await fetch("/api/send-brand-contact-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        fullName,
-        email,
-        phoneNumber,
-        message,
-        currentPage: typeof window !== "undefined" ? window.location.href : "",
-        referringPage:
-          typeof document !== "undefined" ? document.referrer || "Direct visit" : "Direct visit",
-        userIP: userInfo.ip,
-        userCity: userInfo.city,
-        userRegion: userInfo.region,
-        userCountry: userInfo.country,
-      }),
-    });
-
-    return response.json();
+  // ✅ Validation helpers
+  const validateFullName = (value) => {
+    const v = value.trim();
+    if (!v) return "Name is required";
+    if (v.length < 2) return "Name must be at least 2 characters";
+    return "";
   };
 
+  const validateEmail = (value) => {
+    const v = value.trim();
+    if (!v) return "Email is required";
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(v)) return "Please enter a valid email address";
+    return "";
+  };
+
+  const validatePhone = (value) => {
+    const v = value.trim();
+    if (!v) return "Phone number is required";
+    const digitsOnly = /^\d+$/;
+    if (!digitsOnly.test(v)) return "Phone number must contain digits only";
+    if (v.length < 9) return "Phone number must be at least 9 digits";
+    return "";
+  };
+
+  const validateMessage = (value) => {
+    const v = value.trim();
+    if (!v) return "Message is required";
+    if (v.length < 10) return "Message must be at least 10 characters";
+    return "";
+  };
+
+  // ✅ Validate all fields at once
+  const validateAll = () => {
+    const nextErrors = {
+      fullName: validateFullName(fullName),
+      email: validateEmail(email),
+      phoneNumber: validatePhone(phoneNumber),
+      message: validateMessage(message),
+    };
+
+    setErrors(nextErrors);
+    return Object.values(nextErrors).every((e) => !e);
+  };
+
+  const sendEmailNotification = async () => {
+    const payload = {
+      fullName,
+      email,
+      phoneNumber,
+      message,
+      currentPage: window.location.href,
+      referringPage: document.referrer || "Direct visit",
+      userIP: userInfo.ip,
+      userCity: userInfo.city,
+      userRegion: userInfo.region,
+      userCountry: userInfo.country,
+    };
+
+    const res = await fetch("/api/send-brand-contact-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await safeJson(res);
+
+    if (!res.ok || !data.success) {
+      console.error("API failed:", res.status, data);
+      return { success: false, message: data.message || "Request failed" };
+    }
+
+    return data;
+  };
+
+  // ✅ handleChange + live validation
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === "fullName") setFullName(value);
-    if (name === "email") setEmail(value);
-    if (name === "message") setMessage(value);
+    if (name === "fullName") {
+      setFullName(value);
+      setErrors((prev) => ({ ...prev, fullName: validateFullName(value) }));
+      return;
+    }
+
+    if (name === "email") {
+      setEmail(value);
+      setErrors((prev) => ({ ...prev, email: validateEmail(value) }));
+      return;
+    }
 
     if (name === "phoneNumber") {
-      const phoneRegex = /^\d*$/; // digits only
-      if (!phoneRegex.test(value)) {
-        setPhoneError("Invalid phone number format");
+      // allow typing only digits (or empty)
+      if (value !== "" && !/^\d*$/.test(value)) {
+        setErrors((prev) => ({ ...prev, phoneNumber: "Phone number must contain digits only" }));
         return;
       }
 
       setPhoneNumber(value);
+      setErrors((prev) => ({ ...prev, phoneNumber: validatePhone(value) }));
+      return;
+    }
 
-      if (value.length > 0 && value.length < 9) {
-        setPhoneError("Phone number must be at least 9 digits");
-      } else {
-        setPhoneError("");
-      }
+    if (name === "message") {
+      setMessage(value);
+      setErrors((prev) => ({ ...prev, message: validateMessage(value) }));
+      return;
     }
   };
+
+  // ✅ handleBlur (show error if user leaves field)
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "fullName") setErrors((p) => ({ ...p, fullName: validateFullName(value) }));
+    if (name === "email") setErrors((p) => ({ ...p, email: validateEmail(value) }));
+    if (name === "phoneNumber") setErrors((p) => ({ ...p, phoneNumber: validatePhone(value) }));
+    if (name === "message") setErrors((p) => ({ ...p, message: validateMessage(value) }));
+  };
+
+  // ✅ Disable submit until valid + not submitting
+  const isFormValid = useMemo(() => {
+    return (
+      !validateFullName(fullName) &&
+      !validateEmail(email) &&
+      !validatePhone(phoneNumber) &&
+      !validateMessage(message)
+    );
+  }, [fullName, email, phoneNumber, message]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (phoneNumber && phoneNumber.length < 9) {
-      setPhoneError("Phone number must be at least 9 digits");
-      return;
-    }
+    const ok = validateAll();
+    if (!ok) return;
 
     setIsSubmitting(true);
 
@@ -117,6 +217,7 @@ export default function Sidepopup() {
           setEmail("");
           setPhoneNumber("");
           setMessage("");
+          setErrors({ fullName: "", email: "", phoneNumber: "", message: "" });
           closePopup();
         }, 2500);
       } else {
@@ -133,11 +234,16 @@ export default function Sidepopup() {
   return (
     <div>
       <div
-        className={`fixed bg-black inset-y-0 right-0 flex z-[99] max-w-full transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+        className={`fixed bg-black inset-y-0 right-0 flex z-[99] max-w-full transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <div className="pointer-events-auto w-screen max-w-[38rem]" id="sidePopup">
-          <form onSubmit={handleSubmit} className="flex flex-col divide-y divide-gray-200 shadow-xl bg-black">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col divide-y divide-gray-200 shadow-xl bg-black"
+            noValidate
+          >
             <div className="h-0 flex-1 overflow-y-auto">
               <div className="flex flex-1 flex-col justify-between">
                 <div className="px-4 sm:px-6 pb-8 overflow-x-hidden">
@@ -163,70 +269,89 @@ export default function Sidepopup() {
                   </p>
 
                   <div className="my-8 space-y-4">
-                    <input
-                      type="text"
-                      name="fullName"
-                      value={fullName}
-                      onChange={handleChange}
-                      placeholder="Name"
-                      className="block w-full rounded-[23px] bg-[#1f2020] text-white px-5 py-2"
-                      required
-                    />
+                    {/* Full Name */}
+                    <div>
+                      <input
+                        type="text"
+                        name="fullName"
+                        value={fullName}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="Name"
+                        className="block w-full rounded-[23px] bg-[#1f2020] text-white px-5 py-2"
+                        required
+                      />
+                      {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
+                    </div>
 
-                    <input
-                      type="email"
-                      name="email"
-                      value={email}
-                      onChange={handleChange}
-                      placeholder="Email"
-                      className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2"
-                      required
-                    />
+                    {/* Email */}
+                    <div>
+                      <input
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="Email"
+                        className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2"
+                        required
+                      />
+                      {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                    </div>
 
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      value={phoneNumber}
-                      onChange={handleChange}
-                      placeholder="Phone"
-                      className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2"
-                    />
+                    {/* Phone */}
+                    <div>
+                      <input
+                        type="text"
+                        name="phoneNumber"
+                        value={phoneNumber}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="Phone"
+                        className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2"
+                        required
+                      />
+                      {errors.phoneNumber && <p className="text-red-500 text-sm mt-1">{errors.phoneNumber}</p>}
+                    </div>
 
-                    {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
-
-                    <textarea
-                      name="message"
-                      value={message}
-                      onChange={handleChange}
-                      placeholder="Message"
-                      className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2 resize-none"
-                      rows={4}
-                      required
-                    />
+                    {/* Message */}
+                    <div>
+                      <textarea
+                        name="message"
+                        value={message}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        placeholder="Message"
+                        className="block w-full rounded-[23px] bg-[#26292D] text-white px-5 py-2 resize-none"
+                        rows={4}
+                        required
+                      />
+                      {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+                    </div>
 
                     <button
                       type="submit"
-                      disabled={isSubmitting}
+                      disabled={!isFormValid || isSubmitting}
                       className="w-full px-6 h-[40px] text-black bg-[#3bb9e1] rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </button>
 
-                    {showSuccess && (
-                      <p className="text-white text-center mt-2">✅ Message sent successfully.</p>
-                    )}
+                    {showSuccess && <p className="text-white text-center mt-2">✅ Message sent successfully.</p>}
 
                     <div className="inline-flex items-start mb-5">
                       <p className="text-[#7D8387] select-none text-sm tracking-wider cursor-text">
                         We&apos;ll keep your information in our CRM to respond to your request. For more details,
                         consult our{" "}
-                        <a className="inline-flex text-white hover:text-[#3bb9e1] cursor-pointer ps-1.5" href="/privacy-policy">
+                        <a
+                          className="inline-flex text-white hover:text-[#3bb9e1] cursor-pointer ps-1.5"
+                          href="/privacy-policy"
+                        >
                           privacy policy.
                         </a>
                       </p>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
