@@ -148,7 +148,7 @@ const relatedServices = [
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">A successful e-commerce store is more than just products online. We build secure, scalable, and conversion-focused e-commerce solutions that help you attract customers, drive sales, and grow your business.</p>
                         </div>
                         <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/E-Commerce-Solution.png" alt="E-Commerce Development" width="500" height="500" />
+                            <Image className="w-full" src="/images/E-Commerce-Solution.webp" alt="E-Commerce Development" width="500" height="500" />
                         </div>
                     </div>
                 </div>

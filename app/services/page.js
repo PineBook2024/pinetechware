@@ -47,7 +47,7 @@ export default function services() {
     }, []);
 
 
-    const [openIndex, setOpenIndex] = useState(1); // Default: 2nd (Audit & Consulting) open
+    const [openIndex, setOpenIndex] = useState(0);
 
     const toggleAccordion = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -185,10 +185,7 @@ export default function services() {
                                             <span className="ml-6 flex h-7 items-center text-black">
                                                 <span
                                                     className={` transform transition-transform duration-[200ms] ease-in-out text-5xl font-normal mt-[8px] ${openIndex === index
-                                                        ? "rotate-180 text-black mt-[5px]"
-                                                        : ""
-                                                        }`}
-                                                >
+                                                        ? "rotate-180 text-black mt-[5px]" : "" }`}>
                                                     {openIndex === index ? "-" : "+"}
                                                 </span>
                                             </span>
@@ -197,8 +194,7 @@ export default function services() {
                                         {/* Accordion Content with Animation */}
                                         <div
                                             className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === index ? "max-h-[500px]" : "max-h-0"
-                                                }`}
-                                        >
+                                                }`}>
                                             <dd className="mt-6 pr-12">
                                                 <p className="text-black mt-3 mb-7 text-sm lg:text-md xl:text-lg 2xl:text-xl">
                                                     {item.content}

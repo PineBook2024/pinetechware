@@ -137,10 +137,10 @@ export default function Home() {
       </p>
 
       {/* Right Side Circle */}
-      <div className="ball text-right justify-end pr-12 pb-8 md:flex hidden">
+      <div className="ball text-right justify-end md:flex hidden">
         <div
           ref={btnRef} onClick={openPopup}
-          className="bg-[#3BB9E1] duration-100 hover:bg-[#fff] scale-125 rounded-full h-[150px] w-[150px] flex flex-col items-center justify-center hover:text-black text-white mt-8 cursor-pointer shadow-md"
+          className="bg-[#3BB9E1] duration-100 hover:bg-[#fff] absolute bottom-[-15%] rounded-full h-[150px] w-[150px] flex flex-col items-center justify-center hover:text-black text-white cursor-pointer shadow-md"
         >
           <MdArrowOutward className="text-black text-5xl" />
           <b className="mb-0 font-bold mt-2 xl:leading-5 leading-4 text-center">
