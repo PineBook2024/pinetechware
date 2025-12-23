@@ -99,7 +99,7 @@ export default function work() {
                         <div className="w-full mx-auto mt-10">
 
                             {/* Tabs */}
-                            <div className="flex gap-4 justify-center pb-10">
+                            <div className="flex gap-4 justify-center pb-10 flex-wrap">
                                 {tabKeys.map((tab) => (
                                     <button
                                         key={tab}
