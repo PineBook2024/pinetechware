@@ -10,6 +10,9 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/ProfessionalBranding.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -234,6 +237,10 @@ export default function page() {
                     </div>
                 </div>
             </section>
+
+
+            <AllIndustries />
+           <IndSlider />
 
 
             <section className="textContent-sec bg-white">

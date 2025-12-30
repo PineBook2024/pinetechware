@@ -10,6 +10,8 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -41,98 +43,98 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Functional Game Testing",
-    description:
-      "Ensuring all game features, mechanics, and controls work exactly as intended.",
-  },
-  {
-    heading: "Compatibility Testing",
-    description:
-      "Testing across multiple devices, screen sizes, operating systems, and hardware configurations.",
-  },
-  {
-    heading: "Performance & Load Testing",
-    description:
-      "Frame-rate stability, memory usage, latency, and stress testing under heavy loads.",
-  },
-  {
-    heading: "Usability & Gameplay Testing",
-    description:
-      "Evaluating player experience, controls, UI clarity, and overall gameplay flow.",
-  },
-  {
-    heading: "Multiplayer & Network Testing",
-    description:
-      "Latency, synchronization, matchmaking, and server stability testing for online games.",
-  },
-  {
-    heading: "Security & Anti-Cheat Testing",
-    description:
-      "Identifying vulnerabilities, exploits, and cheating risks to ensure fair gameplay.",
-  },
-  {
-    heading: "Regression Testing",
-    description:
-      "Ensuring new updates and patches don’t break existing functionality.",
-  },
-  {
-    heading: "Platform Compliance Testing",
-    description:
-      "Testing against App Store, Google Play, console, and platform-specific guidelines.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Functional Game Testing",
+            description:
+                "Ensuring all game features, mechanics, and controls work exactly as intended.",
+        },
+        {
+            heading: "Compatibility Testing",
+            description:
+                "Testing across multiple devices, screen sizes, operating systems, and hardware configurations.",
+        },
+        {
+            heading: "Performance & Load Testing",
+            description:
+                "Frame-rate stability, memory usage, latency, and stress testing under heavy loads.",
+        },
+        {
+            heading: "Usability & Gameplay Testing",
+            description:
+                "Evaluating player experience, controls, UI clarity, and overall gameplay flow.",
+        },
+        {
+            heading: "Multiplayer & Network Testing",
+            description:
+                "Latency, synchronization, matchmaking, and server stability testing for online games.",
+        },
+        {
+            heading: "Security & Anti-Cheat Testing",
+            description:
+                "Identifying vulnerabilities, exploits, and cheating risks to ensure fair gameplay.",
+        },
+        {
+            heading: "Regression Testing",
+            description:
+                "Ensuring new updates and patches don’t break existing functionality.",
+        },
+        {
+            heading: "Platform Compliance Testing",
+            description:
+                "Testing against App Store, Google Play, console, and platform-specific guidelines.",
+        },
+    ];
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Test Planning & Strategy",
-    desc: "We analyze your game scope, platforms, and objectives to define a testing roadmap.",
-  },
-  {
-    number: "02",
-    title: "Test Case Creation",
-    desc: "Detailed test cases are designed for gameplay, UI, performance, and edge scenarios.",
-  },
-  {
-    number: "03",
-    title: "Manual & Automated Testing",
-    desc: "A combination of hands-on gameplay testing and automated tools ensures accuracy.",
-  },
-  {
-    number: "04",
-    title: "Bug Reporting & Documentation",
-    desc: "Clear, actionable bug reports with steps, screenshots, and severity levels.",
-  },
-  {
-    number: "05",
-    title: "Performance & Stress Testing",
-    desc: "Testing under real-world conditions to identify bottlenecks and crashes.",
-  },
-  {
-    number: "06",
-    title: "Re-Testing & Validation",
-    desc: "Verification of fixes and regression testing before release.",
-  },
-  {
-    number: "07",
-    title: "Launch Support & Post-Release Testing",
-    desc: "Ongoing testing support for updates, patches, and live environments.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Test Planning & Strategy",
+            desc: "We analyze your game scope, platforms, and objectives to define a testing roadmap.",
+        },
+        {
+            number: "02",
+            title: "Test Case Creation",
+            desc: "Detailed test cases are designed for gameplay, UI, performance, and edge scenarios.",
+        },
+        {
+            number: "03",
+            title: "Manual & Automated Testing",
+            desc: "A combination of hands-on gameplay testing and automated tools ensures accuracy.",
+        },
+        {
+            number: "04",
+            title: "Bug Reporting & Documentation",
+            desc: "Clear, actionable bug reports with steps, screenshots, and severity levels.",
+        },
+        {
+            number: "05",
+            title: "Performance & Stress Testing",
+            desc: "Testing under real-world conditions to identify bottlenecks and crashes.",
+        },
+        {
+            number: "06",
+            title: "Re-Testing & Validation",
+            desc: "Verification of fixes and regression testing before release.",
+        },
+        {
+            number: "07",
+            title: "Launch Support & Post-Release Testing",
+            desc: "Ongoing testing support for updates, patches, and live environments.",
+        },
+    ];
 
-const relatedServices = [
-  { name: "Mobile Game Development" },
-  { name: "Unity Game Development" },
-  { name: "Unreal Game Development" },
-  { name: "Multiplayer Game Development" },
-  { name: "Game Maintenance & Support" },
-  { name: "QA & Software Testing" },
-  { name: "App Testing Services" },
-  { name: "Performance Optimization" },
-];
+    const relatedServices = [
+        { name: "Mobile Game Development" },
+        { name: "Unity Game Development" },
+        { name: "Unreal Game Development" },
+        { name: "Multiplayer Game Development" },
+        { name: "Game Maintenance & Support" },
+        { name: "QA & Software Testing" },
+        { name: "App Testing Services" },
+        { name: "Performance Optimization" },
+    ];
 
 
 
@@ -312,6 +314,12 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+
+
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

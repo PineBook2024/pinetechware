@@ -14,6 +14,8 @@ import Img2 from "@/public/images/check.svg";
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
 
@@ -45,93 +47,93 @@ export default function page() {
     }, []);
 
 
- const webServices = [
-  {
-    heading: "Email Campaign Strategy",
-    description:
-      "Audience segmentation, goal setting, content planning, and campaign mapping for maximum impact.",
-  },
-  {
-    heading: "Email Design & Templates",
-    description:
-      "Professionally designed, mobile-responsive email templates aligned with your brand identity.",
-  },
-  {
-    heading: "Content & Copywriting",
-    description:
-      "Compelling subject lines, engaging body copy, and strong CTAs that drive opens and clicks.",
-  },
-  {
-    heading: "Automated Email Workflows",
-    description:
-      "Welcome sequences, lead nurturing, abandoned cart emails, and customer re-engagement flows.",
-  },
-  {
-    heading: "Promotional & Newsletter Campaigns",
-    description:
-      "Product launches, offers, updates, and newsletters crafted to keep your audience engaged.",
-  },
-  {
-    heading: "List Management & Segmentation",
-    description:
-      "Clean, segmented, and optimized email lists to improve deliverability and performance.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Email Campaign Strategy",
+            description:
+                "Audience segmentation, goal setting, content planning, and campaign mapping for maximum impact.",
+        },
+        {
+            heading: "Email Design & Templates",
+            description:
+                "Professionally designed, mobile-responsive email templates aligned with your brand identity.",
+        },
+        {
+            heading: "Content & Copywriting",
+            description:
+                "Compelling subject lines, engaging body copy, and strong CTAs that drive opens and clicks.",
+        },
+        {
+            heading: "Automated Email Workflows",
+            description:
+                "Welcome sequences, lead nurturing, abandoned cart emails, and customer re-engagement flows.",
+        },
+        {
+            heading: "Promotional & Newsletter Campaigns",
+            description:
+                "Product launches, offers, updates, and newsletters crafted to keep your audience engaged.",
+        },
+        {
+            heading: "List Management & Segmentation",
+            description:
+                "Clean, segmented, and optimized email lists to improve deliverability and performance.",
+        },
+    ];
 
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Audience & Goal Analysis",
-    desc: "We define your audience segments, campaign objectives, and success metrics.",
-  },
-  {
-    number: "02",
-    title: "Strategy & Planning",
-    desc: "We plan content calendars, automation flows, and campaign schedules.",
-  },
-  {
-    number: "03",
-    title: "Design & Copy Creation",
-    desc: "Emails are designed and written to be visually appealing and conversion-focused.",
-  },
-  {
-    number: "04",
-    title: "Platform Setup & Integration",
-    desc: "We configure tools and integrate with your CRM, website, or e-commerce platform.",
-  },
-  {
-    number: "05",
-    title: "Testing & QA",
-    desc: "We test deliverability, responsiveness, and formatting across devices and clients.",
-  },
-  {
-    number: "06",
-    title: "Campaign Launch",
-    desc: "Emails are deployed at optimized times for maximum engagement.",
-  },
-  {
-    number: "07",
-    title: "Optimization & Growth",
-    desc: "We analyze performance and refine campaigns for continuous improvement.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Audience & Goal Analysis",
+            desc: "We define your audience segments, campaign objectives, and success metrics.",
+        },
+        {
+            number: "02",
+            title: "Strategy & Planning",
+            desc: "We plan content calendars, automation flows, and campaign schedules.",
+        },
+        {
+            number: "03",
+            title: "Design & Copy Creation",
+            desc: "Emails are designed and written to be visually appealing and conversion-focused.",
+        },
+        {
+            number: "04",
+            title: "Platform Setup & Integration",
+            desc: "We configure tools and integrate with your CRM, website, or e-commerce platform.",
+        },
+        {
+            number: "05",
+            title: "Testing & QA",
+            desc: "We test deliverability, responsiveness, and formatting across devices and clients.",
+        },
+        {
+            number: "06",
+            title: "Campaign Launch",
+            desc: "Emails are deployed at optimized times for maximum engagement.",
+        },
+        {
+            number: "07",
+            title: "Optimization & Growth",
+            desc: "We analyze performance and refine campaigns for continuous improvement.",
+        },
+    ];
 
 
 
-const relatedServices = [
-  { name: "Digital Marketing" },
-  { name: "Search Engine Optimization (SEO)" },
-  { name: "Social Media Marketing" },
-  { name: "Conversion Rate Optimization" },
-  { name: "Landing Page Design" },
-  { name: "Analytics & Reporting" },
-  { name: "Email Marketing" },
-  { name: "Content Marketing" },
-  { name: "Marketing Automation" },
-];
+    const relatedServices = [
+        { name: "Digital Marketing" },
+        { name: "Search Engine Optimization (SEO)" },
+        { name: "Social Media Marketing" },
+        { name: "Conversion Rate Optimization" },
+        { name: "Landing Page Design" },
+        { name: "Analytics & Reporting" },
+        { name: "Email Marketing" },
+        { name: "Content Marketing" },
+        { name: "Marketing Automation" },
+    ];
 
 
     return (
@@ -312,111 +314,8 @@ const relatedServices = [
             </section>
 
 
-            {/* <section className="textContent-sec bg-white">
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]" >
-                    <div className="2xl:max-w-4xl lg:max-w-3xl" >
-                        <div className="lg:overflow-hidden" >
-                            <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black"><span>related services</span></h2></div>
-                        <p className="text-black lg:pe-[5rem] pt-6 lg:pt-[2.375rem] text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                    </div>
-                </div>
-
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
-                    <div className="grid grid-cols-12 gap-y-4 md:gap-7">
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Mobile App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Android App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li>
-                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">eCommerce App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">visionOS App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Enterprise App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Cross Platform App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Flutter App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Hybrid App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Ionic App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Sencha App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">NativeScript App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">AR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">VR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Metaverse App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">IoT App</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

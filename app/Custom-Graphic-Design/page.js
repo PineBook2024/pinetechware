@@ -14,7 +14,8 @@ import Img2 from "@/public/images/check.svg";
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
-
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
 export default function page() {
     const counterRef = useRef(null);
     const [startCounter, setStartCounter] = useState(false);
@@ -238,6 +239,12 @@ export default function page() {
             </section>
 
 
+
+   <AllIndustries />
+   <IndSlider />
+
+
+
             <section className="textContent-sec bg-white relative">
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]" >
                     <div className="2xl:max-w-4xl lg:max-w-3xl" >
@@ -326,11 +333,16 @@ export default function page() {
                 </div>
             </section>
 
+
+
             <Trigger />
 
             <OurClients />
 
             {/* <Test/> */}
+
+
+
 
             <Footer />
 

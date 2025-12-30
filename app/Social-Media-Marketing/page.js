@@ -10,7 +10,8 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Social-Media-Marketing-banner.webp";
 import Img2 from "@/public/images/check.svg";
-
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
@@ -45,88 +46,88 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-    {
-        heading: "Social Media Strategy & Planning",
-        description:
-            "Platform-specific strategies aligned with your business goals and target audience.",
-    },
-    {
-        heading: "Content Creation & Design",
-        description:
-            "Scroll-stopping posts, reels, stories, and creatives tailored to each platform.",
-    },
-    {
-        heading: "Account Management",
-        description:
-            "Daily posting, community engagement, inbox management, and brand voice consistency.",
-    },
-    {
-        heading: "Paid Social Advertising",
-        description:
-            "High-performing ad campaigns designed to increase reach, leads, and sales.",
-    },
-    {
-        heading: "Audience Growth & Engagement",
-        description:
-            "Organic growth tactics focused on real followers, interactions, and brand loyalty.",
-    },
-    {
-        heading: "Influencer & Collaboration Campaigns",
-        description:
-            "Strategic partnerships to expand reach and credibility.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Social Media Strategy & Planning",
+            description:
+                "Platform-specific strategies aligned with your business goals and target audience.",
+        },
+        {
+            heading: "Content Creation & Design",
+            description:
+                "Scroll-stopping posts, reels, stories, and creatives tailored to each platform.",
+        },
+        {
+            heading: "Account Management",
+            description:
+                "Daily posting, community engagement, inbox management, and brand voice consistency.",
+        },
+        {
+            heading: "Paid Social Advertising",
+            description:
+                "High-performing ad campaigns designed to increase reach, leads, and sales.",
+        },
+        {
+            heading: "Audience Growth & Engagement",
+            description:
+                "Organic growth tactics focused on real followers, interactions, and brand loyalty.",
+        },
+        {
+            heading: "Influencer & Collaboration Campaigns",
+            description:
+                "Strategic partnerships to expand reach and credibility.",
+        },
+    ];
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Audience & Platform Research",
-        desc: "We identify your ideal audience and the platforms where they are most active.",
-    },
-    {
-        number: "02",
-        title: "Strategy Development",
-        desc: "We define content pillars, posting schedules, and growth objectives.",
-    },
-    {
-        number: "03",
-        title: "Creative Production",
-        desc: "High-quality visuals, captions, hashtags, and short-form videos are created.",
-    },
-    {
-        number: "04",
-        title: "Publishing & Engagement",
-        desc: "Consistent posting, active engagement, and community interaction.",
-    },
-    {
-        number: "05",
-        title: "Paid Campaign Execution",
-        desc: "Data-driven ad campaigns to amplify reach and accelerate growth.",
-    },
-    {
-        number: "06",
-        title: "Monitoring & Optimization",
-        desc: "Continuous analysis and refinement to improve performance.",
-    },
-    {
-        number: "07",
-        title: "Reporting & Scaling",
-        desc: "Transparent reports with insights and recommendations for long-term growth.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Audience & Platform Research",
+            desc: "We identify your ideal audience and the platforms where they are most active.",
+        },
+        {
+            number: "02",
+            title: "Strategy Development",
+            desc: "We define content pillars, posting schedules, and growth objectives.",
+        },
+        {
+            number: "03",
+            title: "Creative Production",
+            desc: "High-quality visuals, captions, hashtags, and short-form videos are created.",
+        },
+        {
+            number: "04",
+            title: "Publishing & Engagement",
+            desc: "Consistent posting, active engagement, and community interaction.",
+        },
+        {
+            number: "05",
+            title: "Paid Campaign Execution",
+            desc: "Data-driven ad campaigns to amplify reach and accelerate growth.",
+        },
+        {
+            number: "06",
+            title: "Monitoring & Optimization",
+            desc: "Continuous analysis and refinement to improve performance.",
+        },
+        {
+            number: "07",
+            title: "Reporting & Scaling",
+            desc: "Transparent reports with insights and recommendations for long-term growth.",
+        },
+    ];
 
-const relatedServices = [
-  { name: "Digital Marketing" },
-  { name: "Search Engine Optimization (SEO)" },
-  { name: "Social Media Marketing" },
-  { name: "Conversion Rate Optimization" },
-  { name: "Landing Page Design" },
-  { name: "Analytics & Reporting" },
-  { name: "Email Marketing" },
-  { name: "Content Marketing" },
-  { name: "Marketing Automation" },
-];
+    const relatedServices = [
+        { name: "Digital Marketing" },
+        { name: "Search Engine Optimization (SEO)" },
+        { name: "Social Media Marketing" },
+        { name: "Conversion Rate Optimization" },
+        { name: "Landing Page Design" },
+        { name: "Analytics & Reporting" },
+        { name: "Email Marketing" },
+        { name: "Content Marketing" },
+        { name: "Marketing Automation" },
+    ];
 
 
 
@@ -308,111 +309,8 @@ const relatedServices = [
             </section>
 
 
-            {/* <section className="textContent-sec bg-white">
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]" >
-                    <div className="2xl:max-w-4xl lg:max-w-3xl" >
-                        <div className="lg:overflow-hidden" >
-                            <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black"><span>related services</span></h2></div>
-                        <p className="text-black lg:pe-[5rem] pt-6 lg:pt-[2.375rem] text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                    </div>
-                </div>
-
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
-                    <div className="grid grid-cols-12 gap-y-4 md:gap-7">
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Mobile App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Android App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li>
-                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">eCommerce App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">visionOS App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Enterprise App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Cross Platform App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Flutter App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Hybrid App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Ionic App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Sencha App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">NativeScript App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">AR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">VR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Metaverse App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">IoT App</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

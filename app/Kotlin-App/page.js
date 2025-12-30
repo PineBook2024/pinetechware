@@ -15,6 +15,9 @@ import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
 
 
@@ -44,77 +47,77 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-    {
-        heading: "Custom Kotlin App Development",
-        description:
-            "Tailor-made Android applications built entirely in Kotlin to meet your business requirements.",
-    },
-    {
-        heading: "Native Android Development",
-        description:
-            "High-performance native apps leveraging Kotlin’s modern language features.",
-    },
-    {
-        heading: "UI/UX Design for Kotlin Apps",
-        description:
-            "Clean, intuitive interfaces following Material Design and Android best practices.",
-    },
-    {
-        heading: "API & Backend Integration",
-        description:
-            "Secure integration with APIs, databases, and cloud services.",
-    },
-    {
-        heading: "Kotlin Migration Services",
-        description:
-            "Converting existing Java-based Android apps to Kotlin for better performance and maintainability.",
-    },
-    {
-        heading: "App Testing & Quality Assurance",
-        description:
-            "Comprehensive testing to ensure stability, security, and device compatibility.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom Kotlin App Development",
+            description:
+                "Tailor-made Android applications built entirely in Kotlin to meet your business requirements.",
+        },
+        {
+            heading: "Native Android Development",
+            description:
+                "High-performance native apps leveraging Kotlin’s modern language features.",
+        },
+        {
+            heading: "UI/UX Design for Kotlin Apps",
+            description:
+                "Clean, intuitive interfaces following Material Design and Android best practices.",
+        },
+        {
+            heading: "API & Backend Integration",
+            description:
+                "Secure integration with APIs, databases, and cloud services.",
+        },
+        {
+            heading: "Kotlin Migration Services",
+            description:
+                "Converting existing Java-based Android apps to Kotlin for better performance and maintainability.",
+        },
+        {
+            heading: "App Testing & Quality Assurance",
+            description:
+                "Comprehensive testing to ensure stability, security, and device compatibility.",
+        },
+    ];
 
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Discovery",
-        desc: "We analyze your app goals, features, and technical requirements.",
-    },
-    {
-        number: "02",
-        title: "UI/UX & Prototyping",
-        desc: "Wireframes and prototypes created for smooth Android user experiences.",
-    },
-    {
-        number: "03",
-        title: "Kotlin App Development",
-        desc: "Clean, efficient coding using Kotlin and modern Android frameworks.",
-    },
-    {
-        number: "04",
-        title: "Feature & API Integration",
-        desc: "Secure backend connections and advanced feature implementation.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Rigorous testing across Android devices and OS versions.",
-    },
-    {
-        number: "06",
-        title: "Play Store Launch",
-        desc: "Submission, review handling, and deployment support.",
-    },
-    {
-        number: "07",
-        title: "Post-Launch Support & Scaling",
-        desc: "Ongoing updates, feature enhancements, and scalability planning.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Discovery",
+            desc: "We analyze your app goals, features, and technical requirements.",
+        },
+        {
+            number: "02",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes created for smooth Android user experiences.",
+        },
+        {
+            number: "03",
+            title: "Kotlin App Development",
+            desc: "Clean, efficient coding using Kotlin and modern Android frameworks.",
+        },
+        {
+            number: "04",
+            title: "Feature & API Integration",
+            desc: "Secure backend connections and advanced feature implementation.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Rigorous testing across Android devices and OS versions.",
+        },
+        {
+            number: "06",
+            title: "Play Store Launch",
+            desc: "Submission, review handling, and deployment support.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, feature enhancements, and scalability planning.",
+        },
+    ];
 
 
 
@@ -294,7 +297,11 @@ const processSteps = [
                     </div>
                 </div>
             </section>
-        
+
+            <AllIndustries />
+            <IndSlider />
+
+
             <AppRelatedServices />
 
             <Trigger />

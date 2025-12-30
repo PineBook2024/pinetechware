@@ -20,7 +20,7 @@ const OurClients = () => {
         {
             text: `"Pine Techware delivered exactly what we envisioned for our FinTech platform. Their project manager kept us updated on every milestone through Slack and weekly calls. What impressed us most was their genuine passion for our product and their expertise in financial technology."`,
             initials: "JD",
-            bgColor: "#2ED06E",
+            bgColor: "#3BB9E1",
             name: "— Rachel L., Co-Founder",
             stars: 5,
             // img: Img3,
@@ -28,7 +28,7 @@ const OurClients = () => {
         {
             text: `"The Pine Techware team built a robust e-learning app with clean code and intuitive design. While timelines were ambitious, they worked tirelessly to meet our launch date. Their dedication and quick problem-solving made the entire experience rewarding."`,
             initials: "JD",
-            bgColor: "#2ED06E",
+            bgColor: "#3BB9E1",
             name: "— Jonathan M., CEO",
             stars: 5,
             // img: Img3,
@@ -36,7 +36,7 @@ const OurClients = () => {
         {
             text: `"We partnered with Pine Techware for our e-commerce platform, and the results exceeded our expectations. The team constantly went the extra mile, providing creative solutions and seamless integration. Their ability to combine speed with quality was remarkable."`,
             initials: "JD",
-            bgColor: "#2ED06E",
+            bgColor: "#3BB9E1",
             name: "— Samantha R., Digital Strategy Lead",
             stars: 5,
             // img: Img3,
@@ -44,7 +44,7 @@ const OurClients = () => {
         {
             text: `"Pine Techware has been instrumental in developing our healthcare app. From strategy to execution, they communicated clearly, delivered on time, and ensured compliance with industry standards. The feedback from our beta users has been overwhelmingly positive."`,
             initials: "JD",
-            bgColor: "#2ED06E",
+            bgColor: "#3BB9E1",
             name: "— Dr. Henry A., Director of Innovation",
             stars: 5,
             // img: Img3,
@@ -109,7 +109,7 @@ const OurClients = () => {
                         <div className="relative flex gap-4 items-center w-full pt-12 justify-between sm:w-auto">
 
                             <div className='image-here flex justify-center items-center gap-4 w-full md:w-auto'>
-                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#2ED06E] rounded-full text-center flex items-center justify-center text-black">JD</div>
+                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#3BB9E1] rounded-full text-center flex items-center justify-center text-black">JD</div>
                                 <div className=''>
                                     <p className="font-bold text-black text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-xl">Jackie Dallas, Director</p>
                                     <span className='flex mt-2 gap-1'>
@@ -141,7 +141,7 @@ const OurClients = () => {
                         <div className="relative flex gap-4 items-center w-full pt-12 justify-between sm:w-auto">
 
                             <div className='image-here flex justify-center items-center gap-4 w-full md:w-auto'>
-                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#2ED06E] rounded-full text-center flex items-center justify-center text-black">JD</div>
+                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#3BB9E1] rounded-full text-center flex items-center justify-center text-black">JD</div>
                                 <div className=''>
                                     <p className="font-bold text-black text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-xl">Jackie Dallas, Director</p>
                                     <span className='flex mt-2 gap-1'>
@@ -173,7 +173,7 @@ const OurClients = () => {
                         <div className="relative flex gap-4 items-center w-full pt-12 justify-between sm:w-auto">
 
                             <div className='image-here flex justify-center items-center gap-4 w-full md:w-auto'>
-                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#2ED06E] rounded-full text-center flex items-center justify-center text-black">JD</div>
+                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#3BB9E1] rounded-full text-center flex items-center justify-center text-black">JD</div>
                                 <div className=''>
                                     <p className="font-bold text-black text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-xl">Jackie Dallas, Director</p>
                                     <span className='flex mt-2 gap-1'>
@@ -205,7 +205,7 @@ const OurClients = () => {
                         <div className="relative flex gap-4 items-center w-full pt-12 justify-between sm:w-auto">
 
                             <div className='image-here flex justify-center items-center gap-4 w-full md:w-auto'>
-                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#2ED06E] rounded-full text-center flex items-center justify-center text-black">JD</div>
+                                <div id="profileImage" className="h-12 w-12 xl:h-[84px] md:h-20 xl:w-[84px] md:w-20 lg:text-3xl text-xl font-bold bg-[#3BB9E1] rounded-full text-center flex items-center justify-center text-black">JD</div>
                                 <div className=''>
                                     <p className="font-bold text-black text-xs sm:text-sm lg:text-md xl:text-lg 2xl:text-xl">Jackie Dallas, Director</p>
                                     <span className='flex mt-2 gap-1'>

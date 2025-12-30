@@ -10,6 +10,9 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -41,38 +44,38 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Custom Unity Game Development",
-    description:
-      "End-to-end Unity game development tailored to your concept, genre, and target audience.",
-  },
-  {
-    heading: "2D & 3D Unity Games",
-    description:
-      "Visually rich 2D and 3D games developed using Unity’s advanced rendering and animation capabilities.",
-  },
-  {
-    heading: "Cross-Platform Game Development",
-    description:
-      "Single-build deployment enabling smooth performance across iOS, Android, PC, and console platforms.",
-  },
-  {
-    heading: "Unity AR & VR Development",
-    description:
-      "Immersive augmented and virtual reality experiences powered by Unity’s AR and VR toolsets.",
-  },
-  {
-    heading: "Multiplayer & Online Games",
-    description:
-      "Real-time multiplayer systems with matchmaking, leaderboards, and secure server-side integration.",
-  },
-  {
-    heading: "Game UI/UX Design",
-    description:
-      "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Custom Unity Game Development",
+            description:
+                "End-to-end Unity game development tailored to your concept, genre, and target audience.",
+        },
+        {
+            heading: "2D & 3D Unity Games",
+            description:
+                "Visually rich 2D and 3D games developed using Unity’s advanced rendering and animation capabilities.",
+        },
+        {
+            heading: "Cross-Platform Game Development",
+            description:
+                "Single-build deployment enabling smooth performance across iOS, Android, PC, and console platforms.",
+        },
+        {
+            heading: "Unity AR & VR Development",
+            description:
+                "Immersive augmented and virtual reality experiences powered by Unity’s AR and VR toolsets.",
+        },
+        {
+            heading: "Multiplayer & Online Games",
+            description:
+                "Real-time multiplayer systems with matchmaking, leaderboards, and secure server-side integration.",
+        },
+        {
+            heading: "Game UI/UX Design",
+            description:
+                "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
+        },
+    ];
 
     const processSteps = [
         {
@@ -114,16 +117,16 @@ const webServices = [
 
 
 
-const relatedServices = [
-  { name: "Unity Game Development" },
-  { name: "Mobile Game Development" },
-  { name: "2D & 3D Game Development" },
-  { name: "AR & VR Development" },
-  { name: "UI/UX Design" },
-  { name: "Backend Development" },
-  { name: "Cloud Solutions" },
-  { name: "Multiplayer Game Development" },
-];
+    const relatedServices = [
+        { name: "Unity Game Development" },
+        { name: "Mobile Game Development" },
+        { name: "2D & 3D Game Development" },
+        { name: "AR & VR Development" },
+        { name: "UI/UX Design" },
+        { name: "Backend Development" },
+        { name: "Cloud Solutions" },
+        { name: "Multiplayer Game Development" },
+    ];
 
 
     return (
@@ -302,6 +305,10 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

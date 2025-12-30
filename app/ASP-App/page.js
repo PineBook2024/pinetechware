@@ -8,6 +8,9 @@ import SeoHead from '@/components/SeoHead'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 import Img1 from "@/public/images/banner-inner/Custom-Application-banner.webp";
 import Img2 from "@/public/images/check.svg";
 
@@ -44,77 +47,77 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-    {
-        heading: "Custom ASP.NET Application Development",
-        description:
-            "Tailor-made applications built using ASP.NET Core and MVC to meet specific business requirements.",
-    },
-    {
-        heading: "Enterprise Web Applications",
-        description:
-            "Scalable enterprise solutions designed for high traffic, complex logic, and secure data handling.",
-    },
-    {
-        heading: "ASP.NET MVC Development",
-        description:
-            "Structured, maintainable, and performance-optimized MVC-based applications.",
-    },
-    {
-        heading: "API & System Integration",
-        description:
-            "Secure integration with third-party systems, APIs, CRMs, ERPs, and cloud services.",
-    },
-    {
-        heading: "Cloud-Based ASP.NET Solutions",
-        description:
-            "Cloud-ready applications hosted on Azure and other platforms for scalability and reliability.",
-    },
-    {
-        heading: "Database Design & Management",
-        description:
-            "Efficient database architecture using SQL Server and optimized data workflows.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom ASP.NET Application Development",
+            description:
+                "Tailor-made applications built using ASP.NET Core and MVC to meet specific business requirements.",
+        },
+        {
+            heading: "Enterprise Web Applications",
+            description:
+                "Scalable enterprise solutions designed for high traffic, complex logic, and secure data handling.",
+        },
+        {
+            heading: "ASP.NET MVC Development",
+            description:
+                "Structured, maintainable, and performance-optimized MVC-based applications.",
+        },
+        {
+            heading: "API & System Integration",
+            description:
+                "Secure integration with third-party systems, APIs, CRMs, ERPs, and cloud services.",
+        },
+        {
+            heading: "Cloud-Based ASP.NET Solutions",
+            description:
+                "Cloud-ready applications hosted on Azure and other platforms for scalability and reliability.",
+        },
+        {
+            heading: "Database Design & Management",
+            description:
+                "Efficient database architecture using SQL Server and optimized data workflows.",
+        },
+    ];
 
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Analysis",
-        desc: "We gather functional, technical, and business requirements to define a clear roadmap.",
-    },
-    {
-        number: "02",
-        title: "Architecture & Planning",
-        desc: "We design secure, scalable system architecture aligned with your business goals.",
-    },
-    {
-        number: "03",
-        title: "UI/UX & Prototyping",
-        desc: "User-friendly interfaces and workflows designed for productivity and usability.",
-    },
-    {
-        number: "04",
-        title: "Development & Integration",
-        desc: "Clean, secure code development with seamless system integrations.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Comprehensive testing for performance, security, and cross-browser compatibility.",
-    },
-    {
-        number: "06",
-        title: "Deployment & Launch",
-        desc: "Smooth deployment with final checks and environment setup.",
-    },
-    {
-        number: "07",
-        title: "Support & Scaling",
-        desc: "Ongoing support and feature scaling as your business evolves.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Analysis",
+            desc: "We gather functional, technical, and business requirements to define a clear roadmap.",
+        },
+        {
+            number: "02",
+            title: "Architecture & Planning",
+            desc: "We design secure, scalable system architecture aligned with your business goals.",
+        },
+        {
+            number: "03",
+            title: "UI/UX & Prototyping",
+            desc: "User-friendly interfaces and workflows designed for productivity and usability.",
+        },
+        {
+            number: "04",
+            title: "Development & Integration",
+            desc: "Clean, secure code development with seamless system integrations.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Comprehensive testing for performance, security, and cross-browser compatibility.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Smooth deployment with final checks and environment setup.",
+        },
+        {
+            number: "07",
+            title: "Support & Scaling",
+            desc: "Ongoing support and feature scaling as your business evolves.",
+        },
+    ];
 
 
 
@@ -296,7 +299,12 @@ const processSteps = [
                     </div>
                 </div>
             </section>
-        
+
+
+            <AllIndustries />
+            <IndSlider />
+
+
             <AppRelatedServices />
 
             <Trigger />

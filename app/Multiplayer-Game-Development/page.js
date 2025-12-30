@@ -10,6 +10,9 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -41,97 +44,97 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Real-Time Multiplayer Game Development",
-    description:
-      "Fast, synchronized gameplay with low latency and smooth player interactions.",
-  },
-  {
-    heading: "Online & Co-Op Games",
-    description:
-      "Competitive and cooperative multiplayer modes designed for engagement and replayability.",
-  },
-  {
-    heading: "Matchmaking & Lobby Systems",
-    description:
-      "Smart matchmaking, player lobbies, rankings, and session management.",
-  },
-  {
-    heading: "Server-Side Development",
-    description:
-      "Robust backend architecture to handle real-time communication and scaling.",
-  },
-  {
-    heading: "Cross-Platform Multiplayer Games",
-    description:
-      "Seamless multiplayer experiences across mobile, PC, and console platforms.",
-  },
-  {
-    heading: "Multiplayer Game UI/UX",
-    description:
-      "Player-friendly interfaces for chat, leaderboards, profiles, and social features.",
-  },
-  {
-    heading: "In-Game Chat & Social Features",
-    description:
-      "Text, voice chat, friends list, clans, and community systems.",
-  },
-  {
-    heading: "Security & Anti-Cheat Systems",
-    description:
-      "Cheat prevention, data security, and fair-play mechanisms.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Real-Time Multiplayer Game Development",
+            description:
+                "Fast, synchronized gameplay with low latency and smooth player interactions.",
+        },
+        {
+            heading: "Online & Co-Op Games",
+            description:
+                "Competitive and cooperative multiplayer modes designed for engagement and replayability.",
+        },
+        {
+            heading: "Matchmaking & Lobby Systems",
+            description:
+                "Smart matchmaking, player lobbies, rankings, and session management.",
+        },
+        {
+            heading: "Server-Side Development",
+            description:
+                "Robust backend architecture to handle real-time communication and scaling.",
+        },
+        {
+            heading: "Cross-Platform Multiplayer Games",
+            description:
+                "Seamless multiplayer experiences across mobile, PC, and console platforms.",
+        },
+        {
+            heading: "Multiplayer Game UI/UX",
+            description:
+                "Player-friendly interfaces for chat, leaderboards, profiles, and social features.",
+        },
+        {
+            heading: "In-Game Chat & Social Features",
+            description:
+                "Text, voice chat, friends list, clans, and community systems.",
+        },
+        {
+            heading: "Security & Anti-Cheat Systems",
+            description:
+                "Cheat prevention, data security, and fair-play mechanisms.",
+        },
+    ];
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Multiplayer Game Planning",
-    desc: "We define gameplay modes, networking requirements, and scalability goals.",
-  },
-  {
-    number: "02",
-    title: "Architecture & Networking Design",
-    desc: "We design low-latency, scalable server and networking architecture.",
-  },
-  {
-    number: "03",
-    title: "Game Development",
-    desc: "Core gameplay mechanics and multiplayer features are implemented.",
-  },
-  {
-    number: "04",
-    title: "Backend & Server Integration",
-    desc: "Real-time servers, databases, and APIs are integrated.",
-  },
-  {
-    number: "05",
-    title: "Testing & Load Simulation",
-    desc: "Stress testing, latency optimization, and performance validation.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Launch",
-    desc: "Live server deployment with monitoring and scaling setup.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Scaling",
-    desc: "Ongoing updates, server optimization, and feature expansion.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Multiplayer Game Planning",
+            desc: "We define gameplay modes, networking requirements, and scalability goals.",
+        },
+        {
+            number: "02",
+            title: "Architecture & Networking Design",
+            desc: "We design low-latency, scalable server and networking architecture.",
+        },
+        {
+            number: "03",
+            title: "Game Development",
+            desc: "Core gameplay mechanics and multiplayer features are implemented.",
+        },
+        {
+            number: "04",
+            title: "Backend & Server Integration",
+            desc: "Real-time servers, databases, and APIs are integrated.",
+        },
+        {
+            number: "05",
+            title: "Testing & Load Simulation",
+            desc: "Stress testing, latency optimization, and performance validation.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Live server deployment with monitoring and scaling setup.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, server optimization, and feature expansion.",
+        },
+    ];
 
-const relatedServices = [
-  { name: "Mobile Game Development" },
-  { name: "Unity Game Development" },
-  { name: "Unreal Game Development" },
-  { name: "Backend Development" },
-  { name: "Cloud Solutions" },
-  { name: "Blockchain Game Development" },
-  { name: "Web3 Game Development" },
-  { name: "Game Maintenance & Support" },
-];
+    const relatedServices = [
+        { name: "Mobile Game Development" },
+        { name: "Unity Game Development" },
+        { name: "Unreal Game Development" },
+        { name: "Backend Development" },
+        { name: "Cloud Solutions" },
+        { name: "Blockchain Game Development" },
+        { name: "Web3 Game Development" },
+        { name: "Game Maintenance & Support" },
+    ];
 
 
 
@@ -312,6 +315,10 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

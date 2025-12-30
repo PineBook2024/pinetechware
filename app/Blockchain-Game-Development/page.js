@@ -8,6 +8,9 @@ import SeoHead from '@/components/SeoHead'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
 
@@ -40,97 +43,97 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-  {
-    heading: "Play-to-Earn (P2E) Game Development",
-    description:
-      "Games designed with reward systems that allow players to earn real value through gameplay.",
-  },
-  {
-    heading: "NFT Game Development",
-    description:
-      "Integration of NFTs for characters, skins, weapons, land, and in-game assets with true ownership.",
-  },
-  {
-    heading: "Metaverse Game Development",
-    description:
-      "Immersive virtual worlds combining gaming, social interaction, and digital economies.",
-  },
-  {
-    heading: "Smart Contract Development",
-    description:
-      "Secure and optimized smart contracts for in-game transactions, rewards, and asset ownership.",
-  },
-  {
-    heading: "Token Economy Design",
-    description:
-      "Balanced in-game tokenomics to support long-term sustainability and player engagement.",
-  },
-  {
-    heading: "Wallet & Blockchain Integration",
-    description:
-      "Seamless integration with crypto wallets and blockchain networks.",
-  },
-  {
-    heading: "Cross-Platform Blockchain Games",
-    description:
-      "Blockchain games optimized for mobile, web, and desktop platforms.",
-  },
-  {
-    heading: "Security Audits & Optimization",
-    description:
-      "Smart contract auditing and security testing to prevent vulnerabilities.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Play-to-Earn (P2E) Game Development",
+            description:
+                "Games designed with reward systems that allow players to earn real value through gameplay.",
+        },
+        {
+            heading: "NFT Game Development",
+            description:
+                "Integration of NFTs for characters, skins, weapons, land, and in-game assets with true ownership.",
+        },
+        {
+            heading: "Metaverse Game Development",
+            description:
+                "Immersive virtual worlds combining gaming, social interaction, and digital economies.",
+        },
+        {
+            heading: "Smart Contract Development",
+            description:
+                "Secure and optimized smart contracts for in-game transactions, rewards, and asset ownership.",
+        },
+        {
+            heading: "Token Economy Design",
+            description:
+                "Balanced in-game tokenomics to support long-term sustainability and player engagement.",
+        },
+        {
+            heading: "Wallet & Blockchain Integration",
+            description:
+                "Seamless integration with crypto wallets and blockchain networks.",
+        },
+        {
+            heading: "Cross-Platform Blockchain Games",
+            description:
+                "Blockchain games optimized for mobile, web, and desktop platforms.",
+        },
+        {
+            heading: "Security Audits & Optimization",
+            description:
+                "Smart contract auditing and security testing to prevent vulnerabilities.",
+        },
+    ];
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Game Concept & Blockchain Strategy",
-    desc: "We understand your game vision, blockchain requirements, and monetization goals.",
-  },
-  {
-    number: "02",
-    title: "Tokenomics & Economy Design",
-    desc: "We design reward systems, NFT structures, and in-game economies.",
-  },
-  {
-    number: "03",
-    title: "Game Design & Prototyping",
-    desc: "Gameplay mechanics, user flows, and blockchain interactions are planned.",
-  },
-  {
-    number: "04",
-    title: "Blockchain & Game Development",
-    desc: "Smart contracts, backend systems, and game logic are developed.",
-  },
-  {
-    number: "05",
-    title: "Testing & Security Validation",
-    desc: "Extensive testing of gameplay, transactions, and smart contracts.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Launch",
-    desc: "Blockchain deployment and publishing with full compliance support.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Scaling",
-    desc: "Ongoing updates, economy balancing, and performance optimization.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Game Concept & Blockchain Strategy",
+            desc: "We understand your game vision, blockchain requirements, and monetization goals.",
+        },
+        {
+            number: "02",
+            title: "Tokenomics & Economy Design",
+            desc: "We design reward systems, NFT structures, and in-game economies.",
+        },
+        {
+            number: "03",
+            title: "Game Design & Prototyping",
+            desc: "Gameplay mechanics, user flows, and blockchain interactions are planned.",
+        },
+        {
+            number: "04",
+            title: "Blockchain & Game Development",
+            desc: "Smart contracts, backend systems, and game logic are developed.",
+        },
+        {
+            number: "05",
+            title: "Testing & Security Validation",
+            desc: "Extensive testing of gameplay, transactions, and smart contracts.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Blockchain deployment and publishing with full compliance support.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, economy balancing, and performance optimization.",
+        },
+    ];
 
-const relatedServices = [
-  { name: "Mobile Game Development" },
-  { name: "Unity Game Development" },
-  { name: "Unreal Game Development" },
-  { name: "NFT Development" },
-  { name: "Smart Contract Development" },
-  { name: "Metaverse Development" },
-  { name: "Web3 Application Development" },
-  { name: "Blockchain Consulting" },
-];
+    const relatedServices = [
+        { name: "Mobile Game Development" },
+        { name: "Unity Game Development" },
+        { name: "Unreal Game Development" },
+        { name: "NFT Development" },
+        { name: "Smart Contract Development" },
+        { name: "Metaverse Development" },
+        { name: "Web3 Application Development" },
+        { name: "Blockchain Consulting" },
+    ];
 
     return (
         <div>
@@ -140,7 +143,7 @@ const relatedServices = [
                 title="Custom Software & Digital Solutions | Pine Techware"
                 description="PineTechware offers expert website design, development, and digital solutions to help businesses grow through innovation and technology." />
 
-       <div data-theme="light">
+            <div data-theme="light">
                 <Navbar />
             </div>
 
@@ -307,6 +310,9 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

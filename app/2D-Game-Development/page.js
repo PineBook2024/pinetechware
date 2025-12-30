@@ -10,6 +10,9 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -41,100 +44,100 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Custom 2D Game Development",
-    description:
-      "End-to-end 2D game development tailored to your concept, genre, and target audience.",
-  },
-  {
-    heading: "Mobile 2D Game Development",
-    description:
-      "Optimized 2D games for iOS and Android with smooth performance.",
-  },
-  {
-    heading: "2D Art & Animation",
-    description:
-      "Custom characters, backgrounds, sprites, and animations designed for immersive gameplay.",
-  },
-  {
-    heading: "Unity 2D Game Development",
-    description:
-      "High-performance 2D games built using Unity’s 2D engine.",
-  },
-  {
-    heading: "Gameplay Mechanics & Level Design",
-    description:
-      "Engaging mechanics, levels, and progression systems that keep players hooked.",
-  },
-  {
-    heading: "Multiplayer 2D Games",
-    description:
-      "Online features, leaderboards, and real-time multiplayer integration.",
-  },
-  {
-    heading: "Monetization Integration",
-    description:
-      "Ads, in-app purchases, rewards, and subscriptions optimized for revenue.",
-  },
-  {
-    heading: "Testing & Optimization",
-    description:
-      "Bug fixing, performance tuning, and device compatibility testing.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Custom 2D Game Development",
+            description:
+                "End-to-end 2D game development tailored to your concept, genre, and target audience.",
+        },
+        {
+            heading: "Mobile 2D Game Development",
+            description:
+                "Optimized 2D games for iOS and Android with smooth performance.",
+        },
+        {
+            heading: "2D Art & Animation",
+            description:
+                "Custom characters, backgrounds, sprites, and animations designed for immersive gameplay.",
+        },
+        {
+            heading: "Unity 2D Game Development",
+            description:
+                "High-performance 2D games built using Unity’s 2D engine.",
+        },
+        {
+            heading: "Gameplay Mechanics & Level Design",
+            description:
+                "Engaging mechanics, levels, and progression systems that keep players hooked.",
+        },
+        {
+            heading: "Multiplayer 2D Games",
+            description:
+                "Online features, leaderboards, and real-time multiplayer integration.",
+        },
+        {
+            heading: "Monetization Integration",
+            description:
+                "Ads, in-app purchases, rewards, and subscriptions optimized for revenue.",
+        },
+        {
+            heading: "Testing & Optimization",
+            description:
+                "Bug fixing, performance tuning, and device compatibility testing.",
+        },
+    ];
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Game Concept & Planning",
-    desc: "We understand your game idea, target audience, and monetization goals.",
-  },
-  {
-    number: "02",
-    title: "Storyboarding & Design",
-    desc: "Gameplay flow, characters, levels, and mechanics are planned.",
-  },
-  {
-    number: "03",
-    title: "Art & Asset Creation",
-    desc: "Custom sprites, environments, animations, and effects are created.",
-  },
-  {
-    number: "04",
-    title: "Game Development",
-    desc: "Core gameplay, controls, and systems are developed.",
-  },
-  {
-    number: "05",
-    title: "Testing & Quality Assurance",
-    desc: "Extensive testing ensures stability and smooth performance.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Publishing",
-    desc: "Publishing support for the App Store and Google Play.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Updates",
-    desc: "Updates, enhancements, and long-term maintenance.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Game Concept & Planning",
+            desc: "We understand your game idea, target audience, and monetization goals.",
+        },
+        {
+            number: "02",
+            title: "Storyboarding & Design",
+            desc: "Gameplay flow, characters, levels, and mechanics are planned.",
+        },
+        {
+            number: "03",
+            title: "Art & Asset Creation",
+            desc: "Custom sprites, environments, animations, and effects are created.",
+        },
+        {
+            number: "04",
+            title: "Game Development",
+            desc: "Core gameplay, controls, and systems are developed.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Extensive testing ensures stability and smooth performance.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Publishing",
+            desc: "Publishing support for the App Store and Google Play.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Updates",
+            desc: "Updates, enhancements, and long-term maintenance.",
+        },
+    ];
 
 
 
-const relatedServices = [
-  { name: "Mobile Game Development" },
-  { name: "Unity Game Development" },
-  { name: "3D Game Development" },
-  { name: "UI/UX Design" },
-  { name: "Backend Development" },
-  { name: "Cloud Solutions" },
-  { name: "App Maintenance" },
-  { name: "Multiplayer Game Development" },
-];
+    const relatedServices = [
+        { name: "Mobile Game Development" },
+        { name: "Unity Game Development" },
+        { name: "3D Game Development" },
+        { name: "UI/UX Design" },
+        { name: "Backend Development" },
+        { name: "Cloud Solutions" },
+        { name: "App Maintenance" },
+        { name: "Multiplayer Game Development" },
+    ];
 
 
 
@@ -314,6 +317,10 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">

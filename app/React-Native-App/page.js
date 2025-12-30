@@ -16,6 +16,9 @@ import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 
 
@@ -44,78 +47,78 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-    {
-        heading: "Custom React Native App Development",
-        description:
-            "Tailor-made apps built to match your business model, features, and growth goals.",
-    },
-    {
-        heading: "UI/UX Design for Cross-Platform Apps",
-        description:
-            "Pixel-perfect designs optimized for both iOS and Android user behavior.",
-    },
-    {
-        heading: "iOS + Android App Development",
-        description:
-            "Single codebase apps with native-level performance and smooth user experience.",
-    },
-    {
-        heading: "API & Backend Integration",
-        description:
-            "Secure integrations with databases, cloud services, CRMs, payment gateways, and third-party APIs.",
-    },
-    {
-        heading: "MVP Development",
-        description:
-            "Launch faster with an MVP that validates your idea and supports future scaling.",
-    },
-    {
-        heading: "App Testing & Quality Assurance",
-        description:
-            "Cross-device testing for performance, stability, and compatibility.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom React Native App Development",
+            description:
+                "Tailor-made apps built to match your business model, features, and growth goals.",
+        },
+        {
+            heading: "UI/UX Design for Cross-Platform Apps",
+            description:
+                "Pixel-perfect designs optimized for both iOS and Android user behavior.",
+        },
+        {
+            heading: "iOS + Android App Development",
+            description:
+                "Single codebase apps with native-level performance and smooth user experience.",
+        },
+        {
+            heading: "API & Backend Integration",
+            description:
+                "Secure integrations with databases, cloud services, CRMs, payment gateways, and third-party APIs.",
+        },
+        {
+            heading: "MVP Development",
+            description:
+                "Launch faster with an MVP that validates your idea and supports future scaling.",
+        },
+        {
+            heading: "App Testing & Quality Assurance",
+            description:
+                "Cross-device testing for performance, stability, and compatibility.",
+        },
+    ];
 
 
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Discovery",
-        desc: "We understand your app goals, audience, and functional requirements.",
-    },
-    {
-        number: "02",
-        title: "UI/UX & Prototyping",
-        desc: "Wireframes and prototypes to validate user flow before development starts.",
-    },
-    {
-        number: "03",
-        title: "React Native Development",
-        desc: "Clean, scalable app development with reusable components and best practices.",
-    },
-    {
-        number: "04",
-        title: "Feature & API Integration",
-        desc: "Secure backend connection and third-party service integrations.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Testing across devices, OS versions, and screen sizes.",
-    },
-    {
-        number: "06",
-        title: "Deployment & Launch",
-        desc: "Publishing and launch support for both app stores with compliance handling.",
-    },
-    {
-        number: "07",
-        title: "Post-Launch Scaling",
-        desc: "Ongoing improvements, new feature builds, and scaling as you grow.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Discovery",
+            desc: "We understand your app goals, audience, and functional requirements.",
+        },
+        {
+            number: "02",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes to validate user flow before development starts.",
+        },
+        {
+            number: "03",
+            title: "React Native Development",
+            desc: "Clean, scalable app development with reusable components and best practices.",
+        },
+        {
+            number: "04",
+            title: "Feature & API Integration",
+            desc: "Secure backend connection and third-party service integrations.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Testing across devices, OS versions, and screen sizes.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Publishing and launch support for both app stores with compliance handling.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Scaling",
+            desc: "Ongoing improvements, new feature builds, and scaling as you grow.",
+        },
+    ];
 
 
 
@@ -298,7 +301,10 @@ const processSteps = [
                     </div>
                 </div>
             </section>
-        
+
+            <AllIndustries />
+            <IndSlider />
+
             <AppRelatedServices />
 
             <Trigger />

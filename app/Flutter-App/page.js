@@ -16,6 +16,9 @@ import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 
 
@@ -44,78 +47,78 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-  {
-    heading: "Custom Flutter App Development",
-    description:
-      "End-to-end Flutter application development tailored to your business objectives, target audience, and functional requirements.",
-  },
-  {
-    heading: "UI/UX Design with Flutter",
-    description:
-      "Pixel-perfect, intuitive interfaces crafted using Flutter’s expressive UI capabilities to deliver engaging and user-centric experiences.",
-  },
-  {
-    heading: "Cross-Platform App Development",
-    description:
-      "High-performance applications built on a single codebase, ensuring seamless functionality across both iOS and Android platforms.",
-  },
-  {
-    heading: "API & Backend Integration",
-    description:
-      "Secure and scalable integration with REST APIs, cloud services, and third-party systems to support robust app functionality.",
-  },
-  {
-    heading: "MVP Development",
-    description:
-      "Rapid development of Minimum Viable Products to validate concepts, reduce risk, and accelerate time-to-market.",
-  },
-  {
-    heading: "App Testing & Quality Assurance",
-    description:
-      "Comprehensive testing processes covering performance, security, usability, and multi-device compatibility to ensure a reliable release.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Custom Flutter App Development",
+            description:
+                "End-to-end Flutter application development tailored to your business objectives, target audience, and functional requirements.",
+        },
+        {
+            heading: "UI/UX Design with Flutter",
+            description:
+                "Pixel-perfect, intuitive interfaces crafted using Flutter’s expressive UI capabilities to deliver engaging and user-centric experiences.",
+        },
+        {
+            heading: "Cross-Platform App Development",
+            description:
+                "High-performance applications built on a single codebase, ensuring seamless functionality across both iOS and Android platforms.",
+        },
+        {
+            heading: "API & Backend Integration",
+            description:
+                "Secure and scalable integration with REST APIs, cloud services, and third-party systems to support robust app functionality.",
+        },
+        {
+            heading: "MVP Development",
+            description:
+                "Rapid development of Minimum Viable Products to validate concepts, reduce risk, and accelerate time-to-market.",
+        },
+        {
+            heading: "App Testing & Quality Assurance",
+            description:
+                "Comprehensive testing processes covering performance, security, usability, and multi-device compatibility to ensure a reliable release.",
+        },
+    ];
 
 
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Analysis",
-        desc: "We define app objectives, features, and technical requirements.",
-    },
-    {
-        number: "02",
-        title: "UI/UX & Prototyping",
-        desc: "Wireframes and prototypes designed for Apple’s design guidelines.",
-    },
-    {
-        number: "03",
-        title: "iOS App Development",
-        desc: "Clean, efficient development using Swift and modern frameworks.",
-    },
-    {
-        number: "04",
-        title: "API & Feature Integration",
-        desc: "Secure backend connections and advanced feature implementation.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Thorough testing across devices and iOS versions.",
-    },
-    {
-        number: "06",
-        title: "App Store Launch",
-        desc: "Submission, review handling, and final deployment.",
-    },
-    {
-        number: "07",
-        title: "Post-Launch Support & Scaling",
-        desc: "Continuous support, updates, and scalability planning.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Analysis",
+            desc: "We define app objectives, features, and technical requirements.",
+        },
+        {
+            number: "02",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes designed for Apple’s design guidelines.",
+        },
+        {
+            number: "03",
+            title: "iOS App Development",
+            desc: "Clean, efficient development using Swift and modern frameworks.",
+        },
+        {
+            number: "04",
+            title: "API & Feature Integration",
+            desc: "Secure backend connections and advanced feature implementation.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Thorough testing across devices and iOS versions.",
+        },
+        {
+            number: "06",
+            title: "App Store Launch",
+            desc: "Submission, review handling, and final deployment.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Continuous support, updates, and scalability planning.",
+        },
+    ];
 
 
 
@@ -297,7 +300,10 @@ const processSteps = [
                     </div>
                 </div>
             </section>
-        
+
+            <AllIndustries />
+            <IndSlider />
+
             <AppRelatedServices />
 
             <Trigger />

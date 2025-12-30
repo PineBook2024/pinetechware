@@ -9,6 +9,9 @@ import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Custom-Application-banner.webp";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 import Img2 from "@/public/images/check.svg";
 
 import { useEffect, useRef, useState } from 'react';
@@ -293,6 +296,9 @@ const processSteps = [
                     </div>
                 </div>
             </section>
+
+                           <AllIndustries />
+   <IndSlider />
         
             <AppRelatedServices />
 

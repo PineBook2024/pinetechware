@@ -10,6 +10,8 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Shopify-Store-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -45,95 +47,95 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Custom Shopify Store Development",
-    description:
-      "Tailor-made Shopify stores designed around your brand, products, and growth goals.",
-  },
-  {
-    heading: "Shopify Theme Design & Customization",
-    description:
-      "Pixel-perfect themes customized for performance, branding, and user experience.",
-  },
-  {
-    heading: "Product Setup & Store Configuration",
-    description:
-      "Complete setup of products, collections, variants, pricing, and tax rules.",
-  },
-  {
-    heading: "Payment & Shipping Integration",
-    description:
-      "Secure payment gateways and shipping configurations for smooth checkout.",
-  },
-  {
-    heading: "Shopify App Integration",
-    description:
-      "Third-party and custom apps to extend store functionality and automation.",
-  },
-  {
-    heading: "Conversion Optimization",
-    description:
-      "Optimized layouts, CTAs, and checkout flows to improve sales and reduce drop-offs.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Custom Shopify Store Development",
+            description:
+                "Tailor-made Shopify stores designed around your brand, products, and growth goals.",
+        },
+        {
+            heading: "Shopify Theme Design & Customization",
+            description:
+                "Pixel-perfect themes customized for performance, branding, and user experience.",
+        },
+        {
+            heading: "Product Setup & Store Configuration",
+            description:
+                "Complete setup of products, collections, variants, pricing, and tax rules.",
+        },
+        {
+            heading: "Payment & Shipping Integration",
+            description:
+                "Secure payment gateways and shipping configurations for smooth checkout.",
+        },
+        {
+            heading: "Shopify App Integration",
+            description:
+                "Third-party and custom apps to extend store functionality and automation.",
+        },
+        {
+            heading: "Conversion Optimization",
+            description:
+                "Optimized layouts, CTAs, and checkout flows to improve sales and reduce drop-offs.",
+        },
+    ];
 
 
 
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Business & Product Analysis",
-    desc: "We understand your products, audience, and sales objectives.",
-  },
-  {
-    number: "02",
-    title: "Store Strategy & Planning",
-    desc: "We define store structure, navigation, and conversion paths.",
-  },
-  {
-    number: "03",
-    title: "Design & Development",
-    desc: "Custom designs and Shopify development aligned with your brand identity.",
-  },
-  {
-    number: "04",
-    title: "App & Feature Integration",
-    desc: "We integrate required tools for payments, shipping, marketing, and analytics.",
-  },
-  {
-    number: "05",
-    title: "Testing & Optimization",
-    desc: "We test speed, responsiveness, checkout flow, and user experience.",
-  },
-  {
-    number: "06",
-    title: "Store Launch",
-    desc: "Your Shopify store goes live with final configurations and quality checks.",
-  },
-  {
-    number: "07",
-    title: "Growth & Scaling Support",
-    desc: "Ongoing optimization, feature upgrades, and scaling assistance.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Business & Product Analysis",
+            desc: "We understand your products, audience, and sales objectives.",
+        },
+        {
+            number: "02",
+            title: "Store Strategy & Planning",
+            desc: "We define store structure, navigation, and conversion paths.",
+        },
+        {
+            number: "03",
+            title: "Design & Development",
+            desc: "Custom designs and Shopify development aligned with your brand identity.",
+        },
+        {
+            number: "04",
+            title: "App & Feature Integration",
+            desc: "We integrate required tools for payments, shipping, marketing, and analytics.",
+        },
+        {
+            number: "05",
+            title: "Testing & Optimization",
+            desc: "We test speed, responsiveness, checkout flow, and user experience.",
+        },
+        {
+            number: "06",
+            title: "Store Launch",
+            desc: "Your Shopify store goes live with final configurations and quality checks.",
+        },
+        {
+            number: "07",
+            title: "Growth & Scaling Support",
+            desc: "Ongoing optimization, feature upgrades, and scaling assistance.",
+        },
+    ];
 
 
 
 
-const relatedServices = [
-    { name: "UI/UX Design" },
-    { name: "Web Development" },
-    { name: "Mobile App Design" },
-    { name: "Branding & Visual Identity" },
-    { name: "Custom Graphic Design" },
-    { name: "Landing Page Design" },
-    { name: "E-Commerce Development" },
-    { name: "Website Redesign Services" },
-];
+    const relatedServices = [
+        { name: "UI/UX Design" },
+        { name: "Web Development" },
+        { name: "Mobile App Design" },
+        { name: "Branding & Visual Identity" },
+        { name: "Custom Graphic Design" },
+        { name: "Landing Page Design" },
+        { name: "E-Commerce Development" },
+        { name: "Website Redesign Services" },
+    ];
 
 
 
@@ -315,111 +317,8 @@ const relatedServices = [
             </section>
 
 
-            {/* <section className="textContent-sec bg-white">
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]" >
-                    <div className="2xl:max-w-4xl lg:max-w-3xl" >
-                        <div className="lg:overflow-hidden" >
-                            <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black"><span>related services</span></h2></div>
-                        <p className="text-black lg:pe-[5rem] pt-6 lg:pt-[2.375rem] text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                    </div>
-                </div>
-
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
-                    <div className="grid grid-cols-12 gap-y-4 md:gap-7">
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Mobile App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Android App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li>
-                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">eCommerce App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">visionOS App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Enterprise App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Cross Platform App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Flutter App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Hybrid App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Ionic App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Sencha App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">NativeScript App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">AR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">VR App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Metaverse App</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">IoT App</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">
@@ -466,7 +365,6 @@ const relatedServices = [
 
             <OurClients />
 
-            {/* <Test/> */}
 
             <Footer />
 

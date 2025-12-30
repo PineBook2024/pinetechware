@@ -16,6 +16,9 @@ import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 
 
@@ -44,78 +47,78 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-  {
-    heading: "Custom Swift App Development",
-    description:
-      "Tailor-made iOS applications built in Swift to align with your business goals and user requirements.",
-  },
-  {
-    heading: "Native iOS App Development",
-    description:
-      "High-performance native applications designed specifically for iPhone, iPad, and the Apple ecosystem.",
-  },
-  {
-    heading: "UI/UX Design for Swift Apps",
-    description:
-      "Clean, intuitive user interfaces built in accordance with Apple Human Interface Guidelines.",
-  },
-  {
-    heading: "API & Backend Integration",
-    description:
-      "Secure and scalable integration with cloud services, databases, and third-party APIs.",
-  },
-  {
-    heading: "App Store Deployment",
-    description:
-      "End-to-end App Store submission, compliance management, and launch support.",
-  },
-  {
-    heading: "App Testing & Quality Assurance",
-    description:
-      "Comprehensive testing to ensure optimal performance, security, and multi-device compatibility.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Custom Swift App Development",
+            description:
+                "Tailor-made iOS applications built in Swift to align with your business goals and user requirements.",
+        },
+        {
+            heading: "Native iOS App Development",
+            description:
+                "High-performance native applications designed specifically for iPhone, iPad, and the Apple ecosystem.",
+        },
+        {
+            heading: "UI/UX Design for Swift Apps",
+            description:
+                "Clean, intuitive user interfaces built in accordance with Apple Human Interface Guidelines.",
+        },
+        {
+            heading: "API & Backend Integration",
+            description:
+                "Secure and scalable integration with cloud services, databases, and third-party APIs.",
+        },
+        {
+            heading: "App Store Deployment",
+            description:
+                "End-to-end App Store submission, compliance management, and launch support.",
+        },
+        {
+            heading: "App Testing & Quality Assurance",
+            description:
+                "Comprehensive testing to ensure optimal performance, security, and multi-device compatibility.",
+        },
+    ];
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Requirement Analysis",
-    desc: "We define app objectives, features, and technical requirements clearly.",
-  },
-  {
-    number: "02",
-    title: "UI/UX & Prototyping",
-    desc: "Wireframes and prototypes designed for smooth Apple user experiences.",
-  },
-  {
-    number: "03",
-    title: "Swift App Development",
-    desc: "Clean, efficient development using Swift and modern iOS frameworks.",
-  },
-  {
-    number: "04",
-    title: "Feature & API Integration",
-    desc: "Secure backend connections and advanced feature implementation.",
-  },
-  {
-    number: "05",
-    title: "Testing & Quality Assurance",
-    desc: "Rigorous testing across iOS versions and Apple devices.",
-  },
-  {
-    number: "06",
-    title: "App Store Launch",
-    desc: "Submission, review handling, and final deployment.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Scaling",
-    desc: "Ongoing updates, enhancements, and scalability planning.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Analysis",
+            desc: "We define app objectives, features, and technical requirements clearly.",
+        },
+        {
+            number: "02",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes designed for smooth Apple user experiences.",
+        },
+        {
+            number: "03",
+            title: "Swift App Development",
+            desc: "Clean, efficient development using Swift and modern iOS frameworks.",
+        },
+        {
+            number: "04",
+            title: "Feature & API Integration",
+            desc: "Secure backend connections and advanced feature implementation.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Rigorous testing across iOS versions and Apple devices.",
+        },
+        {
+            number: "06",
+            title: "App Store Launch",
+            desc: "Submission, review handling, and final deployment.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, enhancements, and scalability planning.",
+        },
+    ];
 
 
 
@@ -298,7 +301,10 @@ const processSteps = [
                     </div>
                 </div>
             </section>
-        
+
+            <AllIndustries />
+            <IndSlider />
+
             <AppRelatedServices />
 
             <Trigger />

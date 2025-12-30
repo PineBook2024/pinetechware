@@ -16,6 +16,8 @@ import OurClients from "@/components/OurClients/OurClients";
 import Trigger from "@/components/Trigger/Trigger";
 import Footer from "@/components/Footer/Footer";
 import Sidepopup from "@/components/Sidepopup/Sidepopup";
+import AllIndustries from '@/components/AllIndustries'
+
 
 
 export default function services() {
@@ -185,7 +187,7 @@ export default function services() {
                                             <span className="ml-6 flex h-7 items-center text-black">
                                                 <span
                                                     className={` transform transition-transform duration-[200ms] ease-in-out text-5xl font-normal mt-[8px] ${openIndex === index
-                                                        ? "rotate-180 text-black mt-[5px]" : "" }`}>
+                                                        ? "rotate-180 text-black mt-[5px]" : ""}`}>
                                                     {openIndex === index ? "-" : "+"}
                                                 </span>
                                             </span>
@@ -260,6 +262,8 @@ export default function services() {
                 </div>
             </section>
 
+            <AllIndustries />
+
 
             <OurClients />
 
@@ -268,7 +272,7 @@ export default function services() {
                 // description="Create Without Limits!"
                 buttonText="Start Your Project"
             />
-            
+
             <Sidepopup />
 
             <Footer />

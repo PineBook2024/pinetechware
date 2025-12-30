@@ -10,6 +10,9 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/PPC-Management-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import AllIndustries from '@/components/AllIndustries'
+import IndSlider from '@/components/IndSlider/IndSlider'
+
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -45,97 +48,97 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Social Media Strategy & Planning",
-    description:
-      "Platform-specific strategies aligned with your business goals and target audience.",
-  },
-  {
-    heading: "Content Creation & Design",
-    description:
-      "Scroll-stopping posts, reels, stories, and creatives tailored to each platform.",
-  },
-  {
-    heading: "Account Management",
-    description:
-      "Daily posting, community engagement, inbox management, and consistent brand voice.",
-  },
-  {
-    heading: "Paid Social Advertising",
-    description:
-      "High-performing ad campaigns designed to increase reach, leads, and sales.",
-  },
-  {
-    heading: "Audience Growth & Engagement",
-    description:
-      "Organic growth tactics focused on real followers, interactions, and brand loyalty.",
-  },
-  {
-    heading: "Influencer & Collaboration Campaigns",
-    description:
-      "Strategic influencer partnerships to expand reach and build brand credibility.",
-  },
-  {
-    heading: "Analytics & Performance Tracking",
-    description:
-      "Data-driven insights and reporting on reach, engagement, conversions, and ROI.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Social Media Strategy & Planning",
+            description:
+                "Platform-specific strategies aligned with your business goals and target audience.",
+        },
+        {
+            heading: "Content Creation & Design",
+            description:
+                "Scroll-stopping posts, reels, stories, and creatives tailored to each platform.",
+        },
+        {
+            heading: "Account Management",
+            description:
+                "Daily posting, community engagement, inbox management, and consistent brand voice.",
+        },
+        {
+            heading: "Paid Social Advertising",
+            description:
+                "High-performing ad campaigns designed to increase reach, leads, and sales.",
+        },
+        {
+            heading: "Audience Growth & Engagement",
+            description:
+                "Organic growth tactics focused on real followers, interactions, and brand loyalty.",
+        },
+        {
+            heading: "Influencer & Collaboration Campaigns",
+            description:
+                "Strategic influencer partnerships to expand reach and build brand credibility.",
+        },
+        {
+            heading: "Analytics & Performance Tracking",
+            description:
+                "Data-driven insights and reporting on reach, engagement, conversions, and ROI.",
+        },
+    ];
 
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Audience & Platform Research",
-    desc: "We identify your ideal audience and the platforms where they are most active.",
-  },
-  {
-    number: "02",
-    title: "Strategy Development",
-    desc: "We define content pillars, posting schedules, and growth objectives.",
-  },
-  {
-    number: "03",
-    title: "Creative Production",
-    desc: "High-quality visuals, captions, hashtags, and short-form videos are created.",
-  },
-  {
-    number: "04",
-    title: "Publishing & Engagement",
-    desc: "Consistent posting, active engagement, and community interaction.",
-  },
-  {
-    number: "05",
-    title: "Paid Campaign Execution",
-    desc: "Data-driven ad campaigns to amplify reach and accelerate growth.",
-  },
-  {
-    number: "06",
-    title: "Monitoring & Optimization",
-    desc: "Continuous analysis and refinement to improve performance.",
-  },
-  {
-    number: "07",
-    title: "Reporting & Scaling",
-    desc: "Transparent reports with insights and recommendations for long-term growth.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Audience & Platform Research",
+            desc: "We identify your ideal audience and the platforms where they are most active.",
+        },
+        {
+            number: "02",
+            title: "Strategy Development",
+            desc: "We define content pillars, posting schedules, and growth objectives.",
+        },
+        {
+            number: "03",
+            title: "Creative Production",
+            desc: "High-quality visuals, captions, hashtags, and short-form videos are created.",
+        },
+        {
+            number: "04",
+            title: "Publishing & Engagement",
+            desc: "Consistent posting, active engagement, and community interaction.",
+        },
+        {
+            number: "05",
+            title: "Paid Campaign Execution",
+            desc: "Data-driven ad campaigns to amplify reach and accelerate growth.",
+        },
+        {
+            number: "06",
+            title: "Monitoring & Optimization",
+            desc: "Continuous analysis and refinement to improve performance.",
+        },
+        {
+            number: "07",
+            title: "Reporting & Scaling",
+            desc: "Transparent reports with insights and recommendations for long-term growth.",
+        },
+    ];
 
 
-const relatedServices = [
-  { name: "Digital Marketing" },
-  { name: "Search Engine Optimization (SEO)" },
-  { name: "Social Media Marketing" },
-  { name: "Conversion Rate Optimization" },
-  { name: "Landing Page Design" },
-  { name: "Analytics & Reporting" },
-  { name: "Email Marketing" },
-  { name: "Content Marketing" },
-  { name: "Marketing Automation" },
-];
+    const relatedServices = [
+        { name: "Digital Marketing" },
+        { name: "Search Engine Optimization (SEO)" },
+        { name: "Social Media Marketing" },
+        { name: "Conversion Rate Optimization" },
+        { name: "Landing Page Design" },
+        { name: "Analytics & Reporting" },
+        { name: "Email Marketing" },
+        { name: "Content Marketing" },
+        { name: "Marketing Automation" },
+    ];
 
 
 
@@ -315,6 +318,10 @@ const relatedServices = [
                     </div>
                 </div>
             </section>
+
+
+            <AllIndustries />
+            <IndSlider />
 
 
             <section className="textContent-sec bg-white">
