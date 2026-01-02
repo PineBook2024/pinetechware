@@ -203,10 +203,10 @@ const Footer = () => {
                             </h2>
 
                             <Link
-                                href="tel:8887867135"
+                                href="tel:3075221099"
                                 className="text-white text-sm font-poppins flex justify-center md:justify-start mb-5"
                             >
-                                Sales: (888) 786-7135
+                                Sales: (307) 522-1099
                             </Link>
 
                             <Link
@@ -249,7 +249,7 @@ const Footer = () => {
                             </h4>
 
                             <p className="text-white mb-3">
-                                211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017
+                               30 n gould st 54593 sheridan wy 82801-6317
                             </p>
 
                             {/* <div className="w-full h-[200px] rounded overflow-hidden">

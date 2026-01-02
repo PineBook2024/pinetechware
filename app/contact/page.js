@@ -99,7 +99,7 @@ export default function contact() {
                             <div className='flex items-center md:mt-4'>
                                 <MdOutlineLocalPhone className='h-5 w-5 md:h-6 md:w-6 mr-4 text-black' />
                                 <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                                    <Link href="phone: 866-841-7463">866-841-7463</Link></p>
+                                    <Link href="tel:3075221099">(307) 522-1099</Link></p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@ export default function contact() {
                         {/* <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl w-full h-100" src={usa} alt="Location" /> */}
                         <div className="w-full h-[400px] mb-6 rounded overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps?q=211+E+43rd+St,+New+York,+NY+10017&output=embed"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.169376548553!2d-106.9549129!3d44.7977367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a66677f%3A0x8f85bd068d1afb8a!2s30%20N%20Gould%20St%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1767397484664!5m2!1sen!2s"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -249,7 +249,7 @@ export default function contact() {
                         <div>
                             <p className="  mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">USA Address</p>
                             <p className=" text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
+                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">30 n gould st 54593 sheridan wy 82801-6317</p>
                         </div>
                     </div>
 
