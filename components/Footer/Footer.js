@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="container px-5 pt-10 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
                     <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-10 md:text-left text-center justify-evenly py-10">
                         <div className="lg:w-1/3 md:w-1/4 w-full px-4 widget-2 relative">
-                            <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                            <a className="flex title-font font-medium items-center md:justify-start justify-center text-white cursor-pointer">
                                 <Image src={logo} width={150} height={200} alt='logo'></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7 px-4">
