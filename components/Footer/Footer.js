@@ -217,7 +217,7 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                href="mailto:support@pinebookpublishing.com"
+                                href="mailto:info@pinetechware.com"
                                 className="text-white text-sm font-poppins flex justify-center md:justify-start mb-5"
                             >
                                 info@pinetechware.com

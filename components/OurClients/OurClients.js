@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./OurClients.module.css";
 import { FaStar } from "react-icons/fa6";
 import Img1 from "@/public/images/client1.svg";
-import Img2 from "@/public/images/client2.svg";
+import Img2 from "@/public/images/trustpilot.svg";
 import Img3 from "@/public/images/hotset.svg";
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -94,8 +94,10 @@ const OurClients = () => {
 
                         {/* Images in flex */}
                         <div className="flex justify-center lg:pt-14 lg:pb-24 py-8 gap-6 wrap">
-                            <Image src={Img1} alt="Client 1" width={200} height={100} className="object-contain invert" />
-                            <Image src={Img2} alt="Client 1" width={200} height={100} className="object-contain invert" />
+                            {/* <Image src={Img1} alt="Client 1" width={200} height={100} className="object-contain invert" /> */}
+                            <a href='https://www.trustpilot.com/review/pinetechware.com'>
+                                <Image src={Img2} alt="trustpilot" width={200} height={100} className="object-contain invert" />
+                            </a>
                         </div>
                     </div>
 
