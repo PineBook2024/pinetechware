@@ -96,7 +96,7 @@ const OurClients = () => {
                         <div className="flex justify-center lg:pt-14 lg:pb-24 py-8 gap-6 wrap">
                             {/* <Image src={Img1} alt="Client 1" width={200} height={100} className="object-contain invert" /> */}
                             <a href='https://www.trustpilot.com/review/pinetechware.com'>
-                                <Image src={Img2} alt="trustpilot" width={200} height={100} className="object-contain invert" />
+                                <Image src={Img2} alt="trustpilot" width={200} height={100} className="object-contain" />
                             </a>
                         </div>
                     </div>
