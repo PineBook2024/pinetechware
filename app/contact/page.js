@@ -249,7 +249,7 @@ export default function contact() {
                         <div>
                             <p className="  mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">USA Address</p>
                             <p className=" text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">30 n gould st 54593 sheridan wy 82801-6317</p>
+                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">30 N Gould St 54593 Sheridan Wyoming 82801-6317</p>
                         </div>
                     </div>
 

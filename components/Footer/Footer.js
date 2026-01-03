@@ -220,7 +220,7 @@ const Footer = () => {
                                 href="mailto:support@pinebookpublishing.com"
                                 className="text-white text-sm font-poppins flex justify-center md:justify-start mb-5"
                             >
-                                support@pinebookpublishing.com
+                                info@pinetechware.com
                             </Link>
 
                             {/* Canada Address */}
@@ -249,7 +249,7 @@ const Footer = () => {
                             </h4>
 
                             <p className="text-white mb-3">
-                               30 n gould st 54593 sheridan wy 82801-6317
+                               30 N Gould St 54593 Sheridan Wyoming 82801-6317
                             </p>
 
                             {/* <div className="w-full h-[200px] rounded overflow-hidden">
@@ -270,7 +270,7 @@ const Footer = () => {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2025 |
+                            Copyright © 2026 |
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"
