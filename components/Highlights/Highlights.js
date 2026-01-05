@@ -17,21 +17,21 @@ const Highlights = () => {
         {
           id: 2,
           video: vid,
-          title: "Cubix Reviews & Testimonials Greg...",
+          title: "Pine Techware Reviews & Testimonials Greg...",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
         {
           id: 3,
           video: vid,
-          title: "Cubix Reviews & Testimonials - Karen...",
+          title: "Pine Techware Reviews & Testimonials - Karen...",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 block lg:hidden",
         },
         {
           id: 4,
           video: vid,
-          title: "Cubix Reviews & Testimonials - Karen...",
+          title: "Pine Techware Reviews & Testimonials - Karen...",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
@@ -49,21 +49,21 @@ const Highlights = () => {
         {
           id: 2,
           video: vid,
-          title: "Team bonding session at Cubix HQ.",
+          title: "Team bonding session at Pine Techware HQ.",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
         {
           id: 3,
           video: vid,
-          title: "Cubix MeetUp fun moments.",
+          title: "Pine Techware MeetUp fun moments.",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 block lg:hidden",
         },
         {
           id: 4,
           video: vid,
-          title: "Cubix Celebrations 2023.",
+          title: "Pine Techware Celebrations 2023.",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
@@ -75,13 +75,13 @@ const Highlights = () => {
       leftVideo: {
         id: 1,
         video: vid,
-        title: "Life at Cubix - A Day in the Office.",
+        title: "Life at Pine Techware - A Day in the Office.",
       },
       rightVideos: [
         {
           id: 2,
           video: vid,
-          title: "Cubix Picnic 2022 - Fun and Memories.",
+          title: "Pine Techware Picnic 2022 - Fun and Memories.",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
@@ -95,7 +95,7 @@ const Highlights = () => {
         {
           id: 4,
           video: vid,
-          title: "Cubix Teamwork and Culture.",
+          title: "Pine Techware Teamwork and Culture.",
           classes:
             "max-w-sm sm:max-w-[35rem] lg:max-w-xs mt-10 hidden lg:block",
         },
@@ -155,7 +155,7 @@ const Highlights = () => {
                   width="370"
                   height="380"
                   className="lg:rounded-[30px] rounded-2xl w-full object-contain h-full"
-                  alt="Cubix insights"
+                  alt="Pine Techware insights"
                 />
               </div>
               <p className="text-neutral-200 mt-5 font-medium line-clamp-2 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
@@ -177,7 +177,7 @@ const Highlights = () => {
                       width="360"
                       height="285"
                       className="lg:rounded-[30px] rounded-2xl w-full object-contain h-full"
-                      alt="Cubix insights"
+                      alt="Pine Techware insights"
                     />
                   </div>
                   <p className="text-neutral-200 mt-5 font-medium line-clamp-2 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">

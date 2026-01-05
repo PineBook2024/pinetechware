@@ -117,7 +117,7 @@ export default function Featured() {
                       <h3 className=" mb-[20px] font-bold text-xl xl:text-2xl 2xl:text-3xl tracking-[0px] text-black">Official Website of Tulsa Airport</h3>
                     </span>
                     <span className=" text-black text-md lg:text-xl inline-flex items-center gap-4 group transition-all duration-500 ease-in-out hover:font-semibold">
-                      <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">Tulsa Airport, a prominent name in aviation, sought Cubix’s expertise to enhance its digital presence.</p>
+                      <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">Tulsa Airport, a prominent name in aviation, sought Pine Techware expertise to enhance its digital presence.</p>
                     </span>
                   </div>
                 </div>

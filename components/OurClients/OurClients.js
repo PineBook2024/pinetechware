@@ -106,7 +106,7 @@ const OurClients = () => {
 
                     <div className='flex flex-col gap-y-5 md:gap-y-6 component-height h-fit'>
                         {/* <div className="single-review border border-[#535353] p-6 md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[65px] lg:rounded-[30px] rounded-2xl">
-                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Cubix managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
+                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Pine Techware managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
 
                         <div className="flex justify-between md:items-center  items-start  flex-col sm:flex-row">
                         </div>
@@ -138,7 +138,7 @@ const OurClients = () => {
                     </div>
 
                     <div className="single-review border border-[#535353] p-6 md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[65px] lg:rounded-[30px] rounded-2xl">
-                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Cubix managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
+                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Pine Techware managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
 
                         <div className="flex justify-between md:items-center  items-start  flex-col sm:flex-row">
                         </div>
@@ -170,7 +170,7 @@ const OurClients = () => {
                     </div>
 
                     <div className="single-review border border-[#535353] p-6 md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[65px] lg:rounded-[30px] rounded-2xl">
-                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Cubix managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
+                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Pine Techware managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
 
                         <div className="flex justify-between md:items-center  items-start  flex-col sm:flex-row">
                         </div>
@@ -202,7 +202,7 @@ const OurClients = () => {
                     </div>
 
                     <div className="single-review border border-[#535353] p-6 md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[65px] lg:rounded-[30px] rounded-2xl">
-                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Cubix managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
+                        <p className=" text-lg sm:text-xl md:text-2xl  2xl:text-4xl tracking-[0px] font-semibold text-black lg:!leading-[2.875rem] text-md xl:text-2xl">"Pine Techware managed to provide successful support and development in a timely manner. The app is still in preparation for the beta launch, but it has been receiving a lot of positive feedback from the client. The team provided excellent workflow and communication throughout the project."</p>
 
                         <div className="flex justify-between md:items-center  items-start  flex-col sm:flex-row">
                         </div>
