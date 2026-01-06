@@ -12,6 +12,7 @@ import florida from '@/public/images/florida.webp';
 import usa from '@/public/images/usa.webp';
 import { useState } from "react";
 import Image from 'next/image'
+import ContactForm from '@/components/ContactForm/ContactForm'
 
 
 
@@ -83,121 +84,7 @@ export default function contact() {
                 <Navbar />
             </div>
 
-            <section className="px-6 lg:px-8 pt-24 md:py-[10.5rem] bg-white ">
-                <div className='md:flex max-w-7xl mx-auto '>
-                    <div className='w-full md:w-[40%] md:pr-20'>
-                        <div className='overflow-hidden'>
-                            <h1 className=" font-bold pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-black">Got an idea for your project?</h1>
-                        </div>
-                        <p className=" text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-black">We'd love to learn more about you and what we can design and build together.</p>
-                        <div className='mt-8 md:mt-[220px] 2xl:mt-[175px] flex flex-col wrap md:gap-x-0 gap-2 gap-x-4'>
-                            <div className='flex items-center'>
-                                <IoIosMail className='h-5 w-5 md:h-6 md:w-6 mr-4 text-black' />
-                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                                    <Link href="mailto: info@pinetechware.com">info@pinetechware.com</Link></p>
-                            </div>
-                            <div className='flex items-center md:mt-4'>
-                                <MdOutlineLocalPhone className='h-5 w-5 md:h-6 md:w-6 mr-4 text-black' />
-                                <p className="mx-3 font-bold text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                                    <Link href="phone: 866-841-7463">866-841-7463</Link></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="w-full md:w-[60%]">
-                        <form id="contact-form" onSubmit={handleSubmit}>
-                            <div className="grid grid-col-12 gap-x-2 md:gap-x-10 md:gap-y-10 gap-y-6">
-                                <div className="col-span-12 mt-14 md:mt-0">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
-                                        Name*
-                                    </p>
-                                    <div className="mt-2">
-                                        <input
-                                            onChange={handleChange}
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            value={formData.name}
-                                            autoComplete="given-name"
-                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-span-12 sm:col-span-6">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
-                                        Email*
-                                    </p>
-                                    <div className="mt-2">
-                                        <input
-                                            onChange={handleChange}
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            value={formData.email}
-                                            autoComplete="email"
-                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl "
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-span-12 sm:col-span-6">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
-                                        Phone*
-                                    </p>
-                                    <div className="mt-2">
-                                        <input
-                                            type="text"
-                                            name="phone"
-                                            id="phone"
-                                            autoComplete="tel"
-                                            onChange={handleChange}
-                                            value={formData.phone}
-                                            className="bg-[#dddd] h-12 md:h-14 px-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-span-12">
-                                    <p className=" font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl text-black">
-                                        Message*
-                                    </p>
-                                    <div className="mt-2">
-                                        <textarea
-                                            onChange={handleChange}
-                                            id="message"
-                                            name="message"        // IMPORTANT: API ke saath match
-                                            rows="3"
-                                            value={formData.message}
-                                            className="bg-[#dddd] px-5 pt-5 block w-full rounded-[15px] border-0 py-1.5 text-black focus-visible:outline-[#3BB9E1] text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl h-[122]"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-span-12 mt-2">
-                                    <button
-                                        id="button_686890"
-                                        type="submit"
-                                        disabled={loading}
-                                        className="text-white px-6 md:px-11 w-full bg-black cursor-pointer h-[40px] md:h-[68px] rounded-full font-bold text-xs xl:text-sm 2xl:text-base disabled:opacity-60"
-                                    >
-                                        {loading ? "Sending..." : "Send Message"}
-                                    </button>
-
-                                    {status && (
-                                        <p
-                                            className={`mt-3 text-sm ${status.type === "success" ? "text-green-600" : "text-red-600"
-                                                }`}
-                                        >
-                                            {status.message}
-                                        </p>
-                                    )}
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
+            <ContactForm />
 
 
             <section className="HalfTextContent-sec bg-[#3BB9E1] ">
@@ -238,7 +125,7 @@ export default function contact() {
                         {/* <Image className="mb-5 md:mb-[46px] lg:rounded-[30px] rounded-2xl w-full h-100" src={usa} alt="Location" /> */}
                         <div className="w-full h-[400px] mb-6 rounded overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps?q=211+E+43rd+St,+New+York,+NY+10017&output=embed"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.169376548553!2d-106.9549129!3d44.7977367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a66677f%3A0x8f85bd068d1afb8a!2s30%20N%20Gould%20St%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1767397484664!5m2!1sen!2s"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -249,7 +136,7 @@ export default function contact() {
                         <div>
                             <p className="  mb-1 font-medium text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">USA Address</p>
                             <p className=" text-white mb-3 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
+                            <p className="  text-white font-medium leading-5 md:leading-6 text-xs xl:text-sm 2xl:text-base">30 N Gould St 54593 Sheridan Wyoming 82801-6317</p>
                         </div>
                     </div>
 

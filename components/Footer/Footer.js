@@ -203,10 +203,10 @@ const Footer = () => {
                             </h2>
 
                             <Link
-                                href="tel:8887867135"
+                                href="tel:3075221099"
                                 className="text-white text-sm font-poppins flex justify-center md:justify-start mb-5"
                             >
-                                Sales: (888) 786-7135
+                                Sales: (307) 522-1099
                             </Link>
 
                             <Link
@@ -217,10 +217,10 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                href="mailto:support@pinebookpublishing.com"
+                                href="mailto:info@pinetechware.com"
                                 className="text-white text-sm font-poppins flex justify-center md:justify-start mb-5"
                             >
-                                support@pinebookpublishing.com
+                                info@pinetechware.com
                             </Link>
 
                             {/* Canada Address */}
@@ -249,7 +249,7 @@ const Footer = () => {
                             </h4>
 
                             <p className="text-white mb-3">
-                                211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017
+                               30 N Gould St 54593 Sheridan Wyoming 82801-6317
                             </p>
 
                             {/* <div className="w-full h-[200px] rounded overflow-hidden">
@@ -270,7 +270,7 @@ const Footer = () => {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2025 |
+                            Copyright © 2026 |
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"

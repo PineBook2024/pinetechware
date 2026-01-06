@@ -46,7 +46,7 @@ import Head from 'next/head'
 //   description: "Learn more about our team and company mission.",
 // };
 
-export default function about() {
+export default function TermConditions() {
     const [activeTab, setActiveTab] = useState("tab1"); // 👈 by default Tab1 active
 
 

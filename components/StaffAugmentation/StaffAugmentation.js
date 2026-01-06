@@ -37,7 +37,7 @@ export default function StaffAugmentation() {
                             our staff augmentation for automotive software
                         </h2>
                         <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
-                            Enhance automotive software with Cubix’s staff augmentation. Our experts ensure efficiency, compliance, and innovation, seamlessly integrating with your team.
+                            Enhance automotive software with Pine Techware staff augmentation. Our experts ensure efficiency, compliance, and innovation, seamlessly integrating with your team.
                         </p>
 
                         <div className="lg:mt-12 mt-6 space-y-4">

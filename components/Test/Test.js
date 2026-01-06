@@ -20,7 +20,7 @@ const Highlights = () => {
                     id: 2,
                     thumbnail: vid,
                     caption:
-                        "Equality Brings Innovation and Opportunity to the Workplace | Cubix | Salman Lakhani.",
+                        "Equality Brings Innovation and Opportunity to the Workplace | Pine Techware | Salman Lakhani.",
                 },
                 {
                     id: 3,
@@ -41,23 +41,23 @@ const Highlights = () => {
                 {
                     id: 2,
                     thumbnail: vid,
-                    caption: "Team bonding session at Cubix HQ.",
+                    caption: "Team bonding session at Pine Techware HQ.",
                 },
             ],
         },
         {
             id: 3,
-            title: "Life at Cubix",
+            title: "Life at Pine Techware",
             videos: [
                 {
                     id: 1,
                     thumbnail: vid,
-                    caption: "Life at Cubix - A Day in the Office.",
+                    caption: "Life at Pine Techware - A Day in the Office.",
                 },
                 {
                     id: 2,
                     thumbnail: vid,
-                    caption: "Cubix Picnic 2022 - Fun and Memories.",
+                    caption: "Pine Techware Picnic 2022 - Fun and Memories.",
                 },
             ],
         },

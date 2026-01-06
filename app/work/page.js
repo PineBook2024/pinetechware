@@ -126,13 +126,23 @@ export default function work() {
                                             <div className="absolute inset-0 rounded-3xl bg-white shadow-lg opacity-70 transform -translate-x-2 -translate-y-2" />
                                             {/* Front card */}
                                             <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl bg-white">
-                                                <Image
-                                                    src={src}
-                                                    alt={`Web project ${index + 1}`}
-                                                    className="w-full h-full object-fit"
-                                                    width={350}
-                                                    height={450}
-                                                />
+                                                <div className="absolute inset-0 overflow-hidden">
+                                                    <Image
+                                                        src={src}
+                                                        alt={`Web project ${index + 1}`}
+                                                        width={400}
+                                                        height={800}
+                                                        className="
+    w-full 
+    h-full 
+    object-cover 
+    object-top 
+    transition-all 
+    duration-[3500ms] 
+    ease-linear 
+  "
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
                                     ))}
