@@ -11,6 +11,8 @@ import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
 import AllIndustries from '@/components/AllIndustries'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import IndSlider from '@/components/IndSlider/IndSlider'
 
 
@@ -304,8 +306,11 @@ const relatedServices = [
             </section>
 
 
-                           <AllIndustries />
-   <IndSlider />
+                            <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+    {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

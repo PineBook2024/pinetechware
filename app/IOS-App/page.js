@@ -13,6 +13,8 @@ import Img2 from "@/public/images/check.svg";
 import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
 import { useEffect, useRef, useState } from 'react';
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
@@ -290,8 +292,11 @@ const processSteps = [
             </section>
 
 
-               <AllIndustries />
-   <IndSlider />
+                <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+    {/* <IndSlider /> */}
         
             <AppRelatedServices />
 

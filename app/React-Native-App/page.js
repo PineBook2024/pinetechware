@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar/Navbar'
 import Trigger from '@/components/Trigger/Trigger'
 import Footer from '@/components/Footer/Footer'
 import SeoHead from '@/components/SeoHead'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
@@ -302,8 +304,11 @@ export default function page() {
                 </div>
             </section>
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
             <AppRelatedServices />
 

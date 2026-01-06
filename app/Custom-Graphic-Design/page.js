@@ -10,6 +10,7 @@ import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/custom-graphic-design-banner.webp";
 import Img2 from "@/public/images/check.svg";
+import { allIndustriesData } from "@/components/allIndustriesData";
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
@@ -240,8 +241,11 @@ export default function page() {
 
 
 
-   <AllIndustries />
-   <IndSlider />
+    <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+    {/* <IndSlider /> */}
 
 
 

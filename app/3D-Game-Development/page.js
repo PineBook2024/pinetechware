@@ -12,8 +12,7 @@ import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.we
 import Img2 from "@/public/images/check.svg";
 import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
-
-
+import { allIndustriesData } from "@/components/allIndustriesData";
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
@@ -321,8 +320,11 @@ export default function page() {
 
 
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

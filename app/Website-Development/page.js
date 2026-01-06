@@ -12,6 +12,8 @@ import Img1 from "@/public/images/banner-inner/Website-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
 import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 
 
 import { useEffect, useRef, useState } from 'react';
@@ -308,8 +310,11 @@ const relatedServices = [
             </section>
 
 
-            <AllIndustries />
-   <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+    {/* <IndSlider /> */}
 
             <section className="textContent-sec bg-white">
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">

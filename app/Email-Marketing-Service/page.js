@@ -14,6 +14,8 @@ import Img2 from "@/public/images/check.svg";
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
 import App from 'next/app'
@@ -314,8 +316,11 @@ export default function page() {
             </section>
 
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

@@ -19,6 +19,7 @@ import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServic
 import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
 
+import { allIndustriesData } from "@/components/allIndustriesData";
 
 
 
@@ -302,8 +303,11 @@ export default function page() {
                 </div>
             </section>
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
             <AppRelatedServices />
 

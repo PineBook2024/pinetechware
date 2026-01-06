@@ -9,6 +9,8 @@ import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/Search-Engine-Optimization-banner.webp";
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import Img2 from "@/public/images/check.svg";
 
 import { useEffect, useRef, useState } from 'react';
@@ -312,8 +314,11 @@ export default function page() {
                 </div>
             </section>
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

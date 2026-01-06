@@ -17,6 +17,8 @@ import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
 
 
@@ -317,8 +319,11 @@ export default function page() {
             </section>
 
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

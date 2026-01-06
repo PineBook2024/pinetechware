@@ -19,6 +19,8 @@ import CountUp from 'react-countup';
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 
 
 
@@ -297,8 +299,11 @@ const processSteps = [
                 </div>
             </section>
 
-                           <AllIndustries />
-   <IndSlider />
+                            <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+    {/* <IndSlider /> */}
         
             <AppRelatedServices />
 

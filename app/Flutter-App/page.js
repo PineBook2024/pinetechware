@@ -13,6 +13,8 @@ import Img2 from "@/public/images/check.svg";
 
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import OurClients from '@/components/OurClients/OurClients';
 import App from 'next/app'
 import AppRelatedServices from '@/components/AppRelatedServices/AppRelatedServices';
@@ -301,8 +303,11 @@ export default function page() {
                 </div>
             </section>
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
             <AppRelatedServices />
 

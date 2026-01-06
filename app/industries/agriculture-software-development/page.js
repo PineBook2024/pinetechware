@@ -11,6 +11,8 @@ import Image from 'next/image'
 import Img1 from "@/public/images/banner-inner/custom-graphic-design-banner.webp";
 import Img2 from "@/public/images/check.svg";
 import Cta from "@/components/Cta/Cta";
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 
 
 import { useEffect, useRef, useState } from 'react';
@@ -20,6 +22,7 @@ import AllIndustries from '@/components/AllIndustries'
 import IndSlider from '@/components/IndSlider/IndSlider'
 import StaffAugmentation from '@/components/StaffAugmentation/StaffAugmentation'
 import ContactForm from '@/components/ContactForm/ContactForm'
+
 
 export default function page() {
 
@@ -404,10 +407,13 @@ export default function page() {
 
 
 
-            <AllIndustries />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
 
 
-            <IndSlider />
+             {/* <IndSlider /> */}
 
 
             {/* <section className="ProcessSection-sec bg-white">

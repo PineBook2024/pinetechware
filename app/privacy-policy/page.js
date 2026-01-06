@@ -7,6 +7,8 @@ import { useRef, useState, useEffect } from "react";
 import SeoHead from "@/components/SeoHead";
 import React from 'react'
 
+
+
 export default function about() {
     const [activeTab, setActiveTab] = useState("tab1"); // 👈 by default Tab1 active
 

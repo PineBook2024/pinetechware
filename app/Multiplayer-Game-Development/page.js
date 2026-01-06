@@ -8,6 +8,8 @@ import SeoHead from '@/components/SeoHead'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 import Img1 from "@/public/images/banner-inner/Mobile-Game-Development-banner.webp";
 import Img2 from "@/public/images/check.svg";
 import AllIndustries from '@/components/AllIndustries'
@@ -317,8 +319,11 @@ export default function page() {
             </section>
 
 
-            <AllIndustries />
-            <IndSlider />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
+             {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

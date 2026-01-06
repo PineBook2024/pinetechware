@@ -17,6 +17,8 @@ import Trigger from "@/components/Trigger/Trigger";
 import Footer from "@/components/Footer/Footer";
 import Sidepopup from "@/components/Sidepopup/Sidepopup";
 import AllIndustries from '@/components/AllIndustries'
+import { allIndustriesData } from "@/components/allIndustriesData";
+
 
 
 
@@ -262,7 +264,10 @@ export default function services() {
                 </div>
             </section>
 
-            <AllIndustries />
+             <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
 
 
             <OurClients />
