@@ -43,22 +43,12 @@ export default function StaffAugmentation() {
                         <div className="lg:mt-12 mt-6 space-y-4">
                             {bullets.map((text, index) => (
                                 <div key={index} className="flex gap-4 items-center">
-                                    {/* <Image
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMSAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTUuNSIgY3k9IjE1LjUiIHI9IjE1LjA0MSIgZmlsbD0iIzJFRDA2RSIvPgo8cGF0aCBkPSJNMTMuOTczIDE5LjMzNTlMMTAuNDczNiAxNS41MjUzTDExLjkwNTQgMTQuMTU0M0wxNC4wNzMzIDE2LjUxMzFMMTkuMTk0NSAxMS42NjQxTDIwLjUyNyAxMy4xMzdMMTMuOTczIDE5LjMzNTlaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
-                    width={30}
-                    height={30}
-                    alt="Bullet Point"
-                  /> */}
                                     <p className="text-black font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">{text}</p>
                                 </div>
                             ))}
                         </div>
 
-                        {/* <div className="flex lg:mt-12 mt-6">
-              <button className="bg-black text-white px-6 md:px-8 h-[40px] rounded-full font-extrabold text-sm">
-                Let's Discuss
-              </button>
-            </div> */}
+
 
                         <button onClick={openPopup}
                             className="buttonChange buttonChangeBlack   bg-black text-white 2xl:w-[180px] items-center px-6 md:px-11 h-[40px] md:h-12 border-transparent rounded-full font-extrabold text-sm"  

@@ -8,9 +8,15 @@ import SeoHead from '@/components/SeoHead'
 import Sidepopup from '@/components/Sidepopup/Sidepopup'
 import { usePopup } from "@/context/PopupContext";
 import Image from 'next/image'
-import Img1 from "@/public/images/banner-inner/custom-graphic-design-banner.webp";
+import Img1 from "@/public/images/banner-inner/education-software-development-banner.webp";
 import Img2 from "@/public/images/check.svg";
 import Cta from "@/components/Cta/Cta";
+import { allIndustriesData } from "@/components/allIndustriesData";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+
+
+
 
 
 import { useEffect, useRef, useState } from 'react';
@@ -21,9 +27,12 @@ import IndSlider from '@/components/IndSlider/IndSlider'
 import StaffAugmentation from '@/components/StaffAugmentation/StaffAugmentation'
 import ContactForm from '@/components/ContactForm/ContactForm'
 
+
 export default function page() {
 
     const [activeTab, setActiveTab] = useState("tab1");
+    const { openPopup, closePopup, isOpen } = usePopup();
+
 
     const counterRef = useRef(null);
     const [startCounter, setStartCounter] = useState(false);
@@ -61,6 +70,73 @@ export default function page() {
         { name: "Multiplayer Game Development" },
     ];
 
+const DesignServices = [
+    {
+        title: "Education Domain Expertise",
+        description:
+            "Our team understands academic workflows, learning methodologies, and institutional challenges.",
+    },
+    {
+        title: "Custom-Built Solutions",
+        description:
+            "We deliver tailor-made education software designed to meet specific learning and administrative requirements.",
+    },
+    {
+        title: "Data Security & Compliance",
+        description:
+            "We ensure secure handling of student data and compliance with education data protection standards.",
+    },
+    {
+        title: "QA & Testing",
+        description:
+            "Comprehensive testing guarantees reliable, scalable, and high-performing education platforms.",
+    },
+];
+
+
+    const slides = [
+        {
+            title: "Software Consulting",
+            desc: "Expert guidance to plan, design, and implement education technology solutions.",
+            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building and enhancing education software solutions.",
+            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your internal team with skilled education software developers and QA engineers.",
+            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete project ownership from ideation to deployment and ongoing support.",
+            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        },
+    ];
+
+const bullets = [
+    "Skilled Developers, Designers, & QA Engineers",
+    "Flexible Hiring Models",
+    "Faster Development Cycles",
+    "Cost-Effective Solutions",
+    "Continuous Support & Maintenance"
+];
+
+    const techs = [
+        { name: "Dart", src: "/images/Dart.svg" },
+        { name: "ionic", src: "/images/Ionic.svg" },
+        { name: "JavaScript", src: "/images/Javascrpt.svg" },
+        { name: "React", src: "/images/React.svg" },
+        { name: "Flutter", src: "/images/flutter.svg" },
+        { name: "Xamarin", src: "/images/xamarin.svg" },
+        { name: "Unity", src: "/images/unity.svg" },
+        { name: "Hive", src: "/images/hive.svg" },
+        { name: "C Sharp", src: "/images/C.svg" },
+    ];
+
     return (
         <div>
 
@@ -75,15 +151,15 @@ export default function page() {
 
 
             <section className="HalfTextContent-sec bg-white">
-                <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
+                <div className="px-6 lg:px-8 py-40 lg:py-[10.5rem] max-w-7xl mx-auto">
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Transforming</span> Ideas Into Visual Experiences</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We create visuals that define your brand, tell your story, and make your audience care. From branding to marketing assets, our designs blend creativity with strategy so your business stands out everywhere it appears.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Education Software   </span> Development Company</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a leading education software development company delivering innovative, scalable, and secure digital solutions for schools, universities, training institutes, and EdTech businesses. Our solutions enhance learning experiences, streamline administration, and support digital transformation in education.</p>
                         </div>
                         <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/custom-graphic-design.png" alt="Top Mobile App Developers" width="500" height="500" />
+                            <Image className="w-full" src="/images/education-software-development.webp" alt="Top Mobile App Developers" width="500" height="500" />
                         </div>
                     </div>
                 </div>
@@ -185,12 +261,6 @@ export default function page() {
                                 <span>Our Vision for the Future</span>
                             </h2>
                         </div>
-                        {/* <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
-              Hire from our pool of 350+ specialized experts in web, mobile, and
-              software engineering, specializing in the latest technologies and
-              frameworks, ready to scale your development teams effortlessly.
-            </p> */}
-
                         <div className="flex flex-wrap flex-col md:flex-row mt-8 md:mt-12 lg:mt-20 md:border-t border-gray-300">
                             {/* Left Tabs */}
                             <div className="w-full md:w-[30%] lg:w-[21.5%] 2xl:w-[24%] overflow-auto md:overflow-hidden md:border-r border-gray-300 md:pt-12 md:border-b-0 border-b">
@@ -365,184 +435,108 @@ export default function page() {
 
             <Cta />
 
-            <section className='bg-gray-50'>
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem] ">
+            <section className="bg-gray-50">
+                <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem]">
                     <div className="lg:overflow-hidden">
-                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span>Our Full-Cycle <span className="!normal-case">Custom</span> Graphic Design Services</span></h2></div>
-                    <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black"></p>
-                    <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 lg:gap-14 gap-6 md:gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Brand Identity Design</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Logos, color palettes, typography, and assets crafted to express your brand’s personality and set the foundation for all visual communication.</p>
-                        </div>
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Marketing & Promotional Design</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Flyers, brochures, banners, posters, pitch decks, presentations, social media visuals, and everything you need to promote your business.</p>
-                        </div>
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">UI/UX Graphics & Digital Assets</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Custom icons, illustrations, interface elements, and digital graphics that enhance your website, platform, or mobile app experience.</p>
-                        </div>
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Product Packaging Design</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Unique, shelf-worthy packaging that increases product appeal and communicates your values instantly.</p>
-                        </div>
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Print Design</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Business cards, booklets, company profiles, menus, invitations, and professional print-ready artworks for any requirement.</p>
-                        </div>
-                        <div>
-                            <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Custom Illustrations</h3>
-                            <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Detailed hand-drawn or digital illustrations for books, branding, storytelling, or product lines.</p>
-                        </div>
+                        <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
+                           Why Choose Us for Education Software Development</h2>
+                    </div>
+
+                    <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 gap-6 md:gap-y-16 lg:gap-14 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
+                        {DesignServices.map((service, index) => (
+                            <div key={index}>
+                                <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl text-black">
+                                    {service.title}
+                                </h3>
+                                <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
+                                    {service.description}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
 
 
+            <AllIndustries
+                heading={allIndustriesData.heading}
+                items={allIndustriesData.items}
+            />
 
 
-
-            <AllIndustries />
-
-
-            <IndSlider />
+            {/* <IndSlider /> */}
 
 
-            {/* <section className="ProcessSection-sec bg-white">
-                <div className="px-6 lg:px-8 pt-14 md:pt-24 lg:pt-[10.5rem] max-w-7xl mx-auto">
-                    <div className="lg:grid lg:grid-cols-12">
-                        <div className="lg:col-span-6 lg:pb-0 pb-12 lg:pr-14 2xl:pr-20">
-                            <div className="lg:sticky top-20">
-                                <div className="lg:overflow-hidden">
-                                    <h2 className="text-black font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase "><span>our approach</span></h2></div>
+            {/* ================== Hard-coded IndSlider ================== */}
+            <section className="overflow-x-hidden">
+
+                {/* Desktop Slider */}
+                <section className="hidden sm:block mx-auto py-14 md:py-24 lg:py-[10.5rem]">
+                    <Splide
+                        options={{
+                            perPage: 2,
+                            gap: "2rem",
+                            arrows: false,
+                            pagination: false,
+                            padding: "4rem",
+                            breakpoints: { 1024: { perPage: 1 } },
+                        }}
+                    >
+                        {/* First text slide */}
+                        <SplideSlide>
+                            <div className="mr-16">
+                                <h2 className="font-bold pb-6 text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px]">
+                                    Collaboration Models for Education Software Development
+                                </h2>
+                                <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    We offer flexible engagement models to support institutions and EdTech companies at every stage.
+                                </p>
                             </div>
-                        </div>
-                        <div className="lg:col-span-6">
-                            <div className="flex flex-col gap-y-5">
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">01</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Discovery & Research</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We begin by understanding your brand, audience, and design goals. This helps us create visuals that align with your message and marketing direction.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">02</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Concept Development</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Our designers craft initial directions, mood boards, and creative concepts so you can visualize the tone and direction early on.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">03</span>
-                                    <h3 className=" font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Design Execution</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Once the concept is approved, we refine it into polished graphic designs across the required formats and platforms.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">04</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Revisions & Refinement</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We provide structured revisions to perfect the artwork and ensure everything aligns with your expectations.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">05</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Final Delivery</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">You receive clean, high-resolution, print-ready and web-ready files in all required formats.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">06</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Asset Packaging</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">We organize your full set of branding and graphic assets for long-term, consistent use across your business.</p>
-                                </div>
-                                <div className="theProcess px-7 pt-9 pb-7 lg:rounded-[30px] rounded-2xl text-black bg-[#dddddd]"><span className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">07</span>
-                                    <h3 className="text-black font-bold my-3 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px]">Ongoing Support</h3>
-                                    <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Need updates or new variations later? Our team is here to support your brand’s continued growth and design needs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+                        </SplideSlide>
 
-            {/* <section className="textContent-sec bg-white relative">
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]" >
-                    <div className="2xl:max-w-4xl lg:max-w-3xl" >
-                        <div className="lg:overflow-hidden" >
-                            <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black"><span>related services</span></h2></div>
-                        <p className="text-black lg:pe-[5rem] pt-6 lg:pt-[2.375rem] text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                    </div>
-                </div>
+                        {slides.map((item, i) => (
+                            <SplideSlide key={i}>
+                                <article className="relative flex flex-col justify-end overflow-hidden rounded-2xl px-6 pb-6 py-48 lg:rounded-[30px] lg:px-10 lg:pb-10 lg:py-80">
+                                    <Image src={item.img} alt={item.title} fill className="object-cover -z-10" />
+                                    <div className="absolute inset-0 bg-black/40 -z-10" />
+                                    <h3 className="font-bold pb-4 text-white text-2xl xl:text-3xl 2xl:text-4xl">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-white text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                        {item.desc}
+                                    </p>
+                                </article>
+                            </SplideSlide>
+                        ))}
+                    </Splide>
+                </section>
 
-                <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
-                    <div className="grid grid-cols-12 gap-y-4 md:gap-7">
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Logo Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Branding Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li>
-                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Social Media Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">UI/UX Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" >Web Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Packaging Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Illustration</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Print Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Motion Graphics</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Marketing Material Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Presentation Design</a></li>
-                            </ul>
-                        </div>
-                        <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
-                            <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
-                            <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Book Cover Design</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+                {/* Mobile Slider */}
+                <section className="sm:hidden px-6 pt-14">
+                    <h2 className="font-bold pb-6 text-4xl tracking-[-2px]">
+                        Collaboration Models for Education Software Development
+                    </h2>
+                    <p className="text-base mb-12">
+                        We offer flexible engagement models to support institutions and EdTech companies at every stage.
+                    </p>
 
+                    <div className="flex flex-col gap-5">
+                        {slides.map((item, i) => (
+                            <article key={i} className="relative flex flex-col justify-end overflow-hidden rounded-2xl px-6 pb-6 py-48 lg:rounded-[30px] lg:px-10 lg:pb-10 lg:py-80">
+                                <Image src={item.img} alt={item.title} fill className="object-cover -z-10" />
+                                <div className="absolute inset-0 bg-black/40 -z-10" />
+                                <h3 className="font-bold pb-4 text-white text-2xl xl:text-3xl 2xl:text-4xl">
+                                    {item.title}
+                                </h3>
+                                <p className="text-white text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    {item.desc}
+                                </p>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+            </section>
 
 
             <Trigger />
@@ -587,13 +581,71 @@ export default function page() {
             </section>
 
 
-            <StaffAugmentation/>
+            {/* <StaffAugmentation /> */}
+
+
+            <section className="requestServiceAndroid-sec px-6 pt-14 md:py-24 lg:py-[10.5rem] md:px-8 bg-white" id="staff-augmentation">
+                <div className="mx-auto max-w-7xl">
+                    <div className="md:flex">
+                        <div className="w-full xl:w-[60%] lg:w-[55%] md:w-[50%] mr-[5%]">
+                            <h2 className="text-black font-bold pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px]">
+                                B2B Software Staff Augmentation
+                            </h2>
+                            <p className="text-black text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+                                Strengthen your development capabilities with our experienced B2B software professionals who integrate seamlessly with your team.
+                            </p>
+
+                            <div className="lg:mt-12 mt-6 space-y-4">
+                                {bullets.map((text, index) => (
+                                    <div key={index} className="flex gap-4 items-center">
+                                        <p className="text-black font-medium text-sm lg:text-md xl:text-lg 2xl:text-xl">{text}</p>
+                                    </div>
+                                ))}
+                            </div>
+
+
+
+                            <button onClick={openPopup}
+                                className="buttonChange buttonChangeBlack   bg-black text-white 2xl:w-[180px] items-center px-6 md:px-11 h-[40px] md:h-12 border-transparent rounded-full font-extrabold text-sm"
+                            >
+
+                                <span className="pb-[3px] md:pb-1.5">Get a Quote</span>
+                                <span className="pb-[3px] md:pb-1.5">Get a Quote</span>
+
+                            </button>
+                        </div>
+
+                        <div className="w-full xl:w-[35%] lg:w-[40%] md:w-[45%] mt-14 md:mt-48 2xl:mt-56 hidden md:flex flex-col justify-end">
+                            <div className="grid grid-cols-12 gap-3">
+                                {techs.map((tech, index) => (
+                                    <div key={index} className="col-span-4">
+                                        <a className="relative group h-[123px] bg-[#f1f1f1] w-full md:px-3.5 py-5 border-transparent rounded-xl md:rounded-3xl font-medium text-[12px] md:text-lg flex flex-col items-center justify-center gap-2 overflow-hidden transition duration-500">
+                                            <div className="text-black flex flex-col gap-4 text-center transform translate-y-[-10%] group-hover:translate-y-[55%] transition-transform duration-[350ms] ease-[ease]">
+                                                <span className="block text-md font-semibold leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 -mt-4">
+                                                    {tech.name}
+                                                </span>
+                                                <Image
+                                                    className="opacity-100 group-hover:opacity-0.5 transition-opacity duration-300"
+                                                    src={tech.src}
+                                                    alt={tech.name}
+                                                    width={80}
+                                                    height={80}
+                                                />
+                                            </div>
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <OurClients />
 
 
-            <ContactForm/>
-            
+            <ContactForm />
+
 
             <Footer />
 
