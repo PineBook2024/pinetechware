@@ -107,22 +107,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Expert guidance to help automotive businesses adopt secure, scalable, and future-ready software solutions.",
-            img: "/images/automotive-software-development/Software-Consulting.webp",
+            img: "/images/automotive-software-development/software-consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A fully dedicated team focused on building high-performance automotive software with seamless collaboration.",
-            img: "/images/automotive-software-development/Dedicated-Development-Team.webp",
+            img: "/images/automotive-software-development/dedicated-development-team.webp",
         },
         {
             title: "Skilled Workforce Augmentation",
             desc: "Augment your in-house team with experienced automotive engineers, architects, and QA specialists.",
-            img: "/images/automotive-software-development/Skilled-Workforce-Augmentation.webp",
+            img: "/images/automotive-software-development/skilled-workforce-augmentation.webp",
         },
         {
             title: "End-to-End Project Management",
             desc: "Complete project management covering planning, development, testing, deployment, and ongoing support.",
-            img: "/images/automotive-software-development/End-to-End-Project-Management.webp",
+            img: "/images/automotive-software-development/end-to-end-project-management.webp",
         },
         {
             title: "Automotive R&D Partnership",
