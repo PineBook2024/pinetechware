@@ -15,62 +15,64 @@ import React from 'react'
 export default function work() {
     const { openPopup, closePopup, isOpen } = usePopup();
 
-    const tabData = {
-        "Web Development": {
-            images: [
-                "/images/pack-1-1.jpg",
-                "/images/pack-2-1.jpg",
-                "/images/pack-4-1.jpg",
-                "/images/pack-6-1.jpg",
-                "/images/pack-7-1.jpg",
-                "/images/pack-8-1.jpg",
-                "/images/pack-12-1.jpg",
-                "/images/pack-10-1.png",
-                "/images/pack-11-1.png",
-            ],
-        },
+   const tabData = {
+  "Web Development": {
+    images: [
+      "/images/Portfolio/web-development/pack-1-1.webp",
+      "/images/Portfolio/web-development/pack-1-2.webp",
+      "/images/Portfolio/web-development/pack-1-3.webp",
+      "/images/Portfolio/web-development/pack-1-4.webp",
+      "/images/Portfolio/web-development/pack-1-5.webp",
+      "/images/Portfolio/web-development/pack-1-6.webp",
+      "/images/Portfolio/web-development/pack-1-7.webp",
+      "/images/Portfolio/web-development/pack-1-8.webp",
+      "/images/Portfolio/web-development/pack-1-9.webp",
+    ],
+  },
 
-        "Branding": {
-            images: [
-                "/images/branding-1.png",
-                "/images/branding-2.png",
-                "/images/branding-3.png",
-                "/images/branding-4.png",
-                "/images/branding-5.png",
-                "/images/branding-6.png",
-                "/images/branding-7.png",
-                "/images/branding-8.png",
-                "/images/branding-9.png",
-            ],
-        },
+  "Branding": {
+    images: [
+      "/images/Portfolio/branding/branding-1.webp",
+      "/images/Portfolio/branding/branding-2.webp",
+      "/images/Portfolio/branding/branding-3.webp",
+      "/images/Portfolio/branding/branding-4.webp",
+      "/images/Portfolio/branding/branding-5.webp",
+      "/images/Portfolio/branding/branding-6.webp",
+      "/images/Portfolio/branding/branding-7.webp",
+      "/images/Portfolio/branding/branding-8.webp",
+      "/images/Portfolio/branding/branding-9.webp",
+    ],
+  },
 
-        "Logo": {
-            images: [
-                "/images/logo-1.jpg",
-                "/images/logo-2.jpg",
-                "/images/logo-3.jpg",
-                "/images/logo-4.jpg",
-                "/images/logo-5.jpg",
-                "/images/logo-6.jpg",
-                "/images/logo-7.jpg",
-                "/images/logo-8.jpg",
-                "/images/logo-9.jpg",
-            ],
-        },
-        "App Development": {
-            images: [
-                "/images/app-1.png",
-                "/images/app-2.png",
-                "/images/app-3.png",
-                "/images/app-4.png",
-                "/images/app-5.png",
-                "/images/app-6.png",
-                "/images/app-7.png",
-                "/images/app-8.png",
-                "/images/app-9.png",
-            ],
-        },
-    };
+  "Logo": {
+    images: [
+      "/images/Portfolio/logo/logo-1.webp",
+      "/images/Portfolio/logo/logo-2.webp",
+      "/images/Portfolio/logo/logo-3.webp",
+      "/images/Portfolio/logo/logo-4.webp",
+      "/images/Portfolio/logo/logo-5.webp",
+      "/images/Portfolio/logo/logo-6.webp",
+      "/images/Portfolio/logo/logo-7.webp",
+      "/images/Portfolio/logo/logo-8.webp",
+      "/images/Portfolio/logo/logo-9.webp",
+    ],
+  },
+
+  "App Development": {
+    images: [
+      "/images/Portfolio/app-development/app-1.webp",
+      "/images/Portfolio/app-development/app-2.webp",
+      "/images/Portfolio/app-development/app-3.webp",
+      "/images/Portfolio/app-development/app-4.webp",
+      "/images/Portfolio/app-development/app-5.webp",
+      "/images/Portfolio/app-development/app-6.webp",
+      "/images/Portfolio/app-development/app-7.webp",
+      "/images/Portfolio/app-development/app-8.webp",
+      "/images/Portfolio/app-development/app-9.webp",
+    ],
+  },
+};
+
 
 
 

@@ -161,17 +161,24 @@ export default function page() {
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Real-Time Multiplayer Games </span>  Built for Scale and Performance</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Multiplayer games demand speed, stability, and flawless synchronization. We develop high-performance multiplayer games that deliver smooth real-time experiences, secure networking, and engaging social gameplay across platforms.</p>
                         </div>
-                        <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/multiplayer-game.webp" alt="multiplayer-game" width="500" height="500" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <Image src={Img1} sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Mobile-Game-Development-banner" className="w-full object-cover  max-w-full h-auto" width="1920" height="1080" />
-
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                                                              <Image
+                                                                  src="/images/Multiplayer-Game-Development/01.webp"
+                                                                  alt="Professional Multiplayer Game Development Services"
+                                                                  width={500}
+                                                                  height={500}
+                                                                  priority
+                                                                  className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                                                              />
+                                                          </div>
+                                              
+                                                      </div>
+                                                  </div>
+                                              </section>
+                                              
+                                              
+                                                              <Image src="/images/Multiplayer-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Multiplayer Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                       
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">

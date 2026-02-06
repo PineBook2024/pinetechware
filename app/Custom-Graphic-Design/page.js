@@ -55,23 +55,44 @@ export default function page() {
                       </div>
 
 
-            <section className="HalfTextContent-sec bg-white">
-                <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
-                    <div className="lg:grid lg:grid-cols-12">
-                        <div className="lg:col-span-7">
-                            <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Transforming</span> Ideas Into Visual Experiences</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We create visuals that define your brand, tell your story, and make your audience care. From branding to marketing assets, our designs blend creativity with strategy so your business stands out everywhere it appears.</p>
-                        </div>
-                        <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/custom-graphic-design.png" alt="Top Mobile App Developers" width="500" height="500" />
-                        </div>
-                    </div>
+           <section className="HalfTextContent-sec bg-white">
+    <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
+        <div className="lg:grid lg:grid-cols-12 lg:items-center gap-10">
+            
+            {/* TEXT */}
+            <div className="lg:col-span-7">
+                <div className="overflow-hidden">
+                    <h1 className="font-bold text-black pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[55px] 2xl:!leading-[65px]">
+                        <span className="text-theme text-[#3BB9E1]">Transforming</span> Ideas Into Visual Experiences
+                    </h1>
                 </div>
-            </section>
+
+                <p className="text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                    We create visuals that define your brand, tell your story, and make your audience care.
+                    From branding to marketing assets, our designs blend creativity with strategy so your
+                    business stands out everywhere it appears.
+                </p>
+            </div>
+
+            {/* IMAGE */}
+            <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                <Image
+                    src="/images/custom-graphic-design/01.webp"
+                    alt="Custom Graphic Design Services"
+                    width={500}
+                    height={500}
+                    className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                    priority
+                />
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
-            <Image src={Img1} sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
+                <Image  src="/images/custom-graphic-design/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">

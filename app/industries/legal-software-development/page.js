@@ -164,16 +164,25 @@ const bullets = [
                                 law firms, legal departments, and legal service providers streamline operations, manage cases
                                 efficiently, and ensure compliance with regulatory standards.</p>
                         </div>
-                        <div className="!flex lg:mt-0 mt-6 lg:col-span-5 justify-start lg:justify-start items-start">
-                            <Image className="w-full" src="/images/automotive-software-development.webp" alt="Top Mobile App Developers" width="500" height="500" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <Image src={Img1} sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-
+                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                                                               <Image
+                                                                   src="/images/legal-software-development/01.webp"
+                                                                   alt="Legal Software Development Services"
+                                                                   width={500}
+                                                                   height={500}
+                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                                                   priority
+                                                               />
+                                                           </div>
+                                               
+                                                       </div>
+                                                   </div>
+                                               </section>
+                                               
+                                               
+                                               
+                                                               <Image  src="/images/legal-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Legal Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                       
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
