@@ -104,22 +104,22 @@ export default function page() {
     {
         title: "Software Consulting",
         desc: "Expert guidance to plan and optimize ecommerce software strategies.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/ecommerce-software-development/software-consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and enhancing ecommerce solutions.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/ecommerce-software-development/dedicated-development-team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Scale your team with experienced ecommerce developers and QA engineers.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/ecommerce-software-development/staff-augmentation.webp",
     },
     {
         title: "End-to-End Project Delivery",
         desc: "Complete ownership from planning to deployment and post-launch support.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/ecommerce-software-development/end-to-end-project-delivery.webp",
     },
 ];
 

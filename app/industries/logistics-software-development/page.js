@@ -103,22 +103,22 @@ const slides = [
     {
         title: "Software Consulting",
         desc: "Expert guidance for logistics software strategy and digital transformation.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/logistics-software-development/software-consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and maintaining logistics software solutions.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/logistics-software-development/dedicated-development-team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Extend your in-house team with experienced logistics software developers and QA specialists.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/logistics-software-development/staff-augmentation.webp",
     },
     {
         title: "End-to-End Project Delivery",
         desc: "Complete ownership from planning to deployment and post-launch support.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/logistics-software-development/end-to-end-project-delivery.webp",
     },
 ];
 

@@ -98,22 +98,22 @@ const DesignServices = [
         {
             title: "Software Consulting",
             desc: "Expert guidance to plan, design, and implement education technology solutions.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/education-software-development/software-consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A dedicated team focused on building and enhancing education software solutions.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/education-software-development/dedicated-development-team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your internal team with skilled education software developers and QA engineers.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/education-software-development/staff-augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete project ownership from ideation to deployment and ongoing support.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/education-software-development/end-to-end-project-delivery.webp",
         },
     ];
 

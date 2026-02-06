@@ -97,22 +97,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Strategic guidance to help you plan, optimize, and scale your B2B software initiatives..",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/b2b-software-development/software-consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A fully dedicated team focused on your project with seamless communication and collaboration.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/b2b-software-development/dedicated-development-team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your in-house team with skilled developers, architects, and QA engineers on demand.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/b2b-software-development/staff-augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete ownership from requirement analysis to development, deployment, and ongoing support.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/b2b-software-development/end-to-end-project-delivery.webp",
         },
     ];
 

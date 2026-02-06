@@ -98,22 +98,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Expert guidance for real estate digital transformation, strategy, and software planning.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/real-estate-software-development/real-estate-software-consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A dedicated team focused on building, scaling, and maintaining robust real estate software solutions.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/real-estate-software-development/dedicated-development-team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your in-house team with experienced real estate software developers and QA specialists.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/real-estate-software-development/staff-augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete ownership from planning and development to deployment and post-launch support.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/real-estate-software-development/end-to-end-project-delivery.webp",
         },
     ];
 

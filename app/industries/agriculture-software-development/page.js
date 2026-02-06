@@ -98,22 +98,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Expert guidance for agriculture digital transformation, planning, and software strategy.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/agriculture-software-development/software-consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A dedicated team focused on building, scaling, and enhancing agriculture software solutions.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/agriculture-software-development/dedicated-development-team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your in-house team with skilled agriculture software developers and QA specialists.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/agriculture-software-development/staff-augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete ownership of projects from planning and development to deployment and ongoing support.",
-            img: "/images/banner-inner/custom-graphic-design-banner.webp",
+            img: "/images/agriculture-software-development/end-to-end-project-delivery.webp",
         },
     ];
 

@@ -98,22 +98,22 @@ export default function page() {
   {
     title: "Software Consulting",
     desc: "Expert guidance for travel software strategy, planning, and digital transformation.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/travel-software-development/software-consulting.webp",
   },
   {
     title: "Dedicated Development Team",
     desc: "A dedicated team focused on building, scaling, and maintaining high-quality travel software solutions.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/travel-software-development/dedicated-development-team.webp",
   },
   {
     title: "Staff Augmentation",
     desc: "Extend your in-house team with skilled travel software developers and QA specialists.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/travel-software-development/staff-augmentation.webp",
   },
   {
     title: "End-to-End Project Delivery",
     desc: "Complete ownership of your project from planning and development to deployment and post-launch support.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/travel-software-development/end-to-end-project-delivery.webp",
   },
 ];
 

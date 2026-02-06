@@ -99,22 +99,22 @@ const slides = [
     {
         title: "CRM Consulting",
         desc: "Expert guidance for CRM strategy, implementation, and optimization.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/crm-development-services/crm-consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and maintaining CRM solutions.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/crm-development-services/dedicated-development-team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Extend your in-house team with experienced CRM developers and QA specialists.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/crm-development-services/staff-augmentation.webp",
     },
     {
         title: "End-to-End CRM Development",
         desc: "Complete ownership from requirement analysis to deployment and ongoing support.",
-        img: "/images/banner-inner/custom-graphic-design-banner.webp",
+        img: "/images/crm-development-services/end-to-end-project-delivery.webp",
     }
 ];
 

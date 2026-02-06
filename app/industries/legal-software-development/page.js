@@ -99,22 +99,22 @@ const slides = [
   {
     title: "Legal Software Consulting",
     desc: "Expert guidance for legal software strategy, planning, and digital transformation.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/legal-software-development/legal-software-consulting.webp",
   },
   {
     title: "Dedicated Development Team",
     desc: "A dedicated team focused on building, scaling, and maintaining robust legal software solutions.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/legal-software-development/dedicated-development-team.webp",
   },
   {
     title: "Staff Augmentation",
     desc: "Extend your in-house team with experienced legal software developers and QA specialists.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/legal-software-development/staff-augmentation.webp",
   },
   {
     title: "End-to-End Project Delivery",
     desc: "Complete ownership from planning and development to deployment and ongoing post-launch support.",
-    img: "/images/banner-inner/custom-graphic-design-banner.webp",
+    img: "/images/legal-software-development/end-to-end-project-delivery.webp",
   },
 ];
 
