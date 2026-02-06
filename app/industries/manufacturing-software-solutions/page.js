@@ -99,22 +99,22 @@ const slides = [
     {
         title: "Software Consulting",
         desc: "Expert guidance for manufacturing software strategy and implementation.",
-        img: "/images/manufacturing-software-solutions/software-consulting.webp",
+        img: "/images/manufacturing-software-solutions/Software-Consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and maintaining manufacturing software solutions.",
-        img: "/images/manufacturing-software-solutions/dedicated-development-team.webp",
+        img: "/images/manufacturing-software-solutions/Dedicated-Development-Team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Extend your internal team with skilled industrial software developers and QA specialists.",
-        img: "/images/manufacturing-software-solutions/staff-augmentation.webp",
+        img: "/images/manufacturing-software-solutions/Staff-Augmentation.webp",
     },
     {
         title: "End-to-End Project Delivery",
         desc: "Complete ownership from planning to deployment and ongoing support.",
-        img: "/images/manufacturing-software-solutions/end-to-end-project-delivery.webp",
+        img: "/images/manufacturing-software-solutions/End-to-End-Project-Delivery.webp",
     },
 ];
 

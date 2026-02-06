@@ -99,22 +99,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Expert guidance for finance software strategy, planning, and digital transformation.",
-            img: "/images/finance-software-development/finance-software-consulting.webp",
+            img: "/images/finance-software-development/Software-Consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A dedicated team focused on building, scaling, and maintaining robust finance software solutions.",
-            img: "/images/finance-software-development/dedicated-development-team.webp",
+            img: "/images/finance-software-development/Dedicated-Development-Team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your in-house team with experienced finance software developers and QA specialists.",
-            img: "/images/finance-software-development/staff-augmentation.webp",
+            img: "/images/finance-software-development/Staff-Augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete ownership from planning and development to deployment and ongoing support.",
-            img: "/images/finance-software-development/end-to-end-project-delivery.webp",
+            img: "/images/finance-software-development/End-to-End-Project-Delivery.webp",
         },
     ];
 

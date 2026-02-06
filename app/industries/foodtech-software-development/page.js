@@ -103,22 +103,22 @@ export default function page() {
     {
         title: "Software Consulting",
         desc: "Expert guidance to plan and optimize ecommerce software strategies.",
-        img: "/images/foodtech-software-development/software-consulting.webp",
+        img: "/images/foodtech-software-development/Software-Consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and enhancing ecommerce solutions.",
-        img: "/images/foodtech-software-development/dedicated-development-team.webp",
+        img: "/images/foodtech-software-development/Dedicated-Development-Team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Scale your team with experienced ecommerce developers and QA engineers.",
-        img: "/images/foodtech-software-development/staff-augmentation.webp",
+        img: "/images/foodtech-software-development/Staff-Augmentation.webp",
     },
     {
         title: "End-to-End Project Delivery",
         desc: "Complete ownership from planning to deployment and post-launch support.",
-        img: "/images/foodtech-software-development/end-to-end-project-delivery.webp",
+        img: "/images/foodtech-software-development/End-to-End-Project-Delivery.webp",
     },
 ];
 

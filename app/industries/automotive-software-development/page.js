@@ -117,7 +117,7 @@ export default function page() {
         {
             title: "Skilled Workforce Augmentation",
             desc: "Augment your in-house team with experienced automotive engineers, architects, and QA specialists.",
-            img: "/images/automotive-software-development/Skilled-Workforce-Augmentation.webp",
+            img: "/images/automotive-software-development/Staff-Augmentation.webp",
         },
         {
             title: "End-to-End Project Management",

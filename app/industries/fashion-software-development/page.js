@@ -99,22 +99,22 @@ const slides = [
     {
         title: "Software Consulting",
         desc: "Expert guidance for fashion technology strategy and digital transformation.",
-        img: "/images/fashion-software-development/software-consulting.webp",
+        img: "/images/fashion-software-development/Software-Consulting.webp",
     },
     {
         title: "Dedicated Development Team",
         desc: "A dedicated team focused on building and enhancing fashion software solutions.",
-        img: "/images/fashion-software-development/dedicated-development-team.webp",
+        img: "/images/fashion-software-development/Dedicated-Development-Team.webp",
     },
     {
         title: "Staff Augmentation",
         desc: "Extend your in-house team with skilled fashion software developers and QA specialists.",
-        img: "/images/fashion-software-development/staff-augmentation.webp",
+        img: "/images/fashion-software-development/Staff-Augmentation.webp",
     },
     {
         title: "End-to-End Project Delivery",
         desc: "Complete ownership from ideation to deployment and post-launch support.",
-        img: "/images/fashion-software-development/end-to-end-project-delivery.webp",
+        img: "/images/fashion-software-development/End-to-End-Project-Delivery.webp",
     }
 ];
 

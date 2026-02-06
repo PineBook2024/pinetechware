@@ -104,22 +104,22 @@ export default function page() {
         {
             title: "Software Consulting",
             desc: "Strategic consulting to plan, design, and implement healthcare digital solutions.",
-            img: "/images/healthcare-software-development/software-consulting.webp",
+            img: "/images/healthcare-software-development/Software-Consulting.webp",
         },
         {
             title: "Dedicated Development Team",
             desc: "A dedicated team focused on building and maintaining healthcare software systems.",
-            img: "/images/healthcare-software-development/dedicated-development-team.webp",
+            img: "/images/healthcare-software-development/Dedicated-Development-Team.webp",
         },
         {
             title: "Staff Augmentation",
             desc: "Extend your internal team with experienced healthcare software developers and QA specialists.",
-            img: "/images/healthcare-software-development/staff-augmentation.webp",
+            img: "/images/healthcare-software-development/Staff-Augmentation.webp",
         },
         {
             title: "End-to-End Project Delivery",
             desc: "Complete project ownership from requirement analysis to deployment and ongoing support.",
-            img: "/images/healthcare-software-development/end-to-end-project-delivery.webp",
+            img: "/images/healthcare-software-development/End-to-End-Project-Delivery.webp",
         },
     ];
 
