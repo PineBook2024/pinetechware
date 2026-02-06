@@ -18,15 +18,15 @@ export default function work() {
    const tabData = {
   "Web Development": {
     images: [
-      "/images/Portfolio/web-Development/pack-1-1.webp",
-      "/images/Portfolio/web-Development/pack-1-2.webp",
-      "/images/Portfolio/web-Development/pack-1-3.webp",
-      "/images/Portfolio/web-Development/pack-1-4.webp",
-      "/images/Portfolio/web-Development/pack-1-5.webp",
-      "/images/Portfolio/web-Development/pack-1-6.webp",
-      "/images/Portfolio/web-Development/pack-1-7.webp",
-      "/images/Portfolio/web-Development/pack-1-8.webp",
-      "/images/Portfolio/web-Development/pack-1-9.webp",
+      "/images/Portfolio/Web-Development/pack-1.webp",
+      "/images/Portfolio/Web-Development/pack-2.webp",
+      "/images/Portfolio/Web-Development/pack-3.webp",
+      "/images/Portfolio/Web-Development/pack-4.webp",
+      "/images/Portfolio/Web-Development/pack-5.webp",
+      "/images/Portfolio/Web-Development/pack-6.webp",
+      "/images/Portfolio/Web-Development/pack-7.webp",
+      "/images/Portfolio/Web-Development/pack-8.webp",
+      "/images/Portfolio/Web-Development/pack-9.webp",
     ],
   },
 
