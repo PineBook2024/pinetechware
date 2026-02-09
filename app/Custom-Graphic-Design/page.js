@@ -59,7 +59,7 @@ export default function page() {
     <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
         <div className="lg:grid lg:grid-cols-12 lg:items-center gap-10">
             
-            {/* TEXT */}
+            
             <div className="lg:col-span-7">
                 <div className="overflow-hidden">
                     <h1 className="font-bold text-black pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[55px] 2xl:!leading-[65px]">
@@ -74,10 +74,10 @@ export default function page() {
                 </p>
             </div>
 
-            {/* IMAGE */}
+           
             <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
                 <Image
-                    src="/images/custom-graphic-design/01.webp"
+                    src="/images/Custom-Graphic-Design/01.webp"
                     alt="Custom Graphic Design Services"
                     width={500}
                     height={500}
@@ -92,7 +92,7 @@ export default function page() {
 
 
 
-                <Image  src="/images/custom-graphic-design/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                <Image  src="/images/Custom-Graphic-Design/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">

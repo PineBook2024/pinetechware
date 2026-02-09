@@ -79,7 +79,7 @@ export default function page() {
             {/* IMAGE */}
             <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
                 <Image
-                    src="/images/logo-designs/01.webp"
+                    src="/images/Logo-Designs/01.webp"
                     alt="Professional Logo Design Services"
                     width={500}
                     height={500}
@@ -93,7 +93,7 @@ export default function page() {
 </section>
 
 
-                <Image src="/images/logo-designs/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                <Image src="/images/Logo-Designs/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
