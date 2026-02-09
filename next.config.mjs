@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["pinetechware.com"], // Add your domain here
+    unoptimized: true,
   },
 };
 
