@@ -11,9 +11,12 @@ import { usePopup } from "@/context/PopupContext";
 import SeoHead from "@/components/SeoHead";
 import Trigger from "@/components/Trigger/Trigger";
 
-import Lightbox from "yet-another-react-lightbox";
+
+import dynamic from "next/dynamic";
+const Lightbox = dynamic(() => import("yet-another-react-lightbox"), { ssr: false });
 import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
+// import "yet-another-react-lightbox/plugins/video.css";
 
 function PortfolioStackCard({ item, onClick }) {
   return (
@@ -140,7 +143,6 @@ export default function Work() {
     "Web",
     "Logo",
     "Branding",
-    "2D/3D Illustration",
     "Video",
     "Mobile App",
   ];
@@ -175,296 +177,1238 @@ export default function Work() {
   ];
 
   const portfolioItems = [
-    // WEB
+
+
+    // WE
+    // B
     {
-      title: "Cuisine Culture",
+      title: "tremark",
+      service: "Web",
+      category: "Law Firms",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/tremark2.png",
+        "https://code7labs.com/images/portfolio/web/informative/tremark1.png",
+        "https://code7labs.com/images/portfolio/web/informative/tremark3.png",
+      ],
+      link: "https://www.tremark.co.uk/",
+    },
+
+    {
+      title: "lee-associates",
+      service: "Web",
+      category: "Law Firms",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/lee2.png",
+        "https://code7labs.com/images/portfolio/web/informative/lee1.png",
+        "https://code7labs.com/images/portfolio/web/informative/lee3.png",
+      ],
+      link: "https://www.lee-associates.com/",
+    },
+
+    {
+      title: "caltaxadviser",
+      service: "Web",
+      category: "Law Firms",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/taxl2.png",
+        "https://code7labs.com/images/portfolio/web/informative/taxl1.png",
+        "https://code7labs.com/images/portfolio/web/informative/taxl3.png",
+      ],
+      link: "https://www.caltaxadviser.com/",
+    },
+    {
+      title: "millercanfield",
+      service: "Web",
+      category: "Law Firms",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/millercanfield-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/millercanfield-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/millercanfield-3  .png",
+      ],
+      link: "https://www.millercanfield.com/",
+    },
+    {
+      title: "gibsondunn",
+      service: "Web",
+      category: "Law Firms",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/gibsondunn-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/gibsondunn-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/gibsondunn-3.png",
+      ],
+      link: "https://www.gibsondunn.com/",
+    },
+
+
+    {
+      title: "cuisineculture",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pack-1-3.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-1-1.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-1-2.jpg",
+      ],
+      link: "http://cuisineculture.tv/",
+    },
+
+    {
+      title: "morseys",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pack-8-3.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-8-1.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-8-2.jpg",
+      ],
+      link: "http://morseys.com/",
+    },
+
+    {
+      title: "gemmadiluna",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pack-5-3.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-5-1.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-5-2.jpg",
+      ],
+      link: "https://gemmadiluna.com/",
+    },
+
+    {
+      title: "Lajolla Group",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/ljcg1.png",
+        "https://code7labs.com/images/portfolio/web/informative/pack-9-2.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/ljcg3.png",
+      ],
+      link: "https://ljcg.com/",
+    },
+
+    {
+      title: "enovationbrands",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pack-2-3.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-2-1.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-2-2.jpg",
+      ],
+      link: "https://www.enovationbrands.com/",
+    },
+
+    {
+      title: "cchomes",
+      service: "Web",
+      category: "Informative",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pack-4-3.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-4-1.jpg",
+        "https://code7labs.com/images/portfolio/web/informative/pack-4-2.jpg",
+      ],
+      link: "https://www.cchomes.com/",
+    },
+
+
+    {
+      title: "Cmorseys",
       service: "Web",
       category: "Restaurants",
       images: [
-        "/images/Portfolio/Web-Development/pack-1-1.webp",
-        "/images/Portfolio/Web-Development/pack-2-2.webp",
-        "/images/Portfolio/Web-Development/pack-3-3.webp",
+        "https://code7labs.com/images/portfolio/web/informative/morsey2.png",
+        "https://code7labs.com/images/portfolio/web/informative/morsey1.png",
+        "https://code7labs.com/images/portfolio/web/informative/morsey3.png",
       ],
-      link: "https://cuisineculture.tv",
+      link: "http://morseys.com/",
     },
     {
       title: "Boulevard Cafe",
       service: "Web",
       category: "Restaurants",
       images: [
-        "/images/Portfolio/Web-Development/pack-4-4.webp",
-        "/images/Portfolio/Web-Development/pack-5-5.webp",
-        "/images/Portfolio/Web-Development/pack-6-6.webp",
+        "https://code7labs.com/images/portfolio/web/informative/boulevardcafe2.png",
+        "https://code7labs.com/images/portfolio/web/informative/boulevardcafe1.png",
+        "https://code7labs.com/images/portfolio/web/informative/boulevardcafe3.png",
       ],
       link: "https://theboulevardcafe.com",
     },
+
+
+
     {
-      title: "Urban Dining",
+      title: "nativefoods",
       service: "Web",
       category: "Restaurants",
       images: [
-        "/images/Portfolio/Web-Development/pack-7-7.webp",
-        "/images/Portfolio/Web-Development/pack-8-8.webp",
-        "/images/Portfolio/Web-Development/pack-9-9.webp",
+        "https://code7labs.com/images/portfolio/web/informative/native2.png",
+        "https://code7labs.com/images/portfolio/web/informative/native1.png",
+        "https://code7labs.com/images/portfolio/web/informative/native3.png",
       ],
-      link: "https://urban-dining.example.com",
+      link: "https://nativefoods.com/",
     },
+
+    {
+      title: "veggiegrill",
+      service: "Web",
+      category: "Restaurants",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/veggi2.png",
+        "https://code7labs.com/images/portfolio/web/informative/veggi1.png",
+        "https://code7labs.com/images/portfolio/web/informative/veggi3.png",
+      ],
+      link: "https://www.veggiegrill.com/",
+    },
+
+    {
+      title: "veggiegrill",
+      service: "Web",
+      category: "Restaurants",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/vega2.png",
+        "https://code7labs.com/images/portfolio/web/informative/vega1.png",
+        "https://code7labs.com/images/portfolio/web/informative/vega3.png",
+      ],
+      link: "https://www.veganjunkfoodbar.com/",
+    },
+
+    {
+      title: "eatfarewell",
+      service: "Web",
+      category: "Restaurants",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/fare2.png",
+        "https://code7labs.com/images/portfolio/web/informative/fare1.png",
+        "https://code7labs.com/images/portfolio/web/informative/fare3.png",
+      ],
+      link: "https://www.eatfarewell.com/",
+    },
+
+    {
+      title: "Choice Landing Corp",
+      service: "Web",
+      category: "Financial Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/clg2.png",
+        "https://code7labs.com/images/portfolio/web/informative/clg1.png",
+        "https://code7labs.com/images/portfolio/web/informative/clg3.png",
+      ],
+      link: "https://clg1.net/",
+    },
+
+    {
+      title: "newbridgewealth",
+      service: "Web",
+      category: "Financial Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/bridge1.png",
+        "https://code7labs.com/images/portfolio/web/informative/bridge2.png",
+        "https://code7labs.com/images/portfolio/web/informative/bridge3.png",
+      ],
+      link: "https://www.newbridgewealth.com/",
+    },
+
+
+    {
+      title: "Lajolla Group",
+      service: "Web",
+      category: "Financial Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/ljcg2.png",
+        "https://code7labs.com/images/portfolio/web/informative/ljcg1.png",
+        "https://code7labs.com/images/portfolio/web/informative/ljcg3.png",
+      ],
+      link: "https://ljcg.com/",
+    },
+
+    {
+      title: "amminvest",
+      service: "Web",
+      category: "Financial Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/diego2.png",
+        "https://code7labs.com/images/portfolio/web/informative/diego1.png",
+        "https://code7labs.com/images/portfolio/web/informative/diego3.png",
+      ],
+      link: "https://www.amminvest.com/",
+    },
+
+    {
+      title: "pungroup",
+      service: "Web",
+      category: "Financial Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/cpa2.png",
+        "https://code7labs.com/images/portfolio/web/informative/cpa1.png",
+        "https://code7labs.com/images/portfolio/web/informative/cpa3.png",
+      ],
+      link: "https://pungroup.cpa/",
+    },
+
+
+
     {
       title: "Define Financial",
       service: "Web",
       category: "Financial Services",
       images: [
-        "/images/Portfolio/Web-Development/pack-1-1.webp",
-        "/images/Portfolio/Web-Development/pack-4-4.webp",
-        "/images/Portfolio/Web-Development/pack-7-7.webp",
+        "https://code7labs.com/images/portfolio/web/informative/define1.png",
+        "https://code7labs.com/images/portfolio/web/informative/define2.png",
+        "https://code7labs.com/images/portfolio/web/informative/define3.png",
       ],
-      link: "https://www.definefinancial.com",
+      link: "https://pungroup.cpa/",
     },
+
     {
       title: "CC Homes",
       service: "Web",
       category: "Real Estate",
       images: [
-        "/images/Portfolio/Web-Development/pack-2-2.webp",
-        "/images/Portfolio/Web-Development/pack-5-5.webp",
-        "/images/Portfolio/Web-Development/pack-8-8.webp",
+        "https://code7labs.com/images/portfolio/web/informative/cchome-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/cchome-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/cchome-3.png",
       ],
       link: "https://cchomes.com",
     },
+    {
+      title: "canarias downtown",
+      service: "Web",
+      category: "Real Estate",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/cadiz2.png",
+        "https://code7labs.com/images/portfolio/web/informative/cadiz1.png",
+        "https://code7labs.com/images/portfolio/web/informative/cadiz2.png",
+      ],
+      link: "https://canariasdowntowndoral.com/miami-homes-for-sale/cadiz/",
+    },
+
+    {
+      title: "homerealestate",
+      service: "Web",
+      category: "Real Estate",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/homerealestate-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/homerealestate-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/homerealestate-3.png",
+      ],
+      link: "https://www.homerealestate.com/miami-homes-for-sale/cadiz/",
+    },
+    {
+      title: "homelight",
+      service: "Web",
+      category: "Real Estate",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/homelight-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/homelight-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/homelight-3.png",
+      ],
+      link: "https://www.homelight.com/",
+    },
+
+    {
+      title: "Long & Foster",
+      service: "Web",
+      category: "Real Estate",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/foster2.png",
+        "https://code7labs.com/images/portfolio/web/informative/foster1.png",
+        "https://code7labs.com/images/portfolio/web/informative/foster3.png",
+      ],
+      link: "https://www.longandfoster.com/miami-homes-for-sale/cadiz/",
+    },
+
+    {
+      title: "Long & Foster",
+      service: "Web",
+      category: "Real Estate",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/street2.png",
+        "https://code7labs.com/images/portfolio/web/informative/street1.png",
+        "https://code7labs.com/images/portfolio/web/informative/street3.png",
+      ],
+      link: "https://www.longandfoster.com/miami-homes-for-sale/cadiz/",
+    },
+
+
     {
       title: "Physician One",
       service: "Web",
       category: "Healthcare",
       images: [
-        "/images/Portfolio/Web-Development/pack-3-3.webp",
-        "/images/Portfolio/Web-Development/pack-6-6.webp",
-        "/images/Portfolio/Web-Development/pack-9-9.webp",
+        "https://code7labs.com/images/portfolio/web/informative/vohra2.png",
+        "https://code7labs.com/images/portfolio/web/informative/vohra1.png",
+        "https://code7labs.com/images/portfolio/web/informative/vohra3.png",
       ],
       link: "https://physicianoneurgentcare.com",
     },
+
     {
+      title: "vohrawoundcare",
+      service: "Web",
+      category: "Healthcare",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/oak2.png",
+        "https://code7labs.com/images/portfolio/web/informative/oak1.png",
+        "https://code7labs.com/images/portfolio/web/informative/oak3.png",
+      ],
+      link: "https://vohrawoundcare.com/",
+    },
+
+
+    {
+      title: "Physician One",
+      service: "Web",
+      category: "Healthcare",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/sleepmed2.png",
+        "https://code7labs.com/images/portfolio/web/informative/sleepmed1.png",
+        "https://code7labs.com/images/portfolio/web/informative/sleepmed3.png",
+      ],
+      link: "https://physicianoneurgentcare.com",
+    },
+
+    {
+      title: "Physician One",
+      service: "Web",
+      category: "Healthcare",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/physician2.png",
+        "https://code7labs.com/images/portfolio/web/informative/physician1.png",
+        "https://code7labs.com/images/portfolio/web/informative/physician3.png",
+      ],
+      link: "https://physicianoneurgentcare.com",
+    },
+
+    {
+      title: "panamclinic",
+      service: "Web",
+      category: "Healthcare",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pan2.png",
+        "https://code7labs.com/images/portfolio/web/informative/pan1.png",
+        "https://code7labs.com/images/portfolio/web/informative/pan3.png",
+      ],
+      link: "https://www.panamclinic.org/",
+    },
+
+    {
+      title: "mahogany medical clinic",
+      service: "Web",
+      category: "Healthcare",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/mahogany2.png",
+        "https://code7labs.com/images/portfolio/web/informative/mahogany1.png",
+        "https://code7labs.com/images/portfolio/web/informative/mahogany3.png",
+      ],
+      link: "https://www.mahoganymedicalclinic.ca/",
+    },
+
+    {
+
+      title: "citywide homeloans ",
+      service: "Web",
+      category: "Loan & Mortgage Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/citywidehomeloans-3.png",
+        "https://code7labs.com/images/portfolio/web/informative/citywidehomeloans-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/citywidehomeloans-2.png",
+      ],
+      link: "https://www.citywidehomeloans.com/",
+    },
+
+    {
+
       title: "Mortgage Plus",
       service: "Web",
       category: "Loan & Mortgage Services",
       images: [
-        "/images/Portfolio/Web-Development/pack-1-1.webp",
-        "/images/Portfolio/Web-Development/pack-5-5.webp",
-        "/images/Portfolio/Web-Development/pack-9-9.webp",
+        "https://code7labs.com/images/portfolio/web/informative/astfinancial-3.png",
+        "https://code7labs.com/images/portfolio/web/informative/astfinancial-3.png",
+        "https://code7labs.com/images/portfolio/web/informative/astfinancial-3.png",
       ],
       link: "https://mortgage-plus.example.com",
     },
+
     {
-      title: "Contractor Build",
+
+      title: "sunsethome mortgage",
+      service: "Web",
+      category: "Loan & Mortgage Services",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/sunset2.png",
+        "https://code7labs.com/images/portfolio/web/informative/sunset1.png",
+        "https://code7labs.com/images/portfolio/web/informative/sunset3.png",
+      ],
+      link: "https://sunsethomemortgage.com/",
+    },
+
+    {
+
+      title: "atlantic coast mortgage",
+      service: "Web",
+      category: "Loan & Mortgage Services",
+      images: [
+
+        "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-3.png",
+      ],
+      link: "https://www.atlanticcoastmortgage.com/",
+    },
+
+    {
+
+      title: "churchill mortgage",
+      service: "Web",
+      category: "Loan & Mortgage Services",
+      images: [
+
+        "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-3.png",
+      ],
+      link: "https://www.churchillmortgage.com/",
+    },
+
+    {
+
+      title: "kenna insurance",
+      service: "Web",
+      category: "Loan & Mortgage Services",
+      images: [
+
+        "https://code7labs.com/images/portfolio/web/informative/kenna2.png",
+        "https://code7labs.com/images/portfolio/web/informative/kenna1.png",
+        "https://code7labs.com/images/portfolio/web/informative/kenna3.png",
+      ],
+      link: "https://mckennainsurance.com/",
+    },
+    {
+
+
+      title: "miami invest realty",
       service: "Web",
       category: "Contractors",
       images: [
-        "/images/Portfolio/Web-Development/pack-2-2.webp",
-        "/images/Portfolio/Web-Development/pack-6-6.webp",
-        "/images/Portfolio/Web-Development/pack-7-7.webp",
+        "https://code7labs.com/images/portfolio/web/informative/miami2.png",
+        "https://code7labs.com/images/portfolio/web/informative/miami1.png",
+        "https://code7labs.com/images/portfolio/web/informative/miami3.png",
       ],
-      link: "https://contractor-build.example.com",
+      link: "https://miamiinvestrealty.com/",
     },
 
+    {
+
+
+      title: "murfey company",
+      service: "Web",
+      category: "Contractors",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/murfey2.png",
+        "https://code7labs.com/images/portfolio/web/informative/murfey1.png",
+        "https://code7labs.com/images/portfolio/web/informative/murfey3.png",
+      ],
+      link: "https://murfeycompany.com/",
+    },
+
+    {
+
+
+      title: "factor group",
+      service: "Web",
+      category: "Contractors",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/factor2.png",
+        "https://code7labs.com/images/portfolio/web/informative/factor1.png",
+        "https://code7labs.com/images/portfolio/web/informative/factor3.png",
+      ],
+      link: "https://www.factorgroup.com/",
+    },
+    {
+
+
+      title: "pacific ucwc",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/pacific2.png",
+        "https://code7labs.com/images/portfolio/web/informative/pacific1.png",
+        "https://code7labs.com/images/portfolio/web/informative/pacific3.png",
+      ],
+      link: "https://pacificucwc.com/",
+    },
+
+    {
+
+
+      title: "heart bones yoga",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/heartandbones2.png",
+        "https://code7labs.com/images/portfolio/web/informative/heartandbones1.png",
+        "https://code7labs.com/images/portfolio/web/informative/heartandbones3.png",
+      ],
+      link: "https://www.heartandbonesyoga.com/",
+    },
+
+    {
+
+
+      title: "embody wellness",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/embody2.png",
+        "https://code7labs.com/images/portfolio/web/informative/embody1.png",
+        "https://code7labs.com/images/portfolio/web/informative/embody3.png",
+      ],
+      link: "https://embodywellness.co.uk/",
+    },
+
+    {
+
+
+      title: "sonic boom wellness",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/sonicboomwellness-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/sonicboomwellness-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/sonicboomwellness-3.png",
+      ],
+      link: "https://www.sonicboomwellness.com/",
+    },
+
+    {
+
+
+      title: "Veertical Wellness",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/vertical-wellness-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/vertical-wellness-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/vertical-wellness-3.png",
+      ],
+      link: "https://www.sonicboomwellness.com/",
+    },
+
+    {
+
+
+      title: "Face Beauty Science",
+      service: "Web",
+      category: "Wellness",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/facebeautyscience-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/facebeautyscience-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/facebeautyscience-3.png",
+      ],
+      link: "https://www.facebeautyscience.com/",
+    },
+
+
+    {
+
+
+      title: "workright",
+      service: "Web",
+      category: "Contractors",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/wrk-rit2.png",
+        "https://code7labs.com/images/portfolio/web/informative/wrk-rit1.png",
+        "https://code7labs.com/images/portfolio/web/informative/wrk-rit3.png",
+      ],
+      link: "https://workright.net/",
+    },
+
+    {
+
+
+      title: "peace crowell",
+      service: "Web",
+      category: "Contractors",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/peace-crowell2.png",
+        "https://code7labs.com/images/portfolio/web/informative/peace-crowell1.png",
+        "https://code7labs.com/images/portfolio/web/informative/peace-crowell3.png",
+      ],
+      link: "https://peacecrowell.com/",
+    },
+
+    {
+
+
+      title: "donaldson",
+      service: "Web",
+      category: "Contractors",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/donaldson-2.png",
+        "https://code7labs.com/images/portfolio/web/informative/donaldson-1.png",
+        "https://code7labs.com/images/portfolio/web/informative/donaldson-3.png",
+      ],
+      link: "https://www.donaldson.com/en-us/",
+    },
     // LOGO
     {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-1.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/1.png",
+    },
+
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/1-2.jpg",
+    },
+
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/2-2.jpg",
+    },
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/3-2.jpg",
+    },
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/4-2.jpg",
+    },
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/5-2.jpg",
+    },
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/6-2.jpg",
+    },
+    {
+      title: "Right Hand Consulting",
+      service: "Logo",
+      category: "Animals And Pets",
+      image: "https://code7labs.com/images/portfolio/animals-%26-pets/7-2.jpg",
     },
     {
       title: "Pacifica Consulting",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-2.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/2.jpg",
     },
     {
       title: "San & San Consultant",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-3.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/3.jpg",
     },
     {
       title: "Fifth Element",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-4.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/4.jpg",
     },
     {
       title: "A&R Insurance",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-5.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/6.jpg",
     },
     {
       title: "Mitosky Communications",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-6.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/7.jpg",
     },
     {
       title: "Algoritmo",
       service: "Logo",
       category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-7.webp",
+      image: "https://code7labs.com/images/portfolio/business-&-marketing/8.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/1.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/2.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/3.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/4.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/5.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Entertainment And Events-Music",
+      image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/6.jpg",
+    },
+
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/1.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/2.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/3.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/4.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/5.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Fitness And Gym",
+      image: "https://code7labs.com/images/portfolio/fitness-&-gym/6.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/1.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/2.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/3.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/4.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/5.jpg",
+    },
+    {
+      title: "Algoritmo",
+      service: "Logo",
+      category: "Home Real Estate And Renovation",
+      image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/6.jpg",
     },
     {
       title: "BitAFS",
       service: "Logo",
-      category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-8.webp",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/1.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/2.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/3.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/4.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/5.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/6.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/7.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/8.jpg",
+    },
+    {
+      title: "BitAFS",
+      service: "Logo",
+      category: "Cannabis",
+      image: "https://code7labs.com/images/portfolio/cannabis/9.jpg",
     },
     {
       title: "Karshel",
       service: "Logo",
-      category: "Business And Marketing",
-      image: "/images/Portfolio/Logo/logo-9.webp",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/1.jpg",
+    },
+    {
+      title: "Karshel",
+      service: "Logo",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/2.jpg",
+    },
+    {
+      title: "Karshel",
+      service: "Logo",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/3.jpg",
+    },
+    {
+      title: "Karshel",
+      service: "Logo",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/4.jpg",
+    },
+    {
+      title: "Karshel",
+      service: "Logo",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/5.jpg",
+    },
+    {
+      title: "Karshel",
+      service: "Logo",
+      category: "Cleaning",
+      image: "https://code7labs.com/images/portfolio/cleaning/6.jpg",
+    },
+
+    {
+
+      title: "Lexus Med Spa",
+      service: "Logo",
+      category: "Beauty And Cosmetics",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/1.jpg",
     },
     {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
-      image: "/images/Portfolio/Logo/logo-1.webp",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/2.jpg",
+    },
+    {
+      title: "Lexus Med Spa",
+      service: "Logo",
+      category: "Beauty And Cosmetics",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/3.jpg",
+    },
+    {
+      title: "Lexus Med Spa",
+      service: "Logo",
+      category: "Beauty And Cosmetics",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/4.jpg",
+    },
+    {
+      title: "Lexus Med Spa",
+      service: "Logo",
+      category: "Beauty And Cosmetics",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/5.jpg",
+    },
+    {
+      title: "Lexus Med Spa",
+      service: "Logo",
+      category: "Beauty And Cosmetics",
+      image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/6.jpg",
     },
     {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
-      image: "/images/Portfolio/Logo/logo-2.webp",
+      image: "https://code7labs.com/images/portfolio/education/1.jpg",
     },
+
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Education",
+      image: "https://code7labs.com/images/portfolio/education/2.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Education",
+      image: "https://code7labs.com/images/portfolio/education/3.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Education",
+      image: "https://code7labs.com/images/portfolio/education/4.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Education",
+      image: "https://code7labs.com/images/portfolio/education/5.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Education",
+      image: "https://code7labs.com/images/portfolio/education/6.jpg",
+    },
+
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/1.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/2.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/3.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/4.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/5.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Clothing And Apparel",
+      image: "https://code7labs.com/images/portfolio/clothing-&-apparel/6.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Dentist",
+      image: "https://code7labs.com/images/portfolio/dentist/1.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Dentist",
+      image: "https://code7labs.com/images/portfolio/dentist/2.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Dentist",
+      image: "https://code7labs.com/images/portfolio/dentist/3.jpg",
+    },
+    {
+      title: "Talent Management",
+      service: "Logo",
+      category: "Dentist",
+      image: "https://code7labs.com/images/portfolio/dentist/4.jpg",
+    },
+
+
 
     // BRANDING
     {
       title: "Erö Brand Kit",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-1.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-1.png",
     },
     {
       title: "High Life Packaging",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-2.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-2.png",
     },
     {
       title: "Geometric Identity",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-3.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-3.png",
     },
     {
       title: "Planable Brand Assets",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-4.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-4.png",
     },
     {
       title: "Minimal Box Design",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-5.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-5.png",
     },
     {
       title: "Black Angus Packaging",
       service: "Branding",
-      image: "/images/Portfolio/Branding/branding-6.webp",
+      image: "https://code7labs.com/images/portfolio/branding/thumnail/t-6.png",
     },
 
     // 2D/3D ILLUSTRATION
-    {
-      title: "Character Concept",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-1.webp",
-    },
-    {
-      title: "Product Render",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-2.webp",
-    },
-    {
-      title: "Creative Scene",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-3.webp",
-    },
-    {
-      title: "Architectural Visual",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-4.webp",
-    },
-    {
-      title: "Product Modeling",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-5.webp",
-    },
-    {
-      title: "Environment Art",
-      service: "2D/3D Illustration",
-      image: "/images/Portfolio/Illustration/illustration-6.webp",
-    },
+    // {
+    //   title: "Character Concept",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-1.webp",
+    // },
+    // {
+    //   title: "Product Render",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-2.webp",
+    // },
+    // {
+    //   title: "Creative Scene",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-3.webp",
+    // },
+    // {
+    //   title: "Architectural Visual",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-4.webp",
+    // },
+    // {
+    //   title: "Product Modeling",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-5.webp",
+    // },
+    // {
+    //   title: "Environment Art",
+    //   service: "2D/3D Illustration",
+    //   image: "/images/Portfolio/Illustration/illustration-6.webp",
+    // },
 
     // VIDEO
     {
       title: "Restaurant Promo",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-1-poster.webp",
-      videoSrc: "/videos/Portfolio/video-1.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-1.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/1.mp4",
     },
     {
       title: "Brand Campaign Reel",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-2-poster.webp",
-      videoSrc: "/videos/Portfolio/video-2.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-2.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/2.mp4",
     },
     {
       title: "Healthcare Ad",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-3-poster.webp",
-      videoSrc: "/videos/Portfolio/video-3.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-3.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/3.mp4",
     },
     {
       title: "Real Estate Showcase",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-4-poster.webp",
-      videoSrc: "/videos/Portfolio/video-4.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-4.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/4.mp4",
     },
     {
       title: "Social Media Reel",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-5-poster.webp",
-      videoSrc: "/videos/Portfolio/video-5.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-5.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/5.mp4",
     },
     {
       title: "Corporate Intro",
       service: "Video",
-      poster: "/images/Portfolio/Video/video-6-poster.webp",
-      videoSrc: "/videos/Portfolio/video-6.mp4",
+      poster: "https://code7labs.com/images/portfolio/video-animation/thumnail/t-6.png",
+      videoSrc: "https://code7labs.com/images/portfolio/video-animation/inner/6.mp4",
     },
 
     // MOBILE APP
     {
       title: "Finance App",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-1.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-1.png",
     },
     {
       title: "Health Tracker",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-2.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-2.png",
     },
     {
       title: "Shop Smart",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-3.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-3.png",
     },
     {
       title: "Home Connect",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-4.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-4.png",
     },
     {
       title: "Travel Planner",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-5.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-5.png",
     },
     {
       title: "Food Delivery UI",
       service: "Mobile App",
-      image: "/images/Portfolio/App-Development/app-6.webp",
+      image: "https://code7labs.com/images/portfolio/app-design-development/thumnail/t-6.png",
     },
   ];
 
@@ -592,11 +1536,10 @@ export default function Work() {
                 <button
                   key={tab}
                   onClick={() => handleTabChange(tab)}
-                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer ${
-                    activeService === tab
+                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer ${activeService === tab
                       ? "bg-black text-white"
                       : "bg-white border border-black/15 text-black hover:bg-black hover:text-white"
-                  }`}
+                    }`}
                 >
                   {tab}
                 </button>
@@ -622,11 +1565,10 @@ export default function Work() {
                       <button
                         key={category}
                         onClick={() => setActiveCategory(category)}
-                        className={`text-left rounded-2xl px-4 py-3 font-medium transition ${
-                          activeCategory === category
+                        className={`text-left rounded-2xl px-4 py-3 font-medium transition ${activeCategory === category
                             ? "bg-black text-white"
                             : "bg-[#f8f8f8] text-black hover:bg-black hover:text-white"
-                        }`}
+                          }`}
                       >
                         {category}
                       </button>
