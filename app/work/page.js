@@ -14,8 +14,9 @@ import Trigger from "@/components/Trigger/Trigger";
 
 import dynamic from "next/dynamic";
 const Lightbox = dynamic(() => import("yet-another-react-lightbox"), { ssr: false });
-const Video = dynamic(() => import("yet-another-react-lightbox/plugins/video"), { ssr: false });
+import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
+// import "yet-another-react-lightbox/plugins/video.css";
 
 function PortfolioStackCard({ item, onClick }) {
   return (
@@ -142,7 +143,6 @@ export default function Work() {
     "Web",
     "Logo",
     "Branding",
-    "2D/3D Illustration",
     "Video",
     "Mobile App",
   ];
@@ -162,7 +162,7 @@ export default function Work() {
   ];
 
   const logoCategories = [
-    "All",
+    "All",  
     "Animals And Pets",
     "Beauty And Cosmetics",
     "Business And Marketing",
@@ -182,6 +182,97 @@ export default function Work() {
     // WE
     // B
 {
+      title: "Cbeaux",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-2.jpg",
+      ],
+      link: "https://www.tremark.co.uk/",
+    },
+{
+      title: "Okhtein",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-2.jpg",
+      ],
+      link: "https://int.okhtein.com/",
+    },
+{
+      title: "Miashoes",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-2.jpg",
+      ],
+      link: "https://www.miashoes.com/",
+    },
+{
+      title: "Renuherbs",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-2.jpg",
+      ],
+      link: "https://www.renuherbs.com/",
+    },
+{
+      title: "Saltyk Swim",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-2.jpg",
+      ],
+      link: "https://saltykswim.com/",
+    },
+{
+      title: "Factor Group",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/factorg1.png",
+        "https://code7labs.com/images/portfolio/web/informative/factorg2.png",
+        "https://code7labs.com/images/portfolio/web/informative/factorg1.png",
+      ],
+      link: "https://www.factorgroup.com/",
+    },
+
+    {
+      title: "Mita Eyewear",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-2.jpg",
+      ],
+      link: "https://mita-eyewear.com/",
+    },
+
+    {
+      title: "Rosa Express",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-2.jpg",
+      ],
+      link: "https://rosaexpress.com/",
+    },
+
+    {
       title: "tremark",
       service: "Web",
       category: "Law Firms",
@@ -240,7 +331,7 @@ export default function Work() {
     },
 
 
-{
+    {
       title: "cuisineculture",
       service: "Web",
       category: "Informative",
@@ -264,7 +355,7 @@ export default function Work() {
       link: "http://morseys.com/",
     },
 
-     {
+    {
       title: "gemmadiluna",
       service: "Web",
       category: "Informative",
@@ -276,7 +367,7 @@ export default function Work() {
       link: "https://gemmadiluna.com/",
     },
 
-     {
+    {
       title: "Lajolla Group",
       service: "Web",
       category: "Informative",
@@ -336,7 +427,7 @@ export default function Work() {
       link: "https://theboulevardcafe.com",
     },
 
- 
+
 
     {
       title: "nativefoods",
@@ -350,7 +441,7 @@ export default function Work() {
       link: "https://nativefoods.com/",
     },
 
- {
+    {
       title: "veggiegrill",
       service: "Web",
       category: "Restaurants",
@@ -398,7 +489,7 @@ export default function Work() {
       link: "https://clg1.net/",
     },
 
-     {
+    {
       title: "newbridgewealth",
       service: "Web",
       category: "Financial Services",
@@ -411,7 +502,7 @@ export default function Work() {
     },
 
 
-     {
+    {
       title: "Lajolla Group",
       service: "Web",
       category: "Financial Services",
@@ -423,7 +514,7 @@ export default function Work() {
       link: "https://ljcg.com/",
     },
 
-       {
+    {
       title: "amminvest",
       service: "Web",
       category: "Financial Services",
@@ -435,7 +526,7 @@ export default function Work() {
       link: "https://www.amminvest.com/",
     },
 
-     {
+    {
       title: "pungroup",
       service: "Web",
       category: "Financial Services",
@@ -447,9 +538,9 @@ export default function Work() {
       link: "https://pungroup.cpa/",
     },
 
-    
 
-     {
+
+    {
       title: "Define Financial",
       service: "Web",
       category: "Financial Services",
@@ -460,8 +551,8 @@ export default function Work() {
       ],
       link: "https://pungroup.cpa/",
     },
-   
-     {
+
+    {
       title: "CC Homes",
       service: "Web",
       category: "Real Estate",
@@ -472,7 +563,7 @@ export default function Work() {
       ],
       link: "https://cchomes.com",
     },
-     {
+    {
       title: "canarias downtown",
       service: "Web",
       category: "Real Estate",
@@ -484,7 +575,7 @@ export default function Work() {
       link: "https://canariasdowntowndoral.com/miami-homes-for-sale/cadiz/",
     },
 
-     {
+    {
       title: "homerealestate",
       service: "Web",
       category: "Real Estate",
@@ -495,7 +586,7 @@ export default function Work() {
       ],
       link: "https://www.homerealestate.com/miami-homes-for-sale/cadiz/",
     },
-{
+    {
       title: "homelight",
       service: "Web",
       category: "Real Estate",
@@ -519,7 +610,7 @@ export default function Work() {
       link: "https://www.longandfoster.com/miami-homes-for-sale/cadiz/",
     },
 
-     {
+    {
       title: "Long & Foster",
       service: "Web",
       category: "Real Estate",
@@ -544,20 +635,20 @@ export default function Work() {
       link: "https://physicianoneurgentcare.com",
     },
 
- {
+    {
       title: "vohrawoundcare",
       service: "Web",
       category: "Healthcare",
       images: [
-            "https://code7labs.com/images/portfolio/web/informative/oak2.png",
-            "https://code7labs.com/images/portfolio/web/informative/oak1.png",
+        "https://code7labs.com/images/portfolio/web/informative/oak2.png",
+        "https://code7labs.com/images/portfolio/web/informative/oak1.png",
         "https://code7labs.com/images/portfolio/web/informative/oak3.png",
       ],
       link: "https://vohrawoundcare.com/",
     },
 
 
-     {
+    {
       title: "Physician One",
       service: "Web",
       category: "Healthcare",
@@ -569,7 +660,7 @@ export default function Work() {
       link: "https://physicianoneurgentcare.com",
     },
 
-     {
+    {
       title: "Physician One",
       service: "Web",
       category: "Healthcare",
@@ -581,7 +672,7 @@ export default function Work() {
       link: "https://physicianoneurgentcare.com",
     },
 
-      {
+    {
       title: "panamclinic",
       service: "Web",
       category: "Healthcare",
@@ -593,7 +684,7 @@ export default function Work() {
       link: "https://www.panamclinic.org/",
     },
 
-     {
+    {
       title: "mahogany medical clinic",
       service: "Web",
       category: "Healthcare",
@@ -618,7 +709,7 @@ export default function Work() {
       link: "https://www.citywidehomeloans.com/",
     },
 
-     {
+    {
 
       title: "Mortgage Plus",
       service: "Web",
@@ -631,7 +722,7 @@ export default function Work() {
       link: "https://mortgage-plus.example.com",
     },
 
-     {
+    {
 
       title: "sunsethome mortgage",
       service: "Web",
@@ -644,13 +735,13 @@ export default function Work() {
       link: "https://sunsethomemortgage.com/",
     },
 
-     {
+    {
 
       title: "atlantic coast mortgage",
       service: "Web",
       category: "Loan & Mortgage Services",
       images: [
-        
+
         "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-2.png",
         "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-1.png",
         "https://code7labs.com/images/portfolio/web/informative/atlanticcoastmortgage-3.png",
@@ -658,13 +749,13 @@ export default function Work() {
       link: "https://www.atlanticcoastmortgage.com/",
     },
 
-     {
+    {
 
       title: "churchill mortgage",
       service: "Web",
       category: "Loan & Mortgage Services",
       images: [
-        
+
         "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-2.png",
         "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-1.png",
         "https://code7labs.com/images/portfolio/web/informative/churchillmortgage-3.png",
@@ -672,13 +763,13 @@ export default function Work() {
       link: "https://www.churchillmortgage.com/",
     },
 
-     {
+    {
 
       title: "kenna insurance",
       service: "Web",
       category: "Loan & Mortgage Services",
       images: [
-        
+
         "https://code7labs.com/images/portfolio/web/informative/kenna2.png",
         "https://code7labs.com/images/portfolio/web/informative/kenna1.png",
         "https://code7labs.com/images/portfolio/web/informative/kenna3.png",
@@ -699,7 +790,7 @@ export default function Work() {
       link: "https://miamiinvestrealty.com/",
     },
 
-     {
+    {
 
 
       title: "murfey company",
@@ -713,7 +804,7 @@ export default function Work() {
       link: "https://murfeycompany.com/",
     },
 
-      {
+    {
 
 
       title: "factor group",
@@ -740,7 +831,7 @@ export default function Work() {
       link: "https://pacificucwc.com/",
     },
 
-     {
+    {
 
 
       title: "heart bones yoga",
@@ -754,7 +845,7 @@ export default function Work() {
       link: "https://www.heartandbonesyoga.com/",
     },
 
-      {
+    {
 
 
       title: "embody wellness",
@@ -768,7 +859,7 @@ export default function Work() {
       link: "https://embodywellness.co.uk/",
     },
 
-     {
+    {
 
 
       title: "sonic boom wellness",
@@ -782,7 +873,7 @@ export default function Work() {
       link: "https://www.sonicboomwellness.com/",
     },
 
-     {
+    {
 
 
       title: "Veertical Wellness",
@@ -796,7 +887,7 @@ export default function Work() {
       link: "https://www.sonicboomwellness.com/",
     },
 
-     {
+    {
 
 
       title: "Face Beauty Science",
@@ -810,8 +901,8 @@ export default function Work() {
       link: "https://www.facebeautyscience.com/",
     },
 
-    
-     {
+
+    {
 
 
       title: "workright",
@@ -825,7 +916,7 @@ export default function Work() {
       link: "https://workright.net/",
     },
 
-     {
+    {
 
 
       title: "peace crowell",
@@ -839,7 +930,7 @@ export default function Work() {
       link: "https://peacecrowell.com/",
     },
 
-     {
+    {
 
 
       title: "donaldson",
@@ -860,44 +951,44 @@ export default function Work() {
       image: "https://code7labs.com/images/portfolio/business-&-marketing/1.png",
     },
 
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/1-2.jpg",
     },
 
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/2-2.jpg",
     },
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/3-2.jpg",
     },
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/4-2.jpg",
     },
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/5-2.jpg",
     },
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
       image: "https://code7labs.com/images/portfolio/animals-%26-pets/6-2.jpg",
     },
-     {
+    {
       title: "Right Hand Consulting",
       service: "Logo",
       category: "Animals And Pets",
@@ -939,37 +1030,37 @@ export default function Work() {
       category: "Business And Marketing",
       image: "https://code7labs.com/images/portfolio/business-&-marketing/8.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
       image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/1.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
       image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/2.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
       image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/3.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
       image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/4.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
       image: "https://code7labs.com/images/portfolio/entertainment-&-events-music/5.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Entertainment And Events-Music",
@@ -982,67 +1073,67 @@ export default function Work() {
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/1.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/2.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/3.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/4.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/5.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Fitness And Gym",
       image: "https://code7labs.com/images/portfolio/fitness-&-gym/6.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
       image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/1.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
       image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/2.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
       image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/3.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
       image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/4.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
       image: "https://code7labs.com/images/portfolio/home-real-estate-&-renovation/5.jpg",
     },
-     {
+    {
       title: "Algoritmo",
       service: "Logo",
       category: "Home Real Estate And Renovation",
@@ -1054,49 +1145,49 @@ export default function Work() {
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/1.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/2.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/3.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/4.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/5.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/6.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/7.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
       image: "https://code7labs.com/images/portfolio/cannabis/8.jpg",
     },
-     {
+    {
       title: "BitAFS",
       service: "Logo",
       category: "Cannabis",
@@ -1108,7 +1199,7 @@ export default function Work() {
       category: "Cleaning",
       image: "https://code7labs.com/images/portfolio/cleaning/1.jpg",
     },
-{
+    {
       title: "Karshel",
       service: "Logo",
       category: "Cleaning",
@@ -1146,31 +1237,31 @@ export default function Work() {
       category: "Beauty And Cosmetics",
       image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/1.jpg",
     },
-     {
+    {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
       image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/2.jpg",
     },
-     {
+    {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
       image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/3.jpg",
     },
-     {
+    {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
       image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/4.jpg",
     },
-     {
+    {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
       image: "https://code7labs.com/images/portfolio/beauty-&-cosmetics/5.jpg",
     },
-     {
+    {
       title: "Lexus Med Spa",
       service: "Logo",
       category: "Beauty And Cosmetics",
@@ -1183,38 +1274,38 @@ export default function Work() {
       image: "https://code7labs.com/images/portfolio/education/1.jpg",
     },
 
-     {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
       image: "https://code7labs.com/images/portfolio/education/2.jpg",
     },
- {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
       image: "https://code7labs.com/images/portfolio/education/3.jpg",
     },
- {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
       image: "https://code7labs.com/images/portfolio/education/4.jpg",
     },
- {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
       image: "https://code7labs.com/images/portfolio/education/5.jpg",
     },
-     {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Education",
       image: "https://code7labs.com/images/portfolio/education/6.jpg",
     },
 
-     {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Clothing And Apparel",
@@ -1226,7 +1317,7 @@ export default function Work() {
       category: "Clothing And Apparel",
       image: "https://code7labs.com/images/portfolio/clothing-&-apparel/2.jpg",
     },
-{
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Clothing And Apparel",
@@ -1250,7 +1341,7 @@ export default function Work() {
       category: "Clothing And Apparel",
       image: "https://code7labs.com/images/portfolio/clothing-&-apparel/6.jpg",
     },
-      {
+    {
       title: "Talent Management",
       service: "Logo",
       category: "Dentist",
@@ -1274,8 +1365,8 @@ export default function Work() {
       category: "Dentist",
       image: "https://code7labs.com/images/portfolio/dentist/4.jpg",
     },
-   
-  
+
+
 
     // BRANDING
     {
@@ -1536,11 +1627,10 @@ export default function Work() {
                 <button
                   key={tab}
                   onClick={() => handleTabChange(tab)}
-                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer ${
-                    activeService === tab
+                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer ${activeService === tab
                       ? "bg-black text-white"
                       : "bg-white border border-black/15 text-black hover:bg-black hover:text-white"
-                  }`}
+                    }`}
                 >
                   {tab}
                 </button>
@@ -1566,11 +1656,10 @@ export default function Work() {
                       <button
                         key={category}
                         onClick={() => setActiveCategory(category)}
-                        className={`text-left rounded-2xl px-4 py-3 font-medium transition ${
-                          activeCategory === category
+                        className={`text-left rounded-2xl px-4 py-3 font-medium transition ${activeCategory === category
                             ? "bg-black text-white"
                             : "bg-[#f8f8f8] text-black hover:bg-black hover:text-white"
-                        }`}
+                          }`}
                       >
                         {category}
                       </button>

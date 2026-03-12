@@ -144,6 +144,7 @@ export default function Navbar() {
       { name: "About", href: "/about" },
       { name: "Services", href: "/services" },
       { name: "Portfolio", href: "/work" },
+      { name: "Pricing", href: "/pricing" },
       { name: "Contact Us", href: "/contact" },
     ],
     []
