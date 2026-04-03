@@ -169,6 +169,8 @@ export default function Navbar() {
           { name: "Website Development", href: "/Website-Development", icon: FaCode },
           { name: "E-Commerce Solution", href: "/E-Commerce-Solution", icon: FaShoppingCart },
           { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
+          { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
+          { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
         ],
       },
       {
@@ -178,7 +180,7 @@ export default function Navbar() {
           { name: "Search Engine Optimization", href: "/Search-Engine-Optimization", icon: FaSearch },
           { name: "Social Media Marketing", href: "/Social-Media-Marketing", icon: FaHashtag },
           { name: "PPC Management", href: "/PPC-Management", icon: FaBullhorn },
-          { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
+
         ],
       },
       {
@@ -186,7 +188,6 @@ export default function Navbar() {
         items: [
           { name: "iOS App", href: "/IOS-App", icon: FaApple },
           { name: "Android App", href: "/Android-App", icon: FaAndroid },
-          { name: "ASP App", href: "/ASP-App", icon: FaMicrosoft },
           { name: "Kotlin App", href: "/Kotlin-App", icon: FaJava },
           { name: "React Native App", href: "/React-Native-App", icon: FaReact },
           { name: "Flutter App", href: "/Flutter-App", icon: FaFire },
