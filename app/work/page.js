@@ -162,7 +162,7 @@ export default function Work() {
   ];
 
   const logoCategories = [
-    "All",
+    "All",  
     "Animals And Pets",
     "Beauty And Cosmetics",
     "Business And Marketing",
@@ -181,6 +181,97 @@ export default function Work() {
 
     // WE
     // B
+{
+      title: "Cbeaux",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-1-2.jpg",
+      ],
+      link: "https://www.tremark.co.uk/",
+    },
+{
+      title: "Okhtein",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-4-2.jpg",
+      ],
+      link: "https://int.okhtein.com/",
+    },
+{
+      title: "Miashoes",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-2-2.jpg",
+      ],
+      link: "https://www.miashoes.com/",
+    },
+{
+      title: "Renuherbs",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-5-2.jpg",
+      ],
+      link: "https://www.renuherbs.com/",
+    },
+{
+      title: "Saltyk Swim",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-7-2.jpg",
+      ],
+      link: "https://saltykswim.com/",
+    },
+{
+      title: "Factor Group",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/informative/factorg1.png",
+        "https://code7labs.com/images/portfolio/web/informative/factorg2.png",
+        "https://code7labs.com/images/portfolio/web/informative/factorg1.png",
+      ],
+      link: "https://www.factorgroup.com/",
+    },
+
+    {
+      title: "Mita Eyewear",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-3-2.jpg",
+      ],
+      link: "https://mita-eyewear.com/",
+    },
+
+    {
+      title: "Rosa Express",
+      service: "Web",
+      category: "Ecommerce",
+      images: [
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-3.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-1.jpg",
+        "https://code7labs.com/images/portfolio/web/ecommerce/pack-6-2.jpg",
+      ],
+      link: "https://rosaexpress.com/",
+    },
+
     {
       title: "tremark",
       service: "Web",
