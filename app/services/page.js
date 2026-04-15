@@ -264,10 +264,10 @@ export default function services() {
                 </div>
             </section>
 
-            <AllIndustries
+            {/* <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
-            />
+            /> */}
 
 
             <OurClients />

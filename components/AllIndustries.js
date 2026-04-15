@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const AllIndustries = ({ heading, items }) => {
   return (
     <div className="bg-white">
-      <section className="px-6 lg:px-8 pt-14 md:py-24 lg:py-[10.5rem] max-w-7xl mx-auto">
+      {/* <section className="px-6 lg:px-8 pt-14 md:py-24 lg:py-[10.5rem] max-w-7xl mx-auto">
         <div className="2xl:max-w-4xl lg:max-w-3xl lg:pb-24 pb-12">
           <h2 className="font-bold text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] text-black uppercase">
             {heading}
@@ -36,7 +36,7 @@ const AllIndustries = ({ heading, items }) => {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
