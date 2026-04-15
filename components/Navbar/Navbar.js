@@ -162,17 +162,17 @@ export default function Navbar() {
           { name: "Video Animation", href: "/Video-Animation", icon: FaVideo },
         ],
       },
-      {
-        category: "Web Design & Development",
-        items: [
-          { name: "Website Designing", href: "/Website-Designing", icon: FaLaptopCode },
-          { name: "Website Development", href: "/Website-Development", icon: FaCode },
-          { name: "E-Commerce Solution", href: "/E-Commerce-Solution", icon: FaShoppingCart },
-          { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
-          { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
-          { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
-        ],
-      },
+      // {
+      //   category: "Web Design & Development",
+      //   items: [
+      //     { name: "Website Designing", href: "/Website-Designing", icon: FaLaptopCode },
+      //     { name: "Website Development", href: "/Website-Development", icon: FaCode },
+      //     { name: "E-Commerce Solution", href: "/E-Commerce-Solution", icon: FaShoppingCart },
+      //     { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
+      //     { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
+      //     { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
+      //   ],
+      // },
       {
         category: "Digital Marketing",
         items: [
@@ -183,31 +183,31 @@ export default function Navbar() {
 
         ],
       },
-      {
-        category: "Mob App Development",
-        items: [
-          { name: "iOS App", href: "/IOS-App", icon: FaApple },
-          { name: "Android App", href: "/Android-App", icon: FaAndroid },
-          { name: "Kotlin App", href: "/Kotlin-App", icon: FaJava },
-          { name: "React Native App", href: "/React-Native-App", icon: FaReact },
-          { name: "Flutter App", href: "/Flutter-App", icon: FaFire },
-          { name: "Swift App", href: "/Swift-App", icon: FaApple },
-        ],
-      },
-      {
-        category: "Game Development",
-        items: [
-          { name: "Mobile Game Development", href: "/Mobile-Game-Development", icon: FaGamepad },
-          { name: "Unity Game Development", href: "/Unity-Game-Development", icon: FaUnity },
-          { name: "Unreal Game Development", href: "/Unreal-Game-Development", icon: FaCubes },
-          { name: "Blockchain Game Development", href: "/Blockchain-Game-Development", icon: FaCube },
-          { name: "2D Game Development", href: "/2D-Game-Development", icon: FaVectorSquare },
-          { name: "3D Game Development", href: "/3D-Game-Development", icon: FaLayerGroup },
-          { name: "Web3 Game Development", href: "/Web3-Game-Development", icon: FaGlobe },
-          { name: "Multiplayer Game Development", href: "/Multiplayer-Game-Development", icon: FaUsers },
-          { name: "Game Testing", href: "/Game-Testing", icon: FaBug },
-        ],
-      },
+      // {
+      //   category: "Mob App Development",
+      //   items: [
+      //     { name: "iOS App", href: "/IOS-App", icon: FaApple },
+      //     { name: "Android App", href: "/Android-App", icon: FaAndroid },
+      //     { name: "Kotlin App", href: "/Kotlin-App", icon: FaJava },
+      //     { name: "React Native App", href: "/React-Native-App", icon: FaReact },
+      //     { name: "Flutter App", href: "/Flutter-App", icon: FaFire },
+      //     { name: "Swift App", href: "/Swift-App", icon: FaApple },
+      //   ],
+      // },
+      // {
+      //   category: "Game Development",
+      //   items: [
+      //     { name: "Mobile Game Development", href: "/Mobile-Game-Development", icon: FaGamepad },
+      //     { name: "Unity Game Development", href: "/Unity-Game-Development", icon: FaUnity },
+      //     { name: "Unreal Game Development", href: "/Unreal-Game-Development", icon: FaCubes },
+      //     { name: "Blockchain Game Development", href: "/Blockchain-Game-Development", icon: FaCube },
+      //     { name: "2D Game Development", href: "/2D-Game-Development", icon: FaVectorSquare },
+      //     { name: "3D Game Development", href: "/3D-Game-Development", icon: FaLayerGroup },
+      //     { name: "Web3 Game Development", href: "/Web3-Game-Development", icon: FaGlobe },
+      //     { name: "Multiplayer Game Development", href: "/Multiplayer-Game-Development", icon: FaUsers },
+      //     { name: "Game Testing", href: "/Game-Testing", icon: FaBug },
+      //   ],
+      // },
     ],
     []
   )
