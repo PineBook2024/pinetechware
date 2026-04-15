@@ -70,28 +70,28 @@ export default function page() {
         { name: "Multiplayer Game Development" },
     ];
 
-const DesignServices = [
-    {
-        title: "Education Domain Expertise",
-        description:
-            "Our team understands academic workflows, learning methodologies, and institutional challenges.",
-    },
-    {
-        title: "Custom-Built Solutions",
-        description:
-            "We deliver tailor-made education software designed to meet specific learning and administrative requirements.",
-    },
-    {
-        title: "Data Security & Compliance",
-        description:
-            "We ensure secure handling of student data and compliance with education data protection standards.",
-    },
-    {
-        title: "QA & Testing",
-        description:
-            "Comprehensive testing guarantees reliable, scalable, and high-performing education platforms.",
-    },
-];
+    const DesignServices = [
+        {
+            title: "Education Domain Expertise",
+            description:
+                "Our team understands academic workflows, learning methodologies, and institutional challenges.",
+        },
+        {
+            title: "Custom-Built Solutions",
+            description:
+                "We deliver tailor-made education software designed to meet specific learning and administrative requirements.",
+        },
+        {
+            title: "Data Security & Compliance",
+            description:
+                "We ensure secure handling of student data and compliance with education data protection standards.",
+        },
+        {
+            title: "QA & Testing",
+            description:
+                "Comprehensive testing guarantees reliable, scalable, and high-performing education platforms.",
+        },
+    ];
 
 
     const slides = [
@@ -117,13 +117,13 @@ const DesignServices = [
         },
     ];
 
-const bullets = [
-    "Skilled Developers, Designers, & QA Engineers",
-    "Flexible Hiring Models",
-    "Faster Development Cycles",
-    "Cost-Effective Solutions",
-    "Continuous Support & Maintenance"
-];
+    const bullets = [
+        "Skilled Developers, Designers, & QA Engineers",
+        "Flexible Hiring Models",
+        "Faster Development Cycles",
+        "Cost-Effective Solutions",
+        "Continuous Support & Maintenance"
+    ];
 
     const techs = [
         { name: "Dart", src: "/images/Dart.svg" },
@@ -155,28 +155,28 @@ const bullets = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Education Software   </span> Development Company</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a leading education software development company delivering innovative, scalable, and secure digital solutions for schools, universities, training institutes, and EdTech businesses. Our solutions enhance learning experiences, streamline administration, and support digital transformation in education.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Education Software   </span> Marketing Company</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a leading education software Marketing Company delivering innovative, scalable, and secure digital solutions for schools, universities, training institutes, and EdTech businesses. Our solutions enhance learning experiences, streamline administration, and support digital transformation in education.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/education-software-development/01.webp"
-                                                                   alt="Education Software Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/education-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Education Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/education-software-development/01.webp"
+                                alt="Education Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/education-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Education Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -448,7 +448,7 @@ const bullets = [
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem]">
                     <div className="lg:overflow-hidden">
                         <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
-                           Why Choose Us for Education Software Development</h2>
+                            Why Choose Us for Education Software Development</h2>
                     </div>
 
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 gap-6 md:gap-y-16 lg:gap-14 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none">

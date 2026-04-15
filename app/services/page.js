@@ -104,7 +104,7 @@ export default function services() {
                         >
                             <span className="text-theme text-[#3BB9E1]">Fueling Growth Through</span> Advanced Digital Services
                         </h1>
-                        <p className=" text-black mt-5 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We build intelligent, scalable digital products that help businesses grow, innovate, and lead. From strategy through design, development, launch, and maintenance, PineTechware is your full-cycle partner in creating real value.</p>
+                        <p className=" text-black mt-5 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We build intelligent, scalable digital products that help businesses grow, innovate, and lead. From strategy through design, Marketing, launch, and maintenance, PineTechware is your full-cycle partner in creating real value.</p>
 
                     </div>
                 </div>

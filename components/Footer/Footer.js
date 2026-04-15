@@ -21,7 +21,7 @@ const Footer = () => {
                                 <Image src={logo} width={150} height={200} alt='logo'></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7 px-4">
-                                Pine Techware is among the Leading Software Development Agencies in USA & UK. We are Committed to Provide Innovative Tech Products and Solutions with Affordability
+                                Pine Techware is among the Leading Software Design & Marketing Agencies in USA & UK. We are Committed to Provide Innovative Tech Products and Solutions with Affordability
                             </p>
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">

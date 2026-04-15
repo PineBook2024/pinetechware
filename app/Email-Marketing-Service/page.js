@@ -144,7 +144,7 @@ export default function page() {
 
             <SeoHead
                 title="Custom Software & Digital Solutions | Pine Techware"
-                description="PineTechware offers expert website design, development, and digital solutions to help businesses grow through innovation and technology." />
+                description="PineTechware offers expert website design, Marketing, and digital solutions to help businesses grow through innovation and technology." />
 
             <div data-theme="light">
                 <Navbar />
@@ -186,7 +186,7 @@ export default function page() {
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>

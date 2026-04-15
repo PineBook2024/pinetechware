@@ -70,61 +70,61 @@ export default function page() {
         { name: "Multiplayer Game Development" },
     ];
 
-const DesignServices = [
-    {
-        title: "Fashion Industry Expertise",
-        description: "Our team understands the fast-changing fashion landscape, seasonal trends, and apparel supply chain complexities."
-    },
-    {
-        title: "Custom-Built Solutions",
-        description: "We develop tailored software solutions that align with your brand identity and business objectives."
-    },
-    {
-        title: "Scalability & Performance",
-        description: "Our solutions are built to handle seasonal demand spikes and rapid business growth."
-    },
-    {
-        title: "QA & Testing",
-        description: "Comprehensive testing ensures reliability, performance, and smooth user experience."
-    },
-    {
-        title: "Cloud-Based Fashion Software Solutions",
-        description: "We develop cloud-enabled fashion software that supports flexibility, scalability, and real-time access."
-    }
-];
+    const DesignServices = [
+        {
+            title: "Fashion Industry Expertise",
+            description: "Our team understands the fast-changing fashion landscape, seasonal trends, and apparel supply chain complexities."
+        },
+        {
+            title: "Custom-Built Solutions",
+            description: "We develop tailored software solutions that align with your brand identity and business objectives."
+        },
+        {
+            title: "Scalability & Performance",
+            description: "Our solutions are built to handle seasonal demand spikes and rapid business growth."
+        },
+        {
+            title: "QA & Testing",
+            description: "Comprehensive testing ensures reliability, performance, and smooth user experience."
+        },
+        {
+            title: "Cloud-Based Fashion Software Solutions",
+            description: "We develop cloud-enabled fashion software that supports flexibility, scalability, and real-time access."
+        }
+    ];
 
 
 
-const slides = [
-    {
-        title: "Software Consulting",
-        desc: "Expert guidance for fashion technology strategy and digital transformation.",
-        img: "/images/fashion-software-development/Software-Consulting.webp",
-    },
-    {
-        title: "Dedicated Development Team",
-        desc: "A dedicated team focused on building and enhancing fashion software solutions.",
-        img: "/images/fashion-software-development/Dedicated-Development-Team.webp",
-    },
-    {
-        title: "Staff Augmentation",
-        desc: "Extend your in-house team with skilled fashion software developers and QA specialists.",
-        img: "/images/fashion-software-development/Staff-Augmentation.webp",
-    },
-    {
-        title: "End-to-End Project Delivery",
-        desc: "Complete ownership from ideation to deployment and post-launch support.",
-        img: "/images/fashion-software-development/End-to-End-Project-Delivery.webp",
-    }
-];
+    const slides = [
+        {
+            title: "Software Consulting",
+            desc: "Expert guidance for fashion technology strategy and digital transformation.",
+            img: "/images/fashion-software-development/Software-Consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building and enhancing fashion software solutions.",
+            img: "/images/fashion-software-development/Dedicated-Development-Team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your in-house team with skilled fashion software developers and QA specialists.",
+            img: "/images/fashion-software-development/Staff-Augmentation.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete ownership from ideation to deployment and post-launch support.",
+            img: "/images/fashion-software-development/End-to-End-Project-Delivery.webp",
+        }
+    ];
 
-const bullets = [
-    "Fashion Software Developers & QA Engineers",
-    "Flexible Engagement Models",
-    "Faster Time-to-Market",
-    "Cost-Effective Solutions",
-    "Continuous Support & Maintenance"
-];
+    const bullets = [
+        "Fashion Software Developers & QA Engineers",
+        "Flexible Engagement Models",
+        "Faster Time-to-Market",
+        "Cost-Effective Solutions",
+        "Continuous Support & Maintenance"
+    ];
 
 
     const techs = [
@@ -157,28 +157,28 @@ const bullets = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Fashion & Apparel </span> Software Development Company</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a specialized fashion and apparel software development company delivering smart, scalable, and trend-driven digital solutions for fashion brands, apparel manufacturers, retailers, and lifestyle businesses. Our solutions help streamline operations, enhance customer experience, and accelerate growth in the fast-paced fashion industry.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Fashion & Apparel </span> Software Marketing Company</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a specialized fashion and apparel software Marketing Company delivering smart, scalable, and trend-driven digital solutions for fashion brands, apparel manufacturers, retailers, and lifestyle businesses. Our solutions help streamline operations, enhance customer experience, and accelerate growth in the fast-paced fashion industry.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/fashion-software-development/01.webp"
-                                                                   alt="Fashion Software Development"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/fashion-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Fashion Software Development" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/fashion-software-development/01.webp"
+                                alt="Fashion Software Development"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/fashion-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Fashion Software Development" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -501,7 +501,7 @@ const bullets = [
                                     Collaboration Models for Fashion & Apparel Software Development
                                 </h2>
                                 <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                                  We offer flexible engagement models to meet diverse fashion business needs.
+                                    We offer flexible engagement models to meet diverse fashion business needs.
                                 </p>
                             </div>
                         </SplideSlide>
@@ -529,7 +529,7 @@ const bullets = [
                         Collaboration Models for Fashion & Apparel Software Development
                     </h2>
                     <p className="text-base mb-12">
-                         We offer flexible engagement models to meet diverse fashion business needs.
+                        We offer flexible engagement models to meet diverse fashion business needs.
                     </p>
 
                     <div className="flex flex-col gap-5">

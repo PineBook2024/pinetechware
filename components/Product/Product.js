@@ -57,31 +57,31 @@ const Product = () => {
   }, []);
 
   const steps = [
-  {
-    title: "Ideate",
-    description: "Share your vision, market, users & goals with us so we can create a perfect roadmap for your brand's success."
-  },
-  {
-    title: "Design",
-    description: "We craft products that showcase design with all the features to optimize the interface for user satisfaction."
-  },
-  {
-    title: "Develop",
-    description: "Ensuring top-quality development with agile sprints, best practices, and scalable architecture that focus on feasible accessibility."
-  },
-  {
-    title: "Test",
-    description: "We cover every corner of QA, usability, performance, and website security. Your project is in safe hands."
-  },
-  {
-    title: "Launch",
-    description: "Promising a smooth deployment & rollout across all platforms with top-notch development and design services."
-  },
-];
+    {
+      title: "Ideate",
+      description: "Share your vision, market, users & goals with us so we can create a perfect roadmap for your brand's success."
+    },
+    {
+      title: "Design",
+      description: "We craft products that showcase design with all the features to optimize the interface for user satisfaction."
+    },
+    {
+      title: "Develop",
+      description: "Ensuring top-quality Marketing with agile sprints, best practices, and scalable architecture that focus on feasible accessibility."
+    },
+    {
+      title: "Test",
+      description: "We cover every corner of QA, usability, performance, and website security. Your project is in safe hands."
+    },
+    {
+      title: "Launch",
+      description: "Promising a smooth deployment & rollout across all platforms with top-notch Marketing and design services."
+    },
+  ];
 
   return (
 
-    
+
     <section className="pt-16 md:pt-24 lg:pt-[10.5rem] bg-[#3BB9E1]">
       <div className="px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Heading */}
@@ -90,7 +90,7 @@ const Product = () => {
             <h2 className="text-white font-extrabold text-4xl xl:text-5xl 2xl:text-6xl  xl:!leading-[55px] 2xl:!leading-[65px]">
               <span>How We Work  </span>
               <br />
-              <span className="text-theme">Product Development Process</span>
+              <span className="text-theme">Product Marketing Process</span>
             </h2>
           </div>
 

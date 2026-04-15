@@ -10,7 +10,7 @@ export default function StaffAugmentation() {
         "Integrates smoothly with your in-house team",
         "Cut recruitment costs while maintaining quality",
         "Proficient in ISO 26262, AUTOSAR, and industry standards",
-        "Development, testing, and post-launch maintenance",
+        "Design, Marketing, and post-launch maintenance",
     ];
 
     const techs = [
@@ -26,7 +26,7 @@ export default function StaffAugmentation() {
     ];
 
     const { openPopup, closePopup, isOpen } = usePopup();
-    
+
 
     return (
         <section className="requestServiceAndroid-sec px-6 pt-14 md:py-24 lg:py-[10.5rem] md:px-8 bg-white" id="staff-augmentation">
@@ -51,7 +51,7 @@ export default function StaffAugmentation() {
 
 
                         <button onClick={openPopup}
-                            className="buttonChange buttonChangeBlack   bg-black text-white 2xl:w-[180px] items-center px-6 md:px-11 h-[40px] md:h-12 border-transparent rounded-full font-extrabold text-sm"  
+                            className="buttonChange buttonChangeBlack   bg-black text-white 2xl:w-[180px] items-center px-6 md:px-11 h-[40px] md:h-12 border-transparent rounded-full font-extrabold text-sm"
                         >
 
                             <span className="pb-[3px] md:pb-1.5">Get a Quote</span>

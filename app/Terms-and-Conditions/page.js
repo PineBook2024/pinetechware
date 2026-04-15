@@ -105,14 +105,12 @@ export default function TermConditions() {
                         </h2>
 
                         <p className="pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                            Pine Techware is a digital design and development services company providing solutions including but not limited to:
+                            Pine Techware is a digital design and Marketing services company providing solutions including but not limited to:
                         </p>
 
                         <ul className="pt-6 list-disc pl-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
                             <li>Graphic & Branding Design</li>
-                            <li>Website Design & Development</li>
-                            <li>Mobile App Development</li>
-                            <li>Game Development & Testing</li>
+
                             <li>Digital Marketing & Related Services</li>
                         </ul>
 

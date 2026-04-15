@@ -182,7 +182,7 @@ export default function Featured() {
               </h2>
             </div>
             <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-white  2xl:text-2xl">
-              We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+              We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
             </p>
           </div>
         </div>

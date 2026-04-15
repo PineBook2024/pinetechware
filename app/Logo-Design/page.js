@@ -51,49 +51,49 @@ export default function page() {
 
             <SeoHead
                 title="Custom Software & Digital Solutions | Pine Techware"
-                description="PineTechware offers expert website design, development, and digital solutions to help businesses grow through innovation and technology." />
+                description="PineTechware offers expert website design, Marketing, and digital solutions to help businesses grow through innovation and technology." />
 
             <div data-theme="light">
                 <Navbar />
             </div>
 
-           <section className="HalfTextContent-sec bg-white">
-    <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
-        <div className="lg:grid lg:grid-cols-12 lg:items-center gap-12">
+            <section className="HalfTextContent-sec bg-white">
+                <div className="px-6 lg:px-8 pt-40 lg:pt-[10.5rem] max-w-7xl mx-auto">
+                    <div className="lg:grid lg:grid-cols-12 lg:items-center gap-12">
 
-            {/* TEXT */}
-            <div className="lg:col-span-7">
-                <div className="overflow-hidden">
-                    <h1 className="font-bold text-black pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[55px] 2xl:!leading-[65px]">
-                        Crafting Logos That Define Your Brand
-                    </h1>
+                        {/* TEXT */}
+                        <div className="lg:col-span-7">
+                            <div className="overflow-hidden">
+                                <h1 className="font-bold text-black pb-6 lg:pb-[2.375rem] text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] xl:!leading-[55px] 2xl:!leading-[65px]">
+                                    Crafting Logos That Define Your Brand
+                                </h1>
+                            </div>
+
+                            <p className="text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                                A great logo isn’t just an icon. It’s your brand’s identity, personality, and first impression.
+                                We design logos that are memorable, versatile, and rooted in strategy—so your business
+                                stands out everywhere it appears.
+                            </p>
+                        </div>
+
+                        {/* IMAGE */}
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                            <Image
+                                src="/images/Logo-Designs/01.webp"
+                                alt="Professional Logo Design Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
                 </div>
-
-                <p className="text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                    A great logo isn’t just an icon. It’s your brand’s identity, personality, and first impression.
-                    We design logos that are memorable, versatile, and rooted in strategy—so your business
-                    stands out everywhere it appears.
-                </p>
-            </div>
-
-            {/* IMAGE */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                <Image
-                    src="/images/Logo-Designs/01.webp"
-                    alt="Professional Logo Design Services"
-                    width={500}
-                    height={500}
-                    priority
-                    className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                />
-            </div>
-
-        </div>
-    </div>
-</section>
+            </section>
 
 
-                <Image src="/images/Logo-Designs/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+            <Image src="/images/Logo-Designs/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Marketing Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
@@ -104,7 +104,7 @@ export default function page() {
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -270,11 +270,11 @@ export default function page() {
             </section>
 
 
-                <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">
@@ -340,7 +340,7 @@ export default function page() {
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >
                             <Image src={Img2} className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]" alt="Pine Tech Wear Asset" loading="lazy" />
                             <ul>
-                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Brand Guidelines Development</a></li>
+                                <li><a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">Brand Guidelines Design</a></li>
                             </ul>
                         </div>
                         <div className=" md:col-span-4  text-black col-span-12 lg:pr-[55] flex lg:gap-5 gap-3 items-start" >

@@ -71,27 +71,27 @@ export default function page() {
     ];
 
     const DesignServices = [
-    {
-        title: "Industry Expertise",
-        description: "Our team understands complex B2B ecosystems and delivers solutions that match real-world business needs.",
-    },
-    {
-        title: "Custom-Built Solutions",
-        description: "Every solution is designed specifically for your business, ensuring efficiency, scalability, and long-term value.",
-    },
-    {
-        title: "Security & Compliance",
-        description: "We implement enterprise-grade security protocols to protect sensitive business data and ensure compliance.",
-    },
-    {
-        title: "QA & Testing",
-        description: "Rigorous testing processes ensure stable, reliable, and high-performance software before deployment.",
-    },
-    {
-        title: "Cloud-Based B2B Solutions",
-        description: "We develop cloud-native B2B applications that offer flexibility, scalability, and cost efficiency.",
-    },
-];
+        {
+            title: "Industry Expertise",
+            description: "Our team understands complex B2B ecosystems and delivers solutions that match real-world business needs.",
+        },
+        {
+            title: "Custom-Built Solutions",
+            description: "Every solution is designed specifically for your business, ensuring efficiency, scalability, and long-term value.",
+        },
+        {
+            title: "Security & Compliance",
+            description: "We implement enterprise-grade security protocols to protect sensitive business data and ensure compliance.",
+        },
+        {
+            title: "QA & Testing",
+            description: "Rigorous testing processes ensure stable, reliable, and high-performance software before deployment.",
+        },
+        {
+            title: "Cloud-Based B2B Solutions",
+            description: "We develop cloud-native B2B applications that offer flexibility, scalability, and cost efficiency.",
+        },
+    ];
 
     const slides = [
         {
@@ -116,13 +116,13 @@ export default function page() {
         },
     ];
 
-const bullets = [
-    "Skilled Developers, Architects, & QA Engineers",
-    "Flexible Hiring Models",
-    "Faster Project Execution",
-    "Reduced Operational Costs",
-    "Continuous Support & Maintenance"
-];
+    const bullets = [
+        "Skilled Developers, Architects, & QA Engineers",
+        "Flexible Hiring Models",
+        "Faster Project Execution",
+        "Reduced Operational Costs",
+        "Continuous Support & Maintenance"
+    ];
 
     const techs = [
         { name: "Dart", src: "/images/Dart.svg" },
@@ -154,28 +154,28 @@ const bullets = [
                     <div className="lg:grid lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <div className="overflow-hidden">
-                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>B2B Software  </span> Development Company</h1></div>
-                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a trusted B2B software development company delivering scalable, secure, and high-performance digital solutions for businesses worldwide. Our focus is on building software that streamlines operations, improves decision-making, and drives measurable growth.</p>
+                                <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>B2B Software  </span> Marketing Company</h1></div>
+                            <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We are a trusted B2B software Marketing Company delivering scalable, secure, and high-performance digital solutions for businesses worldwide. Our focus is on building software that streamlines operations, improves decision-making, and drives measurable growth.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/b2b-software-development/01.webp"
-                                                                   alt="B2B Software Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/b2b-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="B2B Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/b2b-software-development/01.webp"
+                                alt="B2B Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/b2b-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="B2B Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -447,7 +447,7 @@ const bullets = [
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem]">
                     <div className="lg:overflow-hidden">
                         <h2 className="text-black font-bold pb-2 md:pb-0 sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">
-                           Why Choose Us as Your B2B Software Partner</h2>
+                            Why Choose Us as Your B2B Software Partner</h2>
                     </div>
 
                     <div className="mt-12 lg:mt-20 grid max-w-2xl grid-cols-1 gap-6 md:gap-y-16 lg:gap-14 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none">

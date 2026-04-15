@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <SeoHead
         title="Custom Software & Digital Solutions | Pine Techware"
-        description="PineTechware offers expert website design, development, and digital solutions to help businesses grow through innovation and technology."
+        description="PineTechware offers expert website design, Marketing, and digital solutions to help businesses grow through innovation and technology."
       />
 
       <Navbar />
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex-col justify-between items-center">
 
             <h1 className="font-extrabold text-white md:text-5xl leading-none text-[43px] lg:text-5xl xl:text-6xl 2xl:text-7xl">
-              <span className="text-[#3BB9E1] ">USA’s #1</span> Software Development Company<br/> That Transforms Brands
+              <span className="text-[#3BB9E1] ">USA’s #1</span> Software Marketing Company<br/> That Transforms Brands
             </h1>
             <p className=" text-neutral-200 mt-5 lg:max-w-xl 2xl:max-w-3xl text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               Pine Techware is a full-cycle software development service bringing your vision to life through tech, design & innovation. Let’s make something remarkable.
@@ -127,13 +127,13 @@ export default function Home() {
 
             {/* Left Side Content */}
             <h1 className="font-extrabold text-white md:text-5xl leading-none text-[43px] lg:text-5xl xl:text-6xl 2xl:text-7xl">
-              <span className="text-[#3BB9E1] ">USA’s #1</span> Software Development Company
+              <span className="text-[#3BB9E1] ">USA’s #1</span> Software Marketing Company
               <br />
               That Transforms Brands
             </h1>
 
             <p className=" text-neutral-200 mt-5 lg:max-w-xl 2xl:max-w-3xl text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-              Pine Techware is a full-cycle software development service bringing your vision to life through tech, design & innovation. Let’s make something remarkable.
+              Pine Techware is a full-cycle software Marketing service bringing your vision to life through tech, design & innovation. Let’s make something remarkable.
             </p>
 
             {/* Right Side Circle */}

@@ -4,43 +4,43 @@ import styles from './Industries.module.css'
 
 const Industries = () => {
     const slides = [
-  {
-    id: 1,
-    title: "Finance & FinTech",
-    description:
-      "Empowering Finance & FinTech companies with secure, scalable, and innovative digital solutions. From mobile banking apps to AI-driven platforms, we build technology that enhances user trust, drives growth, and redefines financial experiences.",
-  },
-  {
-    id: 2,
-    title: "Healthcare & Wellbeing",
-    description:
-      "Designing and developing cutting-edge digital solutions for the Healthcare & Wellbeing industry, ensuring security, compliance, and user-centric experiences. From telemedicine apps to wellness platforms, we empower providers and patients with technology that improves lives.",
-  },
-  {
-    id: 3,
-    title: "Education & EdTech",
-    description:
-      "Creating innovative digital solutions for the Education & EdTech industry, making learning accessible, engaging, and scalable. From eLearning platforms to gamified apps, we empower educators and learners with technology that inspires growth.",
-  },
-  {
-    id: 4,
-    title: "EducE-commerce & Retailation",
-    description:
-      "Build powerful E-commerce and Retail solutions that elevate customer experiences and drive sales growth. From scalable online stores to personalized shopping apps, we help brands connect with customers anytime, anywhere.",
-  },
-  {
-    id: 5,
-    title: "Real Estate",
-    description:
-      "Crafting innovative digital solutions for the Real Estate industry that simplify property search, management, and transactions. From immersive virtual tours to smart listing platforms, we help realtors and buyers connect seamlessly.",
-  },
-  {
-    id: 6,
-    title: "Startups & Enterprises",
-    description:
-      "We partner with Startups and Enterprises to transform bold ideas into scalable digital products. From MVP development to enterprise-grade solutions, we provide the strategy, design, and technology that fuel long-term growth.",
-  },
-];
+        {
+            id: 1,
+            title: "Finance & FinTech",
+            description:
+                "Empowering Finance & FinTech companies with secure, scalable, and innovative digital solutions. From mobile banking apps to AI-driven platforms, we build technology that enhances user trust, drives growth, and redefines financial experiences.",
+        },
+        {
+            id: 2,
+            title: "Healthcare & Wellbeing",
+            description:
+                "Designing and developing cutting-edge digital solutions for the Healthcare & Wellbeing industry, ensuring security, compliance, and user-centric experiences. From telemedicine apps to wellness platforms, we empower providers and patients with technology that improves lives.",
+        },
+        {
+            id: 3,
+            title: "Education & EdTech",
+            description:
+                "Creating innovative digital solutions for the Education & EdTech industry, making learning accessible, engaging, and scalable. From eLearning platforms to gamified apps, we empower educators and learners with technology that inspires growth.",
+        },
+        {
+            id: 4,
+            title: "EducE-commerce & Retailation",
+            description:
+                "Build powerful E-commerce and Retail solutions that elevate customer experiences and drive sales growth. From scalable online stores to personalized shopping apps, we help brands connect with customers anytime, anywhere.",
+        },
+        {
+            id: 5,
+            title: "Real Estate",
+            description:
+                "Crafting innovative digital solutions for the Real Estate industry that simplify property search, management, and transactions. From immersive virtual tours to smart listing platforms, we help realtors and buyers connect seamlessly.",
+        },
+        {
+            id: 6,
+            title: "Startups & Enterprises",
+            description:
+                "We partner with Startups and Enterprises to transform bold ideas into scalable digital products. From MVP Marketing to enterprise-grade solutions, we provide the strategy, design, and technology that fuel long-term growth.",
+        },
+    ];
 
     return (
         <div>

@@ -105,7 +105,7 @@ export default function PricingPage() {
     <div className="bg-white">
       <SeoHead
         title="Pricing Packages | Pine Techware"
-        description="Explore pricing packages across web design, ecommerce, WordPress, app development, branding, logo, video animation, and SEO."
+        description="Explore pricing packages across web design, ecommerce, WordPress, app Marketing, branding, logo, video animation, and SEO."
       />
 
       <div data-theme="light">
@@ -127,11 +127,10 @@ export default function PricingPage() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer border ${
-                    activeTab === tab.id
+                  className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer border ${activeTab === tab.id
                       ? "bg-black border-black text-white"
                       : "bg-white border-black/15 text-black hover:bg-black hover:text-white"
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>

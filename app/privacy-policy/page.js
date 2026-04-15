@@ -58,7 +58,7 @@ export default function about() {
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                            This Privacy Policy explains how Pine Techware Design Services (“we,” “us,” or “our”) collects, uses, and protects your personal information when you visit our website or use our design and development services. It also describes your rights and choices regarding your data, and how you can contact us with questions or concerns.
+                            This Privacy Policy explains how Pine Techware Design Services (“we,” “us,” or “our”) collects, uses, and protects your personal information when you visit our website or use our design and Marketing services. It also describes your rights and choices regarding your data, and how you can contact us with questions or concerns.
                         </p>
 
                         <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
@@ -86,7 +86,7 @@ export default function about() {
                         </p>
                         <ul className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
                             <li>Understand your requirements and provide quotes, proposals, and project recommendations.</li>
-                            <li>Deliver and manage our design, development, and related services.</li>
+                            <li>Deliver and manage our design, Marketing, and related services.</li>
                             <li>Improve our website, services, and customer support.</li>
                             <li>Communicate with you about your project, invoices, updates, and feedback.</li>
                             <li>
@@ -123,7 +123,7 @@ export default function about() {
                         </p>
 
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                            3.2 Access to personally identifiable information is limited to employees, contractors, and service providers who need the information to perform specific tasks (for example, project management, development, billing, or customer support).
+                            3.2 Access to personally identifiable information is limited to employees, contractors, and service providers who need the information to perform specific tasks (for example, project management, Marketing, billing, or customer support).
                         </p>
 
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
@@ -176,7 +176,7 @@ export default function about() {
                         </h2>
 
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                            6.1 We strive to ensure that all descriptions of our design, development, branding, and related services on our website are clear and accurate. If you believe that the services you received differ from what was described, please contact us so we can review and address your concern promptly.
+                            6.1 We strive to ensure that all descriptions of our design, Marketing, branding, and related services on our website are clear and accurate. If you believe that the services you received differ from what was described, please contact us so we can review and address your concern promptly.
                         </p>
 
                         <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">

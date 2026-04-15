@@ -46,18 +46,18 @@ export default function page() {
     }, []);
 
 
-const relatedServices = [
-  { name: "UI/UX Design" },
-  { name: "Web Development" },
-  { name: "Mobile App Design" },
-  { name: "Branding & Visual Identity" },
-  { name: "Custom Graphic Design" },
-  { name: "Landing Page Design" },
-  { name: "E-Commerce Development" },
-  { name: "Website Redesign Services" },
-  { name: "SEO-Friendly Web Design" },
-  { name: "Conversion Optimization" },
-];
+    const relatedServices = [
+        { name: "UI/UX Design" },
+        { name: "Web Development" },
+        { name: "Mobile App Design" },
+        { name: "Branding & Visual Identity" },
+        { name: "Custom Graphic Design" },
+        { name: "Landing Page Design" },
+        { name: "E-Commerce Development" },
+        { name: "Website Redesign Services" },
+        { name: "SEO-Friendly Web Design" },
+        { name: "Conversion Optimization" },
+    ];
 
     return (
         <div>
@@ -80,22 +80,22 @@ const relatedServices = [
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Your website is your digital storefront. We design clean, modern, and user-focused websites that reflect your brand, engage visitors, and drive real business results.</p>
                         </div>
                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                       <Image
-                                           src="/images/Website-Designing/01.webp"
-                                           alt="Professional Logo Design Services"
-                                           width={500}
-                                           height={500}
-                                           priority
-                                           className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                       />
-                                   </div>
-                       
-                               </div>
-                           </div>
-                       </section>
-                       
-                       
-                                       <Image src="/images/Website-Designing/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                            <Image
+                                src="/images/Website-Designing/01.webp"
+                                alt="Professional Logo Design Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/Website-Designing/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -105,7 +105,7 @@ const relatedServices = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -263,52 +263,52 @@ const relatedServices = [
             </section>
 
 
-                <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">
-                            <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">
-                                <div className="2xl:max-w-4xl lg:max-w-3xl">
-                                    <div className="lg:overflow-hidden">
-                                        <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black">
-                                            <span>Related Services</span>
-                                        </h2>
-                                    </div>
-                                </div>
+                <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">
+                    <div className="2xl:max-w-4xl lg:max-w-3xl">
+                        <div className="lg:overflow-hidden">
+                            <h2 className="font-bold sentence-first-letter text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] uppercase text-black">
+                                <span>Related Services</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
+                    <div className="grid grid-cols-12 gap-y-4 md:gap-7">
+
+                        {relatedServices.map((item, index) => (
+                            <div
+                                key={index}
+                                className="md:col-span-4 col-span-12 text-black flex lg:gap-5 gap-3 items-start"
+                            >
+                                <Image
+                                    src={Img2}
+                                    className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]"
+                                    alt="Pine Tech Wear Asset"
+                                    loading="lazy"
+                                />
+
+                                <ul>
+                                    <li>
+                                        <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+                                            {item.name}
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-            
-                            <div className="px-6 lg:px-8 max-w-7xl mx-auto mt-12 lg:mt-20">
-                                <div className="grid grid-cols-12 gap-y-4 md:gap-7">
-            
-                                    {relatedServices.map((item, index) => (
-                                        <div
-                                            key={index}
-                                            className="md:col-span-4 col-span-12 text-black flex lg:gap-5 gap-3 items-start"
-                                        >
-                                            <Image
-                                                src={Img2}
-                                                className="h-[20px] w-[20px] lg:h-[27px] lg:w-[30px] 2xl:h-[30px] 2xl:w-[33px]"
-                                                alt="Pine Tech Wear Asset"
-                                                loading="lazy"
-                                            />
-            
-                                            <ul>
-                                                <li>
-                                                    <a className="hover:underline underline-offset-[9px] decoration-1 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
-                                                        {item.name}
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    ))}
-            
-                                </div>
-                            </div>
-                        </section>
+                        ))}
+
+                    </div>
+                </div>
+            </section>
 
 
 

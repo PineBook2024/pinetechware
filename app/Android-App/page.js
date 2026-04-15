@@ -49,77 +49,77 @@ export default function page() {
         };
     }, []);
 
-const webServices = [
-    {
-        heading: "Custom Android App Development",
-        description:
-            "Tailor-made Android applications designed around your business goals and user needs.",
-    },
-    {
-        heading: "UI/UX Design for Android",
-        description:
-            "Clean, intuitive interfaces following Material Design guidelines for seamless usability.",
-    },
-    {
-        heading: "Smartphone & Tablet App Development",
-        description:
-            "Optimized apps built for phones, tablets, and multiple screen resolutions.",
-    },
-    {
-        heading: "API & Backend Integration",
-        description:
-            "Secure integrations with cloud services, databases, and third-party APIs.",
-    },
-    {
-        heading: "Play Store Deployment",
-        description:
-            "Complete Google Play Store publishing, compliance handling, and launch support.",
-    },
-    {
-        heading: "App Testing & Quality Assurance",
-        description:
-            "Comprehensive testing to ensure performance, security, and device compatibility.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom Android App Development",
+            description:
+                "Tailor-made Android applications designed around your business goals and user needs.",
+        },
+        {
+            heading: "UI/UX Design for Android",
+            description:
+                "Clean, intuitive interfaces following Material Design guidelines for seamless usability.",
+        },
+        {
+            heading: "Smartphone & Tablet App Development",
+            description:
+                "Optimized apps built for phones, tablets, and multiple screen resolutions.",
+        },
+        {
+            heading: "API & Backend Integration",
+            description:
+                "Secure integrations with cloud services, databases, and third-party APIs.",
+        },
+        {
+            heading: "Play Store Deployment",
+            description:
+                "Complete Google Play Store publishing, compliance handling, and launch support.",
+        },
+        {
+            heading: "App Testing & Quality Assurance",
+            description:
+                "Comprehensive testing to ensure performance, security, and device compatibility.",
+        },
+    ];
 
 
-const processSteps = [
-    {
-        number: "01",
-        title: "Requirement Analysis",
-        desc: "We define app objectives, features, and technical requirements clearly.",
-    },
-    {
-        number: "02",
-        title: "UI/UX & Prototyping",
-        desc: "Wireframes and prototypes designed for Android users and behavior patterns.",
-    },
-    {
-        number: "03",
-        title: "Android App Development",
-        desc: "Clean, scalable development using Kotlin, Java, and modern Android frameworks.",
-    },
-    {
-        number: "04",
-        title: "Feature & API Integration",
-        desc: "Secure backend connections and advanced feature implementation.",
-    },
-    {
-        number: "05",
-        title: "Testing & Quality Assurance",
-        desc: "Extensive testing across Android versions and devices.",
-    },
-    {
-        number: "06",
-        title: "Play Store Launch",
-        desc: "Submission, review handling, and final deployment.",
-    },
-    {
-        number: "07",
-        title: "Post-Launch Support & Scaling",
-        desc: "Continuous support, updates, and scalability planning.",
-    },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Analysis",
+            desc: "We define app objectives, features, and technical requirements clearly.",
+        },
+        {
+            number: "02",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes designed for Android users and behavior patterns.",
+        },
+        {
+            number: "03",
+            title: "Android App Development",
+            desc: "Clean, scalable development using Kotlin, Java, and modern Android frameworks.",
+        },
+        {
+            number: "04",
+            title: "Feature & API Integration",
+            desc: "Secure backend connections and advanced feature implementation.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Extensive testing across Android versions and devices.",
+        },
+        {
+            number: "06",
+            title: "Play Store Launch",
+            desc: "Submission, review handling, and final deployment.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Continuous support, updates, and scalability planning.",
+        },
+    ];
 
 
     return (
@@ -142,24 +142,24 @@ const processSteps = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Scalable Android Apps </span>  Built for Performance and Growth</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Android apps demand flexibility, performance, and reach. We design and develop high-quality Android applications that are secure, user-friendly, and optimized to perform across all Android devices and screen sizes.</p>
                         </div>
-                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                               <Image
-                                                                   src="/images/Android-App/01.webp"
-                                                                   alt="Professional Android App Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   priority
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                                               <Image src="/images/Android-App/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Professional Android App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                        
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                            <Image
+                                src="/images/Android-App/01.webp"
+                                alt="Professional Android App Development Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/Android-App/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Professional Android App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -169,7 +169,7 @@ const processSteps = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -306,12 +306,12 @@ const processSteps = [
                 </div>
             </section>
 
-                            <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
-        
+            {/* <IndSlider /> */}
+
             <AppRelatedServices />
 
             <Trigger />

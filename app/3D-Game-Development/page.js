@@ -162,23 +162,23 @@ export default function page() {
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">3D games demand depth, realism, and flawless performance. We develop visually rich and technically advanced 3D games that deliver immersive gameplay, smooth mechanics, and engaging player experiences across platforms.</p>
                         </div>
                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                              <Image
-                                                                  src="/images/3D-Game-Development/01.webp"
-                                                                  alt="Professional 3D Game Development Services"
-                                                                  width={500}
-                                                                  height={500}
-                                                                  priority
-                                                                  className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                              />
-                                                          </div>
-                                              
-                                                      </div>
-                                                  </div>
-                                              </section>
-                                              
-                                              
-                                                              <Image src="/images/3D-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="3D Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                            <Image
+                                src="/images/3D-Game-Development/01.webp"
+                                alt="Professional 3D Game Development Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/3D-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="3D Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -188,7 +188,7 @@ export default function page() {
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -327,11 +327,11 @@ export default function page() {
 
 
 
-             <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-             {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

@@ -45,90 +45,90 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-    {
-        heading: "Custom E-Commerce Development",
-        description:
-            "Tailor-made online stores designed around your business model, products, and growth strategy.",
-    },
-    {
-        heading: "E-Commerce Website Design",
-        description:
-            "User-friendly, visually appealing store designs that enhance browsing and improve conversions.",
-    },
-    {
-        heading: "Platform-Based Solutions",
-        description:
-            "Development on platforms like Shopify, WooCommerce, Magento, and custom frameworks.",
-    },
-    {
-        heading: "Shopping Cart & Checkout Development",
-        description:
-            "Optimized cart flows and seamless checkout experiences to reduce abandonment.",
-    },
-    {
-        heading: "Payment Gateway Integration",
-        description:
-            "Secure payment integrations supporting multiple gateways, currencies, and regions.",
-    },
-    {
-        heading: "Product & Inventory Management",
-        description:
-            "Easy-to-manage dashboards for products, stock, pricing, and order fulfillment.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom E-Commerce Development",
+            description:
+                "Tailor-made online stores designed around your business model, products, and growth strategy.",
+        },
+        {
+            heading: "E-Commerce Website Design",
+            description:
+                "User-friendly, visually appealing store designs that enhance browsing and improve conversions.",
+        },
+        {
+            heading: "Platform-Based Solutions",
+            description:
+                "Development on platforms like Shopify, WooCommerce, Magento, and custom frameworks.",
+        },
+        {
+            heading: "Shopping Cart & Checkout Development",
+            description:
+                "Optimized cart flows and seamless checkout experiences to reduce abandonment.",
+        },
+        {
+            heading: "Payment Gateway Integration",
+            description:
+                "Secure payment integrations supporting multiple gateways, currencies, and regions.",
+        },
+        {
+            heading: "Product & Inventory Management",
+            description:
+                "Easy-to-manage dashboards for products, stock, pricing, and order fulfillment.",
+        },
+    ];
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Business Analysis",
-    desc: "We understand your products, audience, competitors, and revenue goals.",
-  },
-  {
-    number: "02",
-    title: "Platform & Strategy Planning",
-    desc: "We recommend the right platform and define a scalable store architecture.",
-  },
-  {
-    number: "03",
-    title: "Design & User Experience",
-    desc: "We design intuitive layouts that guide users smoothly from browsing to checkout.",
-  },
-  {
-    number: "04",
-    title: "Development & Integration",
-    desc: "We develop your store, integrate payments, shipping, and third-party tools.",
-  },
-  {
-    number: "05",
-    title: "Testing & Optimization",
-    desc: "We test performance, security, and usability to ensure a flawless shopping experience.",
-  },
-  {
-    number: "06",
-    title: "Launch & Deployment",
-    desc: "Your store goes live with complete configuration and final quality checks.",
-  },
-  {
-    number: "07",
-    title: "Growth & Support",
-    desc: "We support future enhancements, marketing integrations, and store scaling.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Business Analysis",
+            desc: "We understand your products, audience, competitors, and revenue goals.",
+        },
+        {
+            number: "02",
+            title: "Platform & Strategy Planning",
+            desc: "We recommend the right platform and define a scalable store architecture.",
+        },
+        {
+            number: "03",
+            title: "Design & User Experience",
+            desc: "We design intuitive layouts that guide users smoothly from browsing to checkout.",
+        },
+        {
+            number: "04",
+            title: "Development & Integration",
+            desc: "We develop your store, integrate payments, shipping, and third-party tools.",
+        },
+        {
+            number: "05",
+            title: "Testing & Optimization",
+            desc: "We test performance, security, and usability to ensure a flawless shopping experience.",
+        },
+        {
+            number: "06",
+            title: "Launch & Deployment",
+            desc: "Your store goes live with complete configuration and final quality checks.",
+        },
+        {
+            number: "07",
+            title: "Growth & Support",
+            desc: "We support future enhancements, marketing integrations, and store scaling.",
+        },
+    ];
 
-const relatedServices = [
-    { name: "Website Development" },
-    { name: "Website Designing" },
-    { name: "UI/UX Design" },
-    { name: "Payment Gateway Integration" },
-    { name: "Mobile App Development" },
-    { name: "Inventory Management Systems" },
-    { name: "Digital Marketing" },
-    { name: "SEO Optimization" },
-    { name: "CRM Integration" },
-    { name: "E-Commerce Maintenance" },
-];
+    const relatedServices = [
+        { name: "Website Development" },
+        { name: "Website Designing" },
+        { name: "UI/UX Design" },
+        { name: "Payment Gateway Integration" },
+        { name: "Mobile App Development" },
+        { name: "Inventory Management Systems" },
+        { name: "Digital Marketing" },
+        { name: "SEO Optimization" },
+        { name: "CRM Integration" },
+        { name: "E-Commerce Maintenance" },
+    ];
 
 
     return (
@@ -151,23 +151,23 @@ const relatedServices = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Smart, Scalable   </span>  Online Stores Built to Sell</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">A successful e-commerce store is more than just products online. We build secure, scalable, and conversion-focused e-commerce solutions that help you attract customers, drive sales, and grow your business.</p>
                         </div>
-                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                               <Image
-                                                                   src="/images/E-Commerce-Solution/01.webp"
-                                                                   alt="Professional Logo Design Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   priority
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                                               <Image src="/images/E-Commerce-Solution/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                            <Image
+                                src="/images/E-Commerce-Solution/01.webp"
+                                alt="Professional Logo Design Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/E-Commerce-Solution/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -177,7 +177,7 @@ const relatedServices = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -315,11 +315,11 @@ const relatedServices = [
             </section>
 
 
-     <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
             <section className="textContent-sec bg-white">
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">

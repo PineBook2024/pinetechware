@@ -48,78 +48,78 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-    {
-        heading: "Custom Web Applications",
-        description:
-            "Robust, scalable web apps designed to meet your specific workflows and business requirements.",
-    },
-    {
-        heading: "Mobile Application Development",
-        description:
-            "Native and cross-platform mobile apps built for performance, usability, and reliability.",
-    },
-    {
-        heading: "Enterprise Application Solutions",
-        description:
-            "Large-scale applications that support complex operations, data management, and integrations.",
-    },
-    {
-        heading: "Cloud-Based Applications",
-        description:
-            "Secure cloud applications with high availability, scalability, and optimized performance.",
-    },
-    {
-        heading: "API Development & Integration",
-        description:
-            "Custom APIs and third-party integrations that extend functionality and enable system communication.",
-    },
-    {
-        heading: "UI/UX Design for Applications",
-        description:
-            "User-focused interfaces that ensure smooth navigation and engaging experiences.",
-    },
-];
+    const webServices = [
+        {
+            heading: "Custom Web Applications",
+            description:
+                "Robust, scalable web apps designed to meet your specific workflows and business requirements.",
+        },
+        {
+            heading: "Mobile Application Development",
+            description:
+                "Native and cross-platform mobile apps built for performance, usability, and reliability.",
+        },
+        {
+            heading: "Enterprise Application Solutions",
+            description:
+                "Large-scale applications that support complex operations, data management, and integrations.",
+        },
+        {
+            heading: "Cloud-Based Applications",
+            description:
+                "Secure cloud applications with high availability, scalability, and optimized performance.",
+        },
+        {
+            heading: "API Development & Integration",
+            description:
+                "Custom APIs and third-party integrations that extend functionality and enable system communication.",
+        },
+        {
+            heading: "UI/UX Design for Applications",
+            description:
+                "User-focused interfaces that ensure smooth navigation and engaging experiences.",
+        },
+    ];
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Requirement Discovery",
-    desc: "We analyze your business processes, goals, and technical needs to define a clear application roadmap.",
-  },
-  {
-    number: "02",
-    title: "Solution Architecture",
-    desc: "We design a secure, scalable architecture aligned with your functional and growth requirements.",
-  },
-  {
-    number: "03",
-    title: "UI/UX & Prototyping",
-    desc: "Wireframes and prototypes are created to validate user flow and functionality early.",
-  },
-  {
-    number: "04",
-    title: "Development & Integration",
-    desc: "Our developers build clean, efficient code and integrate necessary tools and services.",
-  },
-  {
-    number: "05",
-    title: "Testing & Quality Assurance",
-    desc: "Rigorous testing ensures performance, security, and reliability across environments.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Launch",
-    desc: "We deploy the application with final checks, configurations, and documentation.",
-  },
-  {
-    number: "07",
-    title: "Support & Scaling",
-    desc: "We provide long-term support and help scale features as your business evolves.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Requirement Discovery",
+            desc: "We analyze your business processes, goals, and technical needs to define a clear application roadmap.",
+        },
+        {
+            number: "02",
+            title: "Solution Architecture",
+            desc: "We design a secure, scalable architecture aligned with your functional and growth requirements.",
+        },
+        {
+            number: "03",
+            title: "UI/UX & Prototyping",
+            desc: "Wireframes and prototypes are created to validate user flow and functionality early.",
+        },
+        {
+            number: "04",
+            title: "Development & Integration",
+            desc: "Our developers build clean, efficient code and integrate necessary tools and services.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Rigorous testing ensures performance, security, and reliability across environments.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "We deploy the application with final checks, configurations, and documentation.",
+        },
+        {
+            number: "07",
+            title: "Support & Scaling",
+            desc: "We provide long-term support and help scale features as your business evolves.",
+        },
+    ];
 
 
 
@@ -145,25 +145,25 @@ const processSteps = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Tailor-Made    </span>  Applications Built Around Your Business</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Off-the-shelf software doesn’t always fit. We design and develop custom applications that solve real business problems, streamline operations, and scale as your organization grows</p>
                         </div>
-                         <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                        <Image
-                                            src="/images/custom-graphic-design/01.webp"
-                                            alt="Custom Graphic Design Services"
-                                            width={500}
-                                            height={500}
-                                            className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                            priority
-                                        />
-                                    </div>
-                        
-                                </div>
-                            </div>
-                        </section>
-                        
-                        
-                        
-                                        <Image  src="/images/custom-graphic-design/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                        
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/custom-graphic-design/01.webp"
+                                alt="Custom Graphic Design Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/custom-graphic-design/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -173,7 +173,7 @@ const processSteps = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -311,13 +311,13 @@ const processSteps = [
             </section>
 
 
-    <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
-   
-        <AppRelatedServices />
+            {/* <IndSlider /> */}
+
+            <AppRelatedServices />
 
             <Trigger />
 

@@ -5,18 +5,18 @@ import Image from "next/image";
 const AppRelatedServices = () => {
 
     const relatedServices = [
-      { name: "Mobile App Development" },
-      { name: "Web Application Development" },
-      { name: "UI/UX Design" },
-      { name: "API Development" },
-      { name: "Cloud Solutions" },
-      { name: "Enterprise Software" },
-      { name: "Website Development" },
-      { name: "E-Commerce Solutions" },
-      { name: "Application Maintenance" },
+        //   { name: "Mobile App Development" },
+        //   { name: "Web Application Development" },
+        //   { name: "UI/UX Design" },
+        //   { name: "API Development" },
+        //   { name: "Cloud Solutions" },
+        //   { name: "Enterprise Software" },
+        //   { name: "Website Development" },
+        //   { name: "E-Commerce Solutions" },
+        //   { name: "Application Maintenance" },
     ];
-    
-    
+
+
 
     return (
         <div>

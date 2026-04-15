@@ -46,18 +46,18 @@ export default function page() {
     }, []);
 
 
-const relatedServices = [
-    { name: "Website Designing" },
-    { name: "UI/UX Design" },
-    { name: "Web Application Development" },
-    { name: "E-Commerce Development" },
-    { name: "CMS Development" },
-    { name: "Mobile App Development" },
-    { name: "API Development & Integration" },
-    { name: "Website Maintenance" },
-    { name: "SEO Optimization" },
-    { name: "Cloud Hosting Solutions" },
-];
+    const relatedServices = [
+        { name: "Website Designing" },
+        { name: "UI/UX Design" },
+        { name: "Web Application Development" },
+        { name: "E-Commerce Development" },
+        { name: "CMS Development" },
+        { name: "Mobile App Development" },
+        { name: "API Development & Integration" },
+        { name: "Website Maintenance" },
+        { name: "SEO Optimization" },
+        { name: "Cloud Hosting Solutions" },
+    ];
 
     const webServices = [
         {
@@ -94,42 +94,42 @@ const relatedServices = [
 
 
     const processSteps = [
-  {
-    number: "01",
-    title: "Requirement Analysis",
-    desc: "We gather functional, technical, and business requirements to define the project scope clearly.",
-  },
-  {
-    number: "02",
-    title: "Architecture Planning",
-    desc: "We design a scalable and secure system architecture tailored to your project needs.",
-  },
-  {
-    number: "03",
-    title: "Development & Implementation",
-    desc: "Our developers write clean, efficient, and well-documented code following best practices.",
-  },
-  {
-    number: "04",
-    title: "Testing & Quality Assurance",
-    desc: "Rigorous testing ensures functionality, security, speed, and cross-browser compatibility.",
-  },
-  {
-    number: "05",
-    title: "Performance Optimization",
-    desc: "We optimize loading speed, responsiveness, and overall site performance.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Launch",
-    desc: "Your website is deployed smoothly with final checks and environment setup.",
-  },
-  {
-    number: "07",
-    title: "Ongoing Support & Scaling",
-    desc: "We provide post-launch support and help scale features as your business grows.",
-  },
-];
+        {
+            number: "01",
+            title: "Requirement Analysis",
+            desc: "We gather functional, technical, and business requirements to define the project scope clearly.",
+        },
+        {
+            number: "02",
+            title: "Architecture Planning",
+            desc: "We design a scalable and secure system architecture tailored to your project needs.",
+        },
+        {
+            number: "03",
+            title: "Development & Implementation",
+            desc: "Our developers write clean, efficient, and well-documented code following best practices.",
+        },
+        {
+            number: "04",
+            title: "Testing & Quality Assurance",
+            desc: "Rigorous testing ensures functionality, security, speed, and cross-browser compatibility.",
+        },
+        {
+            number: "05",
+            title: "Performance Optimization",
+            desc: "We optimize loading speed, responsiveness, and overall site performance.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Your website is deployed smoothly with final checks and environment setup.",
+        },
+        {
+            number: "07",
+            title: "Ongoing Support & Scaling",
+            desc: "We provide post-launch support and help scale features as your business grows.",
+        },
+    ];
 
 
     return (
@@ -153,23 +153,23 @@ const relatedServices = [
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">A great design needs strong development behind it. We build high-performance websites that are secure, scalable, and engineered to deliver smooth user experiences while supporting long-term business growth.</p>
                         </div>
                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                              <Image
-                                                                  src="/images/Website-Development/01.webp"
-                                                                  alt="Professional Logo Design Services"
-                                                                  width={500}
-                                                                  height={500}
-                                                                  priority
-                                                                  className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                              />
-                                                          </div>
-                                              
-                                                      </div>
-                                                  </div>
-                                              </section>
-                                              
-                                              
-                                                              <Image src="/images/Website-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                            <Image
+                                src="/images/Website-Development/01.webp"
+                                alt="Professional Logo Design Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/Website-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="iPhone App Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
@@ -180,7 +180,7 @@ const relatedServices = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -318,11 +318,11 @@ const relatedServices = [
             </section>
 
 
-             <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
             <section className="textContent-sec bg-white">
                 <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">

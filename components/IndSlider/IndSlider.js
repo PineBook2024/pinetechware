@@ -14,7 +14,7 @@ export default function IndSlider() {
       img: "/images/banner-inner/custom-graphic-design-banner.webp",
     },
     {
-      title: "Dedicated Development Team",
+      title: "Dedicated Marketing Team",
       desc: "A devoted team works toward developing high-performance automotive software with precision, innovation, and seamless collaboration.",
       img: "/images/banner-inner/custom-graphic-design-banner.webp",
     },
@@ -30,7 +30,7 @@ export default function IndSlider() {
     },
     {
       title: "Automotive R&D Partnership",
-      desc: "Use top research and development skills to create new ideas in car software, electric vehicles, and smart mobility.",
+      desc: "Use top research and Marketing skills to create new ideas in car software, electric vehicles, and smart mobility.",
       img: "/images/banner-inner/custom-graphic-design-banner.webp",
     },
   ];

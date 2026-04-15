@@ -45,9 +45,9 @@ export default function about() {
         title="About Pine Techware | Global Software & Innovation"
         description="Pine Techware - A global tech partner building software & digital products. From startups to enterprises, we empower businesses with innovation & growth."
       />
-       <div data-theme="light">
-                <Navbar />
-            </div>
+      <div data-theme="light">
+        <Navbar />
+      </div>
 
 
       <section className="bg-white">
@@ -63,7 +63,7 @@ export default function about() {
 
             </p>
           </div>
-         {/* <Image src={abtBanner} alt="About Us Image" width={1200} height={600} className="mt-8 lg:mt-24 image lg:rounded-[30px] rounded-2xl w-full" /> */}
+          {/* <Image src={abtBanner} alt="About Us Image" width={1200} height={600} className="mt-8 lg:mt-24 image lg:rounded-[30px] rounded-2xl w-full" /> */}
         </div>
       </section>
 
@@ -220,7 +220,7 @@ export default function about() {
                         <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Our culture is built on curiosity, experimentation, and the courage to push boundaries. This spirit empowers us to design innovative products that not only transform industries but also exceed expectations.</p>
 
                         <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">For us, creativity is more than a skill; it’s a mindset. It drives us to see possibilities where others see limits, and it fuels our passion to shape a future filled with opportunity.</p>
- 
+
                         <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">When our talented team collaborates with purpose and passion, extraordinary things happen, and the results speak for themselves.</p>
 
                       </div>
@@ -452,34 +452,34 @@ export default function about() {
           <div className="grid grid-cols-2 gap-6 lg:gap-10 lg:grid-cols-3 sm:grid-cols-3 ">
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage2.png" alt="Good Firms"  width={120} height={100}/>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage2.png" alt="Good Firms" width={120} height={100} />
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage3.png" alt="Good Firms"  width={120} height={100}/>
-              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage3.png" alt="Good Firms" width={120} height={100} />
+              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Marketing Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage4.png" alt="Good Firms"  width={120} height={100}/>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage4.png" alt="Good Firms" width={120} height={100} />
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage12.png" alt="Good Firms"  width={120} height={100}/>
-              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage12.png" alt="Good Firms" width={120} height={100} />
+              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Marketing Company</p>
             </span>
 
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage13.png" alt="Good Firms"  width={120} height={100}/>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage13.png" alt="Good Firms" width={120} height={100} />
               <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Blockchain Company</p>
             </span>
 
             <span className="flex flex-col">
-              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage14.png" alt="Good Firms"  width={120} height={100}/>
-              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Development Company</p>
+              <Image className="mx-auto grayscale hover:grayscale-0" src="/images/bage14.png" alt="Good Firms" width={120} height={100} />
+              <p className="lg:text-sm text-xs mt-6 text-center text-black">Top Software Marketing Company</p>
             </span>
 
           </div>
@@ -519,7 +519,7 @@ export default function about() {
       </div> */}
 
 
-{/* 
+      {/* 
       <section className="textContent-sec bg-white">
         <div className="px-6 lg:px-8 max-w-7xl mx-auto pt-14 md:pt-24 lg:pt-[10.5rem]">
           <div className="2xl:max-w-4xl lg:max-w-3xl">
@@ -681,7 +681,7 @@ export default function about() {
       </section> */}
 
 
-{/* 
+      {/* 
       <section className="textContent-sec bg-[#3BB9E1] ">
         <div className="px-6 lg:px-8 max-w-7xl mx-auto py-14 md:py-24 lg:py-[10.5rem]">
           <div className="2xl:max-w-4xl lg:max-w-3xl">

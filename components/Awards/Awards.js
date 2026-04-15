@@ -24,19 +24,19 @@ export default function Awards() {
       id: 1,
       logo: Img1,
       rating: 4.9,
-      description: "Ranked among the leading game development companies for 2025",
+      description: "Ranked among the leading game Design companies for 2025",
     },
     {
       id: 2,
       logo: Img1,
       rating: 4.8,
-      description: "Trusted globally for innovative software development solutions",
+      description: "Trusted globally for innovative software Design solutions",
     },
     {
       id: 3,
       logo: Img1,
       rating: 4.7,
-      description: "Top-rated mobile app development company worldwide",
+      description: "Top-rated mobile app Marketing Company worldwide",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export default function Awards() {
             <div className="lg:overflow-hidden">
               <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-white">
                 Award-Winning  <br />
-                <span className="text-[#3bb9e1]"> Software Development Company</span>
+                <span className="text-[#3bb9e1]"> Software Marketing Company</span>
               </h2>
               <p className="text-white lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
                 We are recognized globally for our high-quality and innovative solutions that transform products for businesses.

@@ -46,86 +46,86 @@ export default function page() {
     }, []);
 
     const webServices = [
-  {
-    heading: "Custom Unity Game Development",
-    description:
-      "End-to-end Unity game development tailored to your concept, genre, and target audience.",
-  },
-  {
-    heading: "2D & 3D Unity Games",
-    description:
-      "Visually rich 2D and 3D games developed using Unity’s advanced rendering and animation capabilities.",
-  },
-  {
-    heading: "Cross-Platform Game Development",
-    description:
-      "Single-build deployment enabling smooth performance across iOS, Android, PC, and console platforms.",
-  },
-  {
-    heading: "Unity AR & VR Development",
-    description:
-      "Immersive augmented and virtual reality experiences powered by Unity’s AR and VR toolsets.",
-  },
-  {
-    heading: "Multiplayer & Online Games",
-    description:
-      "Real-time multiplayer systems with matchmaking, leaderboards, and secure server-side integration.",
-  },
-  {
-    heading: "Game UI/UX Design",
-    description:
-      "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
-  },
-];
+        {
+            heading: "Custom Unity Game Development",
+            description:
+                "End-to-end Unity game development tailored to your concept, genre, and target audience.",
+        },
+        {
+            heading: "2D & 3D Unity Games",
+            description:
+                "Visually rich 2D and 3D games developed using Unity’s advanced rendering and animation capabilities.",
+        },
+        {
+            heading: "Cross-Platform Game Development",
+            description:
+                "Single-build deployment enabling smooth performance across iOS, Android, PC, and console platforms.",
+        },
+        {
+            heading: "Unity AR & VR Development",
+            description:
+                "Immersive augmented and virtual reality experiences powered by Unity’s AR and VR toolsets.",
+        },
+        {
+            heading: "Multiplayer & Online Games",
+            description:
+                "Real-time multiplayer systems with matchmaking, leaderboards, and secure server-side integration.",
+        },
+        {
+            heading: "Game UI/UX Design",
+            description:
+                "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
+        },
+    ];
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Game Concept & Technical Planning",
-    desc: "We understand your vision, target platform, and technical requirements.",
-  },
-  {
-    number: "02",
-    title: "Game Design & Prototyping",
-    desc: "Gameplay mechanics, environments, and interactive prototypes are developed.",
-  },
-  {
-    number: "03",
-    title: "Art & Asset Creation",
-    desc: "High-quality characters, environments, animations, and effects are created.",
-  },
-  {
-    number: "04",
-    title: "Unreal Development",
-    desc: "Game logic, physics, AI systems, and features are built using Unreal Engine.",
-  },
-  {
-    number: "05",
-    title: "Testing & Quality Assurance",
-    desc: "Rigorous testing ensures performance, stability, and visual consistency across devices.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Publishing",
-    desc: "Publishing support for PC, consoles, and mobile platforms.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Scaling",
-    desc: "Ongoing updates, expansions, and long-term technical support.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Game Concept & Technical Planning",
+            desc: "We understand your vision, target platform, and technical requirements.",
+        },
+        {
+            number: "02",
+            title: "Game Design & Prototyping",
+            desc: "Gameplay mechanics, environments, and interactive prototypes are developed.",
+        },
+        {
+            number: "03",
+            title: "Art & Asset Creation",
+            desc: "High-quality characters, environments, animations, and effects are created.",
+        },
+        {
+            number: "04",
+            title: "Unreal Development",
+            desc: "Game logic, physics, AI systems, and features are built using Unreal Engine.",
+        },
+        {
+            number: "05",
+            title: "Testing & Quality Assurance",
+            desc: "Rigorous testing ensures performance, stability, and visual consistency across devices.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Publishing",
+            desc: "Publishing support for PC, consoles, and mobile platforms.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, expansions, and long-term technical support.",
+        },
+    ];
 
-const relatedServices = [
-  { name: "Unity Game Development" },
-  { name: "Mobile Game Development" },
-  { name: "2D & 3D Game Development" },
-  { name: "AR & VR Development" },
-  { name: "UI/UX Design" },
-  { name: "Backend Development" },
-  { name: "Cloud Solutions" },
-  { name: "Multiplayer Game Development" },
-];
+    const relatedServices = [
+        { name: "Unity Game Development" },
+        { name: "Mobile Game Development" },
+        { name: "2D & 3D Game Development" },
+        { name: "AR & VR Development" },
+        { name: "UI/UX Design" },
+        { name: "Backend Development" },
+        { name: "Cloud Solutions" },
+        { name: "Multiplayer Game Development" },
+    ];
 
 
 
@@ -137,7 +137,7 @@ const relatedServices = [
                 title="Custom Software & Digital Solutions | Pine Techware"
                 description="PineTechware offers expert website design, development, and digital solutions to help businesses grow through innovation and technology." />
 
-       <div data-theme="light">
+            <div data-theme="light">
                 <Navbar />
             </div>
 
@@ -149,24 +149,24 @@ const relatedServices = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]">Cinematic, High-Performance Games Built With Unreal Engine</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Unreal Engine is known for stunning visuals, realistic physics, and cinematic experiences. We build high-end Unreal games that deliver immersive gameplay, next-level graphics, and powerful performance across platforms.</p>
                         </div>
-                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                               <Image
-                                                                   src="/images/Unreal-Game-Development/01.webp"
-                                                                   alt="Professional Unreal Game Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   priority
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                                               <Image src="/images/Unreal-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Professional Unreal Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                        
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                            <Image
+                                src="/images/Unreal-Game-Development/01.webp"
+                                alt="Professional Unreal Game Development Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/Unreal-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Professional Unreal Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -176,7 +176,7 @@ const relatedServices = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -314,11 +314,11 @@ const relatedServices = [
             </section>
 
 
-                            <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-    {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

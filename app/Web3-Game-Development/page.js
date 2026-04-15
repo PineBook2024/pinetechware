@@ -46,98 +46,98 @@ export default function page() {
     }, []);
 
 
-const webServices = [
-  {
-    heading: "Play-to-Earn (P2E) Game Development",
-    description:
-      "Reward-based games that allow players to earn tokens and NFTs through gameplay.",
-  },
-  {
-    heading: "NFT Game Development",
-    description:
-      "Integration of NFTs for characters, skins, weapons, land, and in-game assets.",
-  },
-  {
-    heading: "Blockchain Integration",
-    description:
-      "Seamless integration with Ethereum, Polygon, BSC, Solana, and other networks.",
-  },
-  {
-    heading: "Smart Contract Development",
-    description:
-      "Secure smart contracts for in-game transactions, rewards, and asset ownership.",
-  },
-  {
-    heading: "Tokenomics Design",
-    description:
-      "Balanced in-game economies designed for sustainability and player engagement.",
-  },
-  {
-    heading: "Wallet & Payment Integration",
-    description:
-      "Support for crypto wallets, fiat on-ramps, and secure payment flows.",
-  },
-  {
-    heading: "Cross-Platform Web3 Games",
-    description:
-      "Blockchain-powered games optimized for mobile, web, and desktop platforms.",
-  },
-  {
-    heading: "Security Audits & Optimization",
-    description:
-      "Smart contract audits and performance optimization to prevent vulnerabilities.",
-  },
-];
+    const webServices = [
+        {
+            heading: "Play-to-Earn (P2E) Game Development",
+            description:
+                "Reward-based games that allow players to earn tokens and NFTs through gameplay.",
+        },
+        {
+            heading: "NFT Game Development",
+            description:
+                "Integration of NFTs for characters, skins, weapons, land, and in-game assets.",
+        },
+        {
+            heading: "Blockchain Integration",
+            description:
+                "Seamless integration with Ethereum, Polygon, BSC, Solana, and other networks.",
+        },
+        {
+            heading: "Smart Contract Development",
+            description:
+                "Secure smart contracts for in-game transactions, rewards, and asset ownership.",
+        },
+        {
+            heading: "Tokenomics Design",
+            description:
+                "Balanced in-game economies designed for sustainability and player engagement.",
+        },
+        {
+            heading: "Wallet & Payment Integration",
+            description:
+                "Support for crypto wallets, fiat on-ramps, and secure payment flows.",
+        },
+        {
+            heading: "Cross-Platform Web3 Games",
+            description:
+                "Blockchain-powered games optimized for mobile, web, and desktop platforms.",
+        },
+        {
+            heading: "Security Audits & Optimization",
+            description:
+                "Smart contract audits and performance optimization to prevent vulnerabilities.",
+        },
+    ];
 
 
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Game Concept & Web3 Strategy",
-    desc: "We understand your game idea, blockchain goals, and monetization plan.",
-  },
-  {
-    number: "02",
-    title: "Tokenomics & Economy Design",
-    desc: "We design reward systems, NFTs, and in-game economies.",
-  },
-  {
-    number: "03",
-    title: "Game Design & Prototyping",
-    desc: "Gameplay mechanics and blockchain interactions are planned.",
-  },
-  {
-    number: "04",
-    title: "Web3 & Game Development",
-    desc: "Smart contracts, backend systems, and gameplay logic are developed.",
-  },
-  {
-    number: "05",
-    title: "Testing & Security Validation",
-    desc: "Gameplay, transactions, and smart contracts are tested thoroughly.",
-  },
-  {
-    number: "06",
-    title: "Deployment & Launch",
-    desc: "Blockchain deployment and publishing with full launch support.",
-  },
-  {
-    number: "07",
-    title: "Post-Launch Support & Scaling",
-    desc: "Ongoing updates, economy balancing, and performance optimization.",
-  },
-];
+    const processSteps = [
+        {
+            number: "01",
+            title: "Game Concept & Web3 Strategy",
+            desc: "We understand your game idea, blockchain goals, and monetization plan.",
+        },
+        {
+            number: "02",
+            title: "Tokenomics & Economy Design",
+            desc: "We design reward systems, NFTs, and in-game economies.",
+        },
+        {
+            number: "03",
+            title: "Game Design & Prototyping",
+            desc: "Gameplay mechanics and blockchain interactions are planned.",
+        },
+        {
+            number: "04",
+            title: "Web3 & Game Development",
+            desc: "Smart contracts, backend systems, and gameplay logic are developed.",
+        },
+        {
+            number: "05",
+            title: "Testing & Security Validation",
+            desc: "Gameplay, transactions, and smart contracts are tested thoroughly.",
+        },
+        {
+            number: "06",
+            title: "Deployment & Launch",
+            desc: "Blockchain deployment and publishing with full launch support.",
+        },
+        {
+            number: "07",
+            title: "Post-Launch Support & Scaling",
+            desc: "Ongoing updates, economy balancing, and performance optimization.",
+        },
+    ];
 
 
-const relatedServices = [
-  { name: "Blockchain Game Development" },
-  { name: "NFT Development" },
-  { name: "Smart Contract Development" },
-  { name: "Metaverse Development" },
-  { name: "Unity Game Development" },
-  { name: "Unreal Game Development" },
-];
+    const relatedServices = [
+        { name: "Blockchain Game Development" },
+        { name: "NFT Development" },
+        { name: "Smart Contract Development" },
+        { name: "Metaverse Development" },
+        { name: "Unity Game Development" },
+        { name: "Unreal Game Development" },
+    ];
 
 
 
@@ -162,24 +162,24 @@ const relatedServices = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Decentralized Games Built for    </span>  Ownership, Rewards, and Scale</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Web3 gaming is changing how players interact, earn, and own digital assets. We build secure, engaging, and scalable Web3 games that combine immersive gameplay with blockchain-powered ownership and decentralized economies.</p>
                         </div>
-                         <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
-                                                               <Image
-                                                                   src="/images/Web3-Game-Development/01.webp"
-                                                                   alt="Professional Web3 Game Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   priority
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                                               <Image src="/images/Web3-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Web3 Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                        
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+                            <Image
+                                src="/images/Web3-Game-Development/01.webp"
+                                alt="Professional Web3 Game Development Services"
+                                width={500}
+                                height={500}
+                                priority
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <Image src="/images/Web3-Game-Development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Web3 Game Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -189,7 +189,7 @@ const relatedServices = [
                             </h2>
                         </div>
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl text-black  2xl:text-2xl">
-                            We are a full-cycle product development company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
+                            We are a full-cycle product Marketing Company that combines creative thinking with technical expertise to create user-centric products that solve real problems and drive business growth.
                         </p>
                     </div>
                 </div>
@@ -327,11 +327,11 @@ const relatedServices = [
             </section>
 
 
-                         <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
-             {/* <IndSlider /> */}
+            {/* <IndSlider /> */}
 
 
             <section className="textContent-sec bg-white">

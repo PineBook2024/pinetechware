@@ -3,7 +3,7 @@ import "./globals.css";
 import LenisProvider from "./utils/LenisProvider";
 import { PopupProvider } from "@/context/PopupContext";
 import Head from "next/head";
-import Script from "next/script"; 
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 // export const metadata = {
 //   title: "PineTechware | Software & Digital Solutions",
 //   description:
-//     "Expert web and software development company for modern businesses.",
+//     "Expert web and software Marketing Company for modern businesses.",
 // };
 
 export default function RootLayout({ children }) {
