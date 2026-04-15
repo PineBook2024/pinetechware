@@ -27,27 +27,27 @@ const Technologies = () => {
       ],
     },
 
-    "Web Design and Development": {
-      left: [
-        {
-          title: "Website Designing",
-          image: "/images/icon5.svg",
-        },
-        {
-          title: "Informative Website",
-          image: "/images/icon6.svg",
-        },
-        {
-          title: "E-commerce Solutions",
-          image: "/images/icon7.svg",
-        },
-        {
-          title: "Custom Applications",
-          image: "/images/icon8.svg",
-        },
-      ],
+    // "Web Design and Development": {
+    //   left: [
+    //     {
+    //       title: "Website Designing",
+    //       image: "/images/icon5.svg",
+    //     },
+    //     {
+    //       title: "Informative Website",
+    //       image: "/images/icon6.svg",
+    //     },
+    //     {
+    //       title: "E-commerce Solutions",
+    //       image: "/images/icon7.svg",
+    //     },
+    //     {
+    //       title: "Custom Applications",
+    //       image: "/images/icon8.svg",
+    //     },
+    //   ],
 
-    },
+    // },
 
     "Digital Marketing": {
       left: [
@@ -75,54 +75,54 @@ const Technologies = () => {
 
     },
 
-    "Mobile Application Development": {
-      left: [
-        {
-          title: "IOS App",
-          image: "/images/m1.png",
-        },
-        {
-          title: "Android App",
-          image: "/images/m2.png",
-        },
-        {
-          title: "ASP App",
-          image: "/images/m3.png",
-        },
-        {
-          title: "Kotlin App",
-          image: "/images/m4.png",
-        },
-        {
-          title: "React Native App",
-          image: "/images/m5.png",
-        },
-        {
-          title: "Flutter App",
-          image: "/images/m6.png",
-        },
-        {
-          title: "Swift App",
-          image: "/images/m7.png",
-        },
-      ],
-    },
-    "Game Development": {
-      left: [
-        {
-          title: "Mobile Game Development",
-          image: "/images/game-development.png",
-        },
-        {
-          title: "Unity Game Development",
-          image: "/images/unity.svg",
-        },
-        {
-          title: "Unreal Game Developmemt",
-          image: "/images/unreal.svg",
-        },
-      ],
-    },
+    // "Mobile Application Development": {
+    //   left: [
+    //     {
+    //       title: "IOS App",
+    //       image: "/images/m1.png",
+    //     },
+    //     {
+    //       title: "Android App",
+    //       image: "/images/m2.png",
+    //     },
+    //     {
+    //       title: "ASP App",
+    //       image: "/images/m3.png",
+    //     },
+    //     {
+    //       title: "Kotlin App",
+    //       image: "/images/m4.png",
+    //     },
+    //     {
+    //       title: "React Native App",
+    //       image: "/images/m5.png",
+    //     },
+    //     {
+    //       title: "Flutter App",
+    //       image: "/images/m6.png",
+    //     },
+    //     {
+    //       title: "Swift App",
+    //       image: "/images/m7.png",
+    //     },
+    //   ],
+    // },
+    // "Game Development": {
+    //   left: [
+    //     {
+    //       title: "Mobile Game Development",
+    //       image: "/images/game-development.png",
+    //     },
+    //     {
+    //       title: "Unity Game Development",
+    //       image: "/images/unity.svg",
+    //     },
+    //     {
+    //       title: "Unreal Game Developmemt",
+    //       image: "/images/unreal.svg",
+    //     },
+    //   ],
+    // },
   };
 
 
@@ -138,7 +138,7 @@ const Technologies = () => {
             <div className="lg:overflow-hidden">
               <h2 className="font-bold pb-1 md:pb-0 text-4xl xl:text-5xl 2xl:text-6xl  lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px] text-black">
                 <span>Technologies & Tools We Use That Create An Impact</span>
-                
+
               </h2>
             </div>
             <p className="lg:py-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
