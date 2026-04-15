@@ -63,21 +63,21 @@ export default function services() {
             content:
                 "We start by understanding your goals, audience, and market. With research, competitive analysis, and a well-defined roadmap, we help you make informed decisions that drive growth.",
         },
-        {
-            title: "UI / UX Design",
-            content:
-                "Crafting user interfaces and experiences isn’t just about looking good; it’s about feeling intuitive. Our UX audits, wireframes, and prototyping ensure seamless, delightful journeys for your users.",
-        },
-        {
-            title: "Web & Mobile App Development",
-            content:
-                "From responsive websites to powerful native apps, we bring your vision to life with clean architecture, cutting-edge tech, and agile delivery. Whether you’re building SaaS, marketplaces, or platforms, we’ve got you covered.",
-        },
-        {
-            title: "E-commerce & Retail Solutions",
-            content:
-                "We design online stores and commerce platforms that sell— optimized for performance, mobile experience, secure payments, and conversion. Think beautiful storefronts with powerful backend integrations.",
-        },
+        // {
+        //     title: "UI / UX Design",
+        //     content:
+        //         "Crafting user interfaces and experiences isn’t just about looking good; it’s about feeling intuitive. Our UX audits, wireframes, and prototyping ensure seamless, delightful journeys for your users.",
+        // },
+        // {
+        //     title: "Web & Mobile App Development",
+        //     content:
+        //         "From responsive websites to powerful native apps, we bring your vision to life with clean architecture, cutting-edge tech, and agile delivery. Whether you’re building SaaS, marketplaces, or platforms, we’ve got you covered.",
+        // },
+        // {
+        //     title: "E-commerce & Retail Solutions",
+        //     content:
+        //         "We design online stores and commerce platforms that sell— optimized for performance, mobile experience, secure payments, and conversion. Think beautiful storefronts with powerful backend integrations.",
+        // },
         {
             title: "Branding & Marketing",
             content:
@@ -264,7 +264,7 @@ export default function services() {
                 </div>
             </section>
 
-             <AllIndustries
+            <AllIndustries
                 heading={allIndustriesData.heading}
                 items={allIndustriesData.items}
             />
