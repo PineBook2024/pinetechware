@@ -140,11 +140,11 @@ export default function Work() {
   const { openPopup } = usePopup();
 
   const serviceTabs = [
-    "Web",
+    // "Web",
     "Logo",
     "Branding",
     "Video",
-    "Mobile App",
+    // "Mobile App",
   ];
 
   const webCategories = [
@@ -162,7 +162,7 @@ export default function Work() {
   ];
 
   const logoCategories = [
-    "All",  
+    "All",
     "Animals And Pets",
     "Beauty And Cosmetics",
     "Business And Marketing",
@@ -181,7 +181,7 @@ export default function Work() {
 
     // WE
     // B
-{
+    {
       title: "Cbeaux",
       service: "Web",
       category: "Ecommerce",
@@ -192,7 +192,7 @@ export default function Work() {
       ],
       link: "https://www.tremark.co.uk/",
     },
-{
+    {
       title: "Okhtein",
       service: "Web",
       category: "Ecommerce",
@@ -203,7 +203,7 @@ export default function Work() {
       ],
       link: "https://int.okhtein.com/",
     },
-{
+    {
       title: "Miashoes",
       service: "Web",
       category: "Ecommerce",
@@ -214,7 +214,7 @@ export default function Work() {
       ],
       link: "https://www.miashoes.com/",
     },
-{
+    {
       title: "Renuherbs",
       service: "Web",
       category: "Ecommerce",
@@ -225,7 +225,7 @@ export default function Work() {
       ],
       link: "https://www.renuherbs.com/",
     },
-{
+    {
       title: "Saltyk Swim",
       service: "Web",
       category: "Ecommerce",
@@ -236,7 +236,7 @@ export default function Work() {
       ],
       link: "https://saltykswim.com/",
     },
-{
+    {
       title: "Factor Group",
       service: "Web",
       category: "Ecommerce",
@@ -1628,8 +1628,8 @@ export default function Work() {
                   key={tab}
                   onClick={() => handleTabChange(tab)}
                   className={`px-4 py-2 font-semibold rounded-full transition cursor-pointer ${activeService === tab
-                      ? "bg-black text-white"
-                      : "bg-white border border-black/15 text-black hover:bg-black hover:text-white"
+                    ? "bg-black text-white"
+                    : "bg-white border border-black/15 text-black hover:bg-black hover:text-white"
                     }`}
                 >
                   {tab}
@@ -1657,8 +1657,8 @@ export default function Work() {
                         key={category}
                         onClick={() => setActiveCategory(category)}
                         className={`text-left rounded-2xl px-4 py-3 font-medium transition ${activeCategory === category
-                            ? "bg-black text-white"
-                            : "bg-[#f8f8f8] text-black hover:bg-black hover:text-white"
+                          ? "bg-black text-white"
+                          : "bg-[#f8f8f8] text-black hover:bg-black hover:text-white"
                           }`}
                       >
                         {category}
