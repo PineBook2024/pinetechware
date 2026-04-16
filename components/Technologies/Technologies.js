@@ -27,27 +27,27 @@ const Technologies = () => {
       ],
     },
 
-    // "Web Design and Development": {
-    //   left: [
-    //     {
-    //       title: "Website Designing",
-    //       image: "/images/icon5.svg",
-    //     },
-    //     {
-    //       title: "Informative Website",
-    //       image: "/images/icon6.svg",
-    //     },
-    //     {
-    //       title: "E-commerce Solutions",
-    //       image: "/images/icon7.svg",
-    //     },
-    //     {
-    //       title: "Custom Applications",
-    //       image: "/images/icon8.svg",
-    //     },
-    //   ],
+    "Web Design and Development": {
+      left: [
+        {
+          title: "Website Designing",
+          image: "/images/icon5.svg",
+        },
+        {
+          title: "Informative Website",
+          image: "/images/icon6.svg",
+        },
+        {
+          title: "E-commerce Solutions",
+          image: "/images/icon7.svg",
+        },
+        {
+          title: "Custom Applications",
+          image: "/images/icon8.svg",
+        },
+      ],
 
-    // },
+    },
 
     "Digital Marketing": {
       left: [
@@ -75,38 +75,38 @@ const Technologies = () => {
 
     },
 
-    // "Mobile Application Development": {
-    //   left: [
-    //     {
-    //       title: "IOS App",
-    //       image: "/images/m1.png",
-    //     },
-    //     {
-    //       title: "Android App",
-    //       image: "/images/m2.png",
-    //     },
-    //     {
-    //       title: "ASP App",
-    //       image: "/images/m3.png",
-    //     },
-    //     {
-    //       title: "Kotlin App",
-    //       image: "/images/m4.png",
-    //     },
-    //     {
-    //       title: "React Native App",
-    //       image: "/images/m5.png",
-    //     },
-    //     {
-    //       title: "Flutter App",
-    //       image: "/images/m6.png",
-    //     },
-    //     {
-    //       title: "Swift App",
-    //       image: "/images/m7.png",
-    //     },
-    //   ],
-    // },
+    "Mobile Application Development": {
+      left: [
+        {
+          title: "IOS App",
+          image: "/images/m1.png",
+        },
+        {
+          title: "Android App",
+          image: "/images/m2.png",
+        },
+        {
+          title: "ASP App",
+          image: "/images/m3.png",
+        },
+        {
+          title: "Kotlin App",
+          image: "/images/m4.png",
+        },
+        {
+          title: "React Native App",
+          image: "/images/m5.png",
+        },
+        {
+          title: "Flutter App",
+          image: "/images/m6.png",
+        },
+        {
+          title: "Swift App",
+          image: "/images/m7.png",
+        },
+      ],
+    },
     // "Game Development": {
     //   left: [
     //     {

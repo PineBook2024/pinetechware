@@ -162,17 +162,17 @@ export default function Navbar() {
           { name: "Video Animation", href: "/Video-Animation", icon: FaVideo },
         ],
       },
-      // {
-      //   category: "Web Design & Development",
-      //   items: [
-      //     { name: "Website Designing", href: "/Website-Designing", icon: FaLaptopCode },
-      //     { name: "Website Development", href: "/Website-Development", icon: FaCode },
-      //     { name: "E-Commerce Solution", href: "/E-Commerce-Solution", icon: FaShoppingCart },
-      //     { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
-      //     { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
-      //     { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
-      //   ],
-      // },
+      {
+        category: "Web Design & Development",
+        items: [
+          { name: "Website Designing", href: "/Website-Designing", icon: FaLaptopCode },
+          { name: "Website Development", href: "/Website-Development", icon: FaCode },
+          { name: "E-Commerce Solution", href: "/E-Commerce-Solution", icon: FaShoppingCart },
+          { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
+          { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
+          { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
+        ],
+      },
       {
         category: "Digital Marketing",
         items: [
@@ -183,17 +183,17 @@ export default function Navbar() {
 
         ],
       },
-      // {
-      //   category: "Mob App Development",
-      //   items: [
-      //     { name: "iOS App", href: "/IOS-App", icon: FaApple },
-      //     { name: "Android App", href: "/Android-App", icon: FaAndroid },
-      //     { name: "Kotlin App", href: "/Kotlin-App", icon: FaJava },
-      //     { name: "React Native App", href: "/React-Native-App", icon: FaReact },
-      //     { name: "Flutter App", href: "/Flutter-App", icon: FaFire },
-      //     { name: "Swift App", href: "/Swift-App", icon: FaApple },
-      //   ],
-      // },
+      {
+        category: "Mob App Development",
+        items: [
+          { name: "iOS App", href: "/IOS-App", icon: FaApple },
+          { name: "Android App", href: "/Android-App", icon: FaAndroid },
+          { name: "Kotlin App", href: "/Kotlin-App", icon: FaJava },
+          { name: "React Native App", href: "/React-Native-App", icon: FaReact },
+          { name: "Flutter App", href: "/Flutter-App", icon: FaFire },
+          { name: "Swift App", href: "/Swift-App", icon: FaApple },
+        ],
+      },
       // {
       //   category: "Game Development",
       //   items: [

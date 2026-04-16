@@ -66,11 +66,11 @@ const Footer = () => {
                                         Branding
                                     </Link>
                                 </li>
-                                {/* <li className="mt-3">
+                                <li className="mt-3">
                                     <Link href="/Website-Development" onClick={(e) => { e.preventDefault(); window.location.href = "/Website-Development"; }}>
                                         Web Design & Development
                                     </Link>
-                                </li> */}
+                                </li>
                                 <li className="mt-3">
                                     <Link href="/Social-Media-Marketing" onClick={(e) => { e.preventDefault(); window.location.href = "/Social-Media-Marketing"; }}>
                                         Digital Marketing
@@ -79,12 +79,12 @@ const Footer = () => {
                                 {/* <li className="mt-3">
                                     Services
                                 </li> */}
-                                {/* <li className="mt-3">
+                                <li className="mt-3">
                                     <Link href="/IOS-App" onClick={(e) => { e.preventDefault(); window.location.href = "/IOS-App"; }}>
                                         Mob App Development
                                     </Link>
                                 </li>
-                                <li className="mt-3">
+                                {/* <li className="mt-3">
                                     <Link href="/Mobile-Game-Development" onClick={(e) => { e.preventDefault(); window.location.href = "/Mobile-Game-Development"; }}>
                                         Game Development
                                     </Link>
