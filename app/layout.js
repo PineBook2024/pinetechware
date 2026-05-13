@@ -15,6 +15,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+useEffect(() => {
+  const isMobile = window.innerWidth < 768;
+
+  // Mobile par auto-open OFF
+  if (isMobile) {
+    return;
+  }
+
+  // Desktop par auto-open ON
+  const checkZendesk = setInterval(() => {
+    if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+      window.$zopim.livechat.window.show();
+      clearInterval(checkZendesk);
+    }
+  }, 1000);
+
+  return () => clearInterval(checkZendesk);
+}, []);
+
 // export const metadata = {
 //   title: "PineTechware | Software & Digital Solutions",
 //   description:
