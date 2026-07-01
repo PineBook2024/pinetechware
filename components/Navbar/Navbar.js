@@ -194,20 +194,20 @@ export default function Navbar() {
           { name: "Swift App", href: "/Swift-App", icon: FaApple },
         ],
       },
-      // {
-      //   category: "Game Development",
-      //   items: [
-      //     { name: "Mobile Game Development", href: "/Mobile-Game-Development", icon: FaGamepad },
-      //     { name: "Unity Game Development", href: "/Unity-Game-Development", icon: FaUnity },
-      //     { name: "Unreal Game Development", href: "/Unreal-Game-Development", icon: FaCubes },
-      //     { name: "Blockchain Game Development", href: "/Blockchain-Game-Development", icon: FaCube },
-      //     { name: "2D Game Development", href: "/2D-Game-Development", icon: FaVectorSquare },
-      //     { name: "3D Game Development", href: "/3D-Game-Development", icon: FaLayerGroup },
-      //     { name: "Web3 Game Development", href: "/Web3-Game-Development", icon: FaGlobe },
-      //     { name: "Multiplayer Game Development", href: "/Multiplayer-Game-Development", icon: FaUsers },
-      //     { name: "Game Testing", href: "/Game-Testing", icon: FaBug },
-      //   ],
-      // },
+      {
+        category: "Game Development",
+        items: [
+          { name: "Mobile Game Development", href: "/Mobile-Game-Development", icon: FaGamepad },
+          { name: "Unity Game Development", href: "/Unity-Game-Development", icon: FaUnity },
+          { name: "Unreal Game Development", href: "/Unreal-Game-Development", icon: FaCubes },
+          { name: "Blockchain Game Development", href: "/Blockchain-Game-Development", icon: FaCube },
+          { name: "2D Game Development", href: "/2D-Game-Development", icon: FaVectorSquare },
+          { name: "3D Game Development", href: "/3D-Game-Development", icon: FaLayerGroup },
+          { name: "Web3 Game Development", href: "/Web3-Game-Development", icon: FaGlobe },
+          { name: "Multiplayer Game Development", href: "/Multiplayer-Game-Development", icon: FaUsers },
+          { name: "Game Testing", href: "/Game-Testing", icon: FaBug },
+        ],
+      },
     ],
     []
   )

@@ -84,11 +84,11 @@ const Footer = () => {
                                         Mob App Development
                                     </Link>
                                 </li>
-                                {/* <li className="mt-3">
+                                <li className="mt-3">
                                     <Link href="/Mobile-Game-Development" onClick={(e) => { e.preventDefault(); window.location.href = "/Mobile-Game-Development"; }}>
                                         Game Development
                                     </Link>
-                                </li> */}
+                                </li>
 
                                 {/* <li className="mt-3">
                                     Testimonials

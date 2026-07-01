@@ -107,22 +107,22 @@ const Technologies = () => {
         },
       ],
     },
-    // "Game Development": {
-    //   left: [
-    //     {
-    //       title: "Mobile Game Development",
-    //       image: "/images/game-development.png",
-    //     },
-    //     {
-    //       title: "Unity Game Development",
-    //       image: "/images/unity.svg",
-    //     },
-    //     {
-    //       title: "Unreal Game Developmemt",
-    //       image: "/images/unreal.svg",
-    //     },
-    //   ],
-    // },
+    "Game Development": {
+      left: [
+        {
+          title: "Mobile Game Development",
+          image: "/images/game-development.png",
+        },
+        {
+          title: "Unity Game Development",
+          image: "/images/unity.svg",
+        },
+        {
+          title: "Unreal Game Developmemt",
+          image: "/images/unreal.svg",
+        },
+      ],
+    },
   };
 
 
