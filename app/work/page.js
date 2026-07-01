@@ -140,11 +140,11 @@ export default function Work() {
   const { openPopup } = usePopup();
 
   const serviceTabs = [
-    // "Web",
+    "Web",
     "Logo",
     "Branding",
     "Video",
-    // "Mobile App",
+    "Mobile App",
   ];
 
   const webCategories = [
@@ -1401,36 +1401,36 @@ export default function Work() {
     },
 
     // 2D/3D ILLUSTRATION
-    // {
-    //   title: "Character Concept",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-1.webp",
-    // },
-    // {
-    //   title: "Product Render",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-2.webp",
-    // },
-    // {
-    //   title: "Creative Scene",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-3.webp",
-    // },
-    // {
-    //   title: "Architectural Visual",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-4.webp",
-    // },
-    // {
-    //   title: "Product Modeling",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-5.webp",
-    // },
-    // {
-    //   title: "Environment Art",
-    //   service: "2D/3D Illustration",
-    //   image: "/images/Portfolio/Illustration/illustration-6.webp",
-    // },
+    {
+      title: "Character Concept",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-1.webp",
+    },
+    {
+      title: "Product Render",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-2.webp",
+    },
+    {
+      title: "Creative Scene",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-3.webp",
+    },
+    {
+      title: "Architectural Visual",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-4.webp",
+    },
+    {
+      title: "Product Modeling",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-5.webp",
+    },
+    {
+      title: "Environment Art",
+      service: "2D/3D Illustration",
+      image: "/images/Portfolio/Illustration/illustration-6.webp",
+    },
 
     // VIDEO
     {

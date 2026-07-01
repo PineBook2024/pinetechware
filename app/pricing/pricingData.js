@@ -1,12 +1,12 @@
 ﻿export const pricingTabs = [
-    //   { id: "website", label: "Web Design" },
-    //   { id: "ecommerce", label: "eCommerce Packages" },
-    //   { id: "wordpress", label: "Wordpress" },
-    //   { id: "APP1", label: "App Development" },
+    { id: "website", label: "Web Design" },
+    { id: "ecommerce", label: "eCommerce Packages" },
+    { id: "wordpress", label: "Wordpress" },
+    { id: "APP1", label: "App Development" },
     { id: "branding", label: "Branding" },
     { id: "logoDesign", label: "Logo Design" },
     { id: "videoAnimation", label: "Video Animation" },
-    //   { id: "seodiv", label: "SEO" },
+    { id: "seodiv", label: "SEO" },
 ];
 
 export const pricingPackages = {
