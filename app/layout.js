@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "./utils/LenisProvider";
@@ -21,6 +24,20 @@ const geistMono = Geist_Mono({
 // };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) return;
+
+    const checkZendesk = window.setInterval(() => {
+      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+        window.$zopim.livechat.window.show();
+        window.clearInterval(checkZendesk);
+      }
+    }, 1000);
+
+    return () => window.clearInterval(checkZendesk);
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -35,21 +52,6 @@ export default function RootLayout({ children }) {
           src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"
           strategy="afterInteractive"
         />
-
-        <Script id="zendesk-chat-show" strategy="afterInteractive">
-          {`
-            (function () {
-              if (window.innerWidth < 768) return;
-
-              var checkZendesk = window.setInterval(function () {
-                if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
-                  window.$zopim.livechat.window.show();
-                  window.clearInterval(checkZendesk);
-                }
-              }, 1000);
-            })();
-          `}
-        </Script>
 
         <Script id="google-analytics" strategy="afterInteractive">
           {`
