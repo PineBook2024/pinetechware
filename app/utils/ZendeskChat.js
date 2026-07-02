@@ -10,14 +10,6 @@ function showZendeskWidget() {
 
   if (typeof window.zE === "function") {
     try {
-      window.zE("messenger", "show");
-      if (isDesktop) window.zE("messenger", "open");
-      return true;
-    } catch {
-      // Fall back to Web Widget Classic API below.
-    }
-
-    try {
       window.zE("webWidget", "show");
       if (isDesktop) window.zE("webWidget", "open");
       return true;
@@ -27,6 +19,7 @@ function showZendeskWidget() {
   }
 
   if (window.$zopim?.livechat) {
+    window.$zopim.livechat.button.show();
     if (isDesktop) window.$zopim.livechat.window.show();
     return true;
   }
