@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
           src="https://www.googletagmanager.com/gtag/js?id=G-SDVD9HEY4L"
           strategy="afterInteractive"
         />
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </script>
 
         <Script id="google-analytics" strategy="afterInteractive">
           {`
