@@ -3,7 +3,6 @@ import "./globals.css";
 import LenisProvider from "./utils/LenisProvider";
 import { PopupProvider } from "@/context/PopupContext";
 import Script from "next/script";
-import ZendeskChat from "./utils/ZendeskChat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +30,27 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
+        <Script
+          id="ze-snippet"
+          src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"
+          strategy="afterInteractive"
+        />
+
+        <Script id="zendesk-chat-show" strategy="afterInteractive">
+          {`
+            (function () {
+              if (window.innerWidth < 768) return;
+
+              var checkZendesk = window.setInterval(function () {
+                if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+                  window.$zopim.livechat.window.show();
+                  window.clearInterval(checkZendesk);
+                }
+              }, 1000);
+            })();
+          `}
+        </Script>
+
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -44,7 +64,6 @@ export default function RootLayout({ children }) {
         <LenisProvider>
           <PopupProvider>
             {children}
-            <ZendeskChat />
           </PopupProvider>
         </LenisProvider>
       </body>
