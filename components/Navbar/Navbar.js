@@ -154,15 +154,6 @@ export default function Navbar() {
   const servicesData = useMemo(
     () => [
       {
-        category: "Branding",
-        items: [
-          { name: "Custom Graphic Design", href: "/Custom-Graphic-Design", icon: FaPaintBrush },
-          { name: "Logo Designs", href: "/Logo-Design", icon: FaPenNib },
-          { name: "Professional Branding", href: "/Professional-Branding", icon: FaIdBadge },
-          { name: "Video Animation", href: "/Video-Animation", icon: FaVideo },
-        ],
-      },
-      {
         category: "Web Design & Development",
         items: [
           { name: "Website Designing", href: "/Website-Designing", icon: FaLaptopCode },
@@ -171,16 +162,6 @@ export default function Navbar() {
           { name: "Custom Application", href: "/Custom-Application", icon: FaCode },
           { name: "Shopify Store", href: "/Shopify-Store", icon: FaShopify },
           { name: ".Net Application", href: "/ASP-App", icon: FaMicrosoft },
-        ],
-      },
-      {
-        category: "Digital Marketing",
-        items: [
-          { name: "Email Marketing Service", href: "/Email-Marketing-Service", icon: FaEnvelope },
-          { name: "Search Engine Optimization", href: "/Search-Engine-Optimization", icon: FaSearch },
-          { name: "Social Media Marketing", href: "/Social-Media-Marketing", icon: FaHashtag },
-          { name: "PPC Management", href: "/PPC-Management", icon: FaBullhorn },
-
         ],
       },
       {
@@ -206,6 +187,25 @@ export default function Navbar() {
           { name: "Web3 Game Development", href: "/Web3-Game-Development", icon: FaGlobe },
           { name: "Multiplayer Game Development", href: "/Multiplayer-Game-Development", icon: FaUsers },
           { name: "Game Testing", href: "/Game-Testing", icon: FaBug },
+        ],
+      },
+      {
+        category: "Digital Marketing",
+        items: [
+          { name: "Email Marketing Service", href: "/Email-Marketing-Service", icon: FaEnvelope },
+          { name: "Search Engine Optimization", href: "/Search-Engine-Optimization", icon: FaSearch },
+          { name: "Social Media Marketing", href: "/Social-Media-Marketing", icon: FaHashtag },
+          { name: "PPC Management", href: "/PPC-Management", icon: FaBullhorn },
+
+        ],
+      },
+      {
+        category: "Branding",
+        items: [
+          { name: "Custom Graphic Design", href: "/Custom-Graphic-Design", icon: FaPaintBrush },
+          { name: "Logo Designs", href: "/Logo-Design", icon: FaPenNib },
+          { name: "Professional Branding", href: "/Professional-Branding", icon: FaIdBadge },
+          { name: "Video Animation", href: "/Video-Animation", icon: FaVideo },
         ],
       },
     ],

@@ -25,17 +25,15 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
   useEffect(() => {
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) return;
+    if (document.getElementById("ze-snippet")) return;
 
-    const checkZendesk = window.setInterval(() => {
-      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
-        window.$zopim.livechat.window.show();
-        window.clearInterval(checkZendesk);
-      }
-    }, 1000);
+    const script = document.createElement("script");
+    script.id = "ze-snippet";
+    script.src =
+      "https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973";
+    script.async = true;
 
-    return () => window.clearInterval(checkZendesk);
+    document.body.appendChild(script);
   }, []);
 
   return (
@@ -44,12 +42,6 @@ export default function RootLayout({ children }) {
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SDVD9HEY4L"
-          strategy="afterInteractive"
-        />
-
-        <Script
-          id="ze-snippet"
-          src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"
           strategy="afterInteractive"
         />
 
