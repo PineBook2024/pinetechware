@@ -6,6 +6,7 @@ import "./globals.css";
 import LenisProvider from "./utils/LenisProvider";
 import { PopupProvider } from "@/context/PopupContext";
 import Script from "next/script";
+import SocialSidebar from "@/components/SocialSidebar/SocialSidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <LenisProvider>
           <PopupProvider>
+            <SocialSidebar />
             {children}
           </PopupProvider>
         </LenisProvider>
