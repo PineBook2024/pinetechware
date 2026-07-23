@@ -35,13 +35,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return seoRoutes.map(([destination, source]) => ({
-      source: destination,
-      destination: source,
-      permanent: true,
-    }));
-  },
   async rewrites() {
     return seoRoutes.map(([destination, source]) => ({
       source,
