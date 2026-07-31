@@ -234,7 +234,7 @@ const Footer = () => {
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
                             Copyright © 2026 |
                             <Link
-                                href="/terms-and-conditions"
+                                href="/terms-and-condition"
                                 rel="noopener noreferrer"
                                 className="text-white ml-1"
                                 target="_blank"
