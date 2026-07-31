@@ -230,7 +230,7 @@ export default function about() {
                         <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
                             10. Refund Policy
                         </h2>
-                        <ul className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black list-disc list-outside pl-5 space-y-1">
+                        <ul className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black list-disc list-outside pl-12 space-y-1">
                             <li>Refunds are not guaranteed once work has commenced.</li>
                             <li>Approved refunds depend on completed work.</li>
                             <li>No refunds for completed milestones or approved.</li>
