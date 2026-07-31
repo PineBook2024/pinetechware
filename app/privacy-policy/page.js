@@ -228,11 +228,19 @@ export default function about() {
                         </p>
 
                         <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
-                            10. Contact Us
+                            10. Refund Policy
+                        </h2>
+                        <ul className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
+                            <li>Refunds are not guaranteed once work has commenced.</li>
+                            <li>Approved refunds depend on completed work.</li>
+                            <li>No refunds for completed milestones or approved.</li>
+                        </ul>
+                        <h2 className=" font-bold mt-9 mb-6 text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">
+                            11. Contact Us
                         </h2>
 
                         <p className="lg:pt-[2.375rem] pt-6 text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">
-                            If you have any questions about this Privacy Policy, or if you believe we are not complying with it, please contact us so we can address your concerns. You can reach us by email at [INSERT SUPPORT EMAIL] or by phone at [INSERT CONTACT NUMBER]. Our team will respond as soon as reasonably possible.
+                            If you have any questions about this Privacy Policy, or if you believe we are not complying with it, please contact us so we can address your concerns. You can reach us by email at <a href="mailto:info@pinetechware.com">info@pinetechware.com</a> or by phone at <a href='tel:(307) 522-1099'>(307) 522-1099</a>. Our team will respond as soon as reasonably possible.
                         </p>
 
                     </div>
