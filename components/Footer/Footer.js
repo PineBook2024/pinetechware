@@ -67,24 +67,24 @@ const footerServices = [
             { label: "Game Testing", href: "/game-testing", icon: Bug },
         ],
     },
-    {
-        title: "Digital Marketing",
-        links: [
-            { label: "Email Marketing Service", href: "/email-marketing-service", icon: Mail },
-            { label: "Search Engine Optimization", href: "/search-engine-optimization", icon: Search },
-            { label: "Social Media Marketing", href: "/social-media-marketing", icon: Hash },
-            { label: "PPC Management", href: "/ppc-management", icon: Megaphone },
-        ],
-    },
-    {
-        title: "Branding",
-        links: [
-            { label: "Custom Graphic Design", href: "/custom-graphic-design", icon: Brush },
-            { label: "Logo Designs", href: "/logo-design-services", icon: PenTool },
-            { label: "Professional Branding", href: "/branding-services", icon: ShieldCheck },
-            { label: "Video Animation", href: "/video-animation-services", icon: Video },
-        ],
-    },
+    // {
+    //     title: "Digital Marketing",
+    //     links: [
+    //         { label: "Email Marketing Service", href: "/email-marketing-service", icon: Mail },
+    //         { label: "Search Engine Optimization", href: "/search-engine-optimization", icon: Search },
+    //         { label: "Social Media Marketing", href: "/social-media-marketing", icon: Hash },
+    //         { label: "PPC Management", href: "/ppc-management", icon: Megaphone },
+    //     ],
+    // },
+    // {
+    //     title: "Branding",
+    //     links: [
+    //         { label: "Custom Graphic Design", href: "/custom-graphic-design", icon: Brush },
+    //         { label: "Logo Designs", href: "/logo-design-services", icon: PenTool },
+    //         { label: "Professional Branding", href: "/branding-services", icon: ShieldCheck },
+    //         { label: "Video Animation", href: "/video-animation-services", icon: Video },
+    //     ],
+    // },
 ];
 
 
@@ -93,7 +93,7 @@ const Footer = () => {
         <div>
             <section className="bg-[#111111] text-white">
                 <div className="container mx-auto px-5 py-12 md:py-16">
-                    <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
+                    <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                         {footerServices.map((group) => (
                             <div key={group.title}>
                                 <h2 className="mb-5 text-lg font-bold leading-snug text-white">

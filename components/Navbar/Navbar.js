@@ -189,25 +189,25 @@ export default function Navbar() {
           { name: "Game Testing", href: "/game-testing", icon: FaBug },
         ],
       },
-      {
-        category: "Digital Marketing",
-        items: [
-          { name: "Email Marketing Service", href: "/email-marketing-service", icon: FaEnvelope },
-          { name: "Search Engine Optimization", href: "/search-engine-optimization", icon: FaSearch },
-          { name: "Social Media Marketing", href: "/social-media-marketing", icon: FaHashtag },
-          { name: "PPC Management", href: "/ppc-management", icon: FaBullhorn },
+        // {
+        //   category: "Digital Marketing",
+        //   items: [
+        //     { name: "Email Marketing Service", href: "/email-marketing-service", icon: FaEnvelope },
+        //     { name: "Search Engine Optimization", href: "/search-engine-optimization", icon: FaSearch },
+        //     { name: "Social Media Marketing", href: "/social-media-marketing", icon: FaHashtag },
+        //     { name: "PPC Management", href: "/ppc-management", icon: FaBullhorn },
 
-        ],
-      },
-      {
-        category: "Branding",
-        items: [
-          { name: "Custom Graphic Design", href: "/custom-graphic-design", icon: FaPaintBrush },
-          { name: "Logo Designs", href: "/logo-design-services", icon: FaPenNib },
-          { name: "Professional Branding", href: "/branding-services", icon: FaIdBadge },
-          { name: "Video Animation", href: "/video-animation-services", icon: FaVideo },
-        ],
-      },
+        //   ],
+        // },
+      // {
+      //   category: "Branding",
+      //   items: [
+      //     { name: "Custom Graphic Design", href: "/custom-graphic-design", icon: FaPaintBrush },
+      //     { name: "Logo Designs", href: "/logo-design-services", icon: FaPenNib },
+      //     { name: "Professional Branding", href: "/branding-services", icon: FaIdBadge },
+      //     { name: "Video Animation", href: "/video-animation-services", icon: FaVideo },
+      //   ],
+      // },
     ],
     []
   )
@@ -340,7 +340,7 @@ export default function Navbar() {
           }`}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {servicesData.map((section) => (
               <div key={section.category} className="flex flex-col gap-4">
                 <p className="text-lg font-bold text-black">{section.category}</p>
