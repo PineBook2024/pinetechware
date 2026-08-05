@@ -129,11 +129,11 @@ export default function page() {
 
 
     const relatedServices = [
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Web Development" },
         { name: "Mobile App Design" },
-        { name: "Branding & Visual Identity" },
-        { name: "Custom Graphic Design" },
+        // { name: "Branding & Visual Identity" },
+        // { name: "Custom Graphic Design" },
         { name: "Landing Page Design" },
         { name: "E-Commerce Development" },
         { name: "Website Redesign Services" },

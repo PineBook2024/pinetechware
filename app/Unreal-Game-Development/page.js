@@ -71,11 +71,11 @@ export default function page() {
             description:
                 "Real-time multiplayer systems with matchmaking, leaderboards, and secure server-side integration.",
         },
-        {
-            heading: "Game UI/UX Design",
-            description:
-                "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
-        },
+        // {
+        //     heading: "Game UI/UX Design",
+        //     description:
+        //         "Player-friendly menus, controls, HUDs, and navigation systems designed for optimal gameplay.",
+        // },
     ];
 
     const processSteps = [
@@ -121,7 +121,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },

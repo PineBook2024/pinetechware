@@ -55,11 +55,11 @@ export default function page() {
             description:
                 "End-to-end Flutter application development tailored to your business objectives, target audience, and functional requirements.",
         },
-        {
-            heading: "UI/UX Design with Flutter",
-            description:
-                "Pixel-perfect, intuitive interfaces crafted using Flutter’s expressive UI capabilities to deliver engaging and user-centric experiences.",
-        },
+        // {
+        //     heading: "UI/UX Design with Flutter",
+        //     description:
+        //         "Pixel-perfect, intuitive interfaces crafted using Flutter’s expressive UI capabilities to deliver engaging and user-centric experiences.",
+        // },
         {
             heading: "Cross-Platform App Development",
             description:

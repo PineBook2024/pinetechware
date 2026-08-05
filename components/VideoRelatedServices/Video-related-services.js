@@ -5,16 +5,16 @@ import Image from "next/image";
 
 
 const relatedServices = [
-  { name: "Motion Graphics" },
-  { name: "2D & 3D Animation" },
-  { name: "Explainer Videos" },
-  { name: "Social Media Video Design" },
-  { name: "Branding & Visual Identity" },
-  { name: "Custom Graphic Design" },
-  { name: "UI/UX Design" },
-  { name: "Video Editing" },
-  { name: "Promotional Video Creation" },
-  { name: "Product Demo Videos" },
+    { name: "Motion Graphics" },
+    { name: "2D & 3D Animation" },
+    { name: "Explainer Videos" },
+    { name: "Social Media Video Design" },
+    { name: "Branding & Visual Identity" },
+    { name: "Custom Graphic Design" },
+    //   { name: "UI/UX Design" },
+    { name: "Video Editing" },
+    { name: "Promotional Video Creation" },
+    { name: "Product Demo Videos" },
 ]
 
 const VideoRelatedServices = () => {

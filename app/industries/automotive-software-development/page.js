@@ -64,7 +64,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
@@ -173,24 +173,24 @@ export default function page() {
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Automotive </span> Software Development Services</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We deliver advanced automotive software development services focused on automation, safety, connectivity, and performance. Our solutions empower modern vehicles with intelligent systems that enhance driving experience, operational efficiency, and long-term reliability.</p>
                         </div>
-                         <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                        <Image
-                                            src="/images/automotive-software-development/01.webp"
-                                            alt="Automotive Software Development Services"
-                                            width={500}
-                                            height={500}
-                                            className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                            priority
-                                        />
-                                    </div>
-                        
-                                </div>
-                            </div>
-                        </section>
-                        
-                        
-                        
-                                        <Image  src="/images/automotive-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Automotive Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/automotive-software-development/01.webp"
+                                alt="Automotive Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/automotive-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Automotive Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
 
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">

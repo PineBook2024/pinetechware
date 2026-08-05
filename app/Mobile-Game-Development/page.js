@@ -67,11 +67,11 @@ export default function page() {
             description:
                 "High-performance games developed using Unity for scalability, flexibility, and cross-platform support.",
         },
-        {
-            heading: "Game UI/UX Design",
-            description:
-                "Intuitive menus, controls, and interfaces crafted to enhance overall player experience.",
-        },
+        // {
+        //     heading: "Game UI/UX Design",
+        //     description:
+        //         "Intuitive menus, controls, and interfaces crafted to enhance overall player experience.",
+        // },
         {
             heading: "Multiplayer & Online Games",
             description:
@@ -124,7 +124,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },

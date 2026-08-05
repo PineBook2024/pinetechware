@@ -64,7 +64,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },

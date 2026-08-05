@@ -132,7 +132,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "Unity Game Development" },
         { name: "2D Game Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "App Maintenance" },

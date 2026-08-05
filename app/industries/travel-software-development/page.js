@@ -64,67 +64,67 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
     ];
 
-  const DesignServices = [
-  {
-    title: "Travel Industry Expertise",
-    description:
-      "Our team understands travel workflows, seasonal demand, and evolving customer expectations to deliver industry-focused solutions.",
-  },
-  {
-    title: "Custom-Built Solutions",
-    description:
-      "We develop tailored travel software that aligns perfectly with your business model, operational needs, and long-term goals.",
-  },
-  {
-    title: "Scalability & Performance",
-    description:
-      "Our solutions are engineered to handle high traffic volumes and peak travel seasons without compromising performance.",
-  },
-  {
-    title: "QA & Testing",
-    description:
-      "Comprehensive quality assurance and testing ensure reliability, optimal performance, and robust security across all platforms.",
-  },
-];
+    const DesignServices = [
+        {
+            title: "Travel Industry Expertise",
+            description:
+                "Our team understands travel workflows, seasonal demand, and evolving customer expectations to deliver industry-focused solutions.",
+        },
+        {
+            title: "Custom-Built Solutions",
+            description:
+                "We develop tailored travel software that aligns perfectly with your business model, operational needs, and long-term goals.",
+        },
+        {
+            title: "Scalability & Performance",
+            description:
+                "Our solutions are engineered to handle high traffic volumes and peak travel seasons without compromising performance.",
+        },
+        {
+            title: "QA & Testing",
+            description:
+                "Comprehensive quality assurance and testing ensure reliability, optimal performance, and robust security across all platforms.",
+        },
+    ];
 
 
- const slides = [
-  {
-    title: "Software Consulting",
-    desc: "Expert guidance for travel software strategy, planning, and digital transformation.",
-    img: "/images/travel-software-development/software-consulting.webp",
-  },
-  {
-    title: "Dedicated Development Team",
-    desc: "A dedicated team focused on building, scaling, and maintaining high-quality travel software solutions.",
-    img: "/images/travel-software-development/dedicated-development-team.webp",
-  },
-  {
-    title: "Staff Augmentation",
-    desc: "Extend your in-house team with skilled travel software developers and QA specialists.",
-    img: "/images/travel-software-development/staff-augmentation.webp",
-  },
-  {
-    title: "End-to-End Project Delivery",
-    desc: "Complete ownership of your project from planning and development to deployment and post-launch support.",
-    img: "/images/travel-software-development/end-to-end-project-delivery.webp",
-  },
-];
+    const slides = [
+        {
+            title: "Software Consulting",
+            desc: "Expert guidance for travel software strategy, planning, and digital transformation.",
+            img: "/images/travel-software-development/software-consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building, scaling, and maintaining high-quality travel software solutions.",
+            img: "/images/travel-software-development/dedicated-development-team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your in-house team with skilled travel software developers and QA specialists.",
+            img: "/images/travel-software-development/staff-augmentation.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete ownership of your project from planning and development to deployment and post-launch support.",
+            img: "/images/travel-software-development/end-to-end-project-delivery.webp",
+        },
+    ];
 
 
-const bullets = [
-  "Travel Software Developers & QA Engineers",
-  "Flexible Engagement Models",
-  "Faster Time-to-Market",
-  "Cost-Effective Solutions",
-  "Ongoing Support & Maintenance",
-];
+    const bullets = [
+        "Travel Software Developers & QA Engineers",
+        "Flexible Engagement Models",
+        "Faster Time-to-Market",
+        "Cost-Effective Solutions",
+        "Ongoing Support & Maintenance",
+    ];
 
 
     const techs = [
@@ -162,25 +162,25 @@ const bullets = [
                                 solutions for travel agencies, tour operators, airlines, hotels, and travel startups. Our software
                                 helps automate operations, enhance customer experience, and drive growth in the travel industry.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/travel-software-development/01.webp"
-                                                                   alt="Travel Software Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/travel-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Travel Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/travel-software-development/01.webp"
+                                alt="Travel Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/travel-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Travel Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">

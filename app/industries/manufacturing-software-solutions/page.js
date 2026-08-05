@@ -64,68 +64,68 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
     ];
 
-const DesignServices = [
-    {
-        title: "Manufacturing Domain Expertise",
-        description: "Our team understands industrial manufacturing processes, machinery, and operational challenges."
-    },
-    {
-        title: "Custom-Built Software Solutions",
-        description: "We develop tailored solutions aligned with your production goals and business needs."
-    },
-    {
-        title: "Data Security & Compliance",
-        description: "We implement robust security measures to protect operational data and ensure compliance."
-    },
-    {
-        title: "QA & Testing",
-        description: "Comprehensive testing ensures reliability, scalability, and performance of manufacturing systems."
-    },
-    {
-        title: "Cloud-Based Manufacturing Solutions",
-        description: "We develop cloud-enabled manufacturing software that supports scalability, flexibility, and remote access."
-    }
-];
+    const DesignServices = [
+        {
+            title: "Manufacturing Domain Expertise",
+            description: "Our team understands industrial manufacturing processes, machinery, and operational challenges."
+        },
+        {
+            title: "Custom-Built Software Solutions",
+            description: "We develop tailored solutions aligned with your production goals and business needs."
+        },
+        {
+            title: "Data Security & Compliance",
+            description: "We implement robust security measures to protect operational data and ensure compliance."
+        },
+        {
+            title: "QA & Testing",
+            description: "Comprehensive testing ensures reliability, scalability, and performance of manufacturing systems."
+        },
+        {
+            title: "Cloud-Based Manufacturing Solutions",
+            description: "We develop cloud-enabled manufacturing software that supports scalability, flexibility, and remote access."
+        }
+    ];
 
 
 
-const slides = [
-    {
-        title: "Software Consulting",
-        desc: "Expert guidance for manufacturing software strategy and implementation.",
-        img: "/images/manufacturing-software-solutions/Software-Consulting.webp",
-    },
-    {
-        title: "Dedicated Development Team",
-        desc: "A dedicated team focused on building and maintaining manufacturing software solutions.",
-        img: "/images/manufacturing-software-solutions/Dedicated-Development-Team.webp",
-    },
-    {
-        title: "Staff Augmentation",
-        desc: "Extend your internal team with skilled industrial software developers and QA specialists.",
-        img: "/images/manufacturing-software-solutions/Staff-Augmentation.webp",
-    },
-    {
-        title: "End-to-End Project Delivery",
-        desc: "Complete ownership from planning to deployment and ongoing support.",
-        img: "/images/manufacturing-software-solutions/End-to-End-Project-Delivery.webp",
-    },
-];
+    const slides = [
+        {
+            title: "Software Consulting",
+            desc: "Expert guidance for manufacturing software strategy and implementation.",
+            img: "/images/manufacturing-software-solutions/Software-Consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building and maintaining manufacturing software solutions.",
+            img: "/images/manufacturing-software-solutions/Dedicated-Development-Team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your internal team with skilled industrial software developers and QA specialists.",
+            img: "/images/manufacturing-software-solutions/Staff-Augmentation.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete ownership from planning to deployment and ongoing support.",
+            img: "/images/manufacturing-software-solutions/End-to-End-Project-Delivery.webp",
+        },
+    ];
 
 
-   const bullets = [
-    "Industrial Software Developers & QA Engineers",
-    "Flexible Engagement Models",
-    "Faster Development Cycles",
-    "Cost-Effective Solutions",
-    "Continuous Support & Maintenance"
-];
+    const bullets = [
+        "Industrial Software Developers & QA Engineers",
+        "Flexible Engagement Models",
+        "Faster Development Cycles",
+        "Cost-Effective Solutions",
+        "Continuous Support & Maintenance"
+    ];
 
     const techs = [
         { name: "Dart", src: "/images/Dart.svg" },
@@ -160,25 +160,25 @@ const slides = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Industrial Manufacturing    </span> Software Development Services</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We provide advanced industrial manufacturing software development services that help manufacturers digitize operations, improve production efficiency, reduce downtime, and enable data-driven decision-making across the manufacturing lifecycle.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/manufacturing-software-solutions/01.webp"
-                                                                   alt="Manufacturing Software Solutions"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/manufacturing-software-solutions/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Manufacturing Software Solutions" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/manufacturing-software-solutions/01.webp"
+                                alt="Manufacturing Software Solutions"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/manufacturing-software-solutions/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Manufacturing Software Solutions" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -501,7 +501,7 @@ const slides = [
                                     Collaboration Models for Industrial Manufacturing Software Development
                                 </h2>
                                 <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                                   We offer flexible engagement models to match diverse industrial requirements.
+                                    We offer flexible engagement models to match diverse industrial requirements.
                                 </p>
                             </div>
                         </SplideSlide>
@@ -529,7 +529,7 @@ const slides = [
                         Collaboration Models for Industrial Manufacturing Software Development
                     </h2>
                     <p className="text-base mb-12">
-                          We offer flexible engagement models to match diverse industrial requirements.
+                        We offer flexible engagement models to match diverse industrial requirements.
                     </p>
 
                     <div className="flex flex-col gap-5">

@@ -64,67 +64,67 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
     ];
 
-const DesignServices = [
-    {
-        title: "CRM Domain Expertise",
-        description: "Our team understands CRM workflows, customer lifecycle management, and business growth strategies."
-    },
-    {
-        title: "Custom-Built Solutions",
-        description: "We design CRM systems tailored to your business goals and operational needs."
-    },
-    {
-        title: "Scalability & Performance",
-        description: "Our CRM solutions are built to scale with your business growth."
-    },
-    {
-        title: "QA & Testing",
-        description: "Comprehensive testing ensures performance, security, and reliability."
-    },
-    {
-        title: "Cloud-Based CRM Solutions",
-        description: "We develop cloud-enabled CRM platforms that offer flexibility, scalability, and real-time access."
-    }
-];
+    const DesignServices = [
+        {
+            title: "CRM Domain Expertise",
+            description: "Our team understands CRM workflows, customer lifecycle management, and business growth strategies."
+        },
+        {
+            title: "Custom-Built Solutions",
+            description: "We design CRM systems tailored to your business goals and operational needs."
+        },
+        {
+            title: "Scalability & Performance",
+            description: "Our CRM solutions are built to scale with your business growth."
+        },
+        {
+            title: "QA & Testing",
+            description: "Comprehensive testing ensures performance, security, and reliability."
+        },
+        {
+            title: "Cloud-Based CRM Solutions",
+            description: "We develop cloud-enabled CRM platforms that offer flexibility, scalability, and real-time access."
+        }
+    ];
 
 
 
-const slides = [
-    {
-        title: "CRM Consulting",
-        desc: "Expert guidance for CRM strategy, implementation, and optimization.",
-        img: "/images/crm-development-services/Software-Consulting.webp",
-    },
-    {
-        title: "Dedicated Development Team",
-        desc: "A dedicated team focused on building and maintaining CRM solutions.",
-        img: "/images/crm-development-services/Dedicated-Development-Team.webp",
-    },
-    {
-        title: "Staff Augmentation",
-        desc: "Extend your in-house team with experienced CRM developers and QA specialists.",
-        img: "/images/crm-development-services/Staff-Augmentation.webp",
-    },
-    {
-        title: "End-to-End CRM Development",
-        desc: "Complete ownership from requirement analysis to deployment and ongoing support.",
-        img: "/images/crm-development-services/End-to-End-Project-Delivery.webp",
-    }
-];
+    const slides = [
+        {
+            title: "CRM Consulting",
+            desc: "Expert guidance for CRM strategy, implementation, and optimization.",
+            img: "/images/crm-development-services/Software-Consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building and maintaining CRM solutions.",
+            img: "/images/crm-development-services/Dedicated-Development-Team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your in-house team with experienced CRM developers and QA specialists.",
+            img: "/images/crm-development-services/Staff-Augmentation.webp",
+        },
+        {
+            title: "End-to-End CRM Development",
+            desc: "Complete ownership from requirement analysis to deployment and ongoing support.",
+            img: "/images/crm-development-services/End-to-End-Project-Delivery.webp",
+        }
+    ];
 
-const bullets = [
-    "CRM Developers & QA Engineers",
-    "Flexible Engagement Models",
-    "Faster Implementation",
-    "Cost-Effective Solutions",
-    "Ongoing Support & Maintenance"
-];
+    const bullets = [
+        "CRM Developers & QA Engineers",
+        "Flexible Engagement Models",
+        "Faster Implementation",
+        "Cost-Effective Solutions",
+        "Ongoing Support & Maintenance"
+    ];
 
 
     const techs = [
@@ -160,25 +160,25 @@ const bullets = [
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>CRM Software  </span> Development Services</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We provide custom CRM software development services that help businesses manage customer relationships, streamline sales processes, improve customer engagement, and drive long-term growth through data-driven insights.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/crm-development-services/01.webp"
-                                                                   alt="CRM Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/crm-development-services/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="CRM Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/crm-development-services/01.webp"
+                                alt="CRM Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/crm-development-services/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="CRM Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -501,7 +501,7 @@ const bullets = [
                                     Collaboration Models for CRM Software Development
                                 </h2>
                                 <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                                  We offer flexible engagement models to meet diverse CRM project requirements.
+                                    We offer flexible engagement models to meet diverse CRM project requirements.
                                 </p>
                             </div>
                         </SplideSlide>
@@ -529,7 +529,7 @@ const bullets = [
                         Collaboration Models for CRM Software Development
                     </h2>
                     <p className="text-base mb-12">
-                         We offer flexible engagement models to meet diverse CRM project requirements.
+                        We offer flexible engagement models to meet diverse CRM project requirements.
                     </p>
 
                     <div className="flex flex-col gap-5">

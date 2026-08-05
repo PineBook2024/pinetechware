@@ -64,7 +64,7 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
@@ -95,37 +95,37 @@ export default function page() {
 
 
 
-const slides = [
-  {
-    title: "Legal Software Consulting",
-    desc: "Expert guidance for legal software strategy, planning, and digital transformation.",
-    img: "/images/legal-software-development/Software-Consulting.webp",
-  },
-  {
-    title: "Dedicated Development Team",
-    desc: "A dedicated team focused on building, scaling, and maintaining robust legal software solutions.",
-    img: "/images/legal-software-development/Dedicated-Development-Team.webp",
-  },
-  {
-    title: "Staff Augmentation",
-    desc: "Extend your in-house team with experienced legal software developers and QA specialists.",
-    img: "/images/legal-software-development/Staff-Augmentation.webp",
-  },
-  {
-    title: "End-to-End Project Delivery",
-    desc: "Complete ownership from planning and development to deployment and ongoing post-launch support.",
-    img: "/images/legal-software-development/End-to-End-Project-Delivery.webp",
-  },
-];
+    const slides = [
+        {
+            title: "Legal Software Consulting",
+            desc: "Expert guidance for legal software strategy, planning, and digital transformation.",
+            img: "/images/legal-software-development/Software-Consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building, scaling, and maintaining robust legal software solutions.",
+            img: "/images/legal-software-development/Dedicated-Development-Team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Extend your in-house team with experienced legal software developers and QA specialists.",
+            img: "/images/legal-software-development/Staff-Augmentation.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete ownership from planning and development to deployment and ongoing post-launch support.",
+            img: "/images/legal-software-development/End-to-End-Project-Delivery.webp",
+        },
+    ];
 
 
-const bullets = [
-  "Legal Software Developers & QA Engineers",
-  "Flexible Engagement Models",
-  "Faster Implementation",
-  "Cost-Effective Solutions",
-  "Ongoing Support & Maintenance",
-];
+    const bullets = [
+        "Legal Software Developers & QA Engineers",
+        "Flexible Engagement Models",
+        "Faster Implementation",
+        "Cost-Effective Solutions",
+        "Ongoing Support & Maintenance",
+    ];
 
 
 
@@ -164,25 +164,25 @@ const bullets = [
                                 law firms, legal departments, and legal service providers streamline operations, manage cases
                                 efficiently, and ensure compliance with regulatory standards.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/legal-software-development/01.webp"
-                                                                   alt="Legal Software Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/legal-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Legal Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/legal-software-development/01.webp"
+                                alt="Legal Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/legal-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="Legal Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">

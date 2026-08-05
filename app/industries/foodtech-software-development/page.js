@@ -64,63 +64,63 @@ export default function page() {
         { name: "Mobile Game Development" },
         { name: "2D & 3D Game Development" },
         { name: "AR & VR Development" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Backend Development" },
         { name: "Cloud Solutions" },
         { name: "Multiplayer Game Development" },
     ];
 
-   const DesignServices = [
-    {
-        title: "Ecommerce Expertise",
-        description:
-            "Our team understands ecommerce ecosystems, consumer behavior, and digital commerce trends.",
-    },
-    {
-        title: "Custom-Built Solutions",
-        description:
-            "Every ecommerce solution is tailored to meet your business goals and customer expectations.",
-    },
-    {
-        title: "Security & Compliance",
-        description:
-            "We implement advanced security measures to protect customer data and transactions.",
-    },
-    {
-        title: "QA & Testing",
-        description:
-            "Comprehensive testing ensures high performance, reliability, and scalability.",
-    },
-    {
-        title: "Cloud-Based Ecommerce Solutions",
-        description:
-            "We develop cloud-enabled ecommerce platforms that support scalability, speed, and global reach.",
-    },
-];
+    const DesignServices = [
+        {
+            title: "Ecommerce Expertise",
+            description:
+                "Our team understands ecommerce ecosystems, consumer behavior, and digital commerce trends.",
+        },
+        {
+            title: "Custom-Built Solutions",
+            description:
+                "Every ecommerce solution is tailored to meet your business goals and customer expectations.",
+        },
+        {
+            title: "Security & Compliance",
+            description:
+                "We implement advanced security measures to protect customer data and transactions.",
+        },
+        {
+            title: "QA & Testing",
+            description:
+                "Comprehensive testing ensures high performance, reliability, and scalability.",
+        },
+        {
+            title: "Cloud-Based Ecommerce Solutions",
+            description:
+                "We develop cloud-enabled ecommerce platforms that support scalability, speed, and global reach.",
+        },
+    ];
 
 
-   const slides = [
-    {
-        title: "Software Consulting",
-        desc: "Expert guidance to plan and optimize ecommerce software strategies.",
-        img: "/images/foodtech-software-development/Software-Consulting.webp",
-    },
-    {
-        title: "Dedicated Development Team",
-        desc: "A dedicated team focused on building and enhancing ecommerce solutions.",
-        img: "/images/foodtech-software-development/Dedicated-Development-Team.webp",
-    },
-    {
-        title: "Staff Augmentation",
-        desc: "Scale your team with experienced ecommerce developers and QA engineers.",
-        img: "/images/foodtech-software-development/Staff-Augmentation.webp",
-    },
-    {
-        title: "End-to-End Project Delivery",
-        desc: "Complete ownership from planning to deployment and post-launch support.",
-        img: "/images/foodtech-software-development/End-to-End-Project-Delivery.webp",
-    },
-];
+    const slides = [
+        {
+            title: "Software Consulting",
+            desc: "Expert guidance to plan and optimize ecommerce software strategies.",
+            img: "/images/foodtech-software-development/Software-Consulting.webp",
+        },
+        {
+            title: "Dedicated Development Team",
+            desc: "A dedicated team focused on building and enhancing ecommerce solutions.",
+            img: "/images/foodtech-software-development/Dedicated-Development-Team.webp",
+        },
+        {
+            title: "Staff Augmentation",
+            desc: "Scale your team with experienced ecommerce developers and QA engineers.",
+            img: "/images/foodtech-software-development/Staff-Augmentation.webp",
+        },
+        {
+            title: "End-to-End Project Delivery",
+            desc: "Complete ownership from planning to deployment and post-launch support.",
+            img: "/images/foodtech-software-development/End-to-End-Project-Delivery.webp",
+        },
+    ];
 
 
 
@@ -165,25 +165,25 @@ export default function page() {
                                 <h1 className=" font-bold text-black pb-6 lg:pb-[2.375rem]  text-4xl xl:text-5xl 2xl:text-6xl tracking-[-2px] lg:-translate-y-[7px] xl:!leading-[55px] 2xl:!leading-[65px]"><span className='text-theme text-[#3BB9E1]'>Ecommerce Software    </span> Development Services</h1></div>
                             <p className="   text-black text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">We deliver scalable, secure, and high-performing ecommerce software development services designed to help businesses sell smarter, grow faster, and deliver seamless customer experiences across digital channels.</p>
                         </div>
-                                                <div  className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
-                                                               <Image
-                                                                   src="/images/foodtech-software-development/01.webp"
-                                                                   alt="FoodTech Software Development Services"
-                                                                   width={500}
-                                                                   height={500}
-                                                                   className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
-                                                                   priority
-                                                               />
-                                                           </div>
-                                               
-                                                       </div>
-                                                   </div>
-                                               </section>
-                                               
-                                               
-                                               
-                                                               <Image  src="/images/foodtech-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="FoodTech Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
-                       
+                        <div className="lg:col-span-5 flex justify-center items-center mt-10 lg:mt-0 rounded-4xl">
+                            <Image
+                                src="/images/foodtech-software-development/01.webp"
+                                alt="FoodTech Software Development Services"
+                                width={500}
+                                height={500}
+                                className="w-full max-w-[420px] h-auto object-contain bg-transparent rounded-4xl mb-3.5"
+                                priority
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <Image src="/images/foodtech-software-development/02.webp" sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1440px) 1440px, 1920px" alt="FoodTech Software Development Services" className="w-full object-cover max-w-full h-auto" width="1920" height="1080" />
+
             <section ref={counterRef} className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-14 md:pt-24  lg:py-24 lg:px-8 ">
                     <div className="max-w-3xl xl:max-w-4xl">
@@ -506,7 +506,7 @@ export default function page() {
                                     Collaboration Models for Ecommerce Software Development
                                 </h2>
                                 <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                                   We offer flexible engagement models to suit your business needs and project scope.
+                                    We offer flexible engagement models to suit your business needs and project scope.
                                 </p>
                             </div>
                         </SplideSlide>
@@ -534,7 +534,7 @@ export default function page() {
                         Collaboration Models for Ecommerce Software Development
                     </h2>
                     <p className="text-base mb-12">
-                          We offer flexible engagement models to suit your business needs and project scope.
+                        We offer flexible engagement models to suit your business needs and project scope.
                     </p>
 
                     <div className="flex flex-col gap-5">

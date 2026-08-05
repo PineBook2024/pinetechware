@@ -59,11 +59,11 @@ export default function page() {
             description:
                 "High-performance native applications designed specifically for iPhone, iPad, and the Apple ecosystem.",
         },
-        {
-            heading: "UI/UX Design for Swift Apps",
-            description:
-                "Clean, intuitive user interfaces built in accordance with Apple Human Interface Guidelines.",
-        },
+        // {
+        //     heading: "UI/UX Design for Swift Apps",
+        //     description:
+        //         "Clean, intuitive user interfaces built in accordance with Apple Human Interface Guidelines.",
+        // },
         {
             heading: "API & Backend Integration",
             description:

@@ -52,10 +52,10 @@ export default function page() {
             heading: "Custom iOS App Development",
             description: "Tailor-made iOS applications built to match your business goals and user requirements.",
         },
-        {
-            heading: "UI/UX Design for iOS",
-            description: "Apple-standard interfaces with smooth navigation and intuitive user experiences.",
-        },
+        // {
+        //     heading: "UI/UX Design for iOS",
+        //     description: "Apple-standard interfaces with smooth navigation and intuitive user experiences.",
+        // },
         {
             heading: "iPhone & iPad App Development",
             description: "Optimized apps designed for both iPhone and iPad with consistent performance.",

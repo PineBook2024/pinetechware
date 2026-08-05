@@ -120,12 +120,12 @@ export default function page() {
     const relatedServices = [
         { name: "Website Development" },
         { name: "Website Designing" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Payment Gateway Integration" },
         { name: "Mobile App Development" },
-        { name: "Inventory Management Systems" },
-        { name: "Digital Marketing" },
-        { name: "SEO Optimization" },
+        // { name: "Inventory Management Systems" },
+        // { name: "Digital Marketing" },
+        // { name: "SEO Optimization" },
         { name: "CRM Integration" },
         { name: "E-Commerce Maintenance" },
     ];

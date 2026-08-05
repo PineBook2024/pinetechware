@@ -47,15 +47,15 @@ export default function page() {
 
 
     const relatedServices = [
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Web Development" },
         { name: "Mobile App Design" },
-        { name: "Branding & Visual Identity" },
-        { name: "Custom Graphic Design" },
+        // { name: "Branding & Visual Identity" },
+        // { name: "Custom Graphic Design" },
         { name: "Landing Page Design" },
         { name: "E-Commerce Development" },
         { name: "Website Redesign Services" },
-        { name: "SEO-Friendly Web Design" },
+        // { name: "SEO-Friendly Web Design" },
         { name: "Conversion Optimization" },
     ];
 
@@ -193,10 +193,10 @@ export default function page() {
                             <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Custom Website Design</h3>
                             <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Fully tailored website designs created around your brand identity, goals, and target audience.</p>
                         </div>
-                        <div>
+                        {/* <div>
                             <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">UI/UX Design</h3>
                             <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">User-centered interfaces with smooth navigation, clear layouts, and intuitive experiences.</p>
-                        </div>
+                        </div> */}
                         <div>
                             <h3 className="font-bold pb-6 lg:pb-[2.125rem] text-2xl xl:text-3xl 2xl:text-4xl tracking-[0px] text-black">Responsive Web Design</h3>
                             <p className="text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black">Websites optimized for desktop, tablet, and mobile to ensure consistency across all devices.</p>

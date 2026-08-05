@@ -60,11 +60,11 @@ export default function page() {
             description:
                 "High-performance native apps leveraging Kotlin’s modern language features.",
         },
-        {
-            heading: "UI/UX Design for Kotlin Apps",
-            description:
-                "Clean, intuitive interfaces following Material Design and Android best practices.",
-        },
+        // {
+        //     heading: "UI/UX Design for Kotlin Apps",
+        //     description:
+        //         "Clean, intuitive interfaces following Material Design and Android best practices.",
+        // },
         {
             heading: "API & Backend Integration",
             description:

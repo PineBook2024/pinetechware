@@ -48,14 +48,14 @@ export default function page() {
 
     const relatedServices = [
         { name: "Website Designing" },
-        { name: "UI/UX Design" },
+        // { name: "UI/UX Design" },
         { name: "Web Application Development" },
         { name: "E-Commerce Development" },
         { name: "CMS Development" },
         { name: "Mobile App Development" },
         { name: "API Development & Integration" },
-        { name: "Website Maintenance" },
-        { name: "SEO Optimization" },
+        // { name: "Website Maintenance" },
+        // { name: "SEO Optimization" },
         { name: "Cloud Hosting Solutions" },
     ];
 

@@ -55,11 +55,11 @@ export default function page() {
             description:
                 "Tailor-made Android applications designed around your business goals and user needs.",
         },
-        {
-            heading: "UI/UX Design for Android",
-            description:
-                "Clean, intuitive interfaces following Material Design guidelines for seamless usability.",
-        },
+        // {
+        //     heading: "UI/UX Design for Android",
+        //     description:
+        //         "Clean, intuitive interfaces following Material Design guidelines for seamless usability.",
+        // },
         {
             heading: "Smartphone & Tablet App Development",
             description:

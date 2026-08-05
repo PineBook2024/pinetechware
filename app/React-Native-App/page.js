@@ -55,11 +55,11 @@ export default function page() {
             description:
                 "Tailor-made apps built to match your business model, features, and growth goals.",
         },
-        {
-            heading: "UI/UX Design for Cross-Platform Apps",
-            description:
-                "Pixel-perfect designs optimized for both iOS and Android user behavior.",
-        },
+        // {
+        //     heading: "UI/UX Design for Cross-Platform Apps",
+        //     description:
+        //         "Pixel-perfect designs optimized for both iOS and Android user behavior.",
+        // },
         {
             heading: "iOS + Android App Development",
             description:
