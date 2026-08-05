@@ -58,16 +58,16 @@ export default function services() {
     };
 
     const data = [
-        {
-            title: "Strategy & Consulting",
-            content:
-                "We start by understanding your goals, audience, and market. With research, competitive analysis, and a well-defined roadmap, we help you make informed decisions that drive growth.",
-        },
-        {
-            title: "UI / UX Design",
-            content:
-                "Crafting user interfaces and experiences isn’t just about looking good; it’s about feeling intuitive. Our UX audits, wireframes, and prototyping ensure seamless, delightful journeys for your users.",
-        },
+        // {
+        //     title: "Strategy & Consulting",
+        //     content:
+        //         "We start by understanding your goals, audience, and market. With research, competitive analysis, and a well-defined roadmap, we help you make informed decisions that drive growth.",
+        // },
+        // {
+        //     title: "UI / UX Design",
+        //     content:
+        //         "Crafting user interfaces and experiences isn’t just about looking good; it’s about feeling intuitive. Our UX audits, wireframes, and prototyping ensure seamless, delightful journeys for your users.",
+        // },
         {
             title: "Web & Mobile App Development",
             content:
@@ -78,11 +78,11 @@ export default function services() {
             content:
                 "We design online stores and commerce platforms that sell— optimized for performance, mobile experience, secure payments, and conversion. Think beautiful storefronts with powerful backend integrations.",
         },
-        {
-            title: "Branding & Marketing",
-            content:
-                "Turn data into insights and hand off repetitive tasks. Our branding models, predictive analytics, and frameworks enhance efficiency and uncover opportunities you might not see otherwise.",
-        },
+        // {
+        //     title: "Branding & Marketing",
+        //     content:
+        //         "Turn data into insights and hand off repetitive tasks. Our branding models, predictive analytics, and frameworks enhance efficiency and uncover opportunities you might not see otherwise.",
+        // },
         {
             title: "Support & Optimization",
             content:
