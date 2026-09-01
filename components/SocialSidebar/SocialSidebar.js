@@ -12,13 +12,13 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/feed/",
+    href: "https://www.linkedin.com/company/pine-techware",
     icon: FaLinkedinIn,
     color: "text-[#0A66C2]",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/pinebookwriting?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+    href: "https://www.instagram.com/pinetechware/",
     icon: FaInstagram,
     color: "text-[#E4405F]",
   },
