@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "./utils/LenisProvider";
@@ -25,21 +24,18 @@ const geistMono = Geist_Mono({
 // };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    if (document.getElementById("ze-snippet")) return;
-
-    const script = document.createElement("script");
-    script.id = "ze-snippet";
-    script.src =
-      "https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973";
-    script.async = true;
-
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <html lang="en">
       <head>
+        <Script id="text-chat" strategy="afterInteractive">
+          {`
+            window.__lc = window.__lc || {};
+            window.__lc.organizationId = "eacfe277-ea71-4ece-b8fc-b4c78fd34c3d";
+            window.__lc.integration_name = "manual_onboarding";
+            window.__lc.product_name = "text";
+            ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+          `}
+        </Script>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SDVD9HEY4L"
@@ -81,6 +77,18 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <noscript>
+          <a
+            href="https://www.text.com/chat-with-ai-agent/eacfe277-ea71-4ece-b8fc-b4c78fd34c3d/"
+            rel="nofollow"
+          >
+            Chat with AI Agent
+          </a>
+          {", powered by "}
+          <a href="https://www.text.com/" rel="noopener nofollow" target="_blank">
+            Text
+          </a>
+        </noscript>
         <noscript>
           <img
             height="1"
