@@ -27,32 +27,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-       <Script id="tawk-to" strategy="afterInteractive">
-          {`
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/6aea31a7514dbd3c354cb328/1k6hd3url';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          `}
+        <Script id="zoho-salesiq-init" strategy="beforeInteractive">
+          {`window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}`}
         </Script>
-        {/* <Script id="tawk-chat" strategy="afterInteractive">
-          {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function() {
-              var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = "https://embed.tawk.to/6ae0ef971e2fa534748c92a2/1k5vafqp0";
-              s1.charset = "UTF-8";
-              s1.setAttribute("crossorigin", "*");
-              s0.parentNode.insertBefore(s1, s0);
-            })();
-          `}
-        </Script> */}
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zohopublic.com/widget?wc=siqbd2efc989c2066a4e9c5a1d1fc2a2e5aa947de2ffdfc7fef65f0b82ad608ba33"
+          strategy="afterInteractive"
+          defer
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SDVD9HEY4L"
